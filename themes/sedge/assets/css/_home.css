@@ -1,0 +1,74 @@
+.straw-intro{
+	padding-left: 36px;
+	padding-right: 36px;
+	background: #f9f9f9;
+
+}
+.straw-intro-bg{
+	background: #faf5ef;
+	padding-top: 213px;
+    padding-bottom: 287px;
+}
+.straw-into-cntrl{
+	display: flex;
+}
+.straw-cont{
+	width: 50%;
+	height: 520px;
+	background: #6dbd98;
+	padding: 127px 73px 116px;
+	position: relative;
+	z-index: 2;
+}
+.straw-des{
+	padding-bottom: 25px;
+}
+.straw-des p{
+	font-size: 30px;
+	font-family: 'Ubuntu', sans-serif;
+	font-style: italic;
+	font-weight: 500;
+	color: #fff;
+	line-height: 1.3;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+}
+.straw-intro-btn {
+	border: 1px solid #fff;
+	color: #fff;
+	border-radius: 3px;
+}
+.straw-img-box{
+	position: absolute;
+	width: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    margin-left: 125px;
+    margin-top: 66px;	
+}
+
+/* product-sec */
+.prdt-catge{
+	width: 50%;
+}
+.prdt-item{
+	background: #fff;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 17px;
+	border-radius: 10px;
+}
+.prdt-item:nth-child(2n+2) sapn{
+	order: 1;
+}
+.prdt-item:nth-child(2n+2) img{
+	order: 2;
+}
+.prdt-item:last-child{
+	margin-bottom: 0;
+}
+.prdt-catge-des {
+	width: 50%;
+}
