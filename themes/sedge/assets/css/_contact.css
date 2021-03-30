@@ -1,0 +1,372 @@
+/*
+---------------------
+ contact-form-sec-wrp
+---------------------
+*/
+.contact-form-sec-wrp{
+	padding-bottom: 100px;
+}
+.contact-form-lft {
+    width: 73%;
+    float: left;
+    padding-right: 90px;
+}
+.contact-form-rgt {
+    width: 27%;
+    float: right;
+    position: relative;
+}
+.page-entry-header {
+    border-bottom: 2px solid#F2EADE;
+    padding-right: 0;
+    padding-bottom: 25px;
+    margin-bottom: 45px;
+}
+.page-entry-header .fl-h2 {
+    color: #78797B;
+    margin-bottom: 26px;
+}
+.page-entry-header p{
+	margin-bottom: 25px;
+	color: #71867E;
+}
+.contact-form-block{
+	padding-top: 40px;
+}
+.contact-form-info-cntlr{
+	position: relative;
+	z-index: 1;
+}
+
+/*
+---------------------
+ Contact Form
+---------------------
+*/
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container:after,
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container:before{
+	content: "";
+	clear: both;
+	display: table;
+}
+.contact-form-wrp  div.wpforms-container-full .wpforms-form .wpforms-field{
+	clear: initial;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field{
+	width: 50%;
+	float: left;
+	padding: 0 12px;
+	margin-bottom: 22px;
+	position: relative;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.FullWidthField{
+	width: 100%;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container{
+	margin: 0 -12px;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field label {
+    display: inline-block;
+    vertical-align: baseline;
+    width: auto;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    color: #78797B;
+    margin-bottom: 10px;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input{
+	width: 100%;
+	max-width: 100%;
+	height: 50px;
+	background: transparent;
+    border: 1px solid #F2EADE;
+	box-sizing: border-box;
+	padding: 15px 15px 16px;
+	color: #78797B;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	border-radius: 0;
+	box-shadow: none !important;
+	background: #fff;
+}
+
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea{
+	width: 100%;
+	margin-bottom: 15px;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea textarea{
+	width: 100%;
+	height: 235px;
+	background:transparent;
+	border: 1px solid #F2EADE;
+	box-sizing: border-box;
+	color: #8C8CA1;;
+	background:#fff;
+	font-size: 16px;
+	line-height: 1;
+	font-weight: 400;
+	padding: 14px 15px;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	resize: none;
+	border-radius: 0;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea textarea:focus,
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input:focus{
+	border-color:#c0bebe;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button {
+    max-width: 235px;
+    width: 100%;
+    height: 50px;
+    border: 2px solid #6DBD98 !important;
+    background: #6DBD98;
+    border-radius: 4px;
+    font-size: 16px!important;
+    line-height: 1 !important;
+    color: #fff!important;
+    text-transform: uppercase;
+    font-weight: 600!important;
+    transition: all 0.5s!important;
+    -ms-transition: all 0.5s!important;
+    -webkit-transition: all 0.5s!important;
+    cursor: pointer!important;
+    padding: 16px 10px 15px!important;
+    text-align: center;
+}
+.contact-form-wrp .wpforms-field-pagebreak .wpforms-clear button:hover,
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:hover{
+	background: transparent!important;
+	color: #6DBD98!important;
+	border-color: #6DBD98 !important;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.wpforms-field-text p {
+    font-size: 14px;
+    line-height: 1.3;
+    color: #78797B;
+    margin-bottom: 30px;
+    padding-top: 3px;
+    font-weight: 300;
+}
+.wpforms-field-text p a{
+	color: #873C42;
+	text-decoration: underline;
+}
+.wpforms-field-text p a:hover{
+	color: #ba0820;
+}
+.contact-form-wrp .wpforms-container .wpforms-form.was-validated .wpforms-field-container .wpforms-has-error label.wpforms-error{
+	display: block;
+
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-has-error span {
+    display: block !important;
+    top: 7px;
+    bottom: auto !important;
+    padding-right: 0 !important;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field span{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
+    color: #D17181;
+    position: absolute;
+    right: 14px;
+    text-align: right;
+    width: auto;
+    text-transform: inherit;
+    margin-bottom: 0;
+    display: none;
+    padding-right: 14px;
+    cursor: pointer;
+    bottom: 18px;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error {
+	font-size: 14px;
+    line-height: 1;
+    color: #D17181;
+    position: absolute;
+    bottom: 16px;
+    display: block;
+    right: 20px;
+    padding-right: 12px;
+    font-weight: 700!important;
+    text-align: right;
+    width: auto;
+    text-transform: inherit;
+    margin-bottom: 0;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error{
+	font-weight: 700;
+	font-size: 14px;
+	padding-left: 2px;
+	display: block;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container span,
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container label.wpforms-error{
+	display: none;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error input {
+    border: 1px solid #D17181 !important;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text{
+	width: 100%!important;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.form-privacy-text{
+	margin-bottom: 15px;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text p {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #6A6A6A;
+    margin-bottom: 24px;
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text p a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: underline;
+	color: #6A6A6A;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text p a:hover{
+	color: #E0861A;
+}
+
+.contact-form-wrp .wpforms-container label.wpforms-field-label span.wpforms-required-label{
+	display: inline-block!important;
+}
+.wpforms-field.wpforms-field-html p{
+	color: #78797B;
+}
+.wpforms-field.wpforms-field-html p a{
+	color: #78797B;
+	text-decoration: underline;
+}
+.wpforms-field.wpforms-field-html p a:hover{
+	color: #e48aa4;
+}
+
+/*
+placeholder
+*/
+
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #78797B;
+  opacity: 1;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error input::-moz-placeholder { /* Firefox 19+ */
+  color: #78797B;
+  opacity: 1;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error input:-ms-input-placeholder { /* IE 10+ */
+  color: #78797B;
+  opacity: 1;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error input:-moz-placeholder { /* Firefox 18- */
+  color: #78797B;
+  opacity: 1;
+}
+
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #78797B;
+  opacity: 1;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #78797B;
+  opacity: 1;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #78797B;
+  opacity: 1;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error textarea:-moz-placeholder { /* Firefox 18- */
+  color: #78797B;
+  opacity: 1;
+}
+
+/*
+----------------------
+Inputtype Radio Css
+----------------------
+*/
+.input-type-radio ul li{
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative;
+    float: left;
+    padding-right: 28px !important;
+}
+.input-type-radio ul li label {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400;
+    color: #78797B;
+    margin: 0;
+    padding-left: 50px;
+    text-transform: inherit;
+    padding-right: 0;
+    cursor: pointer;
+    padding: 2px 0 2px 25px;
+}
+/* Hide the browser's default checkbox */
+.input-type-radio ul li label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #71867E;
+    box-sizing: border-box;
+    left: 0;
+    top: 5px;
+    border-radius: 15px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.input-type-radio ul li label input:checked ~ .checkmark:after {
+  display: block;
+  background: #93A198;
+}
+
+
+/* Style the checkmark/indicator */
+.input-type-radio ul li label .checkmark:after {
+	content: "";
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    width: 8px;
+    height: 8px;
+    background: #93A198;
+    border-radius: 10px;
+}
