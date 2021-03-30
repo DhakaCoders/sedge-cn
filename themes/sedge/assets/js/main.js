@@ -216,7 +216,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
   /*start of Shariful*/
-
+  var swiper = new Swiper('.ftrTopSlider', {
+    slidesPerView: 'auto',
+    loop: true,
+    spaceBetween: 0,
+    /*navigation: {
+      nextEl: '.restaurantGallerySliderArrows .swiper-button-next',
+      prevEl: '.restaurantGallerySliderArrows .swiper-button-prev',
+    }*/
+  });
 
 
 
