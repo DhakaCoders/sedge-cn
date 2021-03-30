@@ -16,7 +16,7 @@ a, a:hover, a:focus, button:hover, button:focus{
 }
 
 body {
-    background: #fff;
+    background: #faf5ef;
     color: #78797B;
     font-size: 16px;
     line-height: 24px;
@@ -202,6 +202,12 @@ ul.ab-top-menu li:before{
 
 strong{
 	font-weight: 700;
+}
+a{
+	color: #873C42;
+}
+a:hover{
+	color: #6DBD98;
 }
 
 
