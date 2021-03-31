@@ -278,12 +278,17 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 }
 .hm-banner-title{
 	color: #6DBD98;
-	line-height: 1.3;
+	line-height: 1.2;
+	text-transform: uppercase;
 }
 .hm-banner-btn{
 	position: absolute;
 	bottom: 72px;
 	left: 65px;
+}
+.hm-banner-btn a:hover{
+	background: #fff;
+	border-color: #fff;
 }
 
 /*fixed cart socials*/
