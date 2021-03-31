@@ -17,6 +17,7 @@
 	border-color: #71867f;
 	padding-top: 4px;
 	letter-spacing: -0.02em;
+    text-transform: uppercase;
 }
 .page-entry-hdr a.fl-blue-btn:hover{
 	color:#71867f;
@@ -45,6 +46,8 @@
 .page-entry-header .fl-h2 {
     color: #78797B;
     margin-bottom: 26px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
 }
 .page-entry-header p{
 	margin-bottom: 22px;

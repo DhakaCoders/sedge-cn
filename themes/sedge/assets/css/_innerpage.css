@@ -39,6 +39,9 @@
 	margin-bottom: 0;
 	padding: 10px 50px;
 	background: #B3192A;
+	position: absolute;
+	top: 85px;
+	left: -300px;
 }
 
 .dfp-text-module{
@@ -108,6 +111,7 @@ ol li::before {
 
 .dfp-promo-module{
 	padding-bottom: 45px;
+	position: relative;
 }
 
 
@@ -329,6 +333,23 @@ Gallery design
 .cta-btn .fl-transparent-btn:hover{
 	background: #fff;
 	color: #71867E;
+}
+
+
+.dfp-prdt-item-module .prdt-item{
+	max-width: 100%;
+	margin-bottom: 30px;
+}
+
+.dfp-des-lft {
+    float: left;
+    width: 50%;
+    padding-right: 30px;
+}
+.dfp-des-rgt {
+    float: right;
+    width: 50%;
+    padding-right: 30px;
 }
 
 
