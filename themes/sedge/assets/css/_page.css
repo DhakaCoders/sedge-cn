@@ -40,3 +40,67 @@
 .sitemap ol li a:focus{
 	text-decoration: underline;
 }
+
+
+/*responsive*/
+@media(max-width: 1599px){
+	.hm-banner-cntlr{
+		padding-left: 200px;
+	}
+}
+@media(max-width: 1399px){
+	
+}
+@media(max-width: 1299px){
+	.hm-banner-cntlr{
+		padding-left: 150px;
+	}
+}
+@media(max-width: 1199px){
+	.hm-banner{
+		height: 750px;
+	}
+	.hm-banner-cntlr{
+		padding-left: 100px;
+		padding-top: 50px;
+	}
+}
+@media(max-width: 991px){
+	.hm-banner{
+		height: 650px;
+	}
+	.hm-banner-cntlr{
+		padding-left: 60px;
+		padding-top: 30px;
+	}
+}
+@media(max-width: 767px){
+	.hm-banner{
+		height: 550px;
+	}
+	.hm-banner-cntlr{
+		padding-left: 20px;
+		padding-top: 10px;
+	}
+	.hm-banner-title br{
+		display: block!important;
+	}
+	.hm-banner-bg{
+		top: 150px;
+	}
+	.hm-banner-btn{
+		left: 25px;
+		bottom: 47px;
+	}
+}
+@media(max-width: 575px){
+	.hm-banner{
+		height: 450px;
+	}
+	.hm-banner-cntlr{
+		padding-top: 0;
+	}
+	.hm-banner-bg{
+		top: 100px;
+	}
+}
