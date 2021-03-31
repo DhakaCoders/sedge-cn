@@ -49,6 +49,9 @@
 }
 
 /* product-sec */
+.prdt-bnr img {
+	width: 100%;
+}
 .prdt-cntrl{
 	display: flex;
 	margin-top: -103px;
@@ -60,11 +63,11 @@
 	background: #fff;
 	max-width: 687px;
 	width: 100%;
-	min-height: 330px;
 	display: flex;
 	align-items: center;
 	margin-bottom: 17px;
 	border-radius: 10px;
+	padding: 22px 0;
 }
 
 .prdt-itm-titl{
@@ -114,8 +117,8 @@
 	background: #71867f;
 	padding-left: 60px;
 	padding-right: 70px;
-	padding-top: 63px;
-	padding-bottom: 60px
+	padding-top: 64px;
+	padding-bottom: 63px
 }
 .prdt-des-logo{
 	display: flex;
@@ -140,15 +143,17 @@
 	width: 100%;
 }
 .prdt-des ul {
-	margin: -11px -22px;
-	padding-bottom: 82px;
+	margin: 0 -22px 90px;
 }
 .prdt-des ul li{
 	font-weight: 600;
 	font-size: 16px;
 	color: #fff;
-	padding: 11px 22px;
+	padding: 0 22px 11px;
 	position: relative;
+}
+.prdt-des ul li:last-child{
+	padding-bottom: 0;
 }
 .prdt-des ul li:after{
 	position: absolute;
