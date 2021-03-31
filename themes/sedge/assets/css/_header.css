@@ -285,3 +285,51 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	bottom: 72px;
 	left: 65px;
 }
+
+/*fixed cart socials*/
+.sitebar-add-cart{
+	position: fixed;
+	right: 0;
+	top: 555px;
+	z-index: 999;
+}
+.sitebar-add-cart a{
+	width: 83px;
+	height: 83px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #6DBD98;
+}
+.sitebar-add-cart a:hover{
+	background: #b4192b;
+}
+.sitebar-socials{
+	background: #b4192b;
+	position: fixed;
+	right: 0;
+	top: 648px;
+	z-index: 999;
+	padding: 27px 31px;
+}
+.sitebar-socials ul{
+
+}
+
+.sitebar-socials ul li{
+	padding: 10px 0;
+}
+.sitebar-socials ul li:first-child{
+	padding-top: 0;
+}
+.sitebar-socials ul li:last-child{
+	padding-bottom: 0;
+}
+.sitebar-socials ul li a{
+	color: #fff;
+	display: inline-block;
+	font-size: 24px;
+}
+.sitebar-socials ul li a:hover{
+	opacity: 0.8;
+}
