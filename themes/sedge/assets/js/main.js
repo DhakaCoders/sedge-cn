@@ -199,7 +199,18 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
   /*start of Noyon*/
-
+  if( $('.hambergar-icon').length ){
+    $('.hambergar-icon').click(function(){
+      $('body').toggleClass('allWork');
+    });
+  }
+  if( $('li.menu-item-has-children a').length ){
+    $('li.menu-item-has-children a').click(function(e){
+     event.preventDefault();
+     $(this).next().slideToggle(300);
+     $(this).parent().toggleClass('sub-menu-arrow');
+   });
+  }
 
 
   /*start of Rannojit*/
