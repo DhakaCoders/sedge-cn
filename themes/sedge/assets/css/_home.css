@@ -58,6 +58,7 @@
 }
 .prdt-catg{
 	width: 50%;
+	padding-right: 25px;
 }
 .prdt-item{
 	background: #fff;
@@ -112,18 +113,28 @@
 /* prdt-catg-des-cntrl */
 .prdt-catg-des-cntrl {
 	width: 50%;
+	position: relative;
+}
+.prdt-catg-des-cntrl:after{
+	position: absolute;
+	content: "";
+	width: 75px;
+	height: 132px;
+	background-color: #b4192b;
+	right: -37.5px;
+	top: 16.5%;
 }
 .prdt-catg-des-bg{
 	background: #71867f;
 	padding-left: 60px;
 	padding-right: 70px;
-	padding-top: 64px;
+	padding-top: 60px;
 	padding-bottom: 63px
 }
 .prdt-des-logo{
 	display: flex;
 	justify-content: center;
-	padding-bottom: 82px;
+	padding-bottom: 77px;
 	margin-bottom: 95px;
 	position: relative;
 }
@@ -169,7 +180,7 @@
 	-ms-transform: translateY(-50%);
 }
 .notice {
-	padding-top: 56px;
+	padding-top: 60px;
 	position: relative;
 	padding-bottom: 40px;
 }
