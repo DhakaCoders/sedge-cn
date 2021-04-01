@@ -16,7 +16,7 @@
 	width: 50%;
 	height: 520px;
 	background: #6dbd98;
-	padding: 127px 73px 116px;
+	padding: 127px 72px 116px;
 	position: relative;
 	z-index: 2;
 }
@@ -208,4 +208,87 @@
 	width: 370px;
 	background-color: #fff;
 	color: #81948e;
+}
+
+/* =============== */
+/*== responsive ==*/
+/* ============= */
+@media (max-width: 1699px) {
+	.straw-des p{
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 1599px) {
+	.straw-des p{
+		font-size: 26px;
+	}
+	.straw-cont{
+		padding: 127px 92px 116px;
+	}
+}
+
+@media (max-width: 1499px) {
+	.straw-des p{
+		font-size: 24px;
+	}
+	.straw-cont{
+		padding: 71px 65px 100px;
+		height: 460px;
+	}
+	.straw-img-box{
+		margin-top: 63px;
+	}
+
+}
+
+@media (max-width: 1399px) {
+	.straw-des p{
+		font-size: 22px;
+	}
+	.straw-cont{
+		padding: 60px 63px 80px;
+		height: 420px;
+	}
+	.straw-img-box{
+		margin-left: 95px;
+		margin-top: 57px;
+	}
+}
+
+@media (max-width: 1299px) {
+	
+}
+
+@media (max-width: 1199px) {
+	.straw-des p{
+		font-size: 21px;
+	}
+	.straw-cont{
+		padding: 127px 59px 116px;
+	}
+}
+
+@media (max-width: 991px) {
+	
+}
+
+@media (max-width: 767px) {
+	
+}
+
+@media (max-width: 639px) {
+	
+}
+
+@media (max-width: 575px) {
+	
+}
+
+@media (max-width: 439px) {
+	
+}
+
+@media (max-width: 375px) {
+	
 }
