@@ -272,6 +272,24 @@
 		margin-left: 95px;
 		margin-top: 57px;
 	}
+	.prdt-catg-des-bg{
+    	padding-top: 30px;
+    	padding-bottom: 50px;
+	}
+	.prdt-des-logo{
+		padding-bottom: 40px;
+    	margin-bottom: 40px;
+	}
+	.prdt-des ul{
+		margin: 0 -22px 50px;
+	}
+	.notice{
+		padding-top: 30px;
+    	padding-bottom: 25px;
+	}
+	.prdt-des-logo:after, .notice:after{
+		width: 425px;
+	}
 }
 
 @media (max-width: 1299px) {
