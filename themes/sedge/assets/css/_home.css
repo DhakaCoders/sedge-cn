@@ -68,12 +68,16 @@
 	align-items: center;
 	margin-bottom: 17px;
 	border-radius: 10px;
-	padding: 22px 0;
+	padding: 44px 0;
 }
 
 .prdt-itm-titl{
 	color: #6dbd98;
 	text-transform: uppercase;
+}
+.pi-img{
+	max-width: 355px;
+	width: 100%;
 }
 .prdt-item:nth-child(1) .pi-img{
 	padding-left: 52px;
@@ -128,7 +132,7 @@
 	background: #71867f;
 	padding-left: 60px;
 	padding-right: 70px;
-	padding-top: 61px;
+	padding-top: 64px;
 	padding-bottom: 63px
 }
 .prdt-des-logo{
@@ -217,6 +221,9 @@
 	.straw-des p{
 		font-size: 28px;
 	}
+	.prdt-item:nth-child(2n+2) .pi-cont{
+		padding-left: 32px;
+	}
 }
 
 @media (max-width: 1599px) {
@@ -239,22 +246,24 @@
 	.straw-img-box{
 		margin-top: 63px;
 	}
+	.pi-img{
+		max-width: 340px;
+	}
+	.pi-cont{
+		padding-right: 50px;
+	}
 	.prdt-catg-des-bg{
-    	padding-top: 45px;
-    	padding-bottom: 70px;
-    	padding-left: 55px;
-    	padding-right: 45px;
+    	padding-top: 60px;
+    	padding-bottom: 60px;
+    	padding-left: 60px;
+    	padding-right: 40px;
 	}
 	.prdt-des-logo{
-		padding-bottom: 63px;
-    	margin-bottom: 63px;
+		padding-bottom: 65px;
+    	margin-bottom: 80px;
 	}
 	.prdt-des ul{
-		margin: 0 -22px 70px;
-	}
-	.notice{
-		padding-top: 45px;
-    	padding-bottom: 30px;
+		margin: 0 -22px 92px;
 	}
 	.prdt-des-logo:after, .notice:after{
 		width: 470px;
@@ -274,26 +283,31 @@
 		margin-left: 95px;
 		margin-top: 57px;
 	}
-	.prdt-catg-des-bg{
-    	padding-top: 30px;
-   	 	padding-bottom: 50px
+	.pi-img{
+		max-width: 300px;
 	}
-	.prdt-des-logo{
-		padding-bottom: 55px;
-    	margin-bottom: 55px;
+	.pi-cont{
+		padding-right: 40px;
 	}
-	.prdt-des ul{
-		margin: 0 -22px 60px;
+	.prdt-catg-des-bg {
+	    padding-top: 47px;
+	    padding-bottom: 47px;
+	    padding-left: 60px;
+	    padding-right: 40px;
 	}
+	.prdt-des-logo {
+	    padding-bottom: 55px;
+	    margin-bottom: 65px;
+	}
+	.prdt-des ul {
+    	margin: 0 -22px 78px;
+	}
+	.notice {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
 	.prdt-des ul li{
 		font-size: 14px;
-	}
-	.notice{
-		padding-top: 35px;
-    	padding-bottom: 25px;
-	}
-	.prdt-des-logo:after, .notice:after{
-		width: 430px;
 	}
 }
 
