@@ -52,7 +52,7 @@
 	height: 426px;
 }
 .prdt-mnl-process ul li{
-	padding: 10px;
+	padding: 10px 0;
 	border-bottom: 1px solid #b3d9c4; 
 }
 .prdt-mnl-process ul li:last-child{
@@ -69,6 +69,7 @@
 }
 .pmp-titl {
 	margin-bottom: 0;
+	padding-left: 107px;
 }
 
 /* grid-gallary */
