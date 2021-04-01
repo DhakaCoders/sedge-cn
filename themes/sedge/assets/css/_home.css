@@ -239,6 +239,24 @@
 	.straw-img-box{
 		margin-top: 63px;
 	}
+	.prdt-catg-des-bg{
+    	padding-top: 40px;
+    	padding-bottom: 63px;
+	}
+	.prdt-des-logo{
+		padding-bottom: 60px;
+    	margin-bottom: 60px;
+	}
+	.prdt-des ul{
+		margin: 0 -22px 70px;
+	}
+	.notice{
+		padding-top: 45px;
+    	padding-bottom: 29px;
+	}
+	.prdt-des-logo:after, .notice:after{
+		width: 470px;
+	}
 
 }
 
