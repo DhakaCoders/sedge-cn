@@ -212,6 +212,11 @@
 	width: 370px;
 	background-color: #fff;
 	color: #81948e;
+	border: 1px solid transparent;
+}
+.find-more-btn:hover{
+	border: 1px solid #b4192b;
+	color: #b4192b;
 }
 
 /* =============== */
