@@ -68,12 +68,16 @@
 	align-items: center;
 	margin-bottom: 17px;
 	border-radius: 10px;
-	padding: 22px 0;
+	padding: 44px 0;
 }
 
 .prdt-itm-titl{
 	color: #6dbd98;
 	text-transform: uppercase;
+}
+.pi-img{
+	max-width: 355px;
+	width: 100%;
 }
 .prdt-item:nth-child(1) .pi-img{
 	padding-left: 52px;
@@ -128,7 +132,7 @@
 	background: #71867f;
 	padding-left: 60px;
 	padding-right: 70px;
-	padding-top: 61px;
+	padding-top: 65px;
 	padding-bottom: 63px
 }
 .prdt-des-logo{
@@ -154,7 +158,7 @@
 	width: 100%;
 }
 .prdt-des ul {
-	margin: 0 -22px 103px;
+	margin: 0 -22px 92px;
 }
 .prdt-des ul li{
 	font-weight: 600;
@@ -163,9 +167,6 @@
 	padding: 0 22px 11px;
 	position: relative;
 }
-.prdt-des ul li:last-child{
-	padding-bottom: 0;
-}
 .prdt-des ul li:after{
 	position: absolute;
 	content: "";
@@ -173,7 +174,7 @@
 	height: 12px;
 	left: 0;
 	top: 50%;
-	margin-top: -1px;
+	margin-top: -4px;
 	background-color: #fff;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
@@ -208,6 +209,11 @@
 	width: 370px;
 	background-color: #fff;
 	color: #81948e;
+	border: 1px solid transparent;
+}
+.find-more-btn:hover{
+	border: 1px solid #6dbd98;
+	color: #6dbd98;
 }
 
 /* =============== */
@@ -216,6 +222,9 @@
 @media (max-width: 1699px) {
 	.straw-des p{
 		font-size: 28px;
+	}
+	.prdt-item:nth-child(2n+2) .pi-cont{
+		padding-left: 32px;
 	}
 }
 
@@ -239,22 +248,24 @@
 	.straw-img-box{
 		margin-top: 63px;
 	}
+	.pi-img{
+		max-width: 340px;
+	}
+	.pi-cont{
+		padding-right: 50px;
+	}
 	.prdt-catg-des-bg{
-    	padding-top: 45px;
-    	padding-bottom: 70px;
-    	padding-left: 55px;
-    	padding-right: 45px;
+    	padding-top: 55px;
+    	padding-bottom: 55px;
+    	padding-left: 60px;
+    	padding-right: 40px;
 	}
 	.prdt-des-logo{
-		padding-bottom: 63px;
-    	margin-bottom: 63px;
+		padding-bottom: 65px;
+    	margin-bottom: 80px;
 	}
 	.prdt-des ul{
-		margin: 0 -22px 70px;
-	}
-	.notice{
-		padding-top: 45px;
-    	padding-bottom: 30px;
+		margin: 0 -22px 92px;
 	}
 	.prdt-des-logo:after, .notice:after{
 		width: 470px;
@@ -274,26 +285,38 @@
 		margin-left: 95px;
 		margin-top: 57px;
 	}
-	.prdt-catg-des-bg{
-    	padding-top: 30px;
-   	 	padding-bottom: 50px
+	.pi-img{
+		max-width: 300px;
 	}
-	.prdt-des-logo{
-		padding-bottom: 55px;
-    	margin-bottom: 55px;
+	.prdt-item:nth-child(3) .pi-img{
+		max-width: 290px;
 	}
-	.prdt-des ul{
-		margin: 0 -22px 60px;
+	.pi-cont{
+		padding-right: 40px;
 	}
+	.prdt-catg-des-bg {
+	    padding-top: 43px;
+	    padding-bottom: 50px;
+	    padding-left: 60px;
+	    padding-right: 40px;
+	}
+	.prdt-des-logo {
+	    padding-bottom: 55px;
+	    margin-bottom: 65px;
+	}
+	.prdt-des ul {
+    	margin: 0 -22px 60px;
+	}
+	.notice {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
 	.prdt-des ul li{
 		font-size: 14px;
 	}
-	.notice{
-		padding-top: 35px;
-    	padding-bottom: 25px;
-	}
 	.prdt-des-logo:after, .notice:after{
 		width: 430px;
+		left: -8px;
 	}
 }
 
@@ -307,6 +330,79 @@
 	}
 	.straw-cont{
 		padding: 127px 59px 116px;
+	}
+	.pi-img {
+    	max-width: 265px;
+	}
+	.prdt-item:nth-child(3) .pi-img {
+    	max-width: 240px;
+	}
+	.pi-cont {
+    	padding-right: 35px;
+	}
+	.prdt-item:nth-child(2n+2) .pi-cont{
+		padding-left: 30px;
+	}
+	.prdt-catg-des-bg {
+	    padding-top: 30px;
+	    padding-bottom: 30px;
+	    padding-left: 50px;
+	    padding-right: 23px;
+	}
+	.prdt-des-logo {
+    	padding-bottom: 40px;
+    	margin-bottom: 45px;
+	}
+	.prdt-des ul {
+    	margin: 0 -22px 50px;
+	}
+	.prdt-des ul li{
+		padding: 0 15px 11px;
+	}
+	.notice {
+    	padding-top: 40px;
+    	padding-bottom: 30px;
+	}
+	.prdt-des-logo:after, .notice:after {
+    	width: 385px;
+	}
+}
+
+@media (max-width: 1099px) {
+	.prdt-catg{
+		padding-right: 0;
+		padding-left: 37px;
+	}
+	.prdt-catg-des-cntrl{
+		padding-left: 25px;
+	}
+	.prdt-item:nth-child(2n+2) .pi-cont{
+		padding-left: 18px;
+	}
+	.pi-cont{
+		padding-right: 24px;
+	}
+	.prdt-item{
+		padding: 44px 0;
+	}
+	.prdt-catg-des-bg{
+		max-width: 480px;
+		width: 100%;
+		margin-left: auto;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-right: 19px;
+	}
+	.prdt-des ul li{
+		font-size: 13px;
+	}
+	.prdt-catg-des-cntrl:after{
+		width: 50px;
+		right: -15px;
+		top: 13.5%;
+	}
+	.prdt-des-logo:after, .notice:after{
+		width: 370px;
 	}
 }
 
