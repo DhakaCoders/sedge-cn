@@ -240,19 +240,21 @@
 		margin-top: 63px;
 	}
 	.prdt-catg-des-bg{
-    	padding-top: 40px;
-    	padding-bottom: 63px;
+    	padding-top: 45px;
+    	padding-bottom: 70px;
+    	padding-left: 55px;
+    	padding-right: 45px;
 	}
 	.prdt-des-logo{
-		padding-bottom: 60px;
-    	margin-bottom: 60px;
+		padding-bottom: 63px;
+    	margin-bottom: 63px;
 	}
 	.prdt-des ul{
 		margin: 0 -22px 70px;
 	}
 	.notice{
 		padding-top: 45px;
-    	padding-bottom: 29px;
+    	padding-bottom: 30px;
 	}
 	.prdt-des-logo:after, .notice:after{
 		width: 470px;
@@ -274,21 +276,24 @@
 	}
 	.prdt-catg-des-bg{
     	padding-top: 30px;
-    	padding-bottom: 50px;
+   	 	padding-bottom: 50px
 	}
 	.prdt-des-logo{
-		padding-bottom: 40px;
-    	margin-bottom: 40px;
+		padding-bottom: 55px;
+    	margin-bottom: 55px;
 	}
 	.prdt-des ul{
-		margin: 0 -22px 50px;
+		margin: 0 -22px 60px;
+	}
+	.prdt-des ul li{
+		font-size: 14px;
 	}
 	.notice{
-		padding-top: 30px;
+		padding-top: 35px;
     	padding-bottom: 25px;
 	}
 	.prdt-des-logo:after, .notice:after{
-		width: 425px;
+		width: 430px;
 	}
 }
 
