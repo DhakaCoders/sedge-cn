@@ -223,6 +223,24 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
   /*start of Milon*/
+  /* -- About page left bg control --*/
+if(windowWidth > 768){
+  var AboutTextImgSecWrp = $('.about-img-text-sec-wrp').width();
+  var AboutTextImgSecWrpContainer = $('.about-img-text-sec-wrp .container').width();
+  var LeftBgWidthCal = (AboutTextImgSecWrp - AboutTextImgSecWrpContainer);
+  var LeftBgWidthCalDiv =  (LeftBgWidthCal / 2) ;
+  var AboutTextImgRgtCon = $('.about-img-text-wrp').outerHeight();
+  $('.about-img-text-bg').height(AboutTextImgRgtCon).width(LeftBgWidthCalDiv);
+
+  $(window).resize(function(){
+    var AboutTextImgSecWrp = $('.about-img-text-sec-wrp').width();
+    var AboutTextImgSecWrpContainer = $('.about-img-text-sec-wrp .container').width();
+    var LeftBgWidthCal = (AboutTextImgSecWrp - AboutTextImgSecWrpContainer);
+    var LeftBgWidthCalDiv =  (LeftBgWidthCal / 2) ;
+    var AboutTextImgRgtCon = $('.about-img-text-wrp').outerHeight();
+    $('.about-img-text-bg').height(AboutTextImgRgtCon).width(LeftBgWidthCalDiv); 
+  });
+}
 
 
 
