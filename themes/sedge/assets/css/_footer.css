@@ -176,7 +176,7 @@ div.wpforms-container-full .wpforms-form .wpforms-error {
 
 
 .ftr-location{
-	padding-bottom: 20px;
+	padding-bottom: 25px;
 }
 .ftr-email{
 	padding-bottom: 10px;
@@ -287,10 +287,17 @@ div.wpforms-container-full .wpforms-form .wpforms-error {
 	padding-top: 25px;
 	padding-bottom: 35px;
 }
+.ftr-copywrite{
+	order: 1;
+}
+.ftr-designby{
+	order: 3;
+}
 .ftr-btm-mdle{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	order: 2;
 }
 
 .ftr-copywrite p,
@@ -398,7 +405,9 @@ div.wpforms-container-full .wpforms-form .wpforms-error {
 	.ftr-designby{
 		text-align: center;
 	}
-	
+	.ftr-btm-mdle{
+		padding-bottom: 20px;
+	}
 	
 }
 
@@ -478,6 +487,9 @@ div.wpforms-container-full .wpforms-form .wpforms-error {
 	}
 	.ftrTopSlider .swiper-slide {
 	    width: 33.3333%;
+	}
+	.ftr-btm-mdle{
+		padding-bottom: 0;
 	}
 }
 
