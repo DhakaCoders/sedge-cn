@@ -16,7 +16,7 @@
 }
 .default-page-con {
 	padding-bottom: 75px;
-	padding-top: 0px;
+	padding-top: 70px;
 }
 
 .fl-dft-overflow-controller {
@@ -339,6 +339,13 @@ Gallery design
 .dfp-prdt-item-module .prdt-item{
 	max-width: 100%;
 	margin-bottom: 30px;
+	padding: 50px 0;
+	padding-right: 60px;
+}
+.prdt-fea-img {
+    max-width: 100%;
+    width: 100%;
+    text-align: right;
 }
 
 .dfp-des-lft {
@@ -557,6 +564,12 @@ Gallery design
 	}
 	.default-page-con{
 		padding-bottom: 80px;
+	}
+	.dfp-single-img-ctlr {
+	    width: 59.5%;
+	}
+	.dfp-small-img{
+		width: 40.5%;
 	}
 }
 @media(max-width: 850px){
@@ -906,6 +919,12 @@ Gallery design
 	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt{
 		padding-right: 0;
 	}
+	.dfp-single-img-ctlr {
+	    width: 61%;
+	}
+	.dfp-small-img {
+	    width: 38.5%;
+	}
 }
 
 
@@ -956,6 +975,9 @@ Gallery design
 	}
 	.fl-pro-grd-des {
 	    padding: 15px 0 10px 0;
+	}
+	.dfp-small-img {
+	    width: 37.5%;
 	}
 	
 }
