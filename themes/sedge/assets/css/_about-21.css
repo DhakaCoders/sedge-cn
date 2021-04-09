@@ -87,7 +87,7 @@ about-img-text-sec-wrp
 }
 .about-img {
     height: 581px;
-    margin-left: -60px;
+    margin-left: -180px;
     margin-top: -85px;
 }
 .about-title-1{
@@ -186,15 +186,26 @@ about-img-text-sec-wrp
  Responsive Css
 --------------------
 */
+@media (max-width: 1899px){
+	.about-img {
+	    margin-left: -150px;
+	}
+}
 @media (max-width: 1799px){
 	.aboutgi1 .about-msnry-grd-item-img {
 	    margin-right: -120px;
+	}
+	.about-img {
+	    margin-left: -110px;
 	}
 }
 
 @media (max-width: 1699px){
 	.aboutgi1 .about-msnry-grd-item-img {
 	    margin-right: -80px;
+	}
+	.about-img {
+	    margin-left: -60px;
 	}
 }
 
@@ -203,7 +214,7 @@ about-img-text-sec-wrp
 	    margin-right: -40px;
 	}
 	.about-img{
-		margin-left: -40px
+		margin-left: -30px
 	}
 }
 @media (max-width: 1499px) {
