@@ -292,6 +292,19 @@ Gallery design
 }
 
 
+.gallery-icon-img{
+	height: 450px;
+}
+
+.glry-col-3 .gallery-icon-img{
+	height: 285px;
+}
+
+.glry-col-2 .gallery-icon-img{
+	height: 263px;
+}
+
+
 
 
 .dft-blockquote{
