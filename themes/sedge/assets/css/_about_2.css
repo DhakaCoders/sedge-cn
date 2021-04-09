@@ -228,7 +228,12 @@
 .res-galry-img2{
 	display: none;
 }
-
+.about-prdt-sec .prdt-catg-des-cntrl{
+	order: 2;
+}
+.about-prdt-sec .prdt-catg{
+	order: 1;
+}
 /* =============== */
 /*== responsive ==*/
 /* ============= */
@@ -357,18 +362,24 @@
 		height: 110px;
 	}
 	.grd-galry-rgt{
-		width: 62.5%;
+		width: 65.3%;
+	}
+	.ggrt-img-1, .ggrt-img-2{
+		margin-right: 10px;
 	}
 	.traditions-sec{
 		padding-bottom: 15px;
 	}
 	.traditions-sec-cntrl{
-		max-width: 370px;
+		max-width: 65%;
 		margin: auto;
+		-webkit-box-shadow: inset 0px 2px 27px -19px rgba(0,0,0,0.75);
+		-moz-box-shadow: inset 0px 2px 27px -19px rgba(0,0,0,0.75);
+		box-shadow: inset 0px 2px 27px -19px rgba(0,0,0,0.75);
 	}	
 	.trad-des{
 		padding-right: 0;
-		padding-bottom: 45px;
+		padding: 45px 13px 45px 17px;
 	}
 	.trad-titl{
 		margin-bottom: 24px;
@@ -397,11 +408,23 @@
 	.tgt-rgt-img2{
 		height: 71px;
 	}
+	.tgt-rgt{
+		width: 38.5%;
+	}
 	.trad-galry-btm{
 		height: 97px;
 	}
+	.tgb-img-1, .tgb-img-2{
+		width: 50%;
+	}
 	.tgb-img-1{
 		margin-right: 10px;
+	}
+	.about-prdt-sec .prdt-catg-des-cntrl{
+		margin-bottom: 15px;
+	}
+	.prdt-item{
+		padding: 10px 0;
 	}
 }
 
