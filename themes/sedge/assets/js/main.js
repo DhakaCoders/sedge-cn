@@ -245,15 +245,41 @@ if(windowWidth > 768){
 
 
   /*start of Shariful*/
-  var swiper = new Swiper('.ftrTopSlider', {
+  /*var swiper = new Swiper('.ftrTopSlider', {
     slidesPerView: 'auto',
     loop: true,
     spaceBetween: 0,
-    /*navigation: {
+    navigation: {
       nextEl: '.restaurantGallerySliderArrows .swiper-button-next',
       prevEl: '.restaurantGallerySliderArrows .swiper-button-prev',
-    }*/
-  });
+    }
+  });*/
+
+  if( $('.ftrTopSlider').length ){
+    $('.ftrTopSlider').slick({
+      dots: false,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: false,
+            dots: false
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
 
 
 

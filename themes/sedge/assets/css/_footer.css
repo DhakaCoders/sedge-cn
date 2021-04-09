@@ -322,6 +322,14 @@ div.wpforms-container-full .wpforms-form .wpforms-error {
 }
 
 
+.ftr-top-sec{
+	overflow: hidden;
+}
+.ftrTopSlider{
+	margin-right: -60px;
+}
+
+
 
 
 @media (max-width: 1699px){
