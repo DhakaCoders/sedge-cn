@@ -583,6 +583,24 @@ Gallery design
 	.dfp-small-img{
 		width: 40.5%;
 	}
+	.gallery-icon-img {
+	    height: 350px;
+	}
+	.glry-col-3 .gallery-icon-img {
+	    height: 240px;
+	}
+	.fl-dft-lftimg-rgtdes-lft {
+	    min-height: 350px;
+	}
+	.dfp-small-img{
+		margin-top: -15px;
+		margin-bottom: -15px;
+	}
+	.dfp-small-img-top,
+	.dfp-small-img-btm{
+	    padding-top: 15px;
+	    padding-bottom: 15px;
+	}
 }
 @media(max-width: 850px){
 	
@@ -742,6 +760,44 @@ Gallery design
 	.fl-pro-grd-btn .fl-blue-btn:after{
 		left: 22px;
 	}
+	.gallery-icon-img {
+	    height: 240px;
+	}
+
+	.xs-fl-white-bg{
+		background: #fff;
+	}
+	.xs-lien-bg{
+		background: #faf5ef;
+		padding: 25px 15px 10px;
+		margin-bottom: 30px;
+		-webkit-box-shadow: inset 0px 5px 0px 0px rgb(0,0,0,0.02);
+		box-shadow: inset 0px 5px 0px 0px rgb(0,0,0,0.02);
+	}
+	.xs-lien-bg .fl-bein-bg{
+		background: red!important;
+	}
+	.xs-lien-bg.lien-bg2{
+		padding: 2px 0 30px;
+	}
+	.xs-lien-bg.lien-bg2 .dfp-text-module,
+	.xs-lien-bg.lien-bg2 .dfp-cta-module{
+		padding: 0 15px;
+	}
+	.gallery {
+	    margin-left: -8px;
+	    margin-right: -8px;
+	}
+	.gallery-item {
+	    padding: 0 8px;
+	    margin-bottom: 16px;
+	}
+	.glry-col-3 .gallery-icon-img {
+	    height: 170px;
+	}
+	.glry-col-2 .gallery-icon-img {
+	    height: 180px;
+	}
 }
 
 
@@ -840,10 +896,10 @@ Gallery design
 	    min-height: 180px;
 	}
 	.dfp-cta-module {
-	    margin-bottom: 45px;
+	    margin-bottom: 0;
 	}
 	.ac-fancy-module{
-		height: 370px;
+		height: 300px;
 	}
 	.ms-video-play-cntlr {
 	    height: 36px;
@@ -937,6 +993,15 @@ Gallery design
 	.dfp-small-img {
 	    width: 38.5%;
 	}
+	.gallery-icon-img {
+	    height: 200px;
+	}
+	.glry-col-3 .gallery-icon-img {
+	    height: 120px;
+	}
+	.glry-col-2 .gallery-icon-img {
+	    height: 130px;
+	}
 }
 
 
@@ -945,10 +1010,10 @@ Gallery design
 	    min-height: 150px;
 	}
 	.dfp-cta-module {
-	    margin-bottom: 25px;
+	    margin-bottom: 0;
 	}
 	.ac-fancy-module{
-		height: 335px;
+		height: 250px;
 	}
 	.dfp-btn-int{
 		padding-right: 0;
@@ -990,6 +1055,15 @@ Gallery design
 	}
 	.dfp-small-img {
 	    width: 37.5%;
+	}
+	.gallery-icon-img {
+	    height: 149px;
+	}
+	.glry-col-3 .gallery-icon-img {
+	    height: 95px;
+	}
+	.glry-col-2 .gallery-icon-img {
+	    height: 100px;
 	}
 	
 }
