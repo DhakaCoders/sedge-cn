@@ -184,7 +184,7 @@ ol li::before {
 	position: relative;
 }
 .fl-dft-lftimg-rgtdes-rgt {
-	padding-left: 30px;
+	padding-left: 25px;
 	padding-bottom: 5px;
 	padding-top: 0;
 }
@@ -345,7 +345,6 @@ Gallery design
 .dfp-prdt-item-module .prdt-fea-img {
     max-width: 100%;
     width: 100%;
-    text-align: right;
 }
 
 .dfp-des-lft {
@@ -480,17 +479,17 @@ Gallery design
 	float: left;
 	width: 40%;
 	padding-left: 25px;
-	margin-top: -15px;
-	margin-bottom: -15px;
+	margin-top: -17px;
+	margin-bottom: -17px;
 }
 
 .dfp-small-img-top{
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 17px;
+	padding-bottom: 17px;
 }
 .dfp-small-img-btm{
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 17px;
+	padding-bottom: 17px;
 }
 
 /*.dfp-single-img{
