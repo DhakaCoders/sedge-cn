@@ -1,0 +1,32 @@
+2021-04-10T16:55:37+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\templates\shop-top.php:5
+Stack trace:
+#0 E:\host\htdocs\2021\04\sedge\wp-includes\template.php(732): require()
+#1 E:\host\htdocs\2021\04\sedge\wp-includes\template.php(676): load_template('E:\\host\\htdocs\\...', false, Array)
+#2 E:\host\htdocs\2021\04\sedge\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\inc\wc-functions.php(17): get_template_part('templates/shop', 'top')
+#4 E:\host\htdocs\2021\04\sedge\wp-includes\class-wp-hook.php(292): get_custom_wc_output_content_wrapper('')
+#5 E:\host\htdocs\2021\04\sedge\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#6 E:\host\htdocs\2021\04\sedge\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#7 E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\woocommerce\archive-product.php(29): do_action('woocommerce_bef...')
+#8 E:\host\htdocs\2021\04\se in E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\templates\shop-top.php on line 5
+
+2021-04-10T16:58:56+00:00 CRITICAL syntax error, unexpected ':' in E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\templates\shop-top.php on line 6
+
+2021-04-10T16:59:49+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE) in E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\templates\shop-top.php on line 6
+
+2021-04-10T17:00:30+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE) in E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\templates\shop-top.php on line 8
+
+2021-04-10T17:00:59+00:00 CRITICAL syntax error, unexpected '}' in E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\templates\shop-top.php on line 8
+
+2021-04-10T17:01:20+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\templates\shop-top.php:5
+Stack trace:
+#0 E:\host\htdocs\2021\04\sedge\wp-includes\template.php(732): require()
+#1 E:\host\htdocs\2021\04\sedge\wp-includes\template.php(676): load_template('E:\\host\\htdocs\\...', false, Array)
+#2 E:\host\htdocs\2021\04\sedge\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\inc\wc-functions.php(17): get_template_part('templates/shop', 'top')
+#4 E:\host\htdocs\2021\04\sedge\wp-includes\class-wp-hook.php(292): get_custom_wc_output_content_wrapper('')
+#5 E:\host\htdocs\2021\04\sedge\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#6 E:\host\htdocs\2021\04\sedge\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#7 E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\woocommerce\archive-product.php(29): do_action('woocommerce_bef...')
+#8 E:\host\htdocs\2021\04\se in E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\templates\shop-top.php on line 5
+
