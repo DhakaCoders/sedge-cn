@@ -49,6 +49,9 @@
 }
 
 /* product-sec */
+.home-product-sec{
+	padding-bottom: 83px;
+}
 .prdt-bnr img {
 	width: 100%;
 }
