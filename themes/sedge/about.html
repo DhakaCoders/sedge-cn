@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>About</title>
+  <title>About</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -34,7 +34,7 @@
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->	
+  <![endif]-->  
 
   <svg style="display: none;">
 
@@ -79,6 +79,23 @@
 
 </head>
 <body class="home">
+<div class="bdoverlay"></div>
+<!-- fixed --> 
+<div class="cart-socials-cntlr">
+  <div class="sitebar-add-cart">
+    <a href="#">
+      <i><svg class="cart-icon" width="32" height="37" viewBox="0 0 32 37" fill="#fff">
+        <use xlink:href="#cart-icon"></use></svg></i>
+      </a>
+    </div> 
+    <div class="sitebar-socials">
+      <ul class="reset-list">
+        <li><a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a target="_blank" href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+</div>
+<!-- fixed --> 
 
 <header class="header">
   <div class="container">
@@ -132,11 +149,96 @@
                 </ul>
               </nav>
             </div>
+            <div class="hambergar-cntlr show-md">
+              <div class="hambergar-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+            <div class="xs-hdr-socials show-md">
+              <ul class="reset-list">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </div>
   </div>
 </header>
+
+<!-- xs mobile menu -->
+<div class="xs-mobile-menu-cntlr">
+  <div class="xs-mobile-menu">
+
+    <div class="xs-menu-hdr">
+      <div class="hambergar-cntlr show-md">
+        <div class="hambergar-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="xs-hdr-socials show-md">
+        <ul class="reset-list">
+          <li><a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a target="_blank" href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="hdr-lft">
+        <div class="logo">
+          <a href="#"><img src="assets/images/logo.svg"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="xs-menu-cntlr">
+      <div class="xs-menu">
+        <nav class="main-nav">
+          <ul class="clearfix reset-list">
+            <li class="current-menu-item"><a href="#">Home</a></li>
+            <li><a href="#">Over Sedge</a></li>
+            <li class="menu-item-has-children">
+              <a href="#">Shop</a>
+              <ul class="sub-menu" style="">
+                <li><a href="#">sub menu</a></li>
+                <li><a href="#">sub menu</a></li>
+                <li><a href="#">sub menu</a></li>
+
+              </ul>
+            </li>
+            <li><a href="#">WHAT’s HAPPENING</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="xs-mbl-footer">
+      <div class="xs-mbl-link">
+        <ul class="reset-list">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Bekijk de voorwaarden</a></li>
+        </ul>
+      </div>
+
+      <div class="xs-mbl-lan">
+        <ul class="reset-list">
+          <li class="active"><a href="#">Nl</a></li>
+          <li><a href="#">fr</a></li>
+          <li><a href="#">en</a></li>
+        </ul>
+      </div>
+      <div class="xs-mbl-btn">
+        <a class="fl-red-btn" href="#">AANMELDEN</a>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <section class="about-grey-sd-sec-wrp">
   <div class="container">
@@ -521,43 +623,27 @@
 
 
 <section class="ftr-top-sec">
-  <div class="swiper-container ftrTopSlider">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="ftr-top-slider-img">
-          <img src="assets/images/ftr-top-img-01.jpg">
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="ftr-top-slider-img">
-          <img src="assets/images/ftr-top-img-02.jpg">
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="ftr-top-slider-img">
-          <img src="assets/images/ftr-top-img-03.jpg">
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="ftr-top-slider-img">
-          <img src="assets/images/ftr-top-img-01.jpg">
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="ftr-top-slider-img">
-          <img src="assets/images/ftr-top-img-02.jpg">
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="ftr-top-slider-img">
-          <img src="assets/images/ftr-top-img-03.jpg">
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="ftr-top-slider-img">
-          <img src="assets/images/ftr-top-img-01.jpg">
-        </div>
-      </div>
+  <div class="ftrTopSlider clearfix">
+    <div class="ftr-slider-grd-item">
+      <img src="assets/images/ftr-top-img-01.jpg">
+    </div>
+    <div class="ftr-slider-grd-item">
+      <img src="assets/images/ftr-top-img-02.jpg">
+    </div>
+    <div class="ftr-slider-grd-item">
+      <img src="assets/images/ftr-top-img-03.jpg">
+    </div>
+    <div class="ftr-slider-grd-item">
+      <img src="assets/images/ftr-top-img-01.jpg">
+    </div>
+    <div class="ftr-slider-grd-item">
+      <img src="assets/images/ftr-top-img-02.jpg">
+    </div>
+    <div class="ftr-slider-grd-item">
+      <img src="assets/images/ftr-top-img-03.jpg">
+    </div>
+    <div class="ftr-slider-grd-item">
+      <img src="assets/images/ftr-top-img-03.jpg">
     </div>
   </div>
 </section>
