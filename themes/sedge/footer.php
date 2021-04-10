@@ -104,7 +104,7 @@
             </div>
             
             <div class="ftr-designby">
-              <a href="#">Grapics by Bas Vaerewyck - Website laten maken door <span>Conversal</span></a>
+              <span>Grapics by Bas Vaerewyck - Website laten maken door<a href="#"> Conversal</a></span>
             </div>
           </div>
         </div>
@@ -112,6 +112,8 @@
     </div>
   </div>
 </footer>
+
+
 <?php wp_footer(); ?>
 </body>
 </html>
