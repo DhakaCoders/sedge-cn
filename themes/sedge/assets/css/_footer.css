@@ -312,7 +312,7 @@ div.wpforms-container-full .wpforms-form .wpforms-error {
 .ftr-designby a{
 	margin-bottom: 0;
 	font-size: 12px;
-	font-weight: 300;
+	font-weight: 400;
 }
 .ftr-btm-mdle-btm span strong{
 	font-weight: 800;
@@ -323,6 +323,14 @@ div.wpforms-container-full .wpforms-form .wpforms-error {
 	text-decoration: underline;
 }
 .ftr-designby span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 12px;
+	font-weight: 300;
+	color: #78797B;
+}
+.ftr-designby span a{
+	font-weight: 300;
 	color: #B3192A;
 	text-decoration: underline;
 }
