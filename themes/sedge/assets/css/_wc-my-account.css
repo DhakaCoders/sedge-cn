@@ -374,13 +374,28 @@ body.woocommerce-account .woocommerce-form{
     padding-left:0px;
     margin-right: 24px;
     padding-right: 0;
-    padding-top:22px;
-    padding-bottom:60px;
+    padding-top:0px;
+    padding-bottom:40px;
 }
 body.woocommerce-account .woocommerce form .form-row,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row,
 body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row{
     margin-bottom:15px
+}
+body.woocommerce-account .woocommerce form.woocommerce-form-login .form-row:first-child{
+    margin-bottom:6px;
+}
+body.woocommerce-account .signup-notification {
+    margin-bottom: 51px;
+}
+body.woocommerce-account .woocommerce .woocommerce-form-register p.form-row:first-child{
+    margin-bottom:53px;
+}
+body.woocommerce-account #login_register #customer_login{
+    padding-bottom:110px;
+}
+.btm-sec-wrap .btm-imgs ul{
+    display: flex;
 }
 /*body.woocommerce-account .woocommerce input[type="text"],
 body.woocommerce-account .woocommerce input[type="email"], 
@@ -389,7 +404,10 @@ body.woocommerce-account .woocommerce input[type="password"],
 body.woocommerce-account .woocommerce textarea{
     border-radius:6px;
 }*/
-
+body.woocommerce-account .woocommerce-form-login label,
+body.woocommerce-account .woocommerce-form-register label{
+    display: none!important;
+}
 
 
 
@@ -505,7 +523,7 @@ body.woocommerce-account .login-info-crtl .login-info-inr .loginInfoSlideItem .l
     background-position: center;
 }
 body.woocommerce-account .default-page-con p{
-    margin-bottom:15px;
+    margin-bottom:13px;
 }
 body.woocommerce-account .woocommerce-form .woocommerce-LostPassword{
     padding-left: 3px;
