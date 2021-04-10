@@ -186,18 +186,6 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 			</div>
 		</div>
 	</form>
-<!-- 	<div class="register-pay-logo-wrap">
-		<h3 class="payment-title">Veilig betalen kan bij ons met</h3>
-		<div class="payment-logo-crtl">
-			<ul class="reset-list">
-              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-01.svg"></li>
-              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-02.svg"></li>
-              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-03.svg"></li>
-              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-04.svg"></li>
-              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-05.svg"></li>
-            </ul>
-		</div>
-	</div> -->
 </div>
 <?php else: ?>
 <div class="login-register-wrap" id="login_register">
@@ -263,34 +251,18 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 		</div>
 
 	</div>
-<!-- 	<div class="login-btm-wrap">
-		<h2 class="login-btm-title">DOLOR SIT AMET</h2>
-		<div class="login-info-crtl">
-			<div class="login-info-inr loginInfoSlider">
-				<div class="loginInfoSlideItem">
-					<div class="loginInfoItem">
-						<i></i>
-						<p>Lorem ipsum dolor sit amet</p>
-					</div>
-				</div>
-				<div class="loginInfoSlideItem">
-					<div class="loginInfoItem">
-						<i></i>
-						<p>Lorem ipsum dolor sit amet</p>
-					</div>
-				</div>
-				<div class="loginInfoSlideItem">
-					<div class="loginInfoItem">
-						<i></i>
-						<p>Lorem ipsum dolor sit amet</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
 </div>
 <?php endif; ?>
 <?php endif; ?>
-
+<div class="login-btm-wrap">
+	<div class="register-pay-logo-wrap">
+		<div class="payment-logo-crtl">
+			<ul class="reset-list">
+              <li><img src="<?php echo THEME_URI; ?>/assets/images/login-btm-img.png"></li>
+              <li><img src="<?php echo THEME_URI; ?>/assets/images/login-btm-img.png"></li>
+            </ul>
+		</div>
+	</div>
+</div>
 
 <?php do_action( 'woocommerce_after_customer_login_form' ); ?>
