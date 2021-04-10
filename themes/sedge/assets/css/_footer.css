@@ -514,6 +514,9 @@ div.wpforms-container-full .wpforms-form .wpforms-error {
 	.ftr-btm-mdle{
 		padding-bottom: 0;
 	}
+	.ftr-designby span{
+		font-size: 10px;
+	}
 }
 
 @media(max-width: 575px){
