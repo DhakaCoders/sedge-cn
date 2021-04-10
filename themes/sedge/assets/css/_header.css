@@ -367,7 +367,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 .cart-socials-cntlr{
 	position: fixed;
 	right: 0;
-	top: 12.76%;
+	top: 40%;
 	z-index: 999;
 }
 .sitebar-add-cart{
