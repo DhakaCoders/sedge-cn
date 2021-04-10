@@ -1,5 +1,6 @@
 .product-menual-sec{
 	padding-bottom: 26px;
+	padding-top: 24px;
 }
 .prdt-menual-hdr{
 	background-color: #6dbd98;
@@ -238,6 +239,9 @@
 
 .res-galry-img2{
 	display: none;
+}
+.about-prdt-sec{
+	padding-bottom: 22px;
 }
 .about-prdt-sec .prdt-catg-des-cntrl{
 	order: 2;
