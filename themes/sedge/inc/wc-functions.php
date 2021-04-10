@@ -530,7 +530,7 @@ $your_translation = 'Insert your translation here';
 $translated = str_ireplace("I’ve read and accept", $your_translation, $translated);
 return $translated;
 }
-add_filter ( 'woocommerce_account_menu_items', 'misha_remove_my_account_links' );
+//add_filter ( 'woocommerce_account_menu_items', 'misha_remove_my_account_links' );
 function misha_remove_my_account_links( $menu_links ){
  // we will hook "anyuniquetext123" later
     unset( $menu_links['edit-address'] ); // Addresses
