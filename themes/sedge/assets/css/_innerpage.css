@@ -774,8 +774,8 @@ Gallery design
 		-webkit-box-shadow: inset 0px 5px 0px 0px rgb(0,0,0,0.02);
 		box-shadow: inset 0px 5px 0px 0px rgb(0,0,0,0.02);
 	}
-	.xs-lien-bg .fl-bein-bg{
-		background: red!important;
+	.xs-fl-white-bg .fl-bein-bg{
+		background: #faf5ef;
 	}
 	.xs-lien-bg.lien-bg2{
 		padding: 2px 0 30px;
