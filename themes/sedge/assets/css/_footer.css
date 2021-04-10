@@ -173,6 +173,9 @@ div.wpforms-container-full .wpforms-form .wpforms-error {
 .ftr-btm-mdle-btm span a:hover{
 	color: #BA0821;
 }
+.ftr-social-media ul li a:hover span{
+	color: #BA0821;
+}
 
 
 .ftr-location{
@@ -275,6 +278,9 @@ div.wpforms-container-full .wpforms-form .wpforms-error {
 	font-size: 12px;
 	color: #78797B;
 	font-weight: 600;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
 }
 .ftr-social-media{
 	padding-bottom: 15px;
