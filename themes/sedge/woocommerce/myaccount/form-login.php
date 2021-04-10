@@ -214,11 +214,11 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 
 				<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 					<label for="username"><?php esc_html_e( 'E-mailadres', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
-					<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>" /><?php // @codingStandardsIgnoreLine ?>
+					<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" placeholder="E-mailadres" autocomplete="username" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>" /><?php // @codingStandardsIgnoreLine ?>
 				</p>
 				<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 					<label for="password"><?php esc_html_e( 'Wachtwoord', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
-					<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" />
+					<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" placeholder="Wachtwoord" autocomplete="current-password" />
 				</p>
 
 				<?php do_action( 'woocommerce_login_form' ); ?>
@@ -243,17 +243,17 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 
 		<div class="u-column2 col-2">
 
-			<h2><?php esc_html_e( 'Nieuw bij Thelene?', 'woocommerce' ); ?></h2>
+			<h2><?php esc_html_e( 'Nieuw bij Sedge?', 'woocommerce' ); ?></h2>
 			<div class="signup-notification">
 				<p>Vul hier je e-mailadres in als je nog niet beschikt over een account. Indien gewenst, kan je in de volgende stap een account aanmaken.</p>
 			</div>
 			<form method="post" action="?action=registration" class="woocommerce-form woocommerce-form-register register" id="mail_checker">
 				<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 					<label for="reg_email"><?php esc_html_e( 'E-mailadres', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
-					<input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="reg_email" id="reg_email" autocomplete="email" placeholder="Bijv. jan@domein.be" required/>
+					<input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="reg_email" id="reg_email" autocomplete="email" placeholder="E-mailadres" required/>
 				</p>
 				<p class="woocommerce-form-row form-row">
-					<button type="submit" class="woocommerce-Button woocommerce-button button woocommerce-form-register__submit" id="register_next" name="register" value="<?php esc_attr_e( 'doorgaan', 'woocommerce' ); ?>"><?php esc_html_e( 'doorgaan', 'woocommerce' ); ?></button>
+					<button type="submit" class="woocommerce-Button woocommerce-button button woocommerce-form-register__submit" id="register_next" name="register" value="<?php esc_attr_e( 'Maak een account aan', 'woocommerce' ); ?>"><?php esc_html_e( 'Maak een account aan', 'woocommerce' ); ?></button>
 				</p>
 			</form>
 
