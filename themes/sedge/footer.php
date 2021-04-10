@@ -6,7 +6,7 @@
           <div class="ftr-top-inr clearfix">
             <div class="ftr-logo-ctlr">
               <div class="ftr-logo">
-                <a href="#"><img src="assets/images/ftr-logo.png"></a>
+                <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/ftr-logo.png"></a>
               </div>
               <div class="xs-ftr-social-media show-sm">
                 <div class="ftr-social-media">
@@ -65,10 +65,10 @@
         <div class="col-md-12">
           <div class="ftr-middle-inr hide-sm">
             <ul class="reset-list">
-              <li><img src="assets/images/ftr-btm-img-01.png"></li>
-              <li><img src="assets/images/ftr-btm-img-02.png"></li>
-              <li><img src="assets/images/ftr-btm-img-03.png"></li>
-              <li><img src="assets/images/ftr-btm-img-04.png"></li>
+              <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-01.png"></li>
+              <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-02.png"></li>
+              <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-03.png"></li>
+              <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-04.png"></li>
             </ul>
           </div>
         </div>
@@ -92,10 +92,10 @@
 
             <div class="ftr-middle-inr xs-btm-img show-sm">
               <ul class="reset-list">
-                <li><img src="assets/images/ftr-btm-img-01.png"></li>
-                <li><img src="assets/images/ftr-btm-img-02.png"></li>
-                <li><img src="assets/images/ftr-btm-img-03.png"></li>
-                <li><img src="assets/images/ftr-btm-img-04.png"></li>
+                <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-01.png"></li>
+                <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-02.png"></li>
+                <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-03.png"></li>
+                <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-04.png"></li>
               </ul>
             </div>
 
