@@ -254,15 +254,4 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 </div>
 <?php endif; ?>
 <?php endif; ?>
-<div class="login-btm-wrap">
-	<div class="register-pay-logo-wrap">
-		<div class="payment-logo-crtl">
-			<ul class="reset-list">
-              <li><img src="<?php echo THEME_URI; ?>/assets/images/login-btm-img.png"></li>
-              <li><img src="<?php echo THEME_URI; ?>/assets/images/login-btm-img.png"></li>
-            </ul>
-		</div>
-	</div>
-</div>
-
 <?php do_action( 'woocommerce_after_customer_login_form' ); ?>
