@@ -63,6 +63,9 @@ div.wpforms-container-full .wpforms-form .wpforms-error {
 	color: #873C42;
 	text-decoration: underline;
 }
+.ftr-top-contact-sec .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-html p a:hover{
+	color: #6DBD98;
+}
 
 .ftr-top-contact-sec .wpforms-form .wpforms-field-container .wpforms-field input{
 	width: 100%;
@@ -333,6 +336,9 @@ div.wpforms-container-full .wpforms-form .wpforms-error {
 	font-weight: 300;
 	color: #B3192A;
 	text-decoration: underline;
+}
+.ftr-designby span a:hover{
+	color: #6DBD98;
 }
 
 
