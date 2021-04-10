@@ -371,7 +371,6 @@ body.woocommerce-account .register-field-error{
 body.woocommerce-account .woocommerce-form{
     border:none;
     margin:0;
-    border-top:1px solid #ECE9E9;
     padding-left:0px;
     margin-right: 24px;
     padding-right: 0;
@@ -383,13 +382,13 @@ body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row,
 body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row{
     margin-bottom:15px
 }
-body.woocommerce-account .woocommerce input[type="text"],
+/*body.woocommerce-account .woocommerce input[type="text"],
 body.woocommerce-account .woocommerce input[type="email"], 
 body.woocommerce-account .woocommerce input[type="tel"], 
 body.woocommerce-account .woocommerce input[type="password"], 
 body.woocommerce-account .woocommerce textarea{
     border-radius:6px;
-}
+}*/
 
 
 
@@ -433,8 +432,10 @@ body.woocommerce-account .woocommerce textarea::-webkit-input-placeholder{
 }
 
 body.woocommerce-account .login-register-wrap a{
-    color:#8AA4E4;
+    color: #78797B;
     text-decoration: underline;
+    font-size: 14px;
+    font-weight: 300;
 }
 body.woocommerce-account .login-register-wrap a:hover {
     color: #8dcc0c;
@@ -448,10 +449,10 @@ body.woocommerce-account .woocommerce button[type=button]{
     margin-left: 0px!important;
     padding: 15px 15px!important;
     line-height: 1;
-    width: 210px;
+    width: 311px;
 }
-body.woocommerce-account .woocommerce button[type=button]{
-    width:260px;
+body.woocommerce-account .woocommerce #register_next{
+    width:410px;
 }
 body.woocommerce-account .woocommerce form .form-row label,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row label,
