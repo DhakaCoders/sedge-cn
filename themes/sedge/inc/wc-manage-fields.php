@@ -1,22 +1,7 @@
 <?php
-add_action('wp_enqueue_scripts', 'wc_user_signup_action_hooks');
-
-function wc_user_signup_action_hooks(){
-        ajax_wc_user_signup_init();
-}
-function ajax_wc_user_signup_init(){
-    wp_register_script('ajax-user-register-script', get_stylesheet_directory_uri(). '/assets/js/ajax-action.js', array('jquery') );
-    wp_enqueue_script('ajax-user-register-script');
-
-    wp_localize_script( 'ajax-user-register-script', 'ajax_user_register_signup_object', array(
-        'ajaxurl' => admin_url( 'admin-ajax.php' )
-    ));
-    // Enable the user with no privileges to run ajax_login() in AJAX
-}
-add_action('wp_ajax_nopriv_ajax_register_save', 'ajax_register_save');
-//add_action('wp_ajax_ajax_register_save', 'ajax_register_save');
+add_action('init', 'ajax_register_save');
 function ajax_register_save(){
-    $data = array();
+    global $data_reg;
     if (isset( $_POST["billing_email_2"] ) && wp_verify_nonce($_POST['user_register_nonce'], 'user-register-nonce')) {
 
         if( isset($_POST['billing_email']) && !empty($_POST['billing_email'])){
@@ -36,7 +21,7 @@ function ajax_register_save(){
         }
         if(email_exists($email)) {
             //Email address already registered
-            $data['email'] = 'Email already registered';
+            $data_reg['exists_email'] = 'Email already registered';
         }else{
             $customerId = wp_insert_user(array(
                 'user_login'        => $user_login,
@@ -57,7 +42,7 @@ function ajax_register_save(){
                             update_user_meta( $customerId, "billing_company", $_POST['billing_company'] );
                         }
                         if( isset($_POST['billing_btw_nummer']) && !empty($_POST['billing_btw_nummer'])){
-                            update_user_meta( $user, "billing_btw_nummer", $_POST['billing_btw_nummer'] );
+                            update_user_meta( $user, "vat_number", $_POST['billing_btw_nummer'] );
                         }
                         if( isset($_POST['billing_reference']) && !empty($_POST['billing_reference'])){
                             update_user_meta( $customerId, "billing_reference", $_POST['billing_reference'] );
@@ -75,7 +60,7 @@ function ajax_register_save(){
                     update_user_meta( $customerId, "billing_last_name", $lastname );
                 }
                 if( isset($_POST['billing_email_2']) && !empty($_POST['billing_email_2']) ){
-                    update_user_meta( $user, "billing_email_2", $_POST['billing_email_2'] );
+                    update_user_meta( $customerId, "billing_email_2", $_POST['billing_email_2'] );
                 }
                 if( isset($_POST['billing_email']) && !empty($_POST['billing_email']) ){
                     update_user_meta( $customerId, "billing_email", $_POST['billing_email'] );
@@ -106,6 +91,17 @@ function ajax_register_save(){
                 if( isset($_POST['billing_phone']) && !empty($_POST['billing_phone'])){
                     update_user_meta( $customerId, "billing_phone", $_POST['billing_phone'] );
                 }
+                if(isset($_POST['is_shipping_address']) && $_POST['is_shipping_address'] == '1'){
+                    if( isset($_POST['billing_address_2']) && !empty($_POST['billing_address_2']) ){
+                        update_user_meta( $customerId, "shipping_address_2", $_POST['billing_address_2'] );
+                    }
+                    if( isset($_POST['billing_gsm_number']) && !empty($_POST['billing_gsm_number'])){
+                        update_user_meta( $customerId, "shipping_gsm_number", $_POST['billing_gsm_number'] );
+                    }
+                    if( isset($_POST['billing_phone']) && !empty($_POST['billing_phone'])){
+                        update_user_meta( $customerId, "shipping_phone", $_POST['billing_phone'] );
+                    }
+                }
                 $user = get_user_by( 'id', $customerId );
                 if($user){
                     wp_clear_auth_cookie();
@@ -116,19 +112,16 @@ function ajax_register_save(){
                     }
                     //do_action( 'wp_login', $user->user_login );
                     if ( is_user_logged_in() ){
-                        $data['user_name'] = $user->user_login;
-                        $data['login_success'] = 'Login successful. Please wait a seccound...';
-                        $data['status'] = 'success';
-                        echo json_encode($data);
+                        $data_reg['user_name'] = $user->user_login;
+                        echo '<script>window.location.href ="'.home_url('my-account').'";</script>';
                         wp_die();
                     }
                 }
 
             }
-            $data['status'] = 'error';
+            $data_reg['error'] = 'Could Not register.';
         }
-        echo json_encode($data);
-        wp_die();
+        return $data_reg;
     }
 }
 //add_action('init', 'registered_user_info_update');
