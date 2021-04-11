@@ -59,8 +59,24 @@
     margin-right: 0;
  }
 .more-btn{
-    padding-left: 30px;
+    
 }
+.more-btn{
+    width: 260px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.more-btn i{
+    position: absolute;
+    left: 28px;
+    top: 12px;
+}
+.more-btn a{
+    color: #fff;
+    width: 100%;
 
 /* .fl-products-cntlr ul.products {
     display: flex;
