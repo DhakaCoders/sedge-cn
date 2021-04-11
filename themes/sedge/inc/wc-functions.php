@@ -85,7 +85,7 @@ if (!function_exists('add_shorttext_below_title_loop')) {
               echo $gridtag;
             echo '</div>';
             echo '<div class="fl-pro-grd-des mHc2">';
-              echo '<h4 class="fl-h5 fl-pro-grd-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h4>';
+              echo '<h4 class="fl-h5 fl-pro-grd-title mHc3"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h4>';
               echo '<div class="product-lenth">';
               echo '<p>(15 cm)</p>';
               echo '</div>';
