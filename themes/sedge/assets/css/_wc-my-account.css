@@ -358,9 +358,7 @@ body.woocommerce-account .default-page-con h1{
     padding-bottom:0px;
     margin-bottom:45px;
 }
-body.woocommerce-checkout .checkout-page-title{
-    border-bottom: 1px solid #F1E8E1;
-}
+
 body.woocommerce-checkout .checkout-page-title h1{
     padding-bottom: 28px;
     margin-bottom:0;    
@@ -573,8 +571,11 @@ body.hide-account-title .register-title h3{
 .register-top-title h1{
     border-bottom:none!important;
 }
-body.hide-account-title .register-top-title h1{
+body.hide-account-title .register-top-title h1,
+body.woocommerce-checkout .checkout-page-title h1{
     color:#B3192A;
+}
+body.hide-account-title .register-top-title h1{
     margin-bottom:58px!important;
 }
 body.hide-account-title .register-title h2{
@@ -950,6 +951,9 @@ body.loggedin-winkelmandje-crtl .myaccount-cart-crtl .woocommerce-mini-cart + p 
 }
 */
 /* ---------------------------- checkout page ----------------------------------*/
+body.woocommerce-checkout .woocommerce-info{
+    display: none;
+}
 body.woocommerce-checkout .breadcrumb-sec{
     display: none;
 }
@@ -1028,8 +1032,11 @@ body.woocommerce-checkout .checkout-page-title h1{
     padding-bottom:29px;
 }
 body.woocommerce-checkout .checkout-page-title{
-    margin-bottom: 48px;
-    padding-bottom:14px;
+   
+}
+body.woocommerce-checkout .custom-checkout-order-review h3 {
+    background: none;
+    padding-left: 0;
 }
 body.woocommerce-checkout .default-page-con h3{
      border-bottom: 1px solid #F1E8E1;
@@ -1136,7 +1143,9 @@ body.woocommerce-checkout .woocommerce-shipping-fields .woocommerce-form__label 
     cursor: pointer;
 }
 body.woocommerce-checkout .default-page-con h3{
-    font-size:24px;
+    font-size: 24px;
+    background: #FFFBF4;
+    padding: 20px 37px;
 }
 body.woocommerce-checkout .payment-method-crtl .shipping-methods{
     margin-bottom:28px;
