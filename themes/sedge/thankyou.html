@@ -137,7 +137,7 @@
       </div>
   </div>
 </header>
-<section>
+<section class="checkout-page-cntlr">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
@@ -183,11 +183,15 @@
 			  <div class="col-md-12">
 			    <div class="thank-you-sec-cntlr">
 			      <div class="thnk-you-des">
-			        <i><img src="assets/images/thankyou.svg" alt="logo"></i>
-			        <h1 class="fl-h2 thank-you-des-title">Dank u, <span>Mathias!</span></h1>
-			        <h2>Je bestelling is voltooid</h2>
-			        <a href="#">#</a>
-			        <p>We maken uw bestelling klaar voor verzending.</p>
+			        <div class="thnk-you-des-left">
+                <i><img src="assets/images/thankyou.svg" alt="logo"></i>
+              </div>
+			        <div class="thnk-you-des-rgt">
+                <h1 class="fl-h2 thank-you-des-title">Dank u, <span>Mathias!</span></h1>
+                <h2>Je bestelling is voltooid</h2>
+                <a href="#">#</a>
+                <p>We maken uw bestelling klaar voor verzending.</p>
+              </div>
 			      </div>
 			    </div>
 			  </div>
@@ -196,46 +200,48 @@
 			</div>
 			<div class="order-products">
 			<div class="orders-crtl">
-				<div class="order-head">
-					<span><h2>PRODUCTEN</h2></span>
-					<span>Hoeveelheid</span>
-				</div>
-				<div class="order-body">
-					<div class="body-list">
-						<div class="image-title">
-						<i><img src="assets/images/order-product.png" alt=""></i>
-							<div class="title-meta">
-								<h2>Cocktail rietjes (15 cm)</h2>
-								<dl>
-									<dt>Diameter:</dt>
-									<dd>Standaard 5 - 7 mm</dd>
-									<dt>Aantal stuks:</dt>
-									<dd>49</dd>
-								</dl>
-							</div>
-						</div>
-						<div class="quantity">
-							1
-						</div>
-					</div>
-					<div class="body-list">
-						<div class="image-title">
-						<i><img src="assets/images/order-product.png" alt=""></i>
-							<div class="title-meta">
-								<h2>Cocktail rietjes (15 cm)</h2>
-								<dl>
-									<dt>Diameter:</dt>
-									<dd>Standaard 5 - 7 mm</dd>
-									<dt>Aantal stuks:</dt>
-									<dd>49</dd>
-								</dl>
-							</div>
-						</div>
-						<div class="quantity">
-							1
-						</div>
-					</div>
-				</div>
+				<div class="orders-product-item">
+            <div class="order-head">
+          <span><h2>PRODUCTEN</h2></span>
+          <span>Hoeveelheid</span>
+        </div>
+        <div class="order-body">
+          <div class="body-list">
+            <div class="image-title">
+            <i><img src="assets/images/order-product.png" alt=""></i>
+              <div class="title-meta">
+                <h2>Cocktail rietjes (15 cm)</h2>
+                <dl>
+                  <dt>Diameter:</dt>
+                  <dd>Standaard 5 - 7 mm</dd>
+                  <dt>Aantal stuks:</dt>
+                  <dd>49</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="quantity">
+              1
+            </div>
+          </div>
+          <div class="body-list">
+            <div class="image-title">
+            <i><img src="assets/images/order-product.png" alt=""></i>
+              <div class="title-meta">
+                <h2>Cocktail rietjes (15 cm)</h2>
+                <dl>
+                  <dt>Diameter:</dt>
+                  <dd>Standaard 5 - 7 mm</dd>
+                  <dt>Aantal stuks:</dt>
+                  <dd>49</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="quantity">
+              1
+            </div>
+          </div>
+        </div>
+        </div>
 				<div class="service-contact">
 					<h2>Service & contact</h2>
 					<div class="service-lists">
@@ -273,38 +279,41 @@
 				<div class="shipping-crtl">
 					<h2>BESTELDETAILS</h2>
 					<div class="address">
+            <h2>Mathias Herrebaut</h2>
 						<ul class="reset-list">
-							<li>Mathias Herrebaut</li>
-							<li>Boekhoutstraat 121<br/>1790 Affligem - België</li>
-							<li>053 222 333</li>
-							<li>mathias@conversal.be</li>
+							<li><a href="#">Boekhoutstraat 121<br/>1790 Affligem - België</a></li>
+							<li><a href="tel:053222333">053 222 333</a></li>
+							<li><a href="#">mathias@conversal.be</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="order-total">
 					<h2>OVERZICHT</h2>
 					<div class="order-details">
-						<ul class="reset-list">
-							<li>
-								<span class="details-title">Subtotaal</span>
-								<span class="amount">€99,00</span>
-							</li>
-							<li>
-								<span class="details-title">BTW</span>
-								<span class="amount">€99,00</span>
-							</li>
-							<li>
-								<span class="details-title">Verzending</span>
-								<span class="amount">€99,00</span>
-							</li>
-						</ul>
-						<hr/>
-						<ul class="reset-list">
-							<li>
-								<span class="details-title">Totaal</span>
-								<span class="total-amount">€99,00</span>
-							</li>
-						</ul>
+						<table class="shop_table woocommerce-checkout-review-order-table">
+              <tbody>
+                <tr class="cart_item">
+                  <td class="product-name">COCKTAIL&nbsp;</td>
+                  <td class="product-total">
+                     <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">€</span>2.99</bdi></span>
+                    </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr class="cart-subtotal">
+                  <th>Subtotaal</th>
+                  <td><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">€</span>2.99</bdi></span></td>
+                </tr>
+                  <tr class="fee">
+                    <th>Verzending</th>
+                    <td><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">€</span>99.00</bdi></span></td>
+                  </tr>
+                <tr class="order-total">
+                  <th>Totaal</th>
+                  <td><strong><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">€</span>101.99</bdi></span></strong> </td>
+                </tr>     
+              </tfoot>
+          </table>
 					</div>
 				</div>
 			      <div class="thnk-y-social-des">
