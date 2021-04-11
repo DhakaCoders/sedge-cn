@@ -79,7 +79,6 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 		<div class="col2-set" id="customer_details">
 			<div class="col-1">
-				<div class="billing-subtitle"><h3><?php esc_html_e('Persoonlijke gegevens', 'woocommerce'); ?></h3></div>
 				<?php do_action( 'woocommerce_checkout_billing' ); ?>
 				<?php do_action( 'woocommerce_checkout_shipping' ); ?>
 			
