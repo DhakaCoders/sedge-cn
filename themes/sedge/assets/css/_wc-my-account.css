@@ -1050,7 +1050,7 @@ body.woocommerce-checkout .custom-checkout-order-review h3{
 }*/
 body.woocommerce-checkout #customer_details .col-2{
     width: 34%;
-    padding-left: 130px;
+    padding-left: 138px;
     padding-right: 0;
 }
 body.woocommerce-checkout .custom-checkout-order-review table.shop_table tfoot .order-total{
@@ -1061,7 +1061,7 @@ body.woocommerce-checkout .woocommerce-additional-fields h3{
     padding-bottom: 20px;
 }
 body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .woocommerce-input-wrapper textarea{
-    min-height:275px;
+    min-height:233px
 }
 body.woocommerce-checkout .custom-checkout-order-review table tbody,
 body.woocommerce-checkout .custom-checkout-order-review table tfoot,
@@ -1093,17 +1093,17 @@ body.woocommerce-checkout .custom-checkout-order-review table tr td.product-name
     display: none;
 }*/
 
-body.woocommerce-checkout .custom-checkout-order-review  button.button.alt{
+body.woocommerce-checkout .custom-checkout-order-review button.button.alt {
     width: 100%;
-    background: #8CCC0C!important;
-    border-color: #8CCC0B!important;
+    background: #6DBD98!important;
+    border-color: #6DBD98!important;
     padding: 15px 10px;
     margin-left: 0;
 }
-body.woocommerce-checkout .payment-method-crtl .custom-checkout-btn button[type=submit]{
-    background: #8CCC0C!important;
-    border-color: #8CCC0B!important;
-    width: 340px;
+body.woocommerce-checkout .payment-method-crtl .custom-checkout-btn button[type=submit] {
+    background: #6DBD98!important;
+    border-color: #6DBD98!important;
+    width: 320px;
     height: 50px;
 }
 body.woocommerce-checkout .payment-method-crtl .custom-checkout-btn{
