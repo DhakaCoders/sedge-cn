@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <section class="innerpage-con-wrap">
-  <?php if(is_account_page()):?>
+  <?php if(is_account_page() || is_checkout()):?>
   	<div class="container">
   		<div class="row">
   			<div class="col-md-12">
