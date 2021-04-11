@@ -206,6 +206,7 @@ if (!function_exists('add_custom_box_product_summary')) {
         echo '<div>';
         $rating_count = intval($product->get_rating_count());
         if ( $rating_count > 0 ) {
+            echo '<div class="rating">';
             echo '<p>Beoordeling door klanten <span><strong>'.$product->get_average_rating().'</strong> van 5  -  '.$rating_count.' beoordelingen</span></p>';
             echo '</div>';
         }
@@ -248,6 +249,7 @@ function cbv_add_custom_info(){
         echo wpautop( $long_desc );
         echo '</div>';
     endif;
+get_template_part('templates/footer', 'top-form');
 }
 
 add_action( 'woocommerce_product_options_inventory_product_data', 'misha_adv_product_options');
