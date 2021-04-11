@@ -72,7 +72,7 @@ if (!function_exists('add_shorttext_below_title_loop')) {
               $label  = __('selecteer bedrag', 'woocommerce');
           break;
           default :
-              $label  = __('MEER INFO', 'woocommerce');
+              $label  = __('IN WINKELWAGEN', 'woocommerce');
           break;
           }
         $seller_flash = get_field('seller_flash', $product->get_id());
@@ -87,6 +87,7 @@ if (!function_exists('add_shorttext_below_title_loop')) {
         echo '</div>';/*end loop image*/
         echo '<div class="mHc6">';
         echo '<h3 class="fl-h5 mHc2 fl-pro-grd-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h3>';
+        echo '<div class="product-lenth"><p>(20 cm)</p></div>';
         echo '<div class="fl-pro-grd-price">';
         echo $product->get_price_html();
         echo '</div>';/*end loop price*/
