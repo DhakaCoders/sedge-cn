@@ -629,12 +629,12 @@ function add_custom_surcharge( $cart ) {
         return;
 
     $state = array('BD');
-    $surcharge  = 10;
+    $surcharge  = 99;
 
     if ( in_array( WC()->customer->get_shipping_state(), $state ) ) {
        
     }
-     $cart->add_fee( 'Extra diensten', $surcharge, true );
+    $cart->add_fee( 'Verzending', $surcharge, true );
 }
 
 

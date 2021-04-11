@@ -43,8 +43,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 				      <div class="chckout-prgrs-col chckout-prgrs-col-2 active">
 				        <strong class="chckout-prgrs-number">2</strong> 
-				        <h6 class="chckout-prgrs-title">Klantgegevens <br>
-				        en Betaling</h6>
+				        <h6 class="chckout-prgrs-title">Klantgegevens en <br>Betaling</h6>
 				      </div>
 
 				      <div class="chckout-prgrs-col chckout-prgrs-col-3">
@@ -112,7 +111,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 								</div>
 							</div>
 							<div class="custom-checkout-btn">
-								<button type="submit" class="button alt" name="woocommerce_checkout_place_order" value="Afrekenen" data-value="Afrekenen"><?php esc_html_e( 'Afrekenen', 'woocommerce' ); ?></button>
+								<button type="submit" class="button alt" name="woocommerce_checkout_place_order" value="BESTELLING AFRONDEN" data-value="BESTELLING AFRONDEN"><span><?php esc_html_e( 'BESTELLING AFRONDEN', 'woocommerce' ); ?></span></button>
 							</div>
 						</div>
 						<!-- end payment method -->
@@ -129,16 +128,18 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 					?>
 					<div class="checkout-terms">
 						<?php wc_get_template_part( 'checkout/terms' ); ?>
-							<p class="form-row validate-required">
-							<label class="woocommerce-form__label woocommerce-form__label-for-checkbox checkbox">
-							<input type="checkbox" class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" name="accept_condition" id="accept_condition" required/>
-								<span class="woocommerce-terms-and-conditions-checkbox-text">
-									Ik geef toestemming voor de verwerking van mijn persoonsgegevens
-								</span>
-							</label>
-						</p>
 					</div>
-					<button type="submit" class="button alt" name="woocommerce_checkout_place_order" value="Afrekenen" data-value="Afrekenen"><?php esc_html_e( 'Afrekenen', 'woocommerce' ); ?></button>
+					<button type="submit" class="button alt" name="woocommerce_checkout_place_order" value="BESTELLING AFRONDEN" data-value="BESTELLING AFRONDEN"><span><?php esc_html_e( 'BESTELLING AFRONDEN', 'woocommerce' ); ?></span></button>
+				</div>
+				<div class="cart-pay-logo-wrap">
+					<div class="cart-logo-crtl">
+						<ul class="reset-list">
+			              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-01.svg"></li>
+			              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-02.svg"></li>
+			              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-03.svg"></li>
+			              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-04.svg"></li>
+			            </ul>
+					</div>
 				</div>
 			</div>
 		</div>
