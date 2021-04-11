@@ -961,12 +961,11 @@ body.woocommerce-checkout .default-page-con{
     padding-bottom:0px;
 }
 body.woocommerce-checkout .woocommerce-notices-wrapper {
-    margin-bottom: 30px;
-    overflow: hidden;
+    margin-bottom: 0px;
 }
-body.woocommerce-checkout .checkout-page-title .checkoutpt-right{
+/*body.woocommerce-checkout .checkout-page-title .checkoutpt-right{
     padding-top:60px;
-}
+}*/
 body.woocommerce-checkout .innerpage-con-wrap{
     max-width: 100%;
     width: 100%;
@@ -1029,7 +1028,7 @@ body.woocommerce-checkout .custom-checkout-order-review table tr.order-total td 
     font-weight:700;
 }
 body.woocommerce-checkout .checkout-page-title h1{
-    padding-bottom:29px;
+    padding-bottom:0px;
 }
 body.woocommerce-checkout .checkout-page-title{
    
@@ -1125,10 +1124,10 @@ body.woocommerce-checkout .payment-method-crtl .custom-checkout-btn{
     text-align:right;
 }
 body.woocommerce-checkout .innerpage-con-wrap{
-    padding-bottom:80px;
+    padding-bottom: 97px;
 }
 body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .form-row{
-    margin-bottom:45px
+    margin-bottom:35px
 }
 body.woocommerce-checkout .woocommerce-terms-and-conditions-wrapper label{
     color:#525A61;
@@ -1158,9 +1157,25 @@ body.woocommerce-checkout .woocommerce-shipping-fields .woocommerce-form__label 
     cursor: pointer;
 }
 body.woocommerce-checkout .billing-subtitle h3{
+    font-size:16px;
+    font-family: Sora;
+    font-weight:700;
+    margin-bottom: 32px;
+
+}
+/*body.woocommerce-checkout .woocommerce-additional-fields{
+    display: none;
+}*/
+body.woocommerce-checkout .woocommerce-billing-fields > h3,
+body.woocommerce-checkout .woocommerce-additional-fields.extra-info h3,
+body.woocommerce-checkout .woocommerce-checkout-review-order h3{
     font-size: 24px;
     background: #FFFBF4;
     padding: 20px 37px;
+    margin-bottom: 42px;
+}
+body.woocommerce-checkout #order_comments_field label{
+    margin-bottom: 8px;
 }
 body.woocommerce-checkout .payment-method-crtl .shipping-methods{
     margin-bottom:28px;
