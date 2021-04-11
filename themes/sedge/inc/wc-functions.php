@@ -78,22 +78,32 @@ if (!function_exists('add_shorttext_below_title_loop')) {
         $seller_flash = get_field('seller_flash', $product->get_id());
         $gridtag = cbv_get_image_tag( get_post_thumbnail_id($product->get_id()), 'pgrid' );
         echo '<div class="fl-product-grd mHc">';
-        if( !empty($seller_flash) ) printf('<span class="seller-flash">%s</span>', $seller_flash); 
-        wc_get_template_part('loop/sale-flash');
-        echo '<div class="fl-product-grd-inr">';
-        echo '<div class="fl-pro-grd-img-cntlr mHc1">';
-        echo '<a class="overlay-link" href="'.get_permalink( $product->get_id() ).'"></a>';
-        echo $gridtag;
-        echo '</div>';/*end loop image*/
-        echo '<div class="mHc6">';
-        echo '<h3 class="fl-h5 mHc2 fl-pro-grd-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h3>';
-        echo '<div class="product-lenth"><p>(20 cm)</p></div>';
-        echo '<div class="fl-pro-grd-price">';
-        echo $product->get_price_html();
-        echo '</div>';/*end loop price*/
-        echo '</div>';
-        echo '<div><a class="fl-trnsprnt-btn" href="'.get_permalink( $product->get_id() ).'"><span>'.$label.'</span></a></div>';
-        echo '</div>';
+          echo '<div class="fl-product-grd-inr">';
+            wc_get_template_part('loop/sale-flash');
+            echo '<div class="fl-pro-grd-img-cntlr mHc1">';
+              echo '<a href="'.get_permalink( $product->get_id() ).'" class="overlay-link"></a>';
+              echo $gridtag;
+            echo '</div>';
+            echo '<div class="fl-pro-grd-des mHc2">';
+              echo '<h4 class="fl-h5 fl-pro-grd-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h4>';
+              echo '<div class="product-lenth">';
+              echo '<p>(15 cm)</p>';
+              echo '</div>';
+              echo '<div class="fl-pro-grd-price">';
+                echo $product->get_price_html();
+              echo '</div>';
+            echo '</div>  ';
+            echo '<div class="fl-pro-grd-btn">';
+              echo '<a class="fl-blue-btn" href="'.get_permalink( $product->get_id() ).'">
+                <i>
+                  <svg class="lock-price" width="14" height="17" viewBox="0 0 14 17" fill="#fff">
+                  <use xlink:href="#lock-price"></use> 
+                  </svg>
+                </i>
+                <span>'.$label.'</span>';
+              echo '</a>';
+            echo '</div>';
+          echo '</div>';
         echo '</div>';
         
     }
