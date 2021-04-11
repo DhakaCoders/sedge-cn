@@ -217,7 +217,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
-
+  /* start of niaz*/
+  $(".type-order-format .woocommerce-input-wrapper span").each(function(){
+        $(this).append('<div class="radio-custom"></div>')
+  });
+  $(".billing-address-wrap .same-as-shipping-address,.login-info p:first-child,.form-row .woocommerce-form__label-for-checkbox").each(function(){
+          $(this).append('<div class="checkbox-custom"></div>')
+    });
   /*start of Sabbir*/
 
 
