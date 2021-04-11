@@ -1,0 +1,146 @@
+.fl-products-cntlr ul.products{
+    display: flex;
+    flex-wrap: wrap;
+     margin: 0 -12px;
+}
+.fl-products-cntlr ul.products > li{
+   width: 25%;
+   padding: 0 12px 38px;
+   margin: 0!important; 
+}
+.shop-item-sec .fl-product-grd{
+    border: none;
+    background: #fffaf4;
+    padding: 7px 7px 24px;
+}
+.shop-item-sec .fl-pro-grd-img-cntlr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 319px;
+    width: auto;
+}
+.shop-item-sec .fl-pro-grd-img-cntlr img{
+    max-height: 319px;
+    width: auto;
+}
+.shop-item-sec .fl-pro-grd-img-cntlr:hover img{
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.prdt-des{
+    padding-left: 33px;
+    padding-top: 33px;
+}
+.shop-item-sec .fl-pro-grd-title{
+    margin-bottom: 13px;    
+}
+.shop-item-sec .fl-pro-grd-title a{
+    text-transform: uppercase;
+    color: #70857e;
+}
+.shop-item-sec .prdt-des > span{
+    padding-bottom: 24px;
+    display: inline-block;
+    vertical-align: baseline;
+}
+ .shop-item-sec .fl-pro-grd-price del span,
+ .product-price del span, .xoo-cp-pprice del span, 
+ .fl-pro-grd-price del span, 
+ .loggedin-winkelmandje-crtl .woocommerce-mini-cart-item .quantity del span, 
+ .loggedin-winkelmandje-crtl .woocommerce-mini-cart-item .quantity del span bdi{
+    color: #b4192b;
+    font-size: 12px;
+    text-decoration-line: line-through;
+    margin-right: 0;
+ }
+.more-btn{
+    padding-left: 30px;
+}
+
+/* .fl-products-cntlr ul.products {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px!important;
+    padding-bottom: 75px!important;
+}
+.fl-products-cntlr ul.products > li {
+    width: 25%!important;
+    padding: 0 12px 24px!important;
+    margin: 0!important;
+}
+.shop-item-sec .fl-product-grd{
+    border: none;
+}
+.fl-product-grd {
+    background: #fffaf4;
+}
+.fl-product-grd-inr{
+	overflow: hidden;
+}
+.fl-pro-grd-img-cntlr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 32px 12px;
+}
+.fl-pro-grd-img-cntlr:hover img{
+	transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+.prdt-des {
+	padding-top: 34px;
+	border-top: 1px solid #f8f8f8;
+	padding: 34px 0 10px;
+	margin: 0 32px;
+}
+.fl-products-cntlr .fl-product-grd .fl-pro-grd-title{
+	font-size: 20px;
+	margin-bottom: 6px;
+    font-weight: 600;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	color: #243444;
+}
+.fl-product-grd .fl-pro-grd-title a{
+	text-decoration: none;
+}
+.fl-product-grd .fl-pro-grd-title a:hover {
+    color: #2285e3;
+    
+}
+.fl-products-cntlr .fl-pro-grd-price {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #707C88;
+}
+.product-price del span, .xoo-cp-pprice del span, .fl-pro-grd-price del span {
+    color: #525A61;
+    font-size: 12px;
+    text-decoration-line: line-through;
+    margin-right: 0;
+}
+.more-btn{
+    width: 260px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.more-btn i{
+    position: absolute;
+    left: 28px;
+    top: 12px;
+}
+.more-btn a{
+	color: #fff;
+    width: 100%;
+} */
