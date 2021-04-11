@@ -13,6 +13,9 @@
   <?php else:?>
   <article class="default-page-con">
     <div class="block-955">
+      <?php if( is_cart() ): ?>
+      	<div class="page-heading"><h1><?php echo get_the_title(); ?></h1></div>
+      <?php endif; ?>
       <?php the_content(); ?>
     </div>
   </article>

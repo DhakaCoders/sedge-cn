@@ -113,7 +113,16 @@ defined( 'ABSPATH' ) || exit;
 	<div class="wc-proceed-to-checkout">
 		<?php do_action( 'woocommerce_proceed_to_checkout' ); ?>
 	</div>
-	<div class="add-more-product"><a href="<?php echo get_permalink(get_option( 'woocommerce_shop_page_id' ) );?>"><?php esc_html_e( 'Meer producten toevoegen', 'woocommerce' ); ?></a></div>
+	<div class="cart-pay-logo-wrap">
+		<div class="cart-logo-crtl">
+			<ul class="reset-list">
+              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-01.svg"></li>
+              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-02.svg"></li>
+              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-03.svg"></li>
+              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-04.svg"></li>
+            </ul>
+		</div>
+	</div>
 
 	<?php do_action( 'woocommerce_after_cart_totals' ); ?>
 

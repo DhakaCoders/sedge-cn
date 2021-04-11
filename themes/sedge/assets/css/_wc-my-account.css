@@ -408,7 +408,15 @@ body.woocommerce-account .woocommerce-form-login label,
 body.woocommerce-account .woocommerce-form-register label{
     display: none!important;
 }
+body.woocommerce-account #login_register{
+    max-width: 1162px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+body.woocommerce-account .col-xs-12 {
+    width: 100%;
+}
 
 
 
@@ -1326,7 +1334,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.woocommerce-account .woocommerce input[type="tel"],
     body.woocommerce-account .woocommerce input[type="password"],
     body.woocommerce-account .woocommerce textarea{
-        height:40px;
+        height:45px;
     }
     body.woocommerce-account .woocommerce button[type=submit],
     body.woocommerce-account .woocommerce button[type=button]{
@@ -1334,8 +1342,11 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     }
 
 
-
-    /*  ----------------------------- my account reg page ------------------------- */
+    /* ------------------ new account page -----------------------*/
+    body.woocommerce-account .signup-notification{
+        margin-bottom: 24px;
+    }
+    /*  ----------------------------- my new account page ------------------------- */
     body.woocommerce-account .register-btn button[type="submit"]{
         padding: 15px 106px!important;
     }
@@ -1437,7 +1448,6 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .selection .select2-selection,
     body.woocommerce-checkout .woocommerce-shipping-fields .selection .select2-selection{
         padding: 5px 10px 5px;
-        height:40px!important;
     }
     body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .woocommerce-input-wrapper textarea {
         min-height: 150px;
