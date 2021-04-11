@@ -1412,10 +1412,10 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
 }
 
 @media(max-width: 992px){
-    .woocommerce-account .register-title h3, 
+    /*.woocommerce-account .register-title h3, 
     .login-info h3{
         font-size: 21px;
-    }
+    }*/
     /*--------------------- new account page ----------------------*/
     body.woocommerce-account .woocommerce-notices-wrapper {
         margin-bottom: 25px;
@@ -1620,7 +1620,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         padding-left: 15px;
     }
     .reg-heading h3{
-        font-size:14px;
+        font-size:16px;
         margin-bottom: 25px!important;
     }
     body.hide-account-title .register-pay-logo-wrap{
@@ -1694,10 +1694,13 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         margin-bottom: 28px!important;
     }
     body.hide-account-title .register-title h2{
-        font-size:16px;
+        font-size:20px;
         padding-bottom: 25px;
         border-color:#F2EADE;
         margin-bottom: 25px;
+    }
+    body.hide-account-title .login-info h3{
+        font-size:16px;
     }
     /* ------------------- woocommerce-cart -------------------*/
     .woocommerce-cart .woocommerce .cart-is-emtpy strong{
@@ -2015,7 +2018,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         padding-top:20px;
     }
     body.woocommerce-account .woocommerce form .form-row label{
-        font-size:14px;
+        font-size:12px;
     }
     body.woocommerce-account .login-btm-wrap h2{
         font-size:20px;
@@ -2056,6 +2059,15 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     }
     body.hide-account-title .register-top-title h1{
         font-size:18px;
+    }
+    body.hide-account-title .login-info h3 {
+        font-size: 14px;
+    }
+    body.hide-account-title .register-title h2 {
+        font-size: 16px
+    }
+    .reg-heading h3 {
+        font-size: 14px;
     }
     /* ------------------- woocommerce-cart -------------------*/
     .woocommerce-cart .woocommerce .cart-is-emtpy strong{
