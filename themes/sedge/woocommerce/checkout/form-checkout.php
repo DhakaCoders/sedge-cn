@@ -19,12 +19,10 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-$cURL = wc_get_cart_url();
 ?>
 
 <div class="checkout-page-title clearfix">
 	<div class="checkoutpt-left">
-		<div class="back-to-dashboard-btn-cntlr"><a class="backshop-cart" href="<?php echo $cURL; ?>">Terug naar winkelmandje</a></div>
 		<h1><?php the_title(); ?></h1>
 	</div>
 	<div class="checkoutpt-right">
@@ -45,8 +43,7 @@ $cURL = wc_get_cart_url();
 
 				      <div class="chckout-prgrs-col chckout-prgrs-col-2 active">
 				        <strong class="chckout-prgrs-number">2</strong> 
-				        <h6 class="chckout-prgrs-title">Klantgegevens <br>
-				        en Betaling</h6>
+				        <h6 class="chckout-prgrs-title">Klantgegevens en <br>Betaling</h6>
 				      </div>
 
 				      <div class="chckout-prgrs-col chckout-prgrs-col-3">
@@ -82,6 +79,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 		<div class="col2-set" id="customer_details">
 			<div class="col-1">
+				<div class="billing-subtitle"><h3><?php esc_html_e('Persoonlijke gegevens', 'woocommerce'); ?></h3></div>
 				<?php do_action( 'woocommerce_checkout_billing' ); ?>
 				<?php do_action( 'woocommerce_checkout_shipping' ); ?>
 			
@@ -90,10 +88,9 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 						<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 						<div class="payment-method-crtl">
 							<div id="order_review" class="woocommerce-checkout-review-order">
-							<h3>2.<?php esc_html_e( 'Bezorgmethode', 'woocommerce' ); ?></h3>
 							<div class="shipping-methods">
 									<?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>
-
+										<h3>2.<?php esc_html_e( 'Bezorgmethode', 'woocommerce' ); ?></h3>
 										<?php do_action( 'woocommerce_review_order_before_shipping' ); ?>
 
 										<?php wc_cart_totals_shipping_html(); ?>
@@ -102,17 +99,19 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 									<?php endif; ?>
 							</div>
-							    <h3>3.<?php esc_html_e( 'Betaalmethode', 'woocommerce' ); ?></h3>
+							    <h3>2.<?php esc_html_e( 'Betaalmethode', 'woocommerce' ); ?></h3>
 								<?php do_action( 'woocommerce_checkout_order_review' ); ?>
 							</div>
 							<div class="woocommerce-additional-fields extra-info">	
 								<h3>4.<?php esc_html_e( 'Extra Info', 'woocommerce' ); ?></h3>
 								<div class="woocommerce-additional-fields__field-wrapper">
-									<p class="form-row notes thwcfd-field-wrapper thwcfd-field-textarea" id="order_comments_field" ><span class="woocommerce-input-wrapper"><textarea name="order_comments" class="input-text " id="order_comments" placeholder="" rows="2" cols="5"></textarea></span></p>	
+									<p class="form-row notes thwcfd-field-wrapper thwcfd-field-textarea" id="order_comments_field" >
+										<label for="order_comments"><?php esc_html_e( 'Extra Info', 'woocommerce' ); ?></label>
+										<span class="woocommerce-input-wrapper"><textarea name="order_comments" class="input-text " id="order_comments" placeholder="" rows="2" cols="5"></textarea></span></p>	
 								</div>
 							</div>
 							<div class="custom-checkout-btn">
-								<button type="submit" class="button alt" name="woocommerce_checkout_place_order" value="Afrekenen" data-value="Afrekenen"><?php esc_html_e( 'Afrekenen', 'woocommerce' ); ?></button>
+								<button type="submit" class="button alt" name="woocommerce_checkout_place_order" value="BESTELLING AFRONDEN" data-value="BESTELLING AFRONDEN"><span><?php esc_html_e( 'BESTELLING AFRONDEN', 'woocommerce' ); ?></span></button>
 							</div>
 						</div>
 						<!-- end payment method -->
@@ -129,16 +128,18 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 					?>
 					<div class="checkout-terms">
 						<?php wc_get_template_part( 'checkout/terms' ); ?>
-							<p class="form-row validate-required">
-							<label class="woocommerce-form__label woocommerce-form__label-for-checkbox checkbox">
-							<input type="checkbox" class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" name="accept_condition" id="accept_condition" required/>
-								<span class="woocommerce-terms-and-conditions-checkbox-text">
-									Ik geef toestemming voor de verwerking van mijn persoonsgegevens
-								</span>
-							</label>
-						</p>
 					</div>
-					<button type="submit" class="button alt" name="woocommerce_checkout_place_order" value="Afrekenen" data-value="Afrekenen"><?php esc_html_e( 'Afrekenen', 'woocommerce' ); ?></button>
+					<button type="submit" class="button alt" name="woocommerce_checkout_place_order" value="BESTELLING AFRONDEN" data-value="BESTELLING AFRONDEN"><span><?php esc_html_e( 'BESTELLING AFRONDEN', 'woocommerce' ); ?></span></button>
+				</div>
+				<div class="cart-pay-logo-wrap">
+					<div class="cart-logo-crtl">
+						<ul class="reset-list">
+			              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-01.svg"></li>
+			              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-02.svg"></li>
+			              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-03.svg"></li>
+			              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-04.svg"></li>
+			            </ul>
+					</div>
 				</div>
 			</div>
 		</div>
