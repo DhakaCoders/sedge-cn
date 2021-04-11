@@ -28,6 +28,9 @@ if($('.mHc4').length){
 if($('.mHc5').length){
   $('.mHc5').matchHeight();
 };
+if($('.mHc6').length){
+  $('.mHc6').matchHeight();
+};
 
 
 //$('[data-toggle="tooltip"]').tooltip();
