@@ -253,12 +253,16 @@ span.xoo-cp-close.xoo-cp-icon-cross:before{
 .xoo-cp-pprice del span,
 .fl-pro-grd-price del span,
 .loggedin-winkelmandje-crtl .woocommerce-mini-cart-item .quantity del span,
-.loggedin-winkelmandje-crtl .woocommerce-mini-cart-item .quantity del span bdi{
-    color: #525A61;
+.loggedin-winkelmandje-crtl .woocommerce-mini-cart-item .quantity del span bdi,
+.fl-pro-grd-price del span,
+.fl-pro-grd-price del span bdi{
+    color: #B3192A!important;
     font-size: 12px;
     text-decoration-line: line-through;
     margin-right: 0;
 }
+
+
 .cart .qty-price-wrap del span{
 	font-size:20px;
 	text-decoration-line: line-through;

@@ -1,21 +1,44 @@
 
+.fl-products-cntlr ul.products{
+    display: flex;
+    flex-wrap: wrap;
+     margin: 0 -12px;
+}
+.fl-products-cntlr ul.products > li{
+   width: 25%;
+   padding: 0 12px 38px;
+   margin: 0!important; 
+}
 .fl-product-grd{
     border: 6px solid #fff;
 }
-.fl-pro-grd-img-ctlr{
-    overflow: hidden;
+.fl-pro-grd-img-cntlr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
+    overflow: hidden;
+    height: 320px;
+    width: auto;
 }
 .fl-pro-grd-img{
-    min-height: 320px;
+    min-height: 319px;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -ms-transition: all 0.5s;
     overflow: hidden;
 }
-.fl-pro-grd-img img{
-    display: none;
+.fl-pro-grd-img-cntlr img{
+    max-height: 319px;
+    width: auto;
 }
+.fl-product-grd:hover .fl-pro-grd-img-cntlr img{
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
 
 .fl-pro-grd-text{
     position: absolute;
@@ -65,12 +88,15 @@
     margin-bottom: 18px;
 }
 .fl-pro-grd-btn .fl-blue-btn{
-    width: 260px;
+    max-width: 260px;
+    width: 100%;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
-.fl-pro-grd-btn .fl-blue-btn:after{
+/*.fl-pro-grd-btn .fl-blue-btn:after{
     content: "";
     position: absolute;
     top: 50%;
@@ -83,7 +109,7 @@
     background: url('../images/fl-pro-btn.svg');
     background-repeat: no-repeat;
     background-size: cover;
-}
+}*/
 .fl-pro-grd-btn .fl-blue-btn:hover{
     background: transparent;
     color: #6DBD98;

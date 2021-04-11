@@ -1,17 +1,40 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>> 
-<head> 
-  <meta charset="<?php bloginfo('charset'); ?>">
+<html>
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <?php $favicon = get_theme_mod('favicon'); if(!empty($favicon)) { ?> 
+
+
+  <!--   <?php $favicon = get_theme_mod('favicon'); if(!empty($favicon)) { ?> 
   <link rel="shortcut icon" href="<?php echo $favicon; ?>" />
-  <?php } ?> 
+  <?php } ?> -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/font-awesome.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/fancybox3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
+  <link rel="stylesheet" type="text/css" href="assets/swiper/swiper-bundle.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->	
+  <![endif]-->  
 
   <svg style="display: none;">
 
@@ -34,10 +57,7 @@
 
       <!-- start of Sabbir -->
 
-      <symbol id="lock-price" width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12.2336 16.0714H1.76636C1.52707 16.0716 1.29023 16.0276 1.07023 15.9418C0.850235 15.8561 0.651686 15.7304 0.486662 15.5726C0.321638 15.4147 0.19359 15.228 0.110305 15.0236C0.0270211 14.8192 -0.00975769 14.6016 0.00220673 14.3839L0.478527 5.14816C0.498241 4.7341 0.692773 4.34299 1.0215 4.05649C1.35023 3.77 1.78774 3.61027 2.24268 3.61066H11.7573C12.2123 3.61027 12.6498 3.77 12.9785 4.05649C13.3072 4.34299 13.5018 4.7341 13.5215 5.14816L13.9978 14.3839C14.0098 14.6016 13.973 14.8192 13.8897 15.0236C13.8064 15.228 13.6784 15.4147 13.5133 15.5726C13.3483 15.7304 13.1498 15.8561 12.9298 15.9418C12.7098 16.0276 12.4729 16.0716 12.2336 16.0714ZM2.24268 4.68744C2.08672 4.68744 1.93714 4.74388 1.82686 4.84435C1.71658 4.94482 1.65463 5.08108 1.65463 5.22316L1.17831 14.4374C1.17432 14.51 1.18658 14.5826 1.21434 14.6507C1.2421 14.7188 1.28478 14.7811 1.33979 14.8337C1.3948 14.8863 1.46098 14.9282 1.53431 14.9567C1.60765 14.9853 1.68659 15 1.76636 14.9999H12.2336C12.3134 15 12.3924 14.9853 12.4657 14.9567C12.539 14.9282 12.6052 14.8863 12.6602 14.8337C12.7152 14.7811 12.7579 14.7188 12.7857 14.6507C12.8134 14.5826 12.8257 14.51 12.8217 14.4374L12.3454 5.20173C12.3454 5.05965 12.2834 4.92339 12.1731 4.82292C12.0629 4.72245 11.9133 4.66601 11.7573 4.66601L2.24268 4.68744Z" fill="white"/>
-        <path d="M10.5283 4.15178H9.35218V3.21428C9.35218 2.64596 9.10436 2.10092 8.66324 1.69905C8.22211 1.29719 7.62382 1.07143 6.99998 1.07143C6.37614 1.07143 5.77785 1.29719 5.33672 1.69905C4.8956 2.10092 4.64778 2.64596 4.64778 3.21428V4.15178H3.47168V3.21428C3.47168 2.3618 3.84341 1.54424 4.50509 0.941441C5.16678 0.338647 6.06422 0 6.99998 0C7.93574 0 8.83318 0.338647 9.49486 0.941441C10.1565 1.54424 10.5283 2.3618 10.5283 3.21428V4.15178Z" fill="white"/>
-      </symbol>
+
       <!-- start of Milon -->
       <symbol id="map-marker-icon-svg" width="24" height="29" viewBox="0 0 24 29" xmlns="http://www.w3.org/2000/svg">
       <path d="M11.9997 28.2933C11.8683 28.2939 11.7382 28.2683 11.6168 28.2179C11.4955 28.1675 11.3854 28.0934 11.2931 27.9999L3.61306 20.3199C1.95225 18.6608 0.820845 16.5464 0.361974 14.2442C-0.0968973 11.9419 0.137386 9.55533 1.03519 7.38627C1.93299 5.2172 3.45396 3.36316 5.40569 2.05869C7.35742 0.754222 9.6522 0.0579453 11.9997 0.0579453C14.3473 0.0579453 16.642 0.754222 18.5938 2.05869C20.5455 3.36316 22.0665 5.2172 22.9643 7.38627C23.8621 9.55533 24.0964 11.9419 23.6375 14.2442C23.1786 16.5464 22.0472 18.6608 20.3864 20.3199L12.7064 27.9999C12.6141 28.0934 12.504 28.1675 12.3827 28.2179C12.2613 28.2683 12.1311 28.2939 11.9997 28.2933ZM11.9997 2.06661C10.0493 2.06798 8.14301 2.64738 6.52171 3.73164C4.90042 4.8159 3.63685 6.35635 2.89063 8.1584C2.14442 9.96045 1.94904 11.9432 2.32917 13.8563C2.70931 15.7693 3.64791 17.5268 5.02639 18.9066L11.9997 25.8799L18.9731 18.9066C20.3515 17.5268 21.2901 15.7693 21.6703 13.8563C22.0504 11.9432 21.855 9.96045 21.1088 8.1584C20.3626 6.35635 19.099 4.8159 17.4777 3.73164C15.8564 2.64738 13.9502 2.06798 11.9997 2.06661Z"/>
@@ -57,9 +77,8 @@
 
     </svg>
 
-<?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body class="home">
 <div class="bdoverlay"></div>
 <!-- fixed --> 
 <div class="cart-socials-cntlr">
@@ -102,7 +121,7 @@
             </div>
             <div class="hdr-lft">
               <div class="logo">
-                <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.png"></a>
+                <a href="#"><img src="assets/images/logo.png"></a>
               </div>
             </div>
             <div class="hdr-rgt">
@@ -156,3 +175,281 @@
       </div>
   </div>
 </header>
+
+<!-- xs mobile menu -->
+<div class="xs-mobile-menu-cntlr">
+  <div class="xs-mobile-menu">
+
+    <div class="xs-menu-hdr">
+      <div class="hambergar-cntlr show-md">
+        <div class="hambergar-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="xs-hdr-socials show-md">
+        <ul class="reset-list">
+          <li><a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a target="_blank" href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="hdr-lft">
+        <div class="logo">
+          <a href="#"><img src="assets/images/logo.svg"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="xs-menu-cntlr">
+      <div class="xs-menu">
+        <nav class="main-nav">
+          <ul class="clearfix reset-list">
+            <li class="current-menu-item"><a href="#">Home</a></li>
+            <li><a href="#">Over Sedge</a></li>
+            <li class="menu-item-has-children">
+              <a href="#">Shop</a>
+              <ul class="sub-menu" style="">
+                <li><a href="#">sub menu</a></li>
+                <li><a href="#">sub menu</a></li>
+                <li><a href="#">sub menu</a></li>
+
+              </ul>
+            </li>
+            <li><a href="#">WHAT’s HAPPENING</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="xs-mbl-footer">
+      <div class="xs-mbl-link">
+        <ul class="reset-list">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Bekijk de voorwaarden</a></li>
+        </ul>
+      </div>
+
+      <div class="xs-mbl-lan">
+        <ul class="reset-list">
+          <li class="active"><a href="#">Nl</a></li>
+          <li><a href="#">fr</a></li>
+          <li><a href="#">en</a></li>
+        </ul>
+      </div>
+      <div class="xs-mbl-btn">
+        <a class="fl-red-btn" href="#">AANMELDEN</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<section class="ftr-top-contact-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="ftr-top-contact-sec-inr clearfix">
+          <div class="ftr-top-contact-lft">
+            <div class="ftr-top-contact-lft-inr">
+              <h6 class="ftr-top-cnt-lft-title">BLIJF OP DE HOOGTE VAN ACTIES EN PROMOTIES SCHRIJF JE IN OP ONZE NIEUWSBRIEF</h6>
+            </div>
+          </div>
+          <div class="ftr-top-contact-rgt">
+            <div class="ftr-top-contact-rgt-inr">
+              <div class="wpforms-container">
+                <form class="wpforms-form">
+                  <div class="wpforms-field-container">  
+                    <div class="wpforms-field firstNameField">
+                      <input type="text" name="name" placeholder="Voornaam" required>
+                    </div>
+                    <div class="wpforms-field lastNameField">
+                      <input type="text" name="name" placeholder="Naam" required>
+                    </div>
+                    <div class="wpforms-field mailField">
+                      <input type="email" name="email" placeholder="mathias2.conversalbe" required>
+                    </div>
+                    <div class="wpforms-field wpforms-field-html html-field">
+                      <p>Wij respecteren uw <a href="#">privacy.</a> Jouw gegevens worden altijd vertrouwelijk behandeld.</p>
+                    </div>
+                  </div><!-- end of .wpforms-field-container-->
+                  <div class="wpforms-submit-container">
+                    <button type="submit" name="submit" class="wpforms-submit fl-blue-btn">VERZENDEN</button>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="ftr-top-sec">
+  <div class="ftrTopSlider clearfix">
+    <div class="ftr-slider-grd-item">
+      <img src="assets/images/ftr-top-img-01.jpg">
+    </div>
+    <div class="ftr-slider-grd-item">
+      <img src="assets/images/ftr-top-img-02.jpg">
+    </div>
+    <div class="ftr-slider-grd-item">
+      <img src="assets/images/ftr-top-img-03.jpg">
+    </div>
+    <div class="ftr-slider-grd-item">
+      <img src="assets/images/ftr-top-img-01.jpg">
+    </div>
+    <div class="ftr-slider-grd-item">
+      <img src="assets/images/ftr-top-img-02.jpg">
+    </div>
+    <div class="ftr-slider-grd-item">
+      <img src="assets/images/ftr-top-img-03.jpg">
+    </div>
+    <div class="ftr-slider-grd-item">
+      <img src="assets/images/ftr-top-img-03.jpg">
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer-wrp">
+  <div class="ftr-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="ftr-top-inr clearfix">
+            <div class="ftr-logo-ctlr">
+              <div class="ftr-logo">
+                <a href="#"><img src="assets/images/ftr-logo.png"></a>
+              </div>
+              <div class="xs-ftr-social-media show-sm">
+                <div class="ftr-social-media">
+                  <ul class="reset-list">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="ftr-menu ftr-col-1">
+              <h6 class="ftr-menu-title hide-sm">Navigatie</h6>
+              <ul class="reset-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Over Sedge</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">What’s happening</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="ftr-menu ftr-col-2 hide-sm">
+              <h6 class="ftr-menu-title">Klantenservice</h6>
+              <ul class="reset-list">
+                <li><a href="#">Inloggen</a></li>
+                <li><a href="#">Algemene voorwaarden</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Cookies</a></li>
+              </ul>
+            </div>
+            <div class="ftr-menu ftr-col-3 hide-sm">
+              <h6 class="ftr-menu-title">Contact gegevens</h6>
+              <div class="ftr-location">
+                <a target="_blank" href="#">Adres Line 1,<br>Aalst, Belgium</a>
+              </div>
+              <div class="ftr-email">
+                <a href="mailto:">info@sedge.be</a>
+              </div>
+              <div class="ftr-phone">
+                <a href="tel:053222333">053 222 333</a>
+              </div>
+              <div class="ftr-social-media">
+                <ul class="reset-list">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="ftr-middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="ftr-middle-inr hide-sm">
+            <ul class="reset-list">
+              <li><img src="assets/images/ftr-btm-img-01.png"></li>
+              <li><img src="assets/images/ftr-btm-img-02.png"></li>
+              <li><img src="assets/images/ftr-btm-img-03.png"></li>
+              <li><img src="assets/images/ftr-btm-img-04.png"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ftr-btm">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="ftr-btm-inr">
+
+            <div class="ftr-btm-mdle">
+              <div class="ftr-btm-mdle-top">
+                <span>Beoordeling door klanten</span>
+              </div>
+              <div class="ftr-btm-mdle-btm">
+                <span><strong>4.2</strong> van 5  -  <a href="#">3083 beoordelingen</a></span>
+              </div>
+            </div>
+
+            <div class="ftr-middle-inr xs-btm-img show-sm">
+              <ul class="reset-list">
+                <li><img src="assets/images/ftr-btm-img-01.png"></li>
+                <li><img src="assets/images/ftr-btm-img-02.png"></li>
+                <li><img src="assets/images/ftr-btm-img-03.png"></li>
+                <li><img src="assets/images/ftr-btm-img-04.png"></li>
+              </ul>
+            </div>
+
+            <div class="ftr-copywrite">
+              <p>&copy;2019 - 2020 SEDGE. All Rights Reserved.</p>
+            </div>
+            
+            <div class="ftr-designby">
+              <span>Grapics by Bas Vaerewyck - Website laten maken door<a href="#"> Conversal</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-select.min.js"></script>
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="assets/fancybox3/dist/jquery.fancybox.min.js"></script>
+<script src="assets/slick.slider/slick.js"></script>
+<script src="assets/swiper/swiper-bundle.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaRQsAJCZyyD6MbCg0jB_0sdLGEOxt97Y"></script>
+<script src="assets/js/jquery.matchHeight-min.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
