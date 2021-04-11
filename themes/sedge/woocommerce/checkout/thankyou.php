@@ -79,15 +79,135 @@ defined( 'ABSPATH' ) || exit;
 			      <div class="col-md-12">
 			        <div class="thank-you-sec-cntlr">
 			          <div class="thnk-you-des">
-			            <i><img src="<?php echo THEME_URI; ?>/assets/images/thankyou-pg-logo.svg" alt="logo"></i>
-			            <h1 class="fl-h2 thank-you-des-title">Bedankt <span>&lt;<?php echo $order->get_billing_first_name(); ?>&gt;</span> voor je bestelling</h1>
-			            <a href="#">Bestelnummer: #<?php echo $order->get_order_number(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></a>
-			            <p>Een bevestigingsmail <br> komt zodadelijk jouw richting uit.</p>
+			            <i><img src="<?php echo THEME_URI; ?>/assets/images/thankyou.svg" alt="logo"></i>
+			            <h1 class="fl-h2 thank-you-des-title">Dank u, <span><?php echo $order->get_billing_first_name(); ?></span></h1>
+			            <h2>Je bestelling is voltooid</h2>
+			            <a href="#">#<?php echo $order->get_order_number(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></a>
+			            
+			            <p>We maken uw bestelling klaar voor verzending.</p>
 			          </div>
-			          <div class="thnk-y-social-des" style="background:url(<?php echo THEME_URI; ?>/assets/images/thank-you-social-bg.jpg);">
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</section>
+			<section class="order-products">
+				<div class="orders-crtl">
+					<div class="order-head">
+						<span><h2><?php esc_html_e( 'PRODUCTEN', 'woocommerce' ); ?></h2></span>
+						<span><?php esc_html_e( 'Hoeveelheid', 'woocommerce' ); ?></span>
+					</div>
+					<div class="order-body">
+						<div class="body-list">
+							<div class="image-title">
+							<i><img src="<?php echo THEME_URI; ?>/assets/images/order-product.png" alt=""></i>
+								<div class="title-meta">
+									<h2>Cocktail rietjes (15 cm)</h2>
+									<dl>
+										<dt>Diameter:</dt>
+										<dd>Standaard 5 - 7 mm</dd>
+										<dt>Aantal stuks:</dt>
+										<dd>49</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="quantity">
+								1
+							</div>
+						</div>
+						<div class="body-list">
+							<div class="image-title">
+							<i><img src="<?php echo THEME_URI; ?>/assets/images/order-product.png" alt=""></i>
+								<div class="title-meta">
+									<h2>Cocktail rietjes (15 cm)</h2>
+									<dl>
+										<dt>Diameter:</dt>
+										<dd>Standaard 5 - 7 mm</dd>
+										<dt>Aantal stuks:</dt>
+										<dd>49</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="quantity">
+								1
+							</div>
+						</div>
+					</div>
+					<div class="service-contact">
+						<h2>Service & contact</h2>
+						<div class="service-lists">
+							<div class="service-list">
+								<div class="icon">
+									<i><img src=""></i>
+								</div>
+								<div class="service-text">
+									<h3>Vind alles in je account</h3>
+									<p><a href="">Volg je bestelling</a>, <a href="">betaal facturen</a> of retourneer een artikel.</p>
+								</div>
+							</div>
+							<div class="service-list">
+								<div class="icon">
+									<i><img src=""></i>
+								</div>
+								<div class="service-text">
+									<h3>Heb je ons nodig?</h3>
+									<p>We helpen je graag. <a href="">Onze klantenservice</a> is dag en nacht open.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="service-bottom">
+						<ul class="">
+							<li><a href="">Snel regelen in je account</a></li>
+							<li><a href="">Heb je ons nodig?</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+					</div>
+					<a class="order-home-btn" href=""><span>Home</span></a>
+				</div>
+				<div class="shipping-order-total">
+					<div class="shipping-crtl">
+						<h2><?php esc_html_e( 'BESTELDETAILS', 'woocommerce' ); ?></h2>
+						<div class="address">
+							<ul class="reset-list">
+								<li><?php echo $order->get_billing_first_name().' '.$order->get_billing_last_name(); ?></li>
+								<li>Boekhoutstraat 121<br/>1790 Affligem - België</li>
+								<li>053 222 333</li>
+								<li>mathias@conversal.be</li>
+							</ul>
+						</div>
+					</div>
+					<div class="order-total">
+						<h2><?php esc_html_e( 'OVERZICHT', 'woocommerce' ); ?></h2>
+						<div class="order-details">
+							<ul class="reset-list">
+								<li>
+									<span class="details-title">Subtotaal</span>
+									<span class="amount">€99,00</span>
+								</li>
+								<li>
+									<span class="details-title">BTW</span>
+									<span class="amount">€99,00</span>
+								</li>
+								<li>
+									<span class="details-title">Verzending</span>
+									<span class="amount">€99,00</span>
+								</li>
+							</ul>
+							<hr/>
+							<ul class="reset-list">
+								<li>
+									<span class="details-title">Totaal</span>
+									<span class="total-amount">€99,00</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+			          <div class="thnk-y-social-des">
 			            <div class="thnk-you-social-des-cntlr" >
-			              <h5 class="fl-h5 thnk-you-social-des-title"><?php esc_html_e( 'Social Media', 'woocommerce' ); ?></h5>
-			              <p>Interdum, nunc id blandit porttitor, velit purus posuere turpis.</p>
+			              <h5 class="fl-h5 thnk-you-social-des-title"><?php esc_html_e( 'Lorem ipsum dolor', 'woocommerce' ); ?></h5>
+			              <p>Convallis ac ut tincidunt adipiscing.</p>
 			               <?php 
 							$smedias = get_field('social_media', 'options');
 			                if(!empty($smedias)):  
@@ -106,10 +226,7 @@ defined( 'ABSPATH' ) || exit;
 			          	  <?php endif; ?>
 			            </div>
 			          </div>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
+				</div>
 			</section>
 		<?php endif; ?>
 
