@@ -11,10 +11,9 @@ add_filter( 'woocommerce_show_page_title', '__return_false' );
 function get_custom_wc_output_content_wrapper(){
 
     if(is_shop() OR is_product_category()){ 
-        echo '<section class="product-page-cntlr"><div class="container"><div class="row"><div class="col-md-12"><div class="product-page-col-cntlr clearfix">';
-        echo '<div class="product-page-col-full">';
         get_template_part('templates/shop', 'top');
-        echo '<div class="fl-products-cntlr">';
+        echo '<div class="product-category shop-item-sec"><div class="container"><div class="row"><div class="col-md-12"><div class="fl-products-cntlr">';
+        
     }
 
 
@@ -22,10 +21,9 @@ function get_custom_wc_output_content_wrapper(){
 
 function get_custom_wc_output_content_wrapper_end(){
   if(is_shop() OR is_product_category()){
-    echo '</div>'; 
-    echo '</div>'; 
     echo '</div></div></div></div></section>';
     get_template_part('templates/shop', 'bottom');
+    get_template_part('templates/footer', 'top-form');
   }
 
 }
@@ -208,6 +206,7 @@ if (!function_exists('add_custom_box_product_summary')) {
         echo '<div>';
         $rating_count = intval($product->get_rating_count());
         if ( $rating_count > 0 ) {
+            echo '<div class="rating">';
             echo '<p>Beoordeling door klanten <span><strong>'.$product->get_average_rating().'</strong> van 5  -  '.$rating_count.' beoordelingen</span></p>';
             echo '</div>';
         }
@@ -250,6 +249,7 @@ function cbv_add_custom_info(){
         echo wpautop( $long_desc );
         echo '</div>';
     endif;
+get_template_part('templates/footer', 'top-form');
 }
 
 add_action( 'woocommerce_product_options_inventory_product_data', 'misha_adv_product_options');
