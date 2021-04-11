@@ -28,8 +28,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 					<tr>
 						<th class="product-name"><strong><?php esc_html_e( 'Producten', 'woocommerce' ); ?></strong></th>
 						<th class="product-price"><?php esc_html_e( 'Prijs', 'woocommerce' ); ?></th>
-						<th class="product-weight"><?php esc_html_e( 'Gewicht', 'woocommerce' ); ?></th>
 						<th class="product-quantity"><?php esc_html_e( 'Aantal', 'woocommerce' ); ?></th>
+						<th class="product-subtotal"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
 						<th class="product-remove">&nbsp;</th>
 					</tr>
 				</thead>
@@ -89,11 +89,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 										echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
 									?>
 								</td>
-								<td class="product-weight">
-									<div>
-									100g-losse-tea
-									</div>
-								</td>
 
 								<td class="product-quantity" data-title="<?php esc_attr_e( 'Quantity', 'woocommerce' ); ?>">
 									<div class="quantity qty1"><span class="minus">-</span>
@@ -117,6 +112,11 @@ do_action( 'woocommerce_before_cart' ); ?>
 								echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // PHPCS: XSS ok.
 								?>
 								<span class="plus">+</span></div>
+								</td>
+								<td class="product-subtotal" data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>">
+									<?php
+										echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
+									?>
 								</td>
 								<td class="product-remove">
 									<?php

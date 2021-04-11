@@ -92,7 +92,7 @@ if (!function_exists('add_shorttext_below_title_loop')) {
         echo $product->get_price_html();
         echo '</div>';/*end loop price*/
         echo '</div>';
-        echo '<div><a class="fl-trnsprnt-btn" href="'.get_permalink( $product->get_id() ).'">'.$label.'</a></div>';
+        echo '<div><a class="fl-trnsprnt-btn" href="'.get_permalink( $product->get_id() ).'"><span>'.$label.'</span></a></div>';
         echo '</div>';
         echo '</div>';
         
@@ -183,6 +183,8 @@ if (!function_exists('add_custom_box_product_summary')) {
         echo '<div class="summary-ctrl">';
         echo '<div class="summary-hdr">';
         echo '<h1 class="product_title entry-title hide-sm">'.$product->get_title().'</h1>';
+        echo '<div class="product-size"><span>(15 cm)</span></div>';
+        echo '<p>Grotere oplages nodig of professionele partner <a class="contact-btn" href="#">Contacteer ons</a><p>';
         if( !empty($sh_desc) ){
             echo '<div class="short-desc">';
             echo wpautop( $sh_desc, true );
@@ -216,7 +218,6 @@ function cbv_get_single_price(){
     echo '<span class="plus">+</span></div>';
     echo '</div></div>';
     echo '<div class="qty-price-wrap">';
-    echo '<span class="price-pre-title">Totaal: </span>';
     echo '<span class="single-price-total">';
     echo $product->get_price_html();
     echo '</span>';
@@ -406,9 +407,11 @@ function projectnamespace_woocommerce_text( $translated, $text, $domain ) {
                 'Kortingsbon',
                 'Waardebon toepassen',
                 'Verder naar afrekenen',
+                'Coupon code',
+                'Apply coupon',
             ),
             array( 
-                'ik ga bestellen', 
+                'Verder naar bestellen', 
                 'ik ga bestellen', 
                 '1. Persoonlijke gegevens', 
                 'Overzicht', 
@@ -419,7 +422,9 @@ function projectnamespace_woocommerce_text( $translated, $text, $domain ) {
                 'Bedrag',
                 'Heb je een kortingscode?',
                 'Verzilver',
-                'ik ga bestellen'
+                'ik ga bestellen',
+                'Heb je een kortingscode?',
+                'Verzilver'
             ),
             $translated
         );
