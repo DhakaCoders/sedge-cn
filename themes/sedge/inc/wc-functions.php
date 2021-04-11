@@ -194,9 +194,8 @@ if (!function_exists('add_custom_box_product_summary')) {
         echo '</div>';
         echo '</div>';
         echo '<div>';
-        echo $rating_count = intval($product->get_rating_count());
-        echo get_option( 'woocommerce_enable_review_rating' );
-        if ( ($rating_count > 0) && wc_review_ratings_enabled() ) {
+        $rating_count = intval($product->get_rating_count());
+        if ( $rating_count > 0 ) {
             echo '<p>Beoordeling door klanten <span><strong>'.$product->get_average_rating().'</strong> van 5  -  '.$rating_count.' beoordelingen</span></p>';
             echo '</div>';
         }
