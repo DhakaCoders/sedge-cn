@@ -651,18 +651,6 @@ function woocommerce_clear_cart_url() {
     }
 }
 
-add_action('woocommerce_checkout_process', 'cw_custom_process_checkbox');
-function cw_custom_process_checkbox() {
-    global $woocommerce;
-    if (!$_POST['accept_condition'])
-        wc_add_notice( __( 'Please accept conditions to proceed with your order' ), 'error' );
-}
-
-
-add_action('woocommerce_checkout_update_order_meta', 'cw_checkout_order_meta');
-function cw_checkout_order_meta( $order_id ) {
-    if ($_POST['accept_condition']) update_post_meta( $order_id, 'Accept Condition', esc_attr($_POST['accept_condition']));
-}
 
 add_filter( 'woocommerce_shipping_package_name', 'custom_shipping_package_name' );
 function custom_shipping_package_name( $name ) {

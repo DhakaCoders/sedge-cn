@@ -30,7 +30,7 @@ defined( 'ABSPATH' ) || exit;
 	<?php endif; ?>
 
 	<?php do_action( 'woocommerce_before_checkout_billing_form', $checkout ); ?>
-
+	<div class="billing-subtitle"><h3><?php esc_html_e('Persoonlijke gegevens', 'woocommerce'); ?></h3></div>
 	<div class="woocommerce-billing-fields__field-wrapper">
 		<?php
 		$fields = $checkout->get_checkout_fields( 'billing' );
