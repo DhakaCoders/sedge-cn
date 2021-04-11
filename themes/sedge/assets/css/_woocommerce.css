@@ -36,14 +36,14 @@ ul.select2-results__options li{
 .woocommerce button[type=submit],
 .woocommerce-orders .orders-crtl .contact-info a.order-contact-btn,
 body.woocommerce-checkout .custom-checkout-order-review .ywgc_enter_code .form-row-last button[type=submit]{
-	background: #31304F!important;
+	background: #6DBD98!important;
     text-transform: uppercase;
-    border: 2px solid #31304F!important;
+    border: 2px solid #6DBD98!important;
     color: #fff!important;
-    border-radius: 6px!important;
+    border-radius: 4px!important;
     font-size: 16px!important;
-    letter-spacing: 0.04em;
-    font-family: Open Sans;
+   font-family: 'Sora', sans-serif;
+    font-weight:600;
 }
 .woocommerce .checkout-button.button:hover,
 .woocommerce #respond input#submit:hover, 
@@ -55,9 +55,8 @@ body.woocommerce-orders .orders-crtl .contact-info a.order-contact-btn:hover,
 body.woocommerce-checkout .custom-checkout-order-review button.button.alt:hover,
 body.woocommerce-checkout .payment-method-crtl .custom-checkout-btn button[type=submit]:hover,
 body.woocommerce-checkout .custom-checkout-order-review .ywgc_enter_code .form-row-last button[type=submit]:hover{
-	background: #EC5387!important;
-	color: #fff!important;
-	border-color:#EC5387!important;
+	background: transparent!important;
+	color: #6DBD98!important;
 }
 body.single-product .pro-cart-btn button:hover svg{
 	fill: #F3BF00!important;
@@ -162,19 +161,18 @@ body.woocommerce-account #customer_login .u-column2.col-2 > h2{
 .woocommerce textarea{
 	width: 100%;
 	max-width: 100%;
-	height: 48px;
-	background: #FFFFFF;
-	border: 1px solid #F2EDE9;
+	height:50px;
+	background: #FFFBF4;
+	border: 1px solid #F2EADE;
 	box-sizing: border-box;
 	padding: 5px 18px 5px;
-	color: #525A61;
+	color: #78797B;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
-	border-radius: 6px;
 }
 .woocommerce input[type="text"]:focus,
 .woocommerce input[type="email"]:focus,
