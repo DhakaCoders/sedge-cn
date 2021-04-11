@@ -28,8 +28,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 					<tr>
 						<th class="product-name"><strong><?php esc_html_e( 'Producten', 'woocommerce' ); ?></strong></th>
 						<th class="product-price"><?php esc_html_e( 'Prijs', 'woocommerce' ); ?></th>
-						<th class="product-quantity"><?php esc_html_e( 'Aantal', 'woocommerce' ); ?></th>
-						<th class="product-subtotal"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
+						<th class="product-quantity"><?php esc_html_e( 'Hoeveelheid', 'woocommerce' ); ?></th>
+						<th class="product-subtotal"><?php esc_html_e( 'Totaal', 'woocommerce' ); ?></th>
 						<th class="product-remove">&nbsp;</th>
 					</tr>
 				</thead>
