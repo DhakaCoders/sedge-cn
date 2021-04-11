@@ -24,7 +24,7 @@ if ( $related_products ) : ?>
 	<div class="related products related-pro-crtl">
 
 		<?php
-		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Gerelateerde Producten', 'woocommerce' ) );
+		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Meer formaten', 'woocommerce' ) );
 
 		if ( $heading ) :
 			?>

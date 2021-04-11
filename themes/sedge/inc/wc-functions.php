@@ -180,42 +180,29 @@ if (!function_exists('add_custom_box_product_summary')) {
         $product_usps = get_field('product_usps', 'options' );
         $sh_desc = !empty($sh_desc)?$sh_desc:'';
 
-            echo '<div class="summary-ctrl">';
-            echo '<div class="summary-hdr">';
-            echo '<h1 class="product_title entry-title hide-sm">'.$product->get_title().'</h1>';
-            if( !empty($sh_desc) ){
-                echo '<div class="short-desc">';
-                echo wpautop( $sh_desc, true );
-                echo '</div>';
-            }
-            if( !empty($long_desc) ){
-                echo '<div class="long-desc">';
-                echo '<h2>Beschrijving</h2>';
-                echo wpautop( $long_desc, true );
-                echo '</div>';
-            }
+        echo '<div class="summary-ctrl">';
+        echo '<div class="summary-hdr">';
+        echo '<h1 class="product_title entry-title hide-sm">'.$product->get_title().'</h1>';
+        if( !empty($sh_desc) ){
+            echo '<div class="short-desc">';
+            echo wpautop( $sh_desc, true );
             echo '</div>';
-            echo '<div class="meta-crtl">';
-            echo '<ul>';
-                echo '<li>';
-                    echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in"><strong>' .esc_html__( 'Categorie: ', 'woocommerce' ). '</strong> ', '</span>' );
-                echo '</li>';
-                cbv_display_some_product_attributes();
-                if ( wc_product_sku_enabled() && !empty($product->get_sku()) && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) :
-                echo '<li>';
-                    echo '<strong>';
-                    esc_html_e( 'SKU:', 'woocommerce' );
-                    echo '</strong>';
-                    echo '<span class="sku">'.( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ).'</span>';
-                echo '</li>';
-                endif;
-            echo '</ul>';
+        }
+        echo '</div>';
+        echo '<div class="price-quentity-ctrl">';
+          woocommerce_template_single_add_to_cart();
+        echo '</div>';
+        echo '</div>';
+        echo '<div>';
+        echo $rating_count = intval($product->get_rating_count());
+        echo get_option( 'woocommerce_enable_review_rating' );
+        if ( ($rating_count > 0) && wc_review_ratings_enabled() ) {
+            echo '<p>Beoordeling door klanten <span><strong>'.$product->get_average_rating().'</strong> van 5  -  '.$rating_count.' beoordelingen</span></p>';
             echo '</div>';
-            echo '<div class="price-quentity-ctrl">';
-              woocommerce_template_single_add_to_cart();
-            echo '</div>';
-            echo '</div>';
+        }
 
+        /*echo $rating_count = $product->get_rating_count();
+        echo $review_count = $product->get_review_count();*/
     }
 }
 
@@ -244,35 +231,13 @@ function bryce_id_add_to_cart_text( $default ) {
         return __( 'In Winkelmand', THEME_NAME );
 }
 
-add_action('woocommerce_product_thumbnails', 'cbv_add_custom_info', 20);
+add_action('woocommerce_after_single_product_summary', 'cbv_add_custom_info', 10);
 function cbv_add_custom_info(){
     global $product;
-    $quantity = get_field('quantity', $product->get_id());
-    $water_temp = get_field('water_temp', $product->get_id());
-    $brewing_time = get_field('brewing_time', $product->get_id());
-    if( !empty($quantity) ||  !empty($water_temp) ||  !empty($brewing_time)):
-        echo '<div class="custom-info-crtl hide-sm">';
-        echo '<ul>';
-        if( !empty($quantity) ) printf('<li class="qnty"><span>Hoeveelheid:</span>%s gr/Liter</li>', $quantity);
-        if( !empty($water_temp) ) printf('<li class="water-temp"><span>Water temperatuur::</span>%s c°</li>', $water_temp);
-        if( !empty($brewing_time) ) printf('<li class="into-time"><span>Trektijd:</span>%s</li>', $brewing_time);
-        echo '</ul>';
-        echo '</div>';
-    endif;
-}
-add_action('woocommerce_after_single_product_summary', 'cbv_add_custom_info_for_xs', 5);
-function cbv_add_custom_info_for_xs(){
-    global $product;
-    $quantity = get_field('quantity', $product->get_id());
-    $water_temp = get_field('water_temp', $product->get_id());
-    $brewing_time = get_field('brewing_time', $product->get_id());
-    if( !empty($quantity) ||  !empty($water_temp) ||  !empty($brewing_time)):
-        echo '<div class="custom-info-crtl custom-info-xs show-sm">';
-        echo '<ul>';
-        if( !empty($quantity) ) printf('<li class="qnty"><span>Hoeveelheid:</span>%s gr/Liter</li>', $quantity);
-        if( !empty($water_temp) ) printf('<li class="water-temp"><span>Water temperatuur::</span>%s c°</li>', $water_temp);
-        if( !empty($brewing_time) ) printf('<li class="into-time"><span>Trektijd:</span>%s</li>', $brewing_time);
-        echo '</ul>';
+    $long_desc = $product->get_description();
+    if( !empty($long_desc) ):
+        echo '<div class="custom-desc-crtl">';
+        echo wpautop( $long_desc );
         echo '</div>';
     endif;
 }

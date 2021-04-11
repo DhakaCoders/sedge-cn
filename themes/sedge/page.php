@@ -18,12 +18,4 @@
   </article>
   <?php endif; ?>
 </section>
-<section class="btm-sec-wrap">
-	<div class="btm-imgs">
-		<ul class="reset-list">
-          <li><img src="<?php echo THEME_URI; ?>/assets/images/login-btm-img.png"></li>
-          <li><img src="<?php echo THEME_URI; ?>/assets/images/login-btm-img.png"></li>
-        </ul>
-	</div>
-</section>
 <?php get_footer(); ?>

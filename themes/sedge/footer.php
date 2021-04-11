@@ -1,3 +1,4 @@
+<?php get_template_part('templates/footer', 'top'); ?>
 <footer class="footer-wrp">
   <div class="ftr-top">
     <div class="container">
