@@ -19,12 +19,10 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-$cURL = wc_get_cart_url();
 ?>
 
 <div class="checkout-page-title clearfix">
 	<div class="checkoutpt-left">
-		<div class="back-to-dashboard-btn-cntlr"><a class="backshop-cart" href="<?php echo $cURL; ?>">Terug naar winkelmandje</a></div>
 		<h1><?php the_title(); ?></h1>
 	</div>
 	<div class="checkoutpt-right">
@@ -82,6 +80,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 		<div class="col2-set" id="customer_details">
 			<div class="col-1">
+				<div class="billing-subtitle"><h3><?php esc_html_e('Persoonlijke gegevens', 'woocommerce'); ?></h3></div>
 				<?php do_action( 'woocommerce_checkout_billing' ); ?>
 				<?php do_action( 'woocommerce_checkout_shipping' ); ?>
 			
@@ -90,10 +89,9 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 						<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 						<div class="payment-method-crtl">
 							<div id="order_review" class="woocommerce-checkout-review-order">
-							<h3>2.<?php esc_html_e( 'Bezorgmethode', 'woocommerce' ); ?></h3>
 							<div class="shipping-methods">
 									<?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>
-
+										<h3>2.<?php esc_html_e( 'Bezorgmethode', 'woocommerce' ); ?></h3>
 										<?php do_action( 'woocommerce_review_order_before_shipping' ); ?>
 
 										<?php wc_cart_totals_shipping_html(); ?>
@@ -102,13 +100,15 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 									<?php endif; ?>
 							</div>
-							    <h3>3.<?php esc_html_e( 'Betaalmethode', 'woocommerce' ); ?></h3>
+							    <h3>2.<?php esc_html_e( 'Betaalmethode', 'woocommerce' ); ?></h3>
 								<?php do_action( 'woocommerce_checkout_order_review' ); ?>
 							</div>
 							<div class="woocommerce-additional-fields extra-info">	
 								<h3>4.<?php esc_html_e( 'Extra Info', 'woocommerce' ); ?></h3>
 								<div class="woocommerce-additional-fields__field-wrapper">
-									<p class="form-row notes thwcfd-field-wrapper thwcfd-field-textarea" id="order_comments_field" ><span class="woocommerce-input-wrapper"><textarea name="order_comments" class="input-text " id="order_comments" placeholder="" rows="2" cols="5"></textarea></span></p>	
+									<p class="form-row notes thwcfd-field-wrapper thwcfd-field-textarea" id="order_comments_field" >
+										<label for="order_comments"><?php esc_html_e( 'Extra Info', 'woocommerce' ); ?></label>
+										<span class="woocommerce-input-wrapper"><textarea name="order_comments" class="input-text " id="order_comments" placeholder="" rows="2" cols="5"></textarea></span></p>	
 								</div>
 							</div>
 							<div class="custom-checkout-btn">

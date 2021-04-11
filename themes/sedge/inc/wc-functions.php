@@ -423,7 +423,7 @@ function projectnamespace_woocommerce_text( $translated, $text, $domain ) {
             array( 
                 'Verder naar bestellen', 
                 'ik ga bestellen', 
-                '1. Persoonlijke gegevens', 
+                '01. Bezorgadres', 
                 'Overzicht', 
                 'Afrekenen',
                 '4. Extra Info',
