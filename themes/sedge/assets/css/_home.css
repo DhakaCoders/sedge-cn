@@ -11,6 +11,7 @@
 .straw-into-cntrl{
 	display: flex;
 	flex-wrap: wrap;
+	margin-left: 70px;
 }
 .straw-cont{
 	width: 50%;
@@ -49,16 +50,20 @@
 }
 
 /* product-sec */
+.home-product-sec{
+	padding-bottom: 83px;
+}
 .prdt-bnr img {
 	width: 100%;
 }
 .prdt-cntrl{
 	display: flex;
-	margin-top: -103px;
+	margin: -103px -12px 0;
 }
 .prdt-catg{
 	width: 50%;
-	padding-right: 25px;
+	padding-right: 12px;
+	padding-left: 12px;
 }
 .prdt-item{
 	background: #fff;
@@ -81,6 +86,10 @@
 .prdt-fea-img{
 	max-width: 355px;
 	width: 100%;
+	padding-left: 30px;
+}
+.prdt-item:nth-child(3) .prdt-fea-img{
+	margin-left: -30px;
 }
 .prdt-fea-cont {
     padding-right: 65px;
@@ -112,6 +121,7 @@
 .prdt-item:nth-child(2n+2) .prdt-fea-img{
 	order: 2;
 	margin-left: auto;
+	padding-left: 0;
 }
 .prdt-item:last-child{
 	margin-bottom: 0;
@@ -120,6 +130,8 @@
 /* prdt-catg-des-cntrl */
 .prdt-catg-des-cntrl {
 	width: 50%;
+	padding-left: 12px;
+	padding-right: 12px;
 }
 .prdt-catg-des-bg{
 	background: #71867f;
@@ -142,7 +154,7 @@
 	display: flex;
 	justify-content: center;
 	padding-bottom: 77px;
-	margin-bottom: 95px;
+	margin-bottom: 85px;
 	position: relative;
 }
 .prdt-des-logo:after{
@@ -162,7 +174,7 @@
 	width: 100%;
 }
 .prdt-des ul {
-	margin: 0 -22px 92px;
+	margin: 0 -22px 80px;
 }
 .prdt-des ul li{
 	font-weight: 600;
@@ -270,6 +282,9 @@
 	}
 	.prdt-des ul{
 		margin: 0 -22px 90px;
+	}
+	.prdt-des ul li{
+		padding: 0 17px 11px;
 	}
 	.prdt-des-logo:after{
 		width: 470px;

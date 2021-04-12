@@ -28,6 +28,9 @@ if($('.mHc4').length){
 if($('.mHc5').length){
   $('.mHc5').matchHeight();
 };
+if($('.mHc6').length){
+  $('.mHc6').matchHeight();
+};
 
 
 //$('[data-toggle="tooltip"]').tooltip();
@@ -217,7 +220,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
-
+  /* start of niaz*/
+  $(".type-order-format .woocommerce-input-wrapper span").each(function(){
+        $(this).append('<div class="radio-custom"></div>')
+  });
+  $(".billing-address-wrap .same-as-shipping-address,.login-info p:first-child,.form-row .woocommerce-form__label-for-checkbox").each(function(){
+          $(this).append('<div class="checkbox-custom"></div>')
+    });
   /*start of Sabbir*/
 
 
@@ -245,19 +254,147 @@ if(windowWidth > 768){
 
 
   /*start of Shariful*/
-  var swiper = new Swiper('.ftrTopSlider', {
+  /*var swiper = new Swiper('.ftrTopSlider', {
     slidesPerView: 'auto',
     loop: true,
     spaceBetween: 0,
-    /*navigation: {
+    navigation: {
       nextEl: '.restaurantGallerySliderArrows .swiper-button-next',
       prevEl: '.restaurantGallerySliderArrows .swiper-button-prev',
-    }*/
-  });
+    }
+  });*/
+
+  if( $('.ftrTopSlider').length ){
+    $('.ftrTopSlider').slick({
+      dots: false,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: false,
+            dots: false
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
+
+$("#register_next").prop("disabled",true);
+$("#reg_email").bind('blur keyup change click', function(){
+  if(isValidEmailAddress($(this).val())){
+    $(this).css({"border": "0px solid red", "color": "#000"});
+    $("#register_next").prop("disabled",false);
+  }else{
+    $(this).css({"border": "1px solid red", "color": "red"});
+    $("#register_next").prop("disabled",true);
+  }
+})
+
+$("#for_business").on('change', function(){
+var html = '<p class="form-row form-row-wide" id="billing_company_field">' +
+        '<label for="billing_company" class="">Bedrijfsnaam</label>' +
+        '<span class="woocommerce-input-wrapper">' +
+          '<input type="text" class="input-text " name="billing_company" id="billing_company" placeholder="Bedrijfsnaam">' +
+        '</span>' +
+      '</p>' +
+      '<p class="form-row form-row-wide" id="billing_btw_nummer_field">' +
+        '<label for="billing_btw_nummer" class="">BTW-nummer</label>' +
+        '<span class="woocommerce-input-wrapper">' +
+          '<input type="text" class="input-text " name="billing_btw_nummer" id="billing_btw_nummer" placeholder="BTW-nummer" required>' +
+        '</span>' +
+      '</p>'+
+      '<p class="form-row form-row-wide" id="billing_btw_nummer_field">' +
+        '<label for="billing_reference" class="">Referentie</label>' +
+        '<span class="woocommerce-input-wrapper">' +
+          '<input type="text" class="input-text " name="billing_reference" id="billing_reference" placeholder="Referentie" required>' +
+        '</span>' +
+      '</p>';
+
+  $("#extra_fields").html(html);
+});
+$("#private").on('change', function(){
+
+var html = '';
+  $("#extra_fields").empty(html);
+})
+
+jQuery('body').on('wc_cart_emptied', function(){
+  location.reload();
+  //console.log('wc_cart_emptied triggered');
+});
+
+// Registration form validation
+$("#re_password").bind('blur keyup change', function(){
+  $("#register_action_btn").attr('disabled','disabled');
+  var pass = $('#re_password').val();
+  //check the strings
+  if(pass.length >= 8){
+    $('.error-rel_password').text('');
+    $(this).css({"border": "2px solid #F3F3F3", "color": "#9EA5AB"});
+  }else{
+    $('.error-rel_password').text('Wachtwoord zou moeten minimaal 8 karakters');
+    $(this).css({"border": "2px solid #D17181", "color": "#D17181"});
+    $("#register_action_btn").attr('disabled','disabled');
+  }
+});
 
 
+$("#confirm_password").bind('blur keyup change click', function(){
+  $("#register_action_btn").prop("disabled",false);
+    var pass = $('#re_password').val();
+    var confpass = $(this).val();
+    //check the strings
+    if(pass == confpass){
+    //if both are same remove the error and allow to submit
+    $('.error-confirm_password').text('');
+    $(this).css({"border": "2px solid #F3F3F3", "color": "#9EA5AB"});
+    $("#register_action_btn").prop("disabled",false);
+    }else{
+    //if not matching show error and not allow to submit
+    $('.error-confirm_password').text('Wachtwoord komt niet overeen');
+    $(this).css({"border": "2px solid #D17181", "color": "#D17181"});
+    $("#register_action_btn").prop("disabled",true);
+    }
+});
+
+/* Checkout field show/hide */
+if ($("#billing_order_type_Zakelijk").is(":checked")) {
+    $('#billing_company_field').addClass('show-company');
+    $('#vat_number_field').addClass('show-vat_number');
+    $('#billing_reference_field').addClass('show-reference');
+}
+$("#billing_order_type_Zakelijk").on('change', function(){
+    if ($(this).is(":checked")) {
+        $('#billing_company_field').addClass('show-company');
+        $('#vat_number_field').addClass('show-vat_number');
+        $('#billing_reference_field').addClass('show-reference');
+    }
+});
+$("#billing_order_type_Particulier").on('change', function(){
+    if ($(this).is(":checked")) {
+        $('#billing_company_field').removeClass('show-company');
+        $('#vat_number_field').removeClass('show-vat_number');
+        $('#billing_reference_field').removeClass('show-reference');
+    }
+});
 
 
     new WOW().init();
 
 })(jQuery);
+
+function isValidEmailAddress(emailAddress) {
+    var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+    return pattern.test(emailAddress);
+}
