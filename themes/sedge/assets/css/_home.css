@@ -48,6 +48,10 @@
     margin-left: 125px;
     margin-top: 66px;	
 }
+.straw-intro-btn:hover{
+	background: #fff;
+	color: #6dbd98
+}
 
 /* product-sec */
 .home-product-sec{
@@ -164,7 +168,7 @@
 	height: 2px;
 	background-color: #869791;
 	top: 100%;
-	left: -10px;
+	left: 0;
 }
 .prdt-des-logo a{
 	display: inline-block;
@@ -174,7 +178,7 @@
 	width: 100%;
 }
 .prdt-des ul {
-	margin: 0 -22px 80px;
+	margin: 0 -12px 80px;
 }
 .prdt-des ul li{
 	font-weight: 600;
@@ -225,8 +229,8 @@
 	border: 1px solid transparent;
 }
 .find-more-btn:hover{
-	border: 1px solid #6dbd98;
-	color: #6dbd98;
+	background: #b4192b;
+	color: #fff;
 }
 
 /* =============== */
@@ -246,7 +250,7 @@
 		font-size: 26px;
 	}
 	.straw-cont{
-		padding: 127px 92px 116px;
+		padding: 127px 90px 116px;
 	}
 }
 
@@ -255,7 +259,7 @@
 		font-size: 24px;
 	}
 	.straw-cont{
-		padding: 71px 65px 100px;
+		padding: 71px 52px 100px;
 		height: 460px;
 	}
 	.straw-img-box{
@@ -271,17 +275,17 @@
 		padding-right: 33px;
 	}
 	.prdt-catg-des-bg{
-    	padding-top: 55px;
-    	padding-bottom: 55px;
-    	padding-left: 60px;
-    	padding-right: 40px;
+    	padding-top: 50px;
+    	padding-bottom: 50px;
+    	padding-left: 50px;
+    	padding-right: 30px;
 	}
 	.prdt-des-logo{
-		padding-bottom: 65px;
-    	margin-bottom: 80px;
+		padding-bottom: 60px;
+    	margin-bottom: 70px;
 	}
 	.prdt-des ul{
-		margin: 0 -22px 90px;
+		margin: 0 -12px 80px;
 	}
 	.prdt-des ul li{
 		padding: 0 17px 11px;
@@ -293,6 +297,14 @@
 }
 
 @media (max-width: 1399px) {
+	.straw-into-cntrl{
+		margin-left: 63px;
+	}
+	.prdt-catg-des-bg:after{
+		width: 60px;
+		right: -30px;
+		top: 14.5%;
+	}
 	.straw-intro-bg{
 		padding-top: 190px;
 		padding-bottom: 220px;
@@ -301,15 +313,15 @@
 		font-size: 22px;
 	}
 	.straw-cont{
-		padding: 60px 63px 80px;
+		padding: 60px 45px 80px;
 		height: 420px;
 	}
 	.straw-img-box{
-		margin-left: 95px;
-		margin-top: 57px;
+		margin-left: 145px;
+		margin-top: 31px;
 	}
 	.prdt-item{
-		padding: 57px 0;
+		padding: 56px 0;
 	}
 	.prdt-fea-img{
 		max-width: 300px;
@@ -321,17 +333,17 @@
 		padding-right: 40px;
 	}
 	.prdt-catg-des-bg {
-	    padding-top: 43px;
-	    padding-bottom: 50px;
-	    padding-left: 60px;
+	    padding-top: 40px;
+	    padding-bottom: 40px;
+	    padding-left: 45px;
 	    padding-right: 40px;
 	}
 	.prdt-des-logo {
-	    padding-bottom: 55px;
-	    margin-bottom: 65px;
+	    padding-bottom: 50px;
+	    margin-bottom: 60px;
 	}
 	.prdt-des ul {
-    	margin: 0 -22px 58px;
+    	margin: 0 -12px 40px;
 	}
 	.notice {
     padding-top: 50px;
@@ -341,8 +353,7 @@
 		font-size: 14px;
 	}
 	.prdt-des-logo:after{
-		width: 430px;
-		left: -8px;
+		width: 415px;
 	}
 }
 
@@ -351,6 +362,9 @@
 }
 
 @media (max-width: 1199px) {
+	.straw-into-cntrl{
+		margin-left: 23px;
+	}
 	.straw-intro-bg{
 		padding-top: 180px;
 		padding-bottom: 200px;
@@ -382,38 +396,38 @@
 		padding-left: 30px;
 	}
 	.prdt-catg-des-bg {
-	    padding-top: 30px;
-	    padding-bottom: 30px;
-	    padding-left: 50px;
-	    padding-right: 23px;
+	    padding-top: 40px;
+	    padding-bottom: 40px;
+	    padding-left: 25px;
+	    padding-right: 15px;
 	}
 	.prdt-catg-des-bg:after{
 		right: -15px;
-		width: 70px;
 	}
 	.prdt-des-logo {
-    	padding-bottom: 40px;
-    	margin-bottom: 45px;
+    	padding-bottom: 30px;
+    	margin-bottom: 35px;
 	}
 	.prdt-des ul {
-    	margin: 0 -22px 48px;
+    	margin: 0 -12px 31px;
 	}
 	.prdt-des ul li{
 		padding: 0 15px 11px;
 	}
 	.notice {
-    	padding-top: 40px;
-    	padding-bottom: 30px;
+    	padding-top: 30px;
+    	padding-bottom: 23px;
 	}
 	.prdt-des-logo:after{
-    	width: 385px;
+    	width: 360px;
 	}
 }
 
 
 @media (max-width: 991px) {
 	.straw-cont{
-		height: 350px;
+		height: 320px;
+		padding: 45px 15px 80px;
 	}
 	.straw-des p{
 		font-size: 18px;
@@ -466,7 +480,7 @@
 		padding-left: 0;
 		padding: 15px 15px;
 		background: #f9f9f9;
-		margin: 0 -15px;
+		margin: 0 -3px;
 	}
 	.prdt-catg-des-bg{
 		margin-left: initial;
@@ -499,8 +513,7 @@
 		padding-bottom: 90px;
 	}
 	.straw-cont{
-		padding: 40px 22px 30px 34px;
-		height: 290px;
+		height: 310px;
 	}
 	.straw-img-box {
     	margin-left: 60px;
@@ -518,6 +531,9 @@
 }
 
 @media (max-width: 639px) {
+	.straw-into-cntrl{
+		margin-left: 0;
+	}
 	.straw-intro{
 		padding: 15px;
 	}
@@ -536,8 +552,7 @@
     	position: static;
 		width: 100%;
 		max-width: 280px;
-		margin-left: auto;
-		margin-right: auto;
+		margin-left: 17px;
 		margin-top: 40px;
 		top: 100%;
 		transform: initial;
