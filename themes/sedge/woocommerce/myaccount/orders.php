@@ -59,11 +59,21 @@ if ( $customer_orders ) :
     ?>
         <li>
         <div class="orders-crtl">
-        <time class="my-ac-time" datetime="<?php echo esc_attr( $order->get_date_created()->date( 'c' ) ); ?>"><?php echo esc_html( wc_format_datetime( $order->get_date_created(), 'd F Y' ) ); ?></time>
-      <div class="code-text">
-        <?php echo __('Bestelnummer', 'woocommerce' ) . '#'.$order->get_order_number(); ?>
-      </div>
-          <span></span>
+          <div class="accordion-order-title">
+            <div class="order-title"><?php echo __('Order', 'woocommerce' ) . '#'.$order->get_order_number(); ?></div>
+            <time class="my-ac-time" datetime="<?php echo esc_attr( $order->get_date_created()->date( 'c' ) ); ?>"><?php echo esc_html( wc_format_datetime( $order->get_date_created(), 'd.m.Y' ) ); ?></time>
+            <div class="order-comment">
+              <p>Dui tortor nisi sit porttitor facilisis vel nisi et.</p>
+            </div>
+            <?php 
+            echo "<div class='order-status color-green'>";
+            echo "<label>Status:</label> ";
+            echo esc_html( wc_get_order_status_name( $order->get_status() ) );
+            echo "</div>";
+            ?> 
+            <span class="plus-minus"></span>
+          </div>
+          
           <div class="order-details">
             <?php 
               $order_items = $order->get_items( apply_filters( 'woocommerce_purchase_order_item_types', 'line_item' ) );
@@ -115,18 +125,6 @@ if ( $customer_orders ) :
               <?php } ?>
             </div>
             <?php endif; ?>
-			<?php 
-			echo "<div class='order-status color-green'>";
-			echo "<label>Status:</label> ";
-			echo esc_html( wc_get_order_status_name( $order->get_status() ) );
-			echo "</div>";
-			?>
-          </div>
-          <div class="contact-info">
-          	<i></i>
-          	<div>
-          		<a class="order-contact-btn" href="#">CONTACT</a>
-          	</div>
           </div>
         </div>
         </li>
