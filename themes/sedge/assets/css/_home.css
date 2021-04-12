@@ -48,6 +48,10 @@
     margin-left: 125px;
     margin-top: 66px;	
 }
+.straw-intro-btn:hover{
+	background: #fff;
+	color: #6dbd98
+}
 
 /* product-sec */
 .home-product-sec{
@@ -225,8 +229,8 @@
 	border: 1px solid transparent;
 }
 .find-more-btn:hover{
-	border: 1px solid #6dbd98;
-	color: #6dbd98;
+	background: #b4192b;
+	color: #fff;
 }
 
 /* =============== */
@@ -246,7 +250,7 @@
 		font-size: 26px;
 	}
 	.straw-cont{
-		padding: 127px 92px 116px;
+		padding: 127px 90px 116px;
 	}
 }
 
@@ -255,7 +259,7 @@
 		font-size: 24px;
 	}
 	.straw-cont{
-		padding: 71px 65px 100px;
+		padding: 71px 52px 100px;
 		height: 460px;
 	}
 	.straw-img-box{
@@ -293,6 +297,9 @@
 }
 
 @media (max-width: 1399px) {
+	.straw-into-cntrl{
+		margin-left: 63px;
+	}
 	.straw-intro-bg{
 		padding-top: 190px;
 		padding-bottom: 220px;
@@ -301,12 +308,12 @@
 		font-size: 22px;
 	}
 	.straw-cont{
-		padding: 60px 63px 80px;
+		padding: 60px 45px 80px;
 		height: 420px;
 	}
 	.straw-img-box{
-		margin-left: 95px;
-		margin-top: 57px;
+		margin-left: 145px;
+		margin-top: 31px;
 	}
 	.prdt-item{
 		padding: 57px 0;
@@ -413,7 +420,8 @@
 
 @media (max-width: 991px) {
 	.straw-cont{
-		height: 350px;
+		height: 320px;
+		padding: 45px 15px 80px;
 	}
 	.straw-des p{
 		font-size: 18px;
@@ -499,8 +507,7 @@
 		padding-bottom: 90px;
 	}
 	.straw-cont{
-		padding: 40px 22px 30px 34px;
-		height: 290px;
+		height: 310px;
 	}
 	.straw-img-box {
     	margin-left: 60px;
@@ -518,6 +525,9 @@
 }
 
 @media (max-width: 639px) {
+	.straw-into-cntrl{
+		margin-left: 0;
+	}
 	.straw-intro{
 		padding: 15px;
 	}
@@ -536,8 +546,7 @@
     	position: static;
 		width: 100%;
 		max-width: 280px;
-		margin-left: auto;
-		margin-right: auto;
+		margin-left: 17px;
 		margin-top: 40px;
 		top: 100%;
 		transform: initial;
