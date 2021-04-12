@@ -545,9 +545,8 @@ function misha_remove_my_account_links( $menu_links ){
     unset( $menu_links['edit-account'] ); // Remove Account details tab
     unset( $menu_links['customer-logout'] ); // Remove Logout link
 
-    $menu_links['orders'] = 'Bestellingen';
-    $menu_links['winkelmandje'] = 'Winkelmandje';
-    $menu_links['edit-account'] = 'ACCOUNT info';
+    $menu_links['orders'] = 'Bestelling';
+    $menu_links['edit-account'] = 'Account info';
     $menu_links['customer-logout'] = 'LOGOUT';
     return $menu_links;
  
