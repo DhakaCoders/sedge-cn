@@ -9,23 +9,25 @@
 .page-entry-hdr{
 	padding-bottom: 55px;
 }
-.page-entry-hdr a.fl-blue-btn{
+.page-entry-hdr .fl-blue-btn{
 	font-size: 48px;
 	line-height: 1;
-	width: 318px;
-	height: 68px;
+	width: auto;
+	height: auto;
 	float: left;
-	background: #71867f;
+	background: #71867f!important;
 	border-radius: 0;
-	border-color: #71867f;
-	padding-top: 4px;
+	border-color: #71867f!important;
+	padding: 10px 45px;
 	letter-spacing: -0.02em;
     text-transform: uppercase;
+    margin: 0;
+    color: #FFFFFF!important;
 }
-.page-entry-hdr a.fl-blue-btn:hover{
+/*.page-entry-hdr a.fl-blue-btn:hover{
 	color:#71867f;
 	background: transparent;  
-}
+}*/
 .contact-form-sec-wrp {
     padding-bottom: 85px;
 }

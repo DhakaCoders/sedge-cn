@@ -550,42 +550,7 @@ function misha_remove_my_account_links( $menu_links ){
     $menu_links['customer-logout'] = 'LOGOUT';
     return $menu_links;
  
-}
-
-
-/**
-    Set gift card category
-*/
-function assign_gift_card_cat(){
-    $gift_cat = array('geschenken');
-    if( !empty($gift_cat) )
-        return $gift_cat;
-    else
-        return false;
-}
-
-/**
- * Exclude products from a particular category on the shop page
- */
-function custom_pre_get_posts_query( $q ) {
-    if ( ! $q->is_main_query() ) return;
-    if ( ! $q->is_post_type_archive() ) return;
-
-    if ( ! is_admin() && is_shop() && assign_gift_card_cat() ) {
-        $tax_query = (array) $q->get( 'tax_query' );
-
-        $tax_query[] = array(
-               'taxonomy' => 'product_cat',
-               'field' => 'slug',
-               'terms' => assign_gift_card_cat(), // Don't display products in the clothing category on the shop page.
-               'operator' => 'NOT IN'
-        );
-
-
-        $q->set( 'tax_query', $tax_query );
-    }
-}
-add_action( 'woocommerce_product_query', 'custom_pre_get_posts_query' );  
+} 
 
 /**
     Myaccount body class
@@ -593,12 +558,10 @@ add_action( 'woocommerce_product_query', 'custom_pre_get_posts_query' );
 add_filter( 'body_class', 'cbv_wc_custom_class' );
 function cbv_wc_custom_class( $classes ) {
     global $woocommerce;
-    if( strpos($_SERVER['REQUEST_URI'], "winkelmandje") !== false && is_account_page() && is_user_logged_in()){
-        $classes[] = 'loggedin-winkelmandje-crtl';
-    }else{
-        if( is_account_page() && is_user_logged_in() && (!is_wc_endpoint_url( 'orders' ) ||  is_wc_endpoint_url( 'edit-account' ))) {
-            $classes[] = 'loggedin-deshboard-crtl';
-        }
+    if( is_account_page() && is_user_logged_in() && is_wc_endpoint_url( 'orders' )) {
+            $classes[] = 'loggedin-order-crtl';
+    }elseif( is_account_page() && is_user_logged_in() && is_wc_endpoint_url( 'edit-account' ) ){
+        $classes[]='loggedin-editaccount-crtl';
     }
     if( is_cart() && WC()->cart->cart_contents_count == 0){
         $classes[]='empty-cart';
