@@ -120,33 +120,33 @@ body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccou
     color:#fff;
     border-radius:4px;
 }
-body.woocommerce-account .woocommerce-MyAccount-content .deshboard-inner{
+.deshboard-inner{
     background: #71867E;
     padding: 45px 30px 30px 32px;
 }
-body.woocommerce-account .service-text h3{
+.service-text h3{
     font-size: 18px;
     color: #fff;
     font-weight:600;
 }
 
-body.woocommerce-account .service-contact .service-lists{
+.service-contact .service-lists{
     display: flex;
 }
-body.woocommerce-account .service-contact .service-text p{
+.service-contact .service-text p{
     color: #fff;
     font-size: 16px;
 }
-body.woocommerce-account .service-contact .service-text a{
+.service-contact .service-text a{
     text-decoration: underline;
     color: #fff;
     font-size: 16px;
 }
-body.woocommerce-account .service-lists .service-list{
+.service-lists .service-list{
     width: 50%;
     display: flex;
 }
-body.woocommerce-account .service-contact h2{
+.service-contact h2{
     font-size: 20px;
     color: #fff;
     font-weight: 600;
