@@ -168,7 +168,7 @@
 	height: 2px;
 	background-color: #869791;
 	top: 100%;
-	left: -10px;
+	left: 0;
 }
 .prdt-des-logo a{
 	display: inline-block;
@@ -178,7 +178,7 @@
 	width: 100%;
 }
 .prdt-des ul {
-	margin: 0 -22px 80px;
+	margin: 0 -12px 80px;
 }
 .prdt-des ul li{
 	font-weight: 600;
@@ -275,17 +275,17 @@
 		padding-right: 33px;
 	}
 	.prdt-catg-des-bg{
-    	padding-top: 55px;
-    	padding-bottom: 55px;
-    	padding-left: 60px;
-    	padding-right: 40px;
+    	padding-top: 50px;
+    	padding-bottom: 50px;
+    	padding-left: 50px;
+    	padding-right: 30px;
 	}
 	.prdt-des-logo{
-		padding-bottom: 65px;
-    	margin-bottom: 80px;
+		padding-bottom: 60px;
+    	margin-bottom: 70px;
 	}
 	.prdt-des ul{
-		margin: 0 -22px 90px;
+		margin: 0 -12px 80px;
 	}
 	.prdt-des ul li{
 		padding: 0 17px 11px;
@@ -299,6 +299,11 @@
 @media (max-width: 1399px) {
 	.straw-into-cntrl{
 		margin-left: 63px;
+	}
+	.prdt-catg-des-bg:after{
+		width: 60px;
+		right: -30px;
+		top: 14.5%;
 	}
 	.straw-intro-bg{
 		padding-top: 190px;
@@ -316,7 +321,7 @@
 		margin-top: 31px;
 	}
 	.prdt-item{
-		padding: 57px 0;
+		padding: 56px 0;
 	}
 	.prdt-fea-img{
 		max-width: 300px;
@@ -328,17 +333,17 @@
 		padding-right: 40px;
 	}
 	.prdt-catg-des-bg {
-	    padding-top: 43px;
-	    padding-bottom: 50px;
-	    padding-left: 60px;
+	    padding-top: 40px;
+	    padding-bottom: 40px;
+	    padding-left: 45px;
 	    padding-right: 40px;
 	}
 	.prdt-des-logo {
-	    padding-bottom: 55px;
-	    margin-bottom: 65px;
+	    padding-bottom: 50px;
+	    margin-bottom: 60px;
 	}
 	.prdt-des ul {
-    	margin: 0 -22px 58px;
+    	margin: 0 -12px 40px;
 	}
 	.notice {
     padding-top: 50px;
@@ -348,8 +353,7 @@
 		font-size: 14px;
 	}
 	.prdt-des-logo:after{
-		width: 430px;
-		left: -8px;
+		width: 415px;
 	}
 }
 
@@ -358,6 +362,9 @@
 }
 
 @media (max-width: 1199px) {
+	.straw-into-cntrl{
+		margin-left: 23px;
+	}
 	.straw-intro-bg{
 		padding-top: 180px;
 		padding-bottom: 200px;
@@ -389,31 +396,30 @@
 		padding-left: 30px;
 	}
 	.prdt-catg-des-bg {
-	    padding-top: 30px;
-	    padding-bottom: 30px;
-	    padding-left: 50px;
-	    padding-right: 23px;
+	    padding-top: 40px;
+	    padding-bottom: 40px;
+	    padding-left: 25px;
+	    padding-right: 15px;
 	}
 	.prdt-catg-des-bg:after{
 		right: -15px;
-		width: 70px;
 	}
 	.prdt-des-logo {
-    	padding-bottom: 40px;
-    	margin-bottom: 45px;
+    	padding-bottom: 30px;
+    	margin-bottom: 35px;
 	}
 	.prdt-des ul {
-    	margin: 0 -22px 48px;
+    	margin: 0 -12px 31px;
 	}
 	.prdt-des ul li{
 		padding: 0 15px 11px;
 	}
 	.notice {
-    	padding-top: 40px;
-    	padding-bottom: 30px;
+    	padding-top: 30px;
+    	padding-bottom: 23px;
 	}
 	.prdt-des-logo:after{
-    	width: 385px;
+    	width: 360px;
 	}
 }
 
@@ -474,7 +480,7 @@
 		padding-left: 0;
 		padding: 15px 15px;
 		background: #f9f9f9;
-		margin: 0 -15px;
+		margin: 0 -3px;
 	}
 	.prdt-catg-des-bg{
 		margin-left: initial;
