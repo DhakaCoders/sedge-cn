@@ -18,7 +18,7 @@
 .checkout-progress-bar{
 	position: absolute;
 	content: "";
-	background: #ECE9E9;
+	background: #B3192A;
 	border-radius: 1px;
 	height: 4px;
 	left: 10px;
@@ -66,12 +66,39 @@
 }
 .chckout-prgrs-number{
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 800;
-	font-size: 14px;
-	line-height: 1;
-	color: #D4D3D4;
-	margin-bottom: 18px;
-	display: block;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 18px;
+    display: block;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    height: 15px;
+    width: 15px;
+    margin-left: auto; 
+    margin-right: auto; 
+    transform: rotate(-45deg);
+}
+.chckout-prgrs-col.active .chckout-prgrs-number:after{
+    content: '';
+    height: 20px;
+    width: 6px;
+    background: #faf5ef;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 14px;
+    left: -13px;
+}
+.chckout-prgrs-col-1 .chckout-prgrs-number{
+    margin-right: auto!important;
+    margin-left: 5%;
+}
+.chckout-prgrs-col-3 .chckout-prgrs-number {
+    margin-left: auto;
+    margin-right: -2px;
+}
+.chckout-prgrs-col-3 .chckout-prgrs-number:after {
+    top: 19px!important;
 }
 .chckout-prgrs-title{
 	font-family: 'Bitter', serif;
@@ -85,7 +112,7 @@
 	text-align: center;
 }
 .chckout-prgrs-col.active .chckout-prgrs-number{
-	color: #8CCC0C;
+	border-bottom-color:#71867E;
 }
 .checkout-page-title .checkoutpt-left{
     float: left;
