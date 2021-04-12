@@ -124,9 +124,8 @@ body.woocommerce-edit-account .innerpage-con-wrap .woocommerce-account-grds-cntl
 body.woocommerce-orders .innerpage-con-wrap .woocommerce-account-grds-cntlr{
     align-items: flex-start;
 }
-body.woocommerce-edit-account .innerpage-con-wrap .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
-    padding-top:13px;
-    padding-right:20px;
+body.woocommerce-edit-account .innerpage-con-wrap .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation {
+    display: none;
 }
 body.woocommerce-edit-account .innerpage-con-wrap,
 body.woocommerce-orders .innerpage-con-wrap{
@@ -717,7 +716,6 @@ body.woocommerce-checkout .woocommerce-shipping-fields .selection .select2-selec
     width: 100%;
     height: 48px!important;
     border: 1px solid #F2EDE9!important;
-    border-radius: 6px!important;
     color: #9EA5AB;
     padding: 5px 18px 5px;
     font-size: 14px;
@@ -1182,6 +1180,12 @@ body.woocommerce-checkout .billing-subtitle h3{
     margin-bottom: 32px;
 
 }
+.woocommerce-checkout input[type=radio]{
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 2px;
+}
 /*body.woocommerce-checkout .woocommerce-additional-fields{
     display: none;
 }*/
@@ -1561,8 +1565,17 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.woocommerce-checkout .custom-checkout-order-review table tr.order-total td {
         padding-top: 20px!important;
     }
-    body.woocommerce-checkout .custom-checkout-order-review button span{
+    body.woocommerce-checkout .custom-checkout-order-review button span, 
+    body.woocommerce-checkout .payment-method-crtl .custom-checkout-btn button[type=submit] span{
         font-size:13px;
+    }
+    body.woocommerce-checkout .woocommerce-billing-fields > h3, 
+    body.woocommerce-checkout .woocommerce-additional-fields.extra-info h3, 
+    body.woocommerce-checkout .woocommerce-checkout-review-order h3{
+        margin-bottom:20px;
+    }
+    body.woocommerce-checkout .payment-method-crtl .woocommerce-additional-fields.extra-info {
+        padding-top: 15px;
     }
 }
 @media(max-width: 768px){
@@ -1654,6 +1667,9 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper #billing_company_field, 
     body.woocommerce-checkout .woocommerce-shipping-fields .form-row-first{
         padding-right:0px;
+    }
+    body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper #billing_first_name_field {
+        margin-bottom: 5px;
     }
 
     body.woocommerce-account .woocommerce form .show-password-input, 
@@ -1994,15 +2010,18 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         display: none;
     }
     body.woocommerce-checkout .checkout-terms{
-        padding-top:26px;
+        display: none;
+    }
+    body.woocommerce-checkout .custom-checkout-order-review table.shop_table {
+        margin-bottom: 13px;
     }
     body.woocommerce-checkout .custom-checkout-order-review table tr.order-total th, 
     body.woocommerce-checkout .custom-checkout-order-review table tr.order-total td{
         padding-top: 20px!important;
     }
-    body.woocommerce-checkout .custom-checkout-order-review table td, 
-    body.woocommerce-checkout .custom-checkout-order-review table th{
-        padding: 8px 0px;
+   body.woocommerce-checkout .custom-checkout-order-review table td, 
+   body.woocommerce-checkout .custom-checkout-order-review table th{
+        padding: 14px 0px;
     }
     body.woocommerce-checkout .custom-checkout-order-review h3{
         border-bottom: 1px solid #F1E8E1;
@@ -2206,6 +2225,24 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     }
     .cart-is-emtpy strong{
         margin-top: 35px;
+    }
+    /* ----------- check out page -----------*/
+    .woocommerce form .form-row label,
+    body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .selection .select2-selection{
+        font-size: 12px;
+    }
+    body.woocommerce-checkout .custom-checkout-order-review button span, 
+    body.woocommerce-checkout .payment-method-crtl .custom-checkout-btn button[type=submit] span{
+        font-size: 11px;
+    }
+    body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .woocommerce-input-wrapper textarea{
+        min-height: 240px;
+    }
+    body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .form-row{
+        margin-bottom: 27px;
+    }
+    body.woocommerce-checkout .woocommerce-additional-fields.extra-info h3{
+        margin-bottom:27px;
     }
     
 }
