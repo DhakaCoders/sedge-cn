@@ -40,7 +40,6 @@ if( !function_exists('cbv_theme_setup') ){
             'cbv_cat_menu' => __( 'Category Menu', THEME_NAME ),
             'cbv_fta_menu' => __( 'Footer Menu 1', THEME_NAME ),
             'cbv_ftb_menu' => __( 'Footer Menu 2', THEME_NAME ),
-            'cbv_ftc_menu' => __( 'Footer Menu 3', THEME_NAME ),
             'cbv_copyright_menu' => __( 'Copyright Menu', THEME_NAME ),
         ) );
 
