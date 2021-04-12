@@ -14,7 +14,9 @@ a, a:hover, a:focus, button:hover, button:focus{
 	text-decoration: none;
 	outline: 0;
 }
-
+dl, dd{
+	margin-bottom: 0;
+}
 body {
     background: #faf5ef;
     color: #78797B;
