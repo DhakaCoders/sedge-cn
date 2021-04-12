@@ -89,6 +89,13 @@ pagination
     justify-content: center;
     align-items: center; */
 }
+.fl-pagi-cntlr ul li:first-child a, .fl-pagi-cntlr ul li:last-child a{
+	margin-top: -7px;
+}
+.fl-pagi-cntlr ul li:first-child a, .fl-pagi-cntlr ul li:last-child a,
+.fl-pagi-cntlr ul li:first-child a:hover, .fl-pagi-cntlr ul li:last-child a:hover{
+	border-bottom: none!important;
+}
 
 /*responsive*/
 @media(max-width: 1599px){
@@ -143,6 +150,12 @@ pagination
 	.fl-pagi-cntlr{
 		padding-bottom: 29px;
 	}
+	.fl-pagi-cntlr ul{
+		margin: 0 -20px;
+	}
+	.fl-pagi-cntlr ul li{
+		padding: 0 20px;
+	}
 }
 
 @media(max-width: 575px){
@@ -154,5 +167,11 @@ pagination
 	}
 	.hm-banner-bg{
 		top: 100px;
+	}
+	.fl-pagi-cntlr ul{
+		margin: 0 -15px;
+	}
+	.fl-pagi-cntlr ul li{
+		padding: 0 15px;
 	}
 }

@@ -5,8 +5,8 @@
      margin: 0 -12px;
 }
 .fl-products-cntlr ul.products > li{
-   width: 25%;
-   padding: 0 12px 38px;
+   width: 25%!important;
+   padding: 0 12px 38px!important;
    margin: 0!important; 
 }
 .fl-product-grd{
@@ -164,10 +164,10 @@ body.home span.onsale, body.post-type-archive span.onsale{
         margin: 0 -10px;
     }
     .fl-products-cntlr ul.products > li{
-        padding: 0 10px 34px;
+        padding: 0 10px 34px!important;
     }
     .fl-pro-grd-des{
-        padding: 25px 24px 19px 24px;
+        padding: 25px 24px 19px 24px!important;
     }
     .fl-pro-grd-btn{
         padding-left: 24px;
@@ -179,10 +179,10 @@ body.home span.onsale, body.post-type-archive span.onsale{
         font-size: 25px;
     }
     .fl-products-cntlr ul.products > li{
-        padding: 0 10px 30px;
+        padding: 0 10px 30px!important;
     } 
     .fl-pro-grd-des{
-        padding: 20px 20px 17px 20px;
+        padding: 20px 20px 17px 20px!important;
     }
     .fl-pro-grd-btn{
         padding-left: 20px;
@@ -195,11 +195,11 @@ body.home span.onsale, body.post-type-archive span.onsale{
 
 @media(max-width: 1199px){
     .fl-products-cntlr ul.products > li{
-        width: 33.3333%;
-        padding: 0 10px 25px;
+        width: 33.3333%!important;
+        padding: 0 10px 25px!important;
     }
     .fl-pro-grd-des{
-        padding: 15px 16px 15px 16px;
+        padding: 15px 16px 15px 16px!important;
     }
     .fl-pro-grd-btn{
         padding-left: 16px;
@@ -214,10 +214,10 @@ body.home span.onsale, body.post-type-archive span.onsale{
         margin: 0 -8px;
     }
     .fl-products-cntlr ul.products > li{
-        padding: 0 8px 20px;
+        padding: 0 8px 20px!important;
     }
     .fl-pro-grd-des{
-        padding: 12px 10px 13px 10px;
+        padding: 12px 10px 13px 10px!important;
     }
     .fl-pro-grd-btn{
         padding-left: 10px;
@@ -234,7 +234,7 @@ body.home span.onsale, body.post-type-archive span.onsale{
         padding-bottom: 20px;
     }
     .fl-products-cntlr ul.products > li{
-        padding: 0 6px 16px;
+        padding: 0 6px 16px!important;
     }
     .fl-pro-grd-des{
         padding: 9px 7px 13px 7px!important;
@@ -262,7 +262,7 @@ body.home span.onsale, body.post-type-archive span.onsale{
 
 @media(max-width: 639px){
     .fl-products-cntlr ul.products > li{
-        width: 50%;
+        width: 50%!important;
     }
     .fl-pro-grd-des{
         padding: 9px 5px 13px 5px!important;
@@ -288,7 +288,7 @@ body.home span.onsale, body.post-type-archive span.onsale{
         margin: 0 -4px;
     }
     .fl-products-cntlr ul.products > li{
-        padding: 0 4px 12px;
+        padding: 0 4px 12px!important;
     }
     .fl-pro-grd-img{
         min-height: 200px;
