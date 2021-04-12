@@ -35,8 +35,10 @@ if( !function_exists('cbv_theme_setup') ){
         ) );
 
         register_nav_menus( array(
-            'cbv_main_menu' => __( 'Hoofdmenu', THEME_NAME ),
+            'cbv_main_menu1' => __( 'Hoofdmenu1', THEME_NAME ),
+            'cbv_main_menu2' => __( 'Hoofdmenu2', THEME_NAME ),
             'cbv_main_mbmenu' => __( 'Mobiel Menu', THEME_NAME ),
+            'cbv_copyright_mobile' => __( 'Copyright Mobiel Menu', THEME_NAME ),
             'cbv_cat_menu' => __( 'Category Menu', THEME_NAME ),
             'cbv_fta_menu' => __( 'Footer Menu 1', THEME_NAME ),
             'cbv_ftb_menu' => __( 'Footer Menu 2', THEME_NAME ),
