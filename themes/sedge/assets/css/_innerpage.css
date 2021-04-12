@@ -390,6 +390,16 @@ Gallery design
 	clear: left;
 }
 
+.fl-product-module .fl-pro-grd-title{
+	margin-bottom: 7px;
+	color: #71867E;
+	text-transform: uppercase;
+}
+
+.fl-product-module .product-lenth p{
+	margin-bottom: 18px;
+}
+
 
 
 
