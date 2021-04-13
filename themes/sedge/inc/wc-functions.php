@@ -248,7 +248,6 @@ function cbv_add_custom_info(){
         echo wpautop( $long_desc );
         echo '</div>';
     endif;
-get_template_part('templates/footer', 'top-form');
 }
 
 add_action( 'woocommerce_product_options_inventory_product_data', 'misha_adv_product_options');
