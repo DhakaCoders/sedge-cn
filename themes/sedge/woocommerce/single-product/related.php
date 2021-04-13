@@ -18,7 +18,6 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-
 if ( $related_products ) : ?>
 
 	<div class="related products related-pro-crtl">
