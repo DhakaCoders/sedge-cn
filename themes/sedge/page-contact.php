@@ -53,45 +53,6 @@ $thisID = get_the_ID();
               </div>
               <div class="wpforms-container">
                 <?php if(!empty($intro['shortcode'])) echo do_shortcode( $intro['shortcode'] ); ?>
-<!--                 <form class="wpforms-form needs-validation" novalidate>
-                  
-                  <div class="wpforms-field-container">
-                    
-                    <div class="wpforms-field XsNameField">
-                      <label class="wpforms-field-label">Voornaam</label>
-                      <input type="text" name="name" placeholder="Tom" required>
-                    </div>
-                    <div class="wpforms-field NameField">
-                      <label class="wpforms-field-label">Naam</label>
-                      <input type="text" name="name" placeholder="Temmerman" required>
-                    </div>
-
-                    <div class="wpforms-field wpforms-has-error FullWidthField">
-                      <label class="wpforms-field-label">Voornaam</label>
-                      <input type="text" name="text" placeholder="mathias2.conversalbe" required>
-                      <label class="wpforms-error"><img src="assets/images/error-msg-icon.svg"></label>
-                    </div>
-
-                    <div class="wpforms-field FullWidthField">
-                      <label class="wpforms-field-label">Telefoon</label>
-                      <input type="text" name="text" placeholder="0400 00 00 00" required>
-                    </div>
-
-                    <div class="wpforms-field wpforms-field-textarea">
-                      <label class="wpforms-field-label">Bericht</label>
-                      <textarea name="message" placeholder="Bericht"></textarea>
-                    </div>
-                  </div>
-
-                  <div class="wpforms-field-text">
-                    <p>Wij respecteren uw <a href="#"> privacy.</a> Jouw gegevens wor den altijd vertrouwelijk behandeld.</p>
-                  </div>
-
-                  <div class="wpforms-submit-container">
-                    <button type="submit" name="submit" class="wpforms-submit">VERZENDEN</button>
-                  </div>
-
-                </form> -->
               </div>
               <?php endif; ?>
             </div>
