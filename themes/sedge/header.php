@@ -96,33 +96,25 @@ $smedias = get_field('social_media', 'options');
             </div>
             <div class="hdr-rgt">
               <nav class="main-nav">
-                <ul class="clearfix reset-list">
-                  <li class="current-menu-item"><a href="#">Home</a></li>
-                  <li><a href="#">Over Sedge</a></li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Shop</a>
-                    <ul class="sub-menu" style="">
-                      <li><a href="#">sub menu</a></li>
-                      <li><a href="#">sub menu</a></li>
-                      <li><a href="#">sub menu</a></li>
-                      
-                    </ul>
-                  </li>
-                </ul>
+                <?php 
+                  $menuOptions1 = array( 
+                      'theme_location' => 'cbv_main_menu_1', 
+                      'menu_class' => 'clearfix reset-list',
+                      'container' => '',
+                      'container_class' => ''
+                    );
+                  wp_nav_menu( $menuOptions1 ); 
+                ?>
 
-                <ul class="clearfix reset-list">
-                  <li><a href="#">WHAT’s HAPPENING</a></li>
-                  <li class="menu-item-has-children">
-                    <a href="#">AANMELDEN</a>
-                    <ul class="sub-menu" style="">
-                      <li><a href="#">sub menu</a></li>
-                      <li><a href="#">sub menu</a></li>
-                      <li><a href="#">sub menu</a></li>
-                      
-                    </ul>
-                  </li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
+                <?php 
+                  $menuOptions2 = array( 
+                      'theme_location' => 'cbv_main_menu_2', 
+                      'menu_class' => 'clearfix reset-list',
+                      'container' => '',
+                      'container_class' => ''
+                    );
+                  wp_nav_menu( $menuOptions2 ); 
+                ?>
               </nav>
             </div>
             <div class="hambergar-cntlr show-md">
@@ -135,10 +127,10 @@ $smedias = get_field('social_media', 'options');
             <?php if(!empty($smedias)):  ?>
             <div class="xs-hdr-socials show-md">
               <?php foreach($smedias as $smedia): ?>
-              <ul class="reset-list">
+              <ul class="reset-list clearfix">
                 <li>
                   <a href="<?php echo $smedia['url']; ?>">
-                    <?php echo $smedia['icon']; ?><span><?php echo $smedia['title']; ?></span>
+                    <?php echo $smedia['icon']; ?>
                   </a>
                 </li>
               </ul>
@@ -150,6 +142,89 @@ $smedias = get_field('social_media', 'options');
       </div>
   </div>
 </header>
+
+
+<!-- xs mobile menu -->
+<div class="xs-mobile-menu-cntlr">
+  <div class="xs-mobile-menu">
+
+    <div class="xs-menu-hdr">
+      <div class="hambergar-cntlr show-md">
+        <div class="hambergar-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <?php if(!empty($smedias)):  ?>
+      <div class="xs-hdr-socials show-md">
+        <ul class="reset-list">
+          <?php foreach($smedias as $smedia): ?>
+          <li>
+            <a href="<?php echo $smedia['url']; ?>">
+              <?php echo $smedia['icon']; ?><span>
+            </a>
+          </li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
+      <?php endif; ?>
+
+      <div class="hdr-lft">
+        <?php if( !empty($logo_tag) ): ?>
+        <div class="logo">
+          <a href="<?php echo esc_url(home_url('/')); ?>">
+            <?php echo $logo_tag; ?>
+          </a>
+        </div>
+        <?php endif; ?>
+      </div>
+    </div>
+
+    <div class="xs-menu-cntlr">
+      <div class="xs-menu">
+        <nav class="main-nav">
+          <?php 
+            $menuOptions_mobiel = array( 
+                'theme_location' => 'cbv_main_mbmenu_mobiel', 
+                'menu_class' => 'clearfix reset-list',
+                'container' => '',
+                'container_class' => ''
+              );
+            wp_nav_menu( $menuOptions_mobiel ); 
+          ?>
+        </nav>
+      </div>
+    </div>
+
+    <div class="xs-mbl-footer">
+      <div class="xs-mbl-link">
+        <?php 
+            $menuOptions_mobiel_copyright = array( 
+                'theme_location' => 'cbv_copyright_mobiel', 
+                'menu_class' => 'clearfix reset-list',
+                'container' => '',
+                'container_class' => ''
+              );
+            wp_nav_menu( $menuOptions_mobiel_copyright ); 
+          ?>
+      </div>
+
+      <div class="xs-mbl-lan">
+        <ul class="reset-list">
+          <li class="active"><a href="#">Nl</a></li>
+          <li><a href="#">fr</a></li>
+          <li><a href="#">en</a></li>
+        </ul>
+      </div>
+      <div class="xs-mbl-btn">
+        <a class="fl-red-btn" href="#">Aanmelden</a>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
 <!-- fixed --> 
