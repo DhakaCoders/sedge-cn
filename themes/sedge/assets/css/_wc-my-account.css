@@ -145,13 +145,18 @@ body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccou
 .service-lists .service-list{
     width: 50%;
     display: flex;
+    padding-right: 30px;
 }
 .service-contact h2{
     font-size: 20px;
     color: #fff;
     font-weight: 600;
+    margin-bottom: 33px!important;
 }
-
+.service-list .icon i{
+    display: inline-block;
+    width: 68px;
+}
 
 
 
