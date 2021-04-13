@@ -203,13 +203,15 @@ if (!function_exists('add_custom_box_product_summary')) {
           woocommerce_template_single_add_to_cart();
         echo '</div>';
         echo '</div>';
-        $rating_count = intval($product->get_rating_count());
+        /*$rating_count = intval($product->get_rating_count());
         if ( $rating_count > 0 ) {
             echo '<div class="rating">';
             echo '<p>Beoordeling door klanten <span><strong>'.$product->get_average_rating().'</strong> van 5  -  '.$rating_count.' beoordelingen</span></p>';
             echo '</div>';
-        }
-
+        }*/
+        echo '<div class="rating">';
+            echo '<p>Beoordeling door klanten <span><strong>4.2</strong> van 5  - 3035 beoordelingen</span></p>';
+        echo '</div>';
         /*echo $rating_count = $product->get_rating_count();
         echo $review_count = $product->get_review_count();*/
     }
