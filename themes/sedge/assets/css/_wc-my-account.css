@@ -23,6 +23,7 @@ body.loggedin-deshboard-crtl .woocommerce-account-grds-cntlr{
 body.woocommerce-account .woocommerce-account-grds-cntlr .woocommerce-notices-wrapper{
     display: none;
 }
+
 body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li{
     padding:0;
     position:relative;
