@@ -32,6 +32,8 @@ $thisID = get_the_ID();
                 <?php 
                   if( !empty($intro['beschrijving']) ) echo wpautop( $intro['beschrijving'] );
                 ?>
+
+                <?php if( !empty($intro['beschrijving']) ): ?>
                 <div class="input-type-radio clearfix">
                   <ul class="reset-list clearfix">
                     <li class="wpforms-selected">
@@ -50,7 +52,8 @@ $thisID = get_the_ID();
                 </div>
               </div>
               <div class="wpforms-container">
-                <form class="wpforms-form needs-validation" novalidate>
+                <?php if(!empty($intro['shortcode'])) echo do_shortcode( $intro['shortcode'] ); ?>
+<!--                 <form class="wpforms-form needs-validation" novalidate>
                   
                   <div class="wpforms-field-container">
                     
@@ -78,7 +81,7 @@ $thisID = get_the_ID();
                       <label class="wpforms-field-label">Bericht</label>
                       <textarea name="message" placeholder="Bericht"></textarea>
                     </div>
-                  </div><!-- end of .wpforms-field-container-->
+                  </div>
 
                   <div class="wpforms-field-text">
                     <p>Wij respecteren uw <a href="#"> privacy.</a> Jouw gegevens wor den altijd vertrouwelijk behandeld.</p>
@@ -88,8 +91,9 @@ $thisID = get_the_ID();
                     <button type="submit" name="submit" class="wpforms-submit">VERZENDEN</button>
                   </div>
 
-                </form>
+                </form> -->
               </div>
+              <?php endif; ?>
             </div>
           </div>
           <?php 
