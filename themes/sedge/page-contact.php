@@ -13,7 +13,7 @@ $thisID = get_the_ID();
     <div class="row">
       <div class="col-md-12">
         <div class="page-entry-hdr clearfix">
-          <a class="fl-blue-btn" href="#">CONTACT</a>
+          <h1 class="fl-blue-btn">CONTACT</h1>
         </div>
       </div>
     </div>
@@ -28,8 +28,10 @@ $thisID = get_the_ID();
       <div class="contact-form-lft">
         <div class="contact-form-wrp clearfix">
           <div class="page-entry-header">
-            <h2 class="fl-h2">Lorem ipsum dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque non nulla in lacus, a, nisl risus pulvinar id. Quis praesent at purus, id justo, enim tortor porttitor sit.</p>
+            <h2 class="fl-h2"><?php echo $page_title; ?></h2>
+            <?php 
+              if( !empty($intro['beschrijving']) ) echo wpautop( $intro['beschrijving'] );
+            ?>
             <div class="input-type-radio clearfix">
               <ul class="reset-list clearfix">
                 <li class="wpforms-selected">
