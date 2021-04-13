@@ -105,7 +105,7 @@ $thisID = get_the_ID();
               <div class="contact-form-info">
                 <h6 class="fl-h6 contact-form-info-title"><?php _e( 'Contact gegevens', THEME_NAME ); ?></h6>
                 <ul class="reset-list clearfix">
-                  <?php ( !empty($address) ) : ?>
+                  <?php if( !empty($address) ) : ?>
                   <li>
                     <a href="<?php echo  $gmaplink; ?>" target="_blank">
                       <i><svg class="map-marker-icon-svg" width="24" height="29" viewBox="0 0 24 29" fill="#78797B">
