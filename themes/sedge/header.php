@@ -43,6 +43,10 @@
       <symbol id="email-icon-svg" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
       <path d="M27.311 4H4.689C3.71094 4.00106 2.77324 4.39006 2.08165 5.08165C1.39006 5.77324 1.00106 6.71094 1 7.689V24.311C1.00106 25.2891 1.39006 26.2268 2.08165 26.9183C2.77324 27.6099 3.71094 27.9989 4.689 28H27.311C28.2891 27.9989 29.2268 27.6099 29.9183 26.9183C30.6099 26.2268 30.9989 25.2891 31 24.311V7.689C30.9989 6.71094 30.6099 5.77324 29.9183 5.08165C29.2268 4.39006 28.2891 4.00106 27.311 4ZM4.689 6H27.311C27.7588 6.00053 28.1881 6.17865 28.5047 6.49528C28.8214 6.81192 28.9995 7.24121 29 7.689V8.454L16 16.811L3 8.454V7.689C3.00053 7.24121 3.17865 6.81192 3.49528 6.49528C3.81192 6.17865 4.24121 6.00053 4.689 6ZM27.311 26H4.689C4.24121 25.9995 3.81192 25.8214 3.49528 25.5047C3.17865 25.1881 3.00053 24.7588 3 24.311V10.832L15.459 18.841C15.6203 18.9448 15.8082 19 16 19C16.1918 19 16.3797 18.9448 16.541 18.841L29 10.832V24.311C28.9995 24.7588 28.8214 25.1881 28.5047 25.5047C28.1881 25.8214 27.7588 25.9995 27.311 26Z"/>
       </symbol>
+      <symbol id="home-btn-arrow" width="8" height="12" viewBox="0 0 8 12" 
+        xmlns="ttp://www.w3.org/2000/svg">
+        <path d="M0.940948 0.000206632C0.757525 -0.00369422 0.577403 0.0477192 0.425624 0.147378C0.273844 0.247037 0.157947 0.390016 0.0940481 0.556308C0.030149 0.722601 0.021422 0.903987 0.0690802 1.0753C0.116738 1.24661 0.218413 1.39923 0.35997 1.51209L5.76116 5.9862L0.35997 10.4587C0.262048 10.5283 0.180041 10.6167 0.119084 10.7183C0.0581275 10.82 0.0195343 10.9327 0.00572114 11.0495C-0.00809202 11.1662 0.00317275 11.2845 0.0388099 11.3968C0.074447 11.5091 0.133688 11.6132 0.212825 11.7024C0.291962 11.7915 0.389288 11.8639 0.49871 11.915C0.608131 11.9661 0.727291 11.9948 0.848725 11.9994C0.97016 12.0039 1.09125 11.9842 1.20442 11.9414C1.31759 11.8986 1.4204 11.8336 1.50641 11.7506L7.69028 6.63464C7.78739 6.55451 7.86537 6.45505 7.91884 6.34296C7.97231 6.23086 8 6.10886 8 5.98541C8 5.86197 7.97231 5.73996 7.91884 5.62787C7.86537 5.51578 7.78739 5.41622 7.69028 5.33609L1.50641 0.215205C1.35019 0.0810394 1.14983 0.00476303 0.940948 9.74702e-06V0.000206632Z"/>
+      </symbol>
   </svg>
 
 
@@ -96,33 +100,25 @@ $smedias = get_field('social_media', 'options');
             </div>
             <div class="hdr-rgt">
               <nav class="main-nav">
-                <ul class="clearfix reset-list">
-                  <li class="current-menu-item"><a href="#">Home</a></li>
-                  <li><a href="#">Over Sedge</a></li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Shop</a>
-                    <ul class="sub-menu" style="">
-                      <li><a href="#">sub menu</a></li>
-                      <li><a href="#">sub menu</a></li>
-                      <li><a href="#">sub menu</a></li>
-                      
-                    </ul>
-                  </li>
-                </ul>
+                <?php 
+                  $menuOptions1 = array( 
+                      'theme_location' => 'cbv_main_menu_1', 
+                      'menu_class' => 'clearfix reset-list',
+                      'container' => '',
+                      'container_class' => ''
+                    );
+                  wp_nav_menu( $menuOptions1 ); 
+                ?>
 
-                <ul class="clearfix reset-list">
-                  <li><a href="#">WHAT’s HAPPENING</a></li>
-                  <li class="menu-item-has-children">
-                    <a href="#">AANMELDEN</a>
-                    <ul class="sub-menu" style="">
-                      <li><a href="#">sub menu</a></li>
-                      <li><a href="#">sub menu</a></li>
-                      <li><a href="#">sub menu</a></li>
-                      
-                    </ul>
-                  </li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
+                <?php 
+                  $menuOptions2 = array( 
+                      'theme_location' => 'cbv_main_menu_2', 
+                      'menu_class' => 'clearfix reset-list',
+                      'container' => '',
+                      'container_class' => ''
+                    );
+                  wp_nav_menu( $menuOptions2 ); 
+                ?>
               </nav>
             </div>
             <div class="hambergar-cntlr show-md">
@@ -135,10 +131,10 @@ $smedias = get_field('social_media', 'options');
             <?php if(!empty($smedias)):  ?>
             <div class="xs-hdr-socials show-md">
               <?php foreach($smedias as $smedia): ?>
-              <ul class="reset-list">
+              <ul class="reset-list clearfix">
                 <li>
                   <a href="<?php echo $smedia['url']; ?>">
-                    <?php echo $smedia['icon']; ?><span><?php echo $smedia['title']; ?></span>
+                    <?php echo $smedia['icon']; ?>
                   </a>
                 </li>
               </ul>
@@ -150,6 +146,89 @@ $smedias = get_field('social_media', 'options');
       </div>
   </div>
 </header>
+
+
+<!-- xs mobile menu -->
+<div class="xs-mobile-menu-cntlr">
+  <div class="xs-mobile-menu">
+
+    <div class="xs-menu-hdr">
+      <div class="hambergar-cntlr show-md">
+        <div class="hambergar-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <?php if(!empty($smedias)):  ?>
+      <div class="xs-hdr-socials show-md">
+        <ul class="reset-list">
+          <?php foreach($smedias as $smedia): ?>
+          <li>
+            <a href="<?php echo $smedia['url']; ?>">
+              <?php echo $smedia['icon']; ?><span>
+            </a>
+          </li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
+      <?php endif; ?>
+
+      <div class="hdr-lft">
+        <?php if( !empty($logo_tag) ): ?>
+        <div class="logo">
+          <a href="<?php echo esc_url(home_url('/')); ?>">
+            <?php echo $logo_tag; ?>
+          </a>
+        </div>
+        <?php endif; ?>
+      </div>
+    </div>
+
+    <div class="xs-menu-cntlr">
+      <div class="xs-menu">
+        <nav class="main-nav">
+          <?php 
+            $menuOptions_mobiel = array( 
+                'theme_location' => 'cbv_main_mbmenu_mobiel', 
+                'menu_class' => 'clearfix reset-list',
+                'container' => '',
+                'container_class' => ''
+              );
+            wp_nav_menu( $menuOptions_mobiel ); 
+          ?>
+        </nav>
+      </div>
+    </div>
+
+    <div class="xs-mbl-footer">
+      <div class="xs-mbl-link">
+        <?php 
+            $menuOptions_mobiel_copyright = array( 
+                'theme_location' => 'cbv_copyright_mobiel', 
+                'menu_class' => 'clearfix reset-list',
+                'container' => '',
+                'container_class' => ''
+              );
+            wp_nav_menu( $menuOptions_mobiel_copyright ); 
+          ?>
+      </div>
+
+      <div class="xs-mbl-lan">
+        <ul class="reset-list">
+          <li class="active"><a href="#">Nl</a></li>
+          <li><a href="#">fr</a></li>
+          <li><a href="#">en</a></li>
+        </ul>
+      </div>
+      <div class="xs-mbl-btn">
+        <a class="fl-red-btn" href="#">Aanmelden</a>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
 <!-- fixed --> 

@@ -145,13 +145,18 @@ body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccou
 .service-lists .service-list{
     width: 50%;
     display: flex;
+    padding-right: 30px;
 }
 .service-contact h2{
     font-size: 20px;
     color: #fff;
     font-weight: 600;
+    margin-bottom: 33px!important;
 }
-
+.service-list .icon i{
+    display: inline-block;
+    width: 68px;
+}
 
 
 
@@ -169,11 +174,10 @@ body.woocommerce-orders .innerpage-con-wrap{
     width: 100%;
 }
 body.woocommerce-edit-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
-    max-width:34.02%;
+    display:none;
 }
-
-body.woocommerce-edit-account .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content{
-    max-width:65.98%;
+body.woocommerce-edit-account .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content {
+    width: 100%;
 }
 body.woocommerce-edit-account .account-page-title h1,
 body.woocommerce-orders .account-page-title h1{
@@ -183,11 +187,14 @@ body.woocommerce-orders .account-page-title h1{
 
 /* -------------- back-button ----------------*/
 .back-to-dashboard-btn-cntlr a{
-    color: #78797B;
+    color: #fff;
     position: relative;
     padding-left: 20px;
     display: inline-block;
-    vertical-align: baseline;    
+    vertical-align: baseline;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1;    
 }
 .back-to-dashboard-btn-cntlr a:hover{
     color: #8dcc0c;
@@ -197,7 +204,13 @@ body.woocommerce-orders .account-page-title h1{
     left: -3px;
 }
 .back-to-dashboard-btn-cntlr{
-    margin-bottom:42px;
+    margin-bottom: 42px;
+    background: #71867E;
+    width: 300px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .back-to-dashboard-btn-cntlr a:after{
@@ -371,16 +384,17 @@ body.woocommerce-edit-account .woocommerce-account-grds-cntlr{
     margin-bottom:110px;
 }
 body.woocommerce-edit-account.woocommerce-account .woocommerce-EditAccountForm legend{
-    border-bottom: 1px solid #ece9e9;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #ECEEEF;
 }
 body.woocommerce-edit-account .woocommerce-EditAccountForm > p {
-    text-align: right;
+    text-align: left;
 }
 body.woocommerce-edit-account .woocommerce-EditAccountForm > p button[type="submit"] {
     padding-left: 15px!important;
     padding-right: 15px!important;
-    width: 350px;
+    width: 235px;
+    height: 50px;
 }
 .country_select {
     display: table;
