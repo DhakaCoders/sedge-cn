@@ -158,6 +158,9 @@ body.woocommerce-order-received .checkout-page-title{
 	width: 100%;
 	height: 100%;
 }
+.title-meta{
+	padding-left: 33px;
+}
 .title-meta .meta-title{
 	font-size: 18px;
 	color: #71867E;
@@ -172,7 +175,7 @@ body.woocommerce-order-received .checkout-page-title{
 	display: flex;
 	margin-bottom: 0;
 }
-.quantity{
+.body-list .quantity{
 	margin-left: auto;
 }
 .deshboard-inner{
@@ -182,6 +185,13 @@ body.woocommerce-order-received .checkout-page-title{
 .service-contact .srv-cont-title{
 	font-family: 'Sora', sans-serif!important;
 	margin-bottom: 33px;
+}
+.icon i{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.service-text{
+	padding-left: 62px;
 }
 /* order-products end */
 
