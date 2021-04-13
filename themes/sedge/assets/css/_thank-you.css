@@ -13,35 +13,52 @@ body.woocommerce-order-received .checkout-page-title .checkoutpt-right{
 	display: none
 }
 .thank-you-sec-cntlr{
-	max-width:740px;
-	margin:0 auto;
+/* 	max-width:740px;
+	margin:0 auto; */
 }
 .thnk-you-des{
-	text-align: center;
-	padding-bottom: 25px;
+	display: flex;
 }
-.thnk-you-des i img{
-	max-width:99px;
-	height: auto;
+.thnk-you-des-left{
+	width: 126px;
+	height: 126px;
 }
 .thnk-you-des i{
-	margin-bottom:31px;
 	display: inline-block;
 	vertical-align:baseline;
+	width: 100%;
+	height: 100%;
+}
+.thnk-you-des i img{
+	height: auto;
+}
+.thank-you-des-sub-title{
+	font-size: 18px;
+	font-family: 'Sora', sans-serif;
+	font-weight: 700;
+	color: #b41929;
+}
+.thank-you-des-title{
+	text-transform: uppercase;
+	color: #71867f;
 }
 .thnk-you-des a{
-	color: #8AA4E4;
-	font-size:20px;
-	font-weight:700;
-	font-family: Open Sans;
+	font-size:14px;
+	font-weight:300;
 	display: inline-block;
 	vertical-align: baseline;
-	line-height:14px;
-	line-height: 0.6;
-	margin-bottom:19px;
-}
-.thnk-you-des .thank-you-des-title{
+	line-height: 1.2;
 	margin-bottom:14px;
+}
+.thnk-you-des-rgt{
+	padding-left: 40px;
+}
+.thnk-you-des-rgt p{
+	font-weight: 300;
+	margin-bottom: 0;
+}
+.thnk-you-des .thank-you-des-title, .thank-you-des-sub-title{
+	margin-bottom:12px;
 }
 .thnk-you-social-des-cntlr{
 	
@@ -95,6 +112,80 @@ body.woocommerce-order-received .checkout-page-title .checkoutpt-right{
 body.woocommerce-order-received .checkout-page-title{
 	margin-bottom:15px;
 }
+
+/* order-products start */
+.order-products{
+	display: flex;
+}
+.orders-product-item{
+	background: #fffaf4;
+	padding: 53px 47px 67px 44px;
+}
+.order-head{
+	display: flex;
+	align-items: center;
+	padding-bottom: 26px;
+}	
+.order-head span h2.order-title{
+	font-size: 16px;
+	letter-spacing: -0.02em;
+	color: #71867E;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+.order-head span:last-of-type{
+	margin-left: auto;
+	font-size: 12px;
+}
+.order-body{
+	margin: -14px 0;
+	padding-right: 35px; 
+}
+.body-list{
+	display: flex;
+	padding: 14px 0;
+	align-items: center;
+}
+.image-title{
+	display: flex;
+	align-items: center;
+}
+.image-title i{
+	width: 119px;
+	height: 114px;
+}
+.image-title i img{
+	width: 100%;
+	height: 100%;
+}
+.title-meta .meta-title{
+	font-size: 18px;
+	color: #71867E;
+	letter-spacing: -0.02em;
+	margin-bottom: 18px;
+}
+.title-meta dl dd, .title-meta dl dt{
+	font-size: 12px;
+	line-height: 16px;
+}
+.title-meta dl{
+	display: flex;
+	margin-bottom: 0;
+}
+.quantity{
+	margin-left: auto;
+}
+.deshboard-inner{
+	margin-top: 30px;
+	padding: 44px 36px 44px 32px!important;
+}
+.service-contact .srv-cont-title{
+	font-family: 'Sora', sans-serif!important;
+	margin-bottom: 33px;
+}
+/* order-products end */
+
+
 @media(max-width:1199px){
 
 }
