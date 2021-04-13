@@ -1,0 +1,18 @@
+<<<<<<< HEAD
+2021-04-13T17:53:52+00:00 CRITICAL Uncaught RuntimeException: Unable to claim actions. Database error. in D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php:675
+Stack trace:
+#0 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php(599): ActionScheduler_DBStore->claim_actions(0, 25, NULL, Array, '')
+#1 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(153): ActionScheduler_DBStore->stake_claim(25)
+#2 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#3 D:\xampp\htdocs\project\2021\march\sedge\wp-includes\class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#4 D:\xampp\htdocs\project\2021\march\sedge\wp-includes\class-wp-hoo in D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php on line 675
+=======
+2021-04-13T13:57:40+00:00 CRITICAL syntax error, unexpected ':' in D:\xampp\htdocs\projects\2021\sedge\sedge-cn\themes\sedge\page-contact.php on line 108
+
+2021-04-13T13:58:29+00:00 CRITICAL syntax error, unexpected ':' in D:\xampp\htdocs\projects\2021\sedge\sedge-cn\themes\sedge\page-contact.php on line 108
+
+2021-04-13T13:59:51+00:00 CRITICAL syntax error, unexpected ':' in D:\xampp\htdocs\projects\2021\sedge\sedge-cn\themes\sedge\page-contact.php on line 108
+
+2021-04-13T14:01:44+00:00 CRITICAL syntax error, unexpected ':' in D:\xampp\htdocs\projects\2021\sedge\sedge-cn\themes\sedge\page-contact.php on line 108
+>>>>>>> e25829de2ca97b474b4311649dbf30b9a9284a2f
+
