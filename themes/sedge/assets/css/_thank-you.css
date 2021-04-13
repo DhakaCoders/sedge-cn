@@ -116,9 +116,11 @@ body.woocommerce-order-received .checkout-page-title{
 /* order-products start */
 .order-products{
 	display: flex;
+	padding: 76px 0 111px 0;
 }
 .orders-crtl{
-	padding: 76px 79px 111px 0'
+	padding: 5px 79px 0 0!important;
+
 }
 .orders-product-item{
 	background: #fffaf4;
@@ -248,8 +250,24 @@ body.woocommerce-order-received .checkout-page-title{
 .order-home-btn{
 	width: 332px;
 }
+svg.home-btn-arrow{
+	fill: #fff;
+}
 .order-home-btn:hover svg.home-btn-arrow{
 	fill: #6DBD98!important;
+}
+
+.shipping-order-title{
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+	color: #71867E;
+	margin-bottom: 48px;
+}
+.address-title{
+	font-size: 16px;
+	text-transform: capitalize;
+	margin-bottom: 36px;
 }
 /* order-products end */
 
