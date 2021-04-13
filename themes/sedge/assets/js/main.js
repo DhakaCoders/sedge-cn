@@ -264,6 +264,10 @@ if(windowWidth > 768){
   });
 }
 
+$('.wpforms-error').on('click', function(){
+  $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
+});
+
 
 
   /*start of Shariful*/
