@@ -228,6 +228,18 @@ google.maps.event.addDomListener(window, 'load', initialize);
           $(this).append('<div class="checkbox-custom"></div>')
   });
   $('.variations_form table.variations select#pa_diameter,.variations_form table.variations select#pa_aantal-stuks').addClass('selectpicker');
+
+  // accordion
+  if( $('.accordion-order-title').length ){
+      $( ".orders-crtl" ).first().find('.hh-accordion-title').addClass('hh-accordion-active');
+      $( ".hh-accordion-active").next().slideDown(300);
+    $('.accordion-order-title').click(function(){
+        $(this).next().slideToggle(300);
+        $(this).parents('li').siblings().find('.order-details').slideUp(300);
+        $(this).toggleClass('hh-accordion-active');
+        $(this).parents('li').siblings().find('.accordion-order-title').removeClass('hh-accordion-active');
+    });
+  }
   /*start of Sabbir*/
 
 
