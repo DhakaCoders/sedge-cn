@@ -473,12 +473,14 @@ body.post-type-archive span.onsale{
     right: initial!important;
 }
 body.single-product .main-img-crtl{
-	  display: flex;
-    max-width: 42%;
+	display: flex;
     width: 100%;
 }
 body.single-product .main-img-crtl .wc-product-gallery-thumb {
-    display: flex;
+   display: flex;
+    max-width: 42%;
+    width: 100%;
+    flex-direction: column;
 }
 
 body.single-product .wc-product-gallery-single {
