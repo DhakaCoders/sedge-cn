@@ -203,7 +203,6 @@ if (!function_exists('add_custom_box_product_summary')) {
           woocommerce_template_single_add_to_cart();
         echo '</div>';
         echo '</div>';
-        echo '<div>';
         $rating_count = intval($product->get_rating_count());
         if ( $rating_count > 0 ) {
             echo '<div class="rating">';
@@ -218,7 +217,7 @@ if (!function_exists('add_custom_box_product_summary')) {
 
 add_action('woocommerce_before_add_to_cart_quantity', 'cbv_start_div_single_price', 99);
 function cbv_start_div_single_price(){
-    echo '<div class="cartbtn-wrap clearfix"><strong>Aantal</strong><div class="cart-btn-qty">';
+    echo '<div class="cartbtn-wrap clearfix"><div class="cart-btn-qty">';
     echo '<div class="quantity qty"><span class="minus">-</span>';
 }
 add_action('woocommerce_after_add_to_cart_quantity', 'cbv_get_single_price');
