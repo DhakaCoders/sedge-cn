@@ -96,33 +96,25 @@ $smedias = get_field('social_media', 'options');
             </div>
             <div class="hdr-rgt">
               <nav class="main-nav">
-                <ul class="clearfix reset-list">
-                  <li class="current-menu-item"><a href="#">Home</a></li>
-                  <li><a href="#">Over Sedge</a></li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Shop</a>
-                    <ul class="sub-menu" style="">
-                      <li><a href="#">sub menu</a></li>
-                      <li><a href="#">sub menu</a></li>
-                      <li><a href="#">sub menu</a></li>
-                      
-                    </ul>
-                  </li>
-                </ul>
+                <?php 
+                  $menuOptions1 = array( 
+                      'theme_location' => 'cbv_main_menu_1', 
+                      'menu_class' => 'clearfix reset-list',
+                      'container' => '',
+                      'container_class' => ''
+                    );
+                  wp_nav_menu( $menuOptions1 ); 
+                ?>
 
-                <ul class="clearfix reset-list">
-                  <li><a href="#">WHAT’s HAPPENING</a></li>
-                  <li class="menu-item-has-children">
-                    <a href="#">AANMELDEN</a>
-                    <ul class="sub-menu" style="">
-                      <li><a href="#">sub menu</a></li>
-                      <li><a href="#">sub menu</a></li>
-                      <li><a href="#">sub menu</a></li>
-                      
-                    </ul>
-                  </li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
+                <?php 
+                  $menuOptions2 = array( 
+                      'theme_location' => 'cbv_main_menu_2', 
+                      'menu_class' => 'clearfix reset-list',
+                      'container' => '',
+                      'container_class' => ''
+                    );
+                  wp_nav_menu( $menuOptions2 ); 
+                ?>
               </nav>
             </div>
             <div class="hambergar-cntlr show-md">
