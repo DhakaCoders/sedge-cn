@@ -78,6 +78,7 @@
 	margin-bottom: 17px;
 	border-radius: 10px;
 	padding: 64px 0;
+	overflow: hidden;
 }
 
 .prdt-itm-titl{
@@ -91,6 +92,12 @@
 	max-width: 355px;
 	width: 100%;
 	padding-left: 30px;
+}
+.prdt-fea-img:hover, a.prdt-itm-titl:hover .prdt-fea-img img{
+	transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
 }
 .prdt-item:nth-child(3) .prdt-fea-img{
 	margin-left: -30px;
