@@ -42,3 +42,5 @@ Stack trace:
 #5 E:\host\htdocs\2021\04\sedge\wp-includes\shortcodes.php(343): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
 #6 [internal function]: do_shortc in E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\woocommerce\checkout\thankyou.php on line 174
 
+2021-04-14T17:25:28+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH) in E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\woocommerce\checkout\thankyou.php on line 221
+
