@@ -561,6 +561,8 @@ function cbv_wc_custom_class( $classes ) {
             $classes[] = 'loggedin-order-crtl';
     }elseif( is_account_page() && is_user_logged_in() && is_wc_endpoint_url( 'edit-account' ) ){
         $classes[]='loggedin-editaccount-crtl';
+    }elseif( strpos($_SERVER['REQUEST_URI'], "order-received") !== false && is_checkout()){
+        $classes[] = 'thankyou';
     }
     if( is_cart() && WC()->cart->cart_contents_count == 0){
         $classes[]='empty-cart';
@@ -657,16 +659,6 @@ function remove_postcode_validation( $fields ) {
     unset($fields['shipping']['shipping_postcode']['validate']);
     
     return $fields;
-}
-
-function formatted_shipping_address($order)
-{
-    return
-        $order->shipping_address_1 . ', ' . 
-        $order->shipping_address_2 . ' ' .
-        $order->shipping_city      . ', ' .
-        $order->shipping_state     . ' ' .
-        $order->shipping_postcode;
 }
 
 include_once(THEME_DIR .'/inc/wc-manage-fields.php');
