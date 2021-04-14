@@ -548,6 +548,9 @@ Inputtype Radio Css
     .contact-form-sec-wrp {
         padding-bottom: 0;
     }
+    .page-entry-hdr .fl-blue-btn{
+        margin-left: -15px;
+    }
 }
 
 @media(max-width: 575px){ 
