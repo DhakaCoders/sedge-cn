@@ -221,11 +221,10 @@ body.woocommerce-orders .account-page-title h1{
     top: 50%;
     transform: translateY(-50%);
     color: #ffffff;
-    margin-top: -1px;
     transition: all .5s;
     -ms-transition: all .5s;
     -webkit-transition: all .5s;
-    margin-top: -1px!important;
+    margin-top: -3px!important;
 }
 body.woocommerce-account .breadcrumb-sec{
     display:none;
@@ -1498,7 +1497,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
 
     }
     .back-to-dashboard-btn-cntlr a:after{
-        margin-top:0;
+       margin-top: -1px!important
     }
     body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .woocommerce-input-wrapper textarea {
         min-height: 200px;
