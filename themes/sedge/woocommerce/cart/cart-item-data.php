@@ -17,7 +17,6 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-var_dump($item_data);
 ?>
 <dl class="variation">
 	<?php foreach ( $item_data as $data ) : ?>

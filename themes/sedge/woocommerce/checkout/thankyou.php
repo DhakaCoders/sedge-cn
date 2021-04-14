@@ -171,12 +171,12 @@ defined( 'ABSPATH' ) || exit;
 		            </div>
 		            <div class="service-bottom">
 		              <ul class="reset-list">
-		                <li><a href="">Snel regelen in je account</a></li>
+		                <li><a href="<?php echo get_permalink(); ?>">Snel regelen in je account</a></li>
 		                <li><a href="">Heb je ons nodig?</a></li>
 		                <li><a href="">Contact</a></li>
 		              </ul>
 		            </div>
-		            <a class="fl-blue-btn order-home-btn" href=""><i><svg class="home-btn-arrow" width="8" height="12" viewBox="0 0 8 12"><use xlink:href="#home-btn-arrow"></use> </svg></i><span>Home</span></a>
+		            <a class="fl-blue-btn order-home-btn" href="<?php echo esc_url(home_url('/')); ?>"><i><svg class="home-btn-arrow" width="8" height="12" viewBox="0 0 8 12"><use xlink:href="#home-btn-arrow"></use> </svg></i><span>Home</span></a>
 		          </div>
 		          <div class="shipping-order-total">
 		            <div class="shipping-crtl">
@@ -214,12 +214,10 @@ defined( 'ABSPATH' ) || exit;
 		                      //wc_price($order->get_subtotal()); ?>
 		                      </td>
 		                    </tr>
-		                    <?php foreach ( $order->get_fees() as $fee ): ?>
 		                    <tr class="fee">
-		                      <th><?php echo esc_html( $fee->name ); ?></th>
-		                      <td><?php wc_cart_totals_fee_html( $fee ); ?></td>
+		                      <th>Verzending</th>
+		                      <td><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">€</span>99.00</bdi></span></td>
 		                    </tr>
-		                	<?php endforeach; ?>
 		                    <tr class="order-total">
 		                      <th>Totaal</th>
 		                      <td><?php echo $order->get_formatted_order_total(); ?></td>
