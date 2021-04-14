@@ -328,11 +328,11 @@ svg.home-btn-arrow{
 	background: #f2eadf;
 	top: -18px;
 }
-.woocommerce-Price-amount.amount bdi{
+.thankyou .woocommerce-Price-amount.amount bdi{
 	color: #78797b!important;
 	font-size: 14px!important;
 }
-.order-totaal .woocommerce-Price-amount.amount bdi{
+.thankyou .order-totaal .woocommerce-Price-amount.amount bdi{
 	color: #6dbd98!important;
 }
 .thnkY-social-link ul li a{
