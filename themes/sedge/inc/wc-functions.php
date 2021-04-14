@@ -23,7 +23,6 @@ function get_custom_wc_output_content_wrapper_end(){
   if(is_shop() OR is_product_category()){
     echo '</div></div></div></div></section>';
     get_template_part('templates/shop', 'bottom');
-    get_template_part('templates/footer', 'top-form');
   }
 
 }
