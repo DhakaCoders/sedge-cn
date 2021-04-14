@@ -104,6 +104,9 @@ function is_blog() {
 function is_cbv_wc() {
     return ( is_cart() || is_checkout() || is_account_page());
 }
+function is_cbv_title() {
+    return ( is_cart() || is_account_page());
+}
 function is_show_footer_form() {
     return ( is_cart() || is_shop() || is_product_category() || is_product_tag() || is_product());
 }
