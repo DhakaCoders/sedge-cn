@@ -561,6 +561,8 @@ function cbv_wc_custom_class( $classes ) {
             $classes[] = 'loggedin-order-crtl';
     }elseif( is_account_page() && is_user_logged_in() && is_wc_endpoint_url( 'edit-account' ) ){
         $classes[]='loggedin-editaccount-crtl';
+    }elseif( strpos($_SERVER['REQUEST_URI'], "order-received") !== false && is_checkout()){
+        $classes[] = 'thankyou';
     }
     if( is_cart() && WC()->cart->cart_contents_count == 0){
         $classes[]='empty-cart';
@@ -658,4 +660,5 @@ function remove_postcode_validation( $fields ) {
     
     return $fields;
 }
+
 include_once(THEME_DIR .'/inc/wc-manage-fields.php');
