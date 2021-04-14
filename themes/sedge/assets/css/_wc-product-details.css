@@ -141,9 +141,14 @@ body.single-product .woocommerce-notices-wrapper{
 body.single-product .custom-desc-crtl h2{
     color: #71867E;
     font-size: 24px;
+    margin-bottom: 28px;
+}
+body.single-product .custom-desc-crtl p{
+    margin-bottom: 30px;
 }
 body.single-product .custom-desc-crtl{
 	padding-top:89px;
+	padding-bottom: 50px;
 }
 .woocommerce .fl-product div.product div.images{
 	width: 49%;
