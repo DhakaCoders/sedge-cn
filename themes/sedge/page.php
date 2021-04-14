@@ -5,10 +5,10 @@
     	<div class="container">
     		<div class="row">
     			<div class="col-md-12">
-    				<article class="default-page-con">
             <?php if( is_cart() ): ?>
-              <div class="page-heading"><h1><?php echo get_the_title(); ?></h1></div>
+              <div class="page-entry-hdr clearfix"><h1 class="fl-blue-btn"><?php echo get_the_title(); ?></h1></div>
             <?php endif; ?>
+    				<article class="default-page-con">
     					<?php the_content(); ?>
     				</article>
     			</div>

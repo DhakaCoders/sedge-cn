@@ -658,4 +658,15 @@ function remove_postcode_validation( $fields ) {
     
     return $fields;
 }
+
+function formatted_shipping_address($order)
+{
+    return
+        $order->shipping_address_1 . ', ' . 
+        $order->shipping_address_2 . ' ' .
+        $order->shipping_city      . ', ' .
+        $order->shipping_state     . ' ' .
+        $order->shipping_postcode;
+}
+
 include_once(THEME_DIR .'/inc/wc-manage-fields.php');
