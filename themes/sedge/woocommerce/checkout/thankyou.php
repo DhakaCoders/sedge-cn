@@ -111,13 +111,20 @@ defined( 'ABSPATH' ) || exit;
 		              ?>
 		              <div class="order-body">
 		              	<?php 
+		              	//printr($order_items);
 		              	foreach ($order_items as $item_id => $item) { 
 		              		$item_meta_data = $item->get_meta_data();
 		              		$formatted_meta_data = $item->get_formatted_meta_data( '_', true );
+			                $product = $item->get_product();
+			                $itemImgID = get_post_thumbnail_id($product->get_id());
+			                if( empty($itemImgID) ){
+			                    $itemImgID = get_post_thumbnail_id($product->get_parent_id());
+			                }
+			                $order_img = cbv_get_image_tag( $itemImgID, 'thumbnail' );
 		              	?>
 		                <div class="body-list">
 		                  <div class="image-title">
-		                    <i><img src="<?php echo THEME_URI; ?>/assets/images/order-product.png" alt=""></i>
+		                    <i><?php echo $order_img; ?></i>
 		                    <div class="title-meta">
 		                      <h2 class="fl-h6 meta-title"><?php echo $item['name']; ?> (15 cm)</h2>
 		                      <?php 
@@ -132,9 +139,7 @@ defined( 'ABSPATH' ) || exit;
 		                      ?>
 		                    </div>
 		                  </div>
-		                  <div class="quantity">
-		                    1
-		                  </div>
+		                  <div class="quantity"><?php echo $item->get_quantity(); ?></div>
 		                </div>
 		            	<?php } ?>
 		              </div>
@@ -177,12 +182,24 @@ defined( 'ABSPATH' ) || exit;
 		            <div class="shipping-crtl">
 		              <h2 class="fl-h6 shipping-order-title">BESTELDETAILS</h2>
 		              <div class="address">
-		                  <h2 class="fl-h2 address-title">Mathias Herrebaut</h2>
-		                  <ul class="reset-list">
-		                      <li><a href="#">Boekhoutstraat 121<br />1790 Affligem - België</a></li>
-		                      <li><a href="tel:053222333">053 222 333</a></li>
-		                      <li><a href="#">mathias@conversal.be</a></li>
-		                  </ul>
+		                 <?php 
+							if ( $order->get_formatted_shipping_address() ) {
+								echo '<h2 class="fl-h2 address-title">'.$order->get_shipping_first_name().' '.$order->get_shipping_last_name().'</h2>';
+							    echo '<ul class="reset-list">';
+			                    echo '<li>'.$order->get_shipping_address_1().'<br/>'.$order->get_shipping_postcode().' '.$order->get_shipping_city(). '- '.WC()->countries->countries[ $order->get_shipping_country() ].'</li>';
+			                    echo '<li>'.$order->get_billing_phone().'</li>';
+			                    echo '<li>'.$order->get_shipping_email().'</li>';
+			                  	echo '</ul>';
+							} else {
+								echo '<h2 class="fl-h2 address-title">'.$order->get_billing_first_name().' '.$order->get_billing_last_name().'</h2>';
+							    echo '<ul class="reset-list">';
+			                    echo '<li>'.$order->get_billing_address_1().'<br />'.$order->get_billing_postcode().' '.$order->get_billing_city(). '- '.WC()->countries->countries[ $order->get_billing_country() ].'</li>';
+			                    echo '<li>'.$order->get_billing_phone().'</li>';
+			                    echo '<li>'.$order->get_billing_email().'</li>';
+			                  	echo '</ul>';
+							}
+							$order_total = is_callable(array($order, 'get_total')) ? $order->get_total() : $order->order_total;
+		                ?>
 		              </div>
 		            </div>
 		            <div class="order-total">
@@ -190,27 +207,24 @@ defined( 'ABSPATH' ) || exit;
 		              <div class="order-details">
 		                <table class="shop_table woocommerce-checkout-review-order-table">
 		                  <tbody>
-		                    <tr class="cart_item">
-		                      <td class="product-name">COCKTAIL&nbsp;</td>
-		                      <td class="product-total">
-		                        <span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">€</span>2.99</bdi></span>
-		                      </td>
-		                    </tr>
-		                  </tbody>
-		                  <tfoot>
 		                    <tr class="cart-subtotal">
 		                      <th>Subtotaal</th>
-		                      <td><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">€</span>2.99</bdi></span></td>
+		                      <td>
+		                      	<?php echo $order->get_subtotal_to_display(); 
+		                      //wc_price($order->get_subtotal()); ?>
+		                      </td>
 		                    </tr>
+		                    <?php foreach ( $order->get_fees() as $fee ): ?>
 		                    <tr class="fee">
-		                      <th>Verzending</th>
-		                      <td><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">€</span>99.00</bdi></span></td>
+		                      <th><?php echo esc_html( $fee->name ); ?></th>
+		                      <td><?php wc_cart_totals_fee_html( $fee ); ?></td>
 		                    </tr>
+		                	<?php endforeach; ?>
 		                    <tr class="order-total">
 		                      <th>Totaal</th>
-		                      <td><strong><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">€</span>101.99</bdi></span></strong> </td>
+		                      <td><?php echo $order->get_formatted_order_total(); ?></td>
 		                    </tr>
-		                  </tfoot>
+		                  </tbody>
 		                </table>
 		              </div>
 		            </div>

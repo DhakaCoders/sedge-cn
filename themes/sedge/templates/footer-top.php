@@ -1,25 +1,14 @@
+<?php 
+$slides = get_field('slides', 'options');
+if( !empty($slides) ):
+?>
 <section class="ftr-top-sec">
   <div class="ftrTopSlider clearfix">
+    <?php foreach( $slides as $slide ): ?>
     <div class="ftr-slider-grd-item">
-      <img src="<?php echo THEME_URI; ?>/assets/images/ftr-top-img-01.jpg">
+      <?php echo cbv_get_image_tag($slide); ?>
     </div>
-    <div class="ftr-slider-grd-item">
-      <img src="<?php echo THEME_URI; ?>/assets/images/ftr-top-img-02.jpg">
-    </div>
-    <div class="ftr-slider-grd-item">
-      <img src="<?php echo THEME_URI; ?>/assets/images/ftr-top-img-03.jpg">
-    </div>
-    <div class="ftr-slider-grd-item">
-      <img src="<?php echo THEME_URI; ?>/assets/images/ftr-top-img-01.jpg">
-    </div>
-    <div class="ftr-slider-grd-item">
-      <img src="<?php echo THEME_URI; ?>/assets/images/ftr-top-img-02.jpg">
-    </div>
-    <div class="ftr-slider-grd-item">
-      <img src="<?php echo THEME_URI; ?>/assets/images/ftr-top-img-03.jpg">
-    </div>
-    <div class="ftr-slider-grd-item">
-      <img src="<?php echo THEME_URI; ?>/assets/images/ftr-top-img-03.jpg">
-    </div>
+    <?php endforeach; ?>
   </div>
 </section>
+<?php endif; ?>
