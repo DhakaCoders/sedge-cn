@@ -33,7 +33,7 @@ $allowed_html = array(
 		<div class="service-lists">
 			<div class="service-list">
 				<div class="icon">
-					<i><img src=""></i>
+					<i><img src="<?php echo THEME_URI; ?>/assets/images/wc-ser-icon.svg" alt=""></i>
 				</div>
 				<div class="service-text">
 					<h3>Vind alles in je account</h3>
@@ -42,7 +42,7 @@ $allowed_html = array(
 			</div>
 			<div class="service-list">
 				<div class="icon">
-					<i><img src=""></i>
+					<i><img src="<?php echo THEME_URI; ?>/assets/images/wc-con-icon.svg" alt=""></i>
 				</div>
 				<div class="service-text">
 					<h3>Heb je ons nodig?</h3>

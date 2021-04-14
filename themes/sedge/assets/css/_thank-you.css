@@ -13,35 +13,52 @@ body.woocommerce-order-received .checkout-page-title .checkoutpt-right{
 	display: none
 }
 .thank-you-sec-cntlr{
-	max-width:740px;
-	margin:0 auto;
+/* 	max-width:740px;
+	margin:0 auto; */
 }
 .thnk-you-des{
-	text-align: center;
-	padding-bottom: 25px;
+	display: flex;
 }
-.thnk-you-des i img{
-	max-width:99px;
-	height: auto;
+.thnk-you-des-left{
+	width: 126px;
+	height: 126px;
 }
 .thnk-you-des i{
-	margin-bottom:31px;
 	display: inline-block;
 	vertical-align:baseline;
+	width: 100%;
+	height: 100%;
+}
+.thnk-you-des i img{
+	height: auto;
+}
+.thank-you-des-sub-title{
+	font-size: 18px;
+	font-family: 'Sora', sans-serif;
+	font-weight: 700;
+	color: #b41929;
+}
+.thank-you-des-title{
+	text-transform: uppercase;
+	color: #71867f;
 }
 .thnk-you-des a{
-	color: #8AA4E4;
-	font-size:20px;
-	font-weight:700;
-	font-family: Open Sans;
+	font-size:14px;
+	font-weight:300;
 	display: inline-block;
 	vertical-align: baseline;
-	line-height:14px;
-	line-height: 0.6;
-	margin-bottom:19px;
+	line-height: 1.2;
+	margin-bottom:10px;
 }
-.thnk-you-des .thank-you-des-title{
-	margin-bottom:14px;
+.thnk-you-des-rgt{
+	padding-left: 40px;
+}
+.thnk-you-des-rgt p{
+	font-weight: 300;
+	margin-bottom: 0;
+}
+.thnk-you-des .thank-you-des-title, .thank-you-des-sub-title{
+	margin-bottom:12px;
 }
 .thnk-you-social-des-cntlr{
 	
@@ -61,10 +78,12 @@ body.woocommerce-order-received .checkout-page-title .checkoutpt-right{
     margin: 0 auto;
     color: #FDF8F5;
     min-height:248px;
+    background: #b4192b;
+    margin-top: 55px;
 }
 .thnk-you-social-des-cntlr {
     width: 100%;
-    padding: 0px 80px;
+    padding: 0px 20px;
 }
 .thnk-y-social-des p {
 	color: #FDF8F5;
@@ -95,6 +114,238 @@ body.woocommerce-order-received .checkout-page-title .checkoutpt-right{
 body.woocommerce-order-received .checkout-page-title{
 	margin-bottom:15px;
 }
+
+/* order-products start */
+.thankyou .order-products{
+	display: flex;
+	padding: 76px 0 111px 0;
+}
+.thankyou .orders-crtl{
+	padding: 5px 0 0 0!important;
+    max-width: 925px;
+    width: 100%;
+    margin-right: 79px;
+}
+.shipping-order-total {
+    max-width: 333px;
+    width: 100%;
+    margin-left: auto;
+}
+.thankyou .orders-product-item{
+	background: #fffaf4;
+	padding: 53px 47px 67px 44px;
+}
+.thankyou .order-head{
+	display: flex;
+	align-items: center;
+	padding-bottom: 26px;
+}	
+.thankyou .order-head span h2.order-title{
+	font-size: 16px;
+	letter-spacing: -0.02em;
+	color: #71867E;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+.thankyou .order-head span:last-of-type{
+	margin-left: auto;
+	font-size: 12px;
+}
+.thankyou .order-body{
+	margin: -14px 0;
+	padding-right: 35px; 
+}
+.thankyou .body-list{
+	display: flex;
+	padding: 14px 0;
+	align-items: center;
+}
+.image-title{
+	display: flex;
+	align-items: center;
+}
+.image-title i{
+	width: 119px;
+	height: 114px;
+}
+.thankyou .image-title i img{
+	width: 100%;
+	height: 100%;
+}
+.thankyou .title-meta{
+	padding-left: 33px;
+}
+.thankyou .title-meta .meta-title{
+	font-size: 18px;
+	color: #71867E;
+	letter-spacing: -0.02em;
+	margin-bottom: 18px;
+}
+.thankyou .title-meta dl dd, .title-meta dl dt{
+	font-size: 12px;
+	line-height: 16px;
+}
+.thankyou .title-meta dl{
+	display: flex;
+	margin-bottom: 0;
+}
+.thankyou .body-list .quantity{
+	margin-left: auto;
+}
+.thankyou .deshboard-inner{
+	margin-top: 30px;
+	padding: 44px 30px 44px 32px!important;
+}
+.thankyou .service-contact .srv-cont-title{
+	font-family: 'Sora', sans-serif!important;
+	margin-bottom: 33px;
+}
+.thankyou .service-list .icon i{
+	display: inline-block;
+	vertical-align: baseline;
+	width: 33px;
+    height: 34px;
+    margin-top: 2px;
+}
+.thankyou .service-lists .service-list{
+	padding-right: 0!important;
+}
+.thankyou .service-lists{
+	margin: 0 -18px;
+}
+.thankyou .service-list{
+	padding: 0 18px;
+}
+.thankyou .service-text{
+	padding-left: 50px;
+}
+.thankyou .srv-txt-title{
+	margin-bottom: 17px;
+}
+.thankyou .service-contact .service-text p{
+	line-height: 1.3;
+	margin-bottom: 0;
+}
+.thankyou .service-bottom{
+	padding-top: 62px;
+	padding-bottom: 60px;
+}
+.thankyou .service-bottom ul{
+	margin-top: -12px;
+	margin-bottom: -12px;
+}
+.thankyou .service-bottom ul li{
+	padding: 12px 19px;
+	position: relative;
+}
+.thankyou .service-bottom ul li:after{
+	position: absolute;
+	content: "";
+	width: 2px;
+	height: 12.23px;
+	background: #6DBD98;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+.thankyou .service-bottom ul li a{
+	text-decoration: underline;
+	display: inline-block;
+	vertical-align: baseline;
+	padding-bottom: 2px;
+}
+.thankyou .order-home-btn{
+	width: 332px;
+}
+svg.home-btn-arrow{
+	fill: #fff;
+}
+.thankyou .order-home-btn:hover svg.home-btn-arrow{
+	fill: #6DBD98!important;
+}
+
+.thankyou .shipping-order-title{
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+	color: #71867E;
+	margin-bottom: 48px;
+}
+.thankyou .address-title{
+	font-size: 16px;
+	text-transform: capitalize;
+	margin-bottom: 36px;
+}
+.thankyou .address ul {
+	margin-top: -14px;
+	margin-bottom: -14px;
+}
+.thankyou .address ul li{
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+.thankyou .address ul li a{
+	color: #78797B;
+}
+.thankyou .order-total{
+	padding-top: 82px;
+}
+.thankyou .order-total-title{
+	font-size: 16px;
+	color: #71867E;
+	margin-bottom: 47px;
+}
+.thankyou .order-details{
+	border-bottom: none!important;
+	margin-bottom: 0!important;
+	padding-bottom: 0!important;
+}
+.thankyou .product-name, .cart-subtotal th, .fee th, .order-totaal th{
+	width: 278px;
+	padding-right: 10px;
+	text-transform: capitalize;
+}
+.thankyou .cart-subtotal th{
+	text-transform: uppercase;
+}
+.thankyou .cart_item, .thankyou .cart-subtotal, .thankyou .fee, .thankyou .order-totaal{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.thankyou .cart_item, .thankyou .cart-subtotal, .thankyou .fee {
+	padding-bottom: 27px;
+}
+.thankyou .order-totaal{
+	position: relative;
+}
+.thankyou .order-totaal:after{
+	position: absolute;
+	content: "";
+	width: 333px;
+	height: 2px;
+	background: #f2eadf;
+	top: -18px;
+}
+.woocommerce-Price-amount.amount bdi{
+	color: #78797b!important;
+	font-size: 14px!important;
+}
+.order-totaal .woocommerce-Price-amount.amount bdi{
+	color: #6dbd98!important;
+}
+.thnkY-social-link ul li a{
+	font-size: 12px;
+	color: #fff;
+}
+.thnkY-social-link ul li a i{
+	font-size: 12px;
+	padding-right: 15px;
+}
+/* order-products end */
+
+
 @media(max-width:1199px){
 
 }

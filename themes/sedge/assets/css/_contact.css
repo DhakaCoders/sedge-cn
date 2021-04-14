@@ -9,23 +9,25 @@
 .page-entry-hdr{
 	padding-bottom: 55px;
 }
-.page-entry-hdr a.fl-blue-btn{
+.page-entry-hdr .fl-blue-btn{
 	font-size: 48px;
 	line-height: 1;
-	width: 318px;
-	height: 68px;
+	width: auto;
+	height: auto;
 	float: left;
-	background: #71867f;
+	background: #71867f!important;
 	border-radius: 0;
-	border-color: #71867f;
-	padding-top: 4px;
+	border-color: #71867f!important;
+	padding: 10px 45px;
 	letter-spacing: -0.02em;
     text-transform: uppercase;
+    margin: 0;
+    color: #FFFFFF!important;
 }
-.page-entry-hdr a.fl-blue-btn:hover{
+/*.page-entry-hdr a.fl-blue-btn:hover{
 	color:#71867f;
 	background: transparent;  
-}
+}*/
 .contact-form-sec-wrp {
     padding-bottom: 85px;
 }
@@ -232,7 +234,7 @@
     margin-bottom: 0;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error{
-	font-weight: 700;
+	font-weight: 400 !important;
 	font-size: 14px;
 	padding-left: 2px;
 	display: block;
@@ -347,7 +349,6 @@ Inputtype Radio Css
     cursor: pointer;
     padding: 2px 0 2px 25px;
 }
-/* Hide the browser's default checkbox */
 .input-type-radio ul li label input {
   position: absolute;
   opacity: 0;
@@ -355,7 +356,7 @@ Inputtype Radio Css
   height: 0;
   width: 0;
 }
-/* Create a custom checkbox */
+
 .checkmark {
     position: absolute;
     width: 14px;
@@ -367,21 +368,17 @@ Inputtype Radio Css
     border-radius: 15px;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the checkmark when checked */
 .input-type-radio ul li label input:checked ~ .checkmark:after {
   display: block;
   background: #93A198;
 }
 
-
-/* Style the checkmark/indicator */
 .input-type-radio ul li label .checkmark:after {
 	content: "";
 	position: absolute;
@@ -413,13 +410,13 @@ Inputtype Radio Css
 	display: block;
 	padding-bottom: 16px;
 }
-.contact-form-info-title {
+.fl-h6.contact-form-info-title{
     font-size: 20px;
     line-height: 1;
     color: #78797B;
-    font-weight: 600;
     margin-bottom: 28px;
     font-family: 'Sora', sans-serif;
+    font-weight: 600;
 }
 .contact-form-info ul li a:hover{
 	color:#B3192A;
@@ -498,11 +495,12 @@ Inputtype Radio Css
     .contact-form-block {
         padding-top: 0;
     }
-    .page-entry-hdr a.fl-blue-btn{
+    .page-entry-hdr a.fl-blue-btn {
         font-size: 30px;
         width: 210px;
         height: 35px;
         margin-left: -15px;
+        padding: 5px 10px;
     }
     .contact-form-rgt {
         width: 100%;

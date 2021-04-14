@@ -14,7 +14,9 @@ a, a:hover, a:focus, button:hover, button:focus{
 	text-decoration: none;
 	outline: 0;
 }
-
+dl, dd{
+	margin-bottom: 0;
+}
 body {
     background: #faf5ef;
     color: #78797B;
@@ -291,6 +293,20 @@ a:hover{
 }
 
 
+
+
+
+/*Slider break fix*/
+.ftrTopSlider .ftr-slider-grd-item{
+	display: none;
+}
+.ftrTopSlider .ftr-slider-grd-item:first-child{
+	display: none;
+}
+
+.ftrTopSlider.slick-initialized .ftr-slider-grd-item{
+	display: block;
+}
 
 /**
 Selects
