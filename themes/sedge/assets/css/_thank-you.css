@@ -58,7 +58,7 @@ body.woocommerce-order-received .checkout-page-title .checkoutpt-right{
 	margin-bottom: 0;
 }
 .thnk-you-des .thank-you-des-title, .thank-you-des-sub-title{
-	margin-bottom:12px;
+	margin-bottom:12px!important;
 }
 .thnk-you-social-des-cntlr{
 	
@@ -217,7 +217,7 @@ body.woocommerce-order-received .checkout-page-title{
 	padding: 0 18px;
 }
 .thankyou .service-text{
-	padding-left: 50px;
+	padding-left: 36px;
 }
 .thankyou .srv-txt-title{
 	margin-bottom: 17px;
@@ -255,6 +255,7 @@ body.woocommerce-order-received .checkout-page-title{
 	display: inline-block;
 	vertical-align: baseline;
 	padding-bottom: 2px;
+	color: #78797B;
 }
 .thankyou .order-home-btn{
 	width: 332px;
