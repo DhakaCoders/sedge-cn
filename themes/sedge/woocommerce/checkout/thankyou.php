@@ -171,7 +171,7 @@ defined( 'ABSPATH' ) || exit;
 		            </div>
 		            <div class="service-bottom">
 		              <ul class="reset-list">
-		                <li><a href="<?php echo get_permlink(); ?>">Snel regelen in je account</a></li>
+		                <li><a href="<?php echo get_permalink(); ?>">Snel regelen in je account</a></li>
 		                <li><a href="">Heb je ons nodig?</a></li>
 		                <li><a href="">Contact</a></li>
 		              </ul>
