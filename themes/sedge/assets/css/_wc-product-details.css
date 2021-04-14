@@ -287,9 +287,20 @@ body.single-product .wc-product-gallery-thumb .woocommerce-product-gallery__imag
 .price-quentity-ctrl form table tbody {
     display: flex;
 }
-
+.related-pro-list{
+	
+}
 .price-quentity-ctrl form table tbody tr {
     width: 50%;
+}
+.related-pro-list .product{
+	display:none;
+}
+.related-pro-list .product:first-child{
+	display:block;
+}
+.related-pro-list.slick-initialized .product{
+	display: block;
 }
 .fl-product .price-quentity-ctrl form .variations tbody tr td  .bootstrap-select .dropdown-toggle .filter-option-inner{
 	color: #8c8da2!important;
@@ -432,11 +443,11 @@ body.single-product div.product form.cart .button:before{
 }
 .related.products.related-pro-crtl h2{
 	font-weight: 700;
-	font-size: 36px;
-	line-height: 30px;
-	margin-bottom: 40px;
-	text-align: center;
-	color: #202020;
+    font-size: 32px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    text-align: left;
+    color: #71867E;
 }
 .fl-product .summary-ctrl{
    margin-top: -10px; 
