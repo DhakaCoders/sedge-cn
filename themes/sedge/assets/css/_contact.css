@@ -438,11 +438,11 @@ Inputtype Radio Css
     .page-entry-hdr {
         padding-bottom: 45px;
     }
-    .page-entry-hdr a.fl-blue-btn{
+    .page-entry-hdr a.fl-blue-btn {
         font-size: 45px;
         width: 300px;
         height: 63px;
-        padding-top: 2px;
+        padding: 8px 30px;
     }
     .contact-form-info ul li span,
     .contact-form-info ul li a {
@@ -547,6 +547,9 @@ Inputtype Radio Css
     }
     .contact-form-sec-wrp {
         padding-bottom: 0;
+    }
+    .page-entry-hdr .fl-blue-btn{
+        margin-left: -15px;
     }
 }
 
