@@ -257,6 +257,14 @@ function misha_adv_product_options(){
     echo '<div class="options_group">';
  
     woocommerce_wp_text_input( array(
+        'id'      => 'product_length',
+        'value'   => get_post_meta( get_the_ID(), 'product_length', true ),
+        'label'   => __('Length (cm)', 'woocommerce'),
+        'type' => 'text',
+        'desc_tip' => 'true', 
+        'description' => __('The amount of credits for this product in currency format.', 'woocommerce'),
+    ));
+    woocommerce_wp_text_input( array(
         'id'      => 'product_min_qty',
         'value'   => get_post_meta( get_the_ID(), 'product_min_qty', true ),
         'label'   => __('Product Min Quantity', 'woocommerce'),
@@ -284,6 +292,7 @@ add_action( 'woocommerce_process_product_meta', 'misha_save_fields', 10, 2 );
 function misha_save_fields( $id, $post ){
  
     //if( !empty( $_POST['super_product'] ) ) {
+        update_post_meta( $id, 'product_length', $_POST['product_length'] );
         update_post_meta( $id, 'product_min_qty', $_POST['product_min_qty'] );
         update_post_meta( $id, 'product_max_qty', $_POST['product_max_qty'] );
     //} else {
