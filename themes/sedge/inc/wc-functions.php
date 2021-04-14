@@ -23,7 +23,6 @@ function get_custom_wc_output_content_wrapper_end(){
   if(is_shop() OR is_product_category()){
     echo '</div></div></div></div></section>';
     get_template_part('templates/shop', 'bottom');
-    get_template_part('templates/footer', 'top-form');
   }
 
 }
@@ -203,13 +202,15 @@ if (!function_exists('add_custom_box_product_summary')) {
           woocommerce_template_single_add_to_cart();
         echo '</div>';
         echo '</div>';
-        $rating_count = intval($product->get_rating_count());
+        /*$rating_count = intval($product->get_rating_count());
         if ( $rating_count > 0 ) {
             echo '<div class="rating">';
             echo '<p>Beoordeling door klanten <span><strong>'.$product->get_average_rating().'</strong> van 5  -  '.$rating_count.' beoordelingen</span></p>';
             echo '</div>';
-        }
-
+        }*/
+        echo '<div class="rating">';
+            echo '<p>Beoordeling door klanten <span><strong>4.2</strong> van 5  - 3035 beoordelingen</span></p>';
+        echo '</div>';
         /*echo $rating_count = $product->get_rating_count();
         echo $review_count = $product->get_review_count();*/
     }
@@ -248,7 +249,6 @@ function cbv_add_custom_info(){
         echo wpautop( $long_desc );
         echo '</div>';
     endif;
-get_template_part('templates/footer', 'top-form');
 }
 
 add_action( 'woocommerce_product_options_inventory_product_data', 'misha_adv_product_options');

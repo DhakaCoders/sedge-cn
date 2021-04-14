@@ -30,8 +30,8 @@ if ( $related_products ) : ?>
 			<h2><?php echo esc_html( $heading ); ?></h2>
 		<?php endif; ?>
 		
-		<?php woocommerce_product_loop_start(); ?>
-
+		<?php //woocommerce_product_loop_start(); ?>
+		    <div class="related-pro-list" id="related-product-slider">
 			<?php foreach ( $related_products as $related_product ) : ?>
 
 					<?php
@@ -43,8 +43,8 @@ if ( $related_products ) : ?>
 					?>
 
 			<?php endforeach; ?>
-
-		<?php woocommerce_product_loop_end(); ?>
+			</div>
+		<?php //woocommerce_product_loop_end(); ?>
 
 	</div>
 	<?php
