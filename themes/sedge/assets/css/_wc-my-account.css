@@ -79,8 +79,8 @@ body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccou
     height: 26px;
     width: 30px;
     background-repeat: no-repeat!important;
-    background-position: center;
-    background-size: 100% auto;
+    background-position: center!important;
+    background-size: 100% auto!important;
     right:42px;
     top: 50%;
     transform: translateY(-50%);
@@ -1627,6 +1627,16 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         padding: 10px 15px;
         font-size: 14px;
     }
+    .deshboard-inner {
+        background: #71867E;
+        padding: 35px 20px 20px 20px;
+    }
+    .service-contact .service-text a{
+        font-size:15px;
+    }
+    .service-list .icon i{
+        width: 60px;
+    }
     /* -----------------------  checkout page -----------------------*/
     body.woocommerce-checkout #customer_details .col-2{
         padding-left: 20px;
@@ -1695,6 +1705,63 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     }
 }
 @media(max-width: 768px){
+    /*  ------------------ deshbord account page -------------------*/
+    body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul {
+        flex-direction: column;
+    }
+    body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li a {
+        font-size: 11px;
+        padding: 13px 20px;
+    }
+    body.woocommerce-account .woocommerce-account-grds-cntlr{
+        padding-top: 20px;
+    }
+    body.woocommerce-account .default-page-con p.loggedin-text{
+        font-size:20px;
+    }
+    .service-contact .service-lists {
+        flex-direction: column;
+    }
+    .service-contact .service-text p,.service-contact .service-text p a {
+        font-size: 11px;
+    }
+    .service-text h3 {
+        font-size: 16px;
+        margin-bottom: 9px!important;
+    }
+    .deshboard-inner {
+        margin: 0 -15px;
+    }
+    .service-lists .service-list{
+        margin-bottom: 30px;
+        width: 100%;
+        padding-right: 0;
+    }
+    .deshboard-inner {
+        padding: 50px 21px 20px 32px;
+    }
+    body.woocommerce-account .myaccount-btm-form {
+        display: none;
+    }
+    body.woocommerce-account .woocommerce-account-grds-cntlr {
+        margin-bottom: 14px!important;
+    }
+    body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
+        margin-bottom:30px;
+    }
+    body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li a:after {
+        width: 22px;
+    }
+    body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--edit-account a:after {
+        width: 22px;
+    }
+    body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--customer-logout a:after {
+        width: 20px;
+    }
     /* -------------------- new login page ----------------------*/
     body.woocommerce-account .account-page-title{
         padding-top: 0px;
@@ -2330,8 +2397,8 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         font-size: 20px;
     }
     /* --------------- account deshboard ----------------*/
-    body.loggedin-deshboard-crtl .account-page-title .loggedin-text{
-        font-size: 12px
+    body.woocommerce-account .default-page-con p.loggedin-text{
+        font-size:16px;
     }
     .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li a{
         font-size: 12px;
