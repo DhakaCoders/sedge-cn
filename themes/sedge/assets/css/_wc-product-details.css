@@ -284,7 +284,13 @@ body.single-product .wc-product-gallery-thumb .woocommerce-product-gallery__imag
 	padding-right: 40px!important;
 	height:50px;
 }
+.price-quentity-ctrl form table tbody {
+    display: flex;
+}
 
+.price-quentity-ctrl form table tbody tr {
+    width: 50%;
+}
 .fl-product .price-quentity-ctrl form .variations tbody tr td  .bootstrap-select .dropdown-toggle .filter-option-inner{
 	color: #8c8da2!important;
 }
