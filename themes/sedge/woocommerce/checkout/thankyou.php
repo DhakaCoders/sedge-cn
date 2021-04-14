@@ -214,12 +214,10 @@ defined( 'ABSPATH' ) || exit;
 		                      //wc_price($order->get_subtotal()); ?>
 		                      </td>
 		                    </tr>
-		                    <?php foreach ( $order->get_fees() as $fee ): ?>
 		                    <tr class="fee">
-		                      <th><?php echo esc_html( $fee->name ); ?></th>
-		                      <td><?php wc_cart_totals_fee_html( $fee ); ?></td>
+		                      <th>Verzending</th>
+		                      <td><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">€</span>99.00</bdi></span></td>
 		                    </tr>
-		                	<?php endforeach; ?>
 		                    <tr class="order-total">
 		                      <th>Totaal</th>
 		                      <td><?php echo $order->get_formatted_order_total(); ?></td>
