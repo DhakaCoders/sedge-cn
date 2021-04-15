@@ -338,7 +338,7 @@ svg.home-btn-arrow{
     padding: 0!important;
 }
 .thankyou .woocommerce table.shop_table td{
-	border-top: none!important;
+	border-bottom: none!important;
 	padding: 0!important;
 	vertical-align: inherit!important;
 }
