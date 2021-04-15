@@ -1,0 +1,4 @@
+2021-04-15T20:09:16+00:00 CRITICAL syntax error, unexpected ':' in D:\xampp\htdocs\projects\2021\sedge\sedge-cn\themes\sedge\page-about.php on line 221
+
+2021-04-15T20:31:54+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in D:\xampp\htdocs\projects\2021\sedge\sedge-cn\themes\sedge\page-about.php on line 384
+

@@ -6,6 +6,9 @@ a,input,img,textarea,button,svg,i,.dft-transition, .prdt-fea-img, .prdt-fea-img:
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
+.fancybox-content img{
+	transition: initial!important;
+}
 .scale{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);

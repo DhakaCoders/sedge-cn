@@ -7,30 +7,6 @@ var windowWidth = $(window).width();
 $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
 });
-	
-  
-//matchHeightCol
-if($('.mHc').length){
-  $('.mHc').matchHeight();
-};
-if($('.mHc1').length){
-  $('.mHc1').matchHeight();
-};
-if($('.mHc2').length){
-  $('.mHc2').matchHeight();
-};
-if($('.mHc3').length){
-  $('.mHc3').matchHeight();
-};
-if($('.mHc4').length){
-  $('.mHc4').matchHeight();
-};
-if($('.mHc5').length){
-  $('.mHc5').matchHeight();
-};
-if($('.mHc6').length){
-  $('.mHc6').matchHeight();
-};
 
 
 //$('[data-toggle="tooltip"]').tooltip();
@@ -309,9 +285,12 @@ if(windowWidth > 768){
   });
 }
 
-$('.wpforms-error').on('click', function(){
+$('.wpforms-field-email').on('click', function(){
+  $(this).addClass('wpforms-has-error');
   $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
 });
+
+
 
 
 
@@ -451,8 +430,52 @@ $("#billing_order_type_Particulier").on('change', function(){
     }
 });
 
-
-    new WOW().init();
+//matchHeightCol
+if($('.mHc').length){
+  $('.mHc').matchHeight();
+};
+if($('.mHc1').length){
+  $('.mHc1').matchHeight();
+};
+if($('.mHc2').length){
+  $('.mHc2').matchHeight();
+};
+if($('.mHc3').length){
+  $('.mHc3').matchHeight();
+};
+if($('.mHc4').length){
+  $('.mHc4').matchHeight();
+};
+if($('.mHc5').length){
+  $('.mHc5').matchHeight();
+};
+if($('.mHc6').length){
+  $('.mHc6').matchHeight();
+};
+$(window).load(function() {
+//matchHeightCol
+  if($('.mHc').length){
+    $('.mHc').matchHeight();
+  };
+  if($('.mHc1').length){
+    $('.mHc1').matchHeight();
+  };
+  if($('.mHc2').length){
+    $('.mHc2').matchHeight();
+  };
+  if($('.mHc3').length){
+    $('.mHc3').matchHeight();
+  };
+  if($('.mHc4').length){
+    $('.mHc4').matchHeight();
+  };
+  if($('.mHc5').length){
+    $('.mHc5').matchHeight();
+  };
+  if($('.mHc6').length){
+    $('.mHc6').matchHeight();
+  };
+});
 
 })(jQuery);
 
