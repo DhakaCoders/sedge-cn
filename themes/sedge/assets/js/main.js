@@ -192,6 +192,22 @@ google.maps.event.addDomListener(window, 'load', initialize);
   }
 
 
+  if( $('.xs-hdr-srch').length ){
+    $('.xs-hdr-srch').click(function(e){
+      event.preventDefault();
+      $('.xs-hdr-srch-wrap').toggleClass('hdr-rgt-srch-input-show');
+    });
+  }
+
+  $(document).click(function(event) { 
+    var $target = $(event.target);
+    if(!$target.closest('.xs-hdr-srch').length && 
+      $('.xs-hdr-srch-btm').is(":visible")) {
+      $('.xs-hdr-srch-wrap').removeClass('hdr-rgt-srch-input-show');
+  }        
+});
+
+
   /*start of Rannojit*/
 
 
