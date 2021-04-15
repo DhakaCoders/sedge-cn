@@ -1144,9 +1144,13 @@ body.woocommerce-checkout .custom-checkout-order-review table td strong{
 body.woocommerce-checkout .custom-checkout-order-review table td.product-name strong{
     display: none;
  }
-body.woocommerce-checkout .custom-checkout-order-review table td,
+/*body.woocommerce-checkout .custom-checkout-order-review table td,
 body.woocommerce-checkout .custom-checkout-order-review table th{
     padding: 12px 0px;
+}*/
+.custom-checkout-order-review table td,
+.custom-checkout-order-review table th{
+    padding: 12px 0px!important;
 }
 .custom-checkout-order-review table tr.order-total th, 
 .custom-checkout-order-review table tr.order-total td{
