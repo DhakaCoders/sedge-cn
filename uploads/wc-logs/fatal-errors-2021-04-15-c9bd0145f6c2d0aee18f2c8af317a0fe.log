@@ -1,2 +1,12 @@
 2021-04-15T10:26:47+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in G:\xampp\htdocs\project\2021\March\sedge\wp-includes\Requests\Transport\cURL.php on line 163
 
+2021-04-15T10:45:19+00:00 CRITICAL Uncaught Error: Call to undefined function assign_gift_card_cat() in G:\xampp\htdocs\project\2021\March\sedge\sedge-cn\themes\sedge\woocommerce\archive-product.php:73
+Stack trace:
+#0 G:\xampp\htdocs\project\2021\March\sedge\sedge-cn\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 G:\xampp\htdocs\project\2021\March\sedge\sedge-cn\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#2 G:\xampp\htdocs\project\2021\March\sedge\wp-includes\template-loader.php(106): include('G:\\xampp\\htdocs...')
+#3 G:\xampp\htdocs\project\2021\March\sedge\wp-blog-header.php(19): require_once('G:\\xampp\\htdocs...')
+#4 G:\xampp\htdocs\project\2021\March\sedge\index.php(17): require('G:\\xampp\\htdocs...')
+#5 {main}
+  thrown in G:\xampp\htdocs\project\2021\March\sedge\sedge-cn\themes\sedge\woocommerce\archive-product.php on line 73
+
