@@ -299,6 +299,7 @@ svg.home-btn-arrow{
 .thankyou .address ul li{
 	padding-top: 14px;
 	padding-bottom: 14px;
+	padding-left: 0;
 }
 .thankyou .address ul li a{
 	color: #78797B;
