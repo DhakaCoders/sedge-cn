@@ -33,9 +33,14 @@ $thisID = get_the_ID();
     </div>
   </div>
 </section>
-
 <?php endif; ?>
 
+
+<?php 
+  $intro = get_field('intro_sec', $thisID);
+  if( $intro ):
+    $intro_banner = !empty($intro['afbeelding'])? cbv_get_image_src( $intro['afbeelding'], 'full' ): '';
+?>
 <section class="about-img-text-sec-wrp">
    <div class="about-img-text-bg"></div>
      <div class="about-red-bg"></div>
@@ -45,12 +50,14 @@ $thisID = get_the_ID();
            <div class="about-img-text-wrp">
              <div class="about-img-text-cntlr clearfix">
                <div class="about-img-lft">
-                 <div class="about-img inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/about-img-001.png);"></div>
+                 <div class="about-img inline-bg" style="background: url('<?php echo $intro_banner; ?>');"></div>
                </div>
                <div class="about-text-rgt">
-                 <h2 class="about-title-1 fl-h2">nine-tailed dragon</h2>
-                 <span>Mekong river delta</span>
-                 <p>Lorem .........Tekst omtrent  de geografische <br> eigenschappen van de mekongdelta met een kleine <br> beschrijving  van de fauna en flora.</p>
+                <?php 
+                  if( !empty($intro['titel']) ) printf( '<h2 class="about-title-1 fl-h2">%s</h2>', $intro['titel'] );
+                  if( !empty($intro['subtitel']) ) printf( '<span>%s</span>', $intro['subtitel'] );
+                  if( !empty($intro['beschrijving']) ) echo wpautop( $intro['beschrijving'] );
+                ?>
                </div>
              </div>
            </div>
@@ -58,6 +65,9 @@ $thisID = get_the_ID();
        </div>
      </div>
 </section>
+<?php endif; ?>
+
+
 
 <section class="about-msnry-grd-items-sec-wrp">
   <div class="container">
