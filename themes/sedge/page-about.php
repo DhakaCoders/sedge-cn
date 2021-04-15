@@ -291,15 +291,21 @@ $thisID = get_the_ID();
   </div>  
 </section>
 
+
+<?php 
+  $tradities_sec = get_field('tradities_sec', $thisID);
+  if( $tradities_sec ):
+?>
 <section class="traditions-sec about-tradition-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="traditions-sec-cntrl">
           <div class="trad-des mHc">
-            <h2 class="fl-h2 trad-titl">TRADITIONS</h2>
-            <p>For hundreds of years grey sedge is used for making all sorts off daily utilities.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque non nulla in lacus, a, nisl risus pulvinar id. Quis praesent at purus, id justo, enim tortor porttitor sit. Erat quam in nisi, amet. Augue adipiscing vel turpis aliquet sem sit nulla. Et ac sed feugiat leo enim placerat nunc.</p>
+            <?php 
+              if( !empty($tradities_sec['titel']) ) printf( '<h2 class="fl-h2 trad-titl">%s</h2>', $tradities_sec['titel'] );
+              if( !empty($tradities_sec['beschrijving']) ) echo wpautop( $tradities_sec['beschrijving'] );
+            ?>
           </div>
           <div class="trad-galry mHc">
             <div class="trad-galry-tp">
@@ -332,6 +338,8 @@ $thisID = get_the_ID();
     </div>
   </div>
 </section>
+<?php endif; ?>
+
 
 <section class="product-sec about-prdt-sec">
   <div class="container">
@@ -384,51 +392,6 @@ $thisID = get_the_ID();
               </div>  
             </div>
           </div>             
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-<section class="ftr-top-contact-sec">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="ftr-top-contact-sec-inr clearfix">
-          <div class="ftr-top-contact-lft">
-            <div class="ftr-top-contact-lft-inr">
-              <h6 class="ftr-top-cnt-lft-title">BLIJF OP DE HOOGTE VAN ACTIES EN PROMOTIES SCHRIJF JE IN OP ONZE NIEUWSBRIEF</h6>
-            </div>
-          </div>
-          <div class="ftr-top-contact-rgt">
-            <div class="ftr-top-contact-rgt-inr">
-              <div class="wpforms-container">
-                <form class="wpforms-form">
-                  <div class="wpforms-field-container">  
-                    <div class="wpforms-field firstNameField">
-                      <input type="text" name="name" placeholder="Voornaam" required>
-                    </div>
-                    <div class="wpforms-field lastNameField">
-                      <input type="text" name="name" placeholder="Naam" required>
-                    </div>
-                    <div class="wpforms-field mailField">
-                      <input type="email" name="email" placeholder="mathias2.conversalbe" required>
-                    </div>
-                    <div class="wpforms-field wpforms-field-html html-field">
-                      <p>Wij respecteren uw <a href="#">privacy.</a> Jouw gegevens worden altijd vertrouwelijk behandeld.</p>
-                    </div>
-                  </div><!-- end of .wpforms-field-container-->
-                  <div class="wpforms-submit-container">
-                    <button type="submit" name="submit" class="wpforms-submit fl-blue-btn">VERZENDEN</button>
-                  </div>
-
-                </form>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

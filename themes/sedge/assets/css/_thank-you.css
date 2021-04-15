@@ -396,8 +396,21 @@ svg.home-btn-arrow{
 	.thnk-y-social-des .thnk-you-social-des-title{
 		font-size:20px;
 	}
-	
+	.thankyou .orders-crtl{
+		max-width: 100%;
+		margin-right: 0;
+	}
+	.shipping-order-total, .thankyou .service-bottom, .fl-blue-btn i{
+		display: none;
+	}
+	.thankyou .deshboard-inner{
+		margin-bottom: 33px;
+	}
+	.thankyou .order-home-btn{
+		margin: auto;
+	}	
 }
+
 @media(max-width:768px){
 	.thnk-you-des .thank-you-des-title{
 		font-size:26px;
@@ -418,7 +431,28 @@ svg.home-btn-arrow{
 	.woocommerce-order-received .innerpage-con-wrap{
 	    padding-top: 38px;
 	}
+	.thankyou .orders-product-item{
+		margin: 0 -30px;
+	}
+	.thankyou .deshboard-inner{
+		margin: 30px -30px;
+	}
 }
+
+@media (max-width: 639px) {
+	.thnk-you-des{
+		display: block;
+	}
+	.thnk-you-des-left{
+		margin: auto;
+		margin-bottom: 12px;
+	}
+	.thnk-you-des-rgt{
+		padding-left: 0;
+		text-align: center;
+	}
+}
+
 @media(max-width:575px){
 	.thnk-you-des a {
 	    font-size: 14px;
@@ -453,65 +487,31 @@ svg.home-btn-arrow{
 	    padding-top: 35px;
 	    padding-bottom: 32px;
 	}
-}
-
-/* ================= */
-/* == responsive == */
-/* =============== */
-@media (max-width: 1699px) {
-	
-}
-
-@media (max-width: 1599px) {
-	
-}
-
-@media (max-width: 1499px) {
-	
-}
-
-@media (max-width: 1399px) {
-	
-}
-
-@media (max-width: 1299px) {
-	
-}
-
-@media (max-width: 1199px) {
-	
-}
-
-@media (max-width: 991px) {
-	
-}
-
-@media (max-width: 767px) {
-	
-}
-
-@media (max-width: 639px) {
-	.thnk-you-des{
-		display: block;
+	.thankyou .body-list .quantity, .thankyou .order-head span:last-of-type{
+		display: none;
 	}
-	.thnk-you-des-left{
-		margin: auto;
-		margin-bottom: 12px;
+	.thankyou .order-body{
+		padding-right: 0;
 	}
-	.thnk-you-des-rgt{
-		padding-left: 0;
-		text-align: center;
+	.thankyou .title-meta .meta-title{
+		font-size: 16px;
 	}
 }
 
-@media (max-width: 575px) {
-	
+@media(max-width:480px){
+	.thankyou .orders-product-item{
+		padding: 30px 20px 50px 20px;
+	}
+	.thankyou .title-meta{
+		padding-left: 15px;
+	}
 }
 
-@media (max-width: 439px) {
-	
-}
-
-@media (max-width: 375px) {
-	
+@media(max-width:375px){
+	.thankyou .orders-product-item{
+		padding: 30px 15px 50px 15px;
+	}
+	.thankyou .order-home-btn{
+		width: 100%;
+	}	
 }
