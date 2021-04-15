@@ -649,13 +649,17 @@ body.woocommerce-account .woocommerce button[type=button].woocommerce-button{
     width: 311px;
 }body.woocommerce-account .woocommerce button[type=submit].woocommerce-button span, 
 body.woocommerce-account .woocommerce button[type=button].woocommerce-button span,
-body.woocommerce-account .register-btn button[type="submit"] span{
+body.woocommerce-account .register-btn button[type="submit"] span,
+body.woocommerce-checkout .payment-method-crtl .custom-checkout-btn button[type=submit] span,
+body.woocommerce-checkout .custom-checkout-order-review button.button.alt span{
     position: relative;
     padding-left: 15px;
 }
 body.woocommerce-account .woocommerce button[type=submit].woocommerce-button span:after, 
 body.woocommerce-account .woocommerce button[type=button].woocommerce-button span:after,
-body.woocommerce-account .register-btn button[type="submit"] span:after{
+body.woocommerce-account .register-btn button[type="submit"] span:after,
+body.woocommerce-checkout .payment-method-crtl .custom-checkout-btn button[type=submit] span:after,
+body.woocommerce-checkout .custom-checkout-order-review button.button.alt span:after{
     position: absolute;
     content: "";
     background: url(../images/cart-page-button-icon.svg);
