@@ -17,9 +17,11 @@
     	<div class="container">
     		<div class="row">
     			<div class="col-md-12">
+            <?php if(have_rows('inhoud')){  ?>
     				<article class="default-page-con">
     					<?php the_content(); ?>
     				</article>
+            <?php endif; ?>
     			</div>
     		</div>
     	</div>
