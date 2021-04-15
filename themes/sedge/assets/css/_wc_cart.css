@@ -225,6 +225,7 @@ body.woocommerce-cart .cart-table-crtl table.shop_table{
 
 body.woocommerce-cart .cart_totals h2{
 	margin-bottom: 30px;
+	padding-top: 10px;
 }
 body.woocommerce-cart .cart_totals tbody tr th:first-child{
 	padding-left: 0;
