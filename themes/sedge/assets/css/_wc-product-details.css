@@ -447,6 +447,12 @@ body.single-product div.product form.cart .button{
 	justify-content: left;
 	padding-top: 13px!important;
 }
+body.single-product div.product form.cart .button:after{
+    position: absolute;
+    left: 100%;
+    margin-left: 16px;
+    color: #6dbd98;
+}
 body.single-product div.product form.cart .button:hover{
 	background: #EC5387!important;
 	border-color: #EC5387!important;
