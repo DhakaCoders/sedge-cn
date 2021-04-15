@@ -242,7 +242,8 @@ body.woocommerce-orders .customer-order-details .faq-accordion-wrp ul li:last-ch
     margin-bottom:0px!important;
 }
 body.woocommerce-orders .customer-order-details .faq-accordion-wrp ul{
-    padding-bottom:0px;
+    position: relative;
+    padding-bottom: 50px!important;
 }
 body.woocommerce-orders .innerpage-con-wrap{
     max-width: 100%;
@@ -470,7 +471,18 @@ body.woocommerce-orders .order-details{
 
 }
 body.woocommerce-orders .customer-order-details .fl-pagi-cntlr {
-    margin-top: 56px;
+    margin-top:42px;
+    padding-bottom: 10px;
+}
+body.woocommerce-orders .customer-order-details .faq-accordion-wrp ul:after {
+    content: "";
+    position: absolute;
+    width: 86px;
+    height: 2px;
+    background: #71867E;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
 }
 /* ------------------------- woocommerce-edit-account --------------------------*/
 body.woocommerce-edit-account .innerpage-con-wrap{
@@ -1569,6 +1581,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.woocommerce-account #customer_login .u-column2.col-2 > h2{
         font-size:30px;
     }
+
 }
 
 @media(max-width:1199px){
