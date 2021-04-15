@@ -330,16 +330,13 @@ svg.home-btn-arrow{
 	font-weight: 400;
 	border-top: none;
 	border-bottom: none!important;
-	padding: 0;
 }
 .thankyou .woocommerce-order-received .woocommerce table.shop_table td, 
 .thankyou .woocommerce-order-received .woocommerce table.shop_table th{
 	border-bottom: none!important;
-    padding: 0!important;
 }
 .thankyou .woocommerce table.shop_table td{
 	border-bottom: none!important;
-	padding: 0!important;
 	vertical-align: inherit!important;
 }
 .thankyou .product-name, .cart-subtotal th, .fee th, .order-totaal th{
@@ -349,10 +346,6 @@ svg.home-btn-arrow{
 }
 .thankyou .cart-subtotal th{
 	text-transform: uppercase;
-}
-.thankyou .cart_item, .thankyou .cart-subtotal, .thankyou .fee, .thankyou .order-totaal{
-	display: inline-block;
-	vertical-align: baseline;
 }
 .thankyou .cart_item, .thankyou .cart-subtotal, .thankyou .fee {
 	padding-bottom: 27px;
