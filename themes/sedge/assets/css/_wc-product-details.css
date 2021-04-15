@@ -1168,6 +1168,9 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		width:14px!important;
 		height:14px!important;
 	}
+	.fl-product .price-quentity-ctrl form .variations tbody tr td .bootstrap-select .dropdown-toggle .filter-option {
+	    padding: 10px 17px 16px 10px!important;
+	}
 }
 
 @media(max-width: 479px){
@@ -1196,7 +1199,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
     .thumbnails-cntlr .thumb-bg > div {
         height: 90px;
     }
-    
+
 }
 
 @media(max-width: 359px){
