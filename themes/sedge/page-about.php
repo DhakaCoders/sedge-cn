@@ -217,16 +217,13 @@ $thisID = get_the_ID();
 ?>
 <section class="grid-gallary">
   <?php foreach( $galerijs_2 as $galerij_2 ){
-    printr($galerij_2);
+    //printr($galerij_2);
   }
-  $galerij_2_01 = !empty($galerij_2[295])? cbv_get_image_src( $galerij_2['295'], 'full' ): '';
-
   ?>
   <div class="grid-gallary-cntrl"> 
     <div class="grd-galry-lft mHc">
       <div class="lft-grd-galry">
-        <div class="grd-galry-img1 inline-bg" style="background-image: url('<?php echo $galerij_2_01; ?>');">
-        </div>
+        <div class="grd-galry-img1 inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/grid-glary-img-1.jpg');"></div>
       </div>   
     </div>
     <div class="grd-galry-rgt mHc">
@@ -306,6 +303,11 @@ $thisID = get_the_ID();
 <?php endif; ?>
 
 
+
+<?php  
+  $aboutproduct = get_field('aboutproduct', $thisID);
+  if($aboutproduct): 
+?>
 <section class="product-sec about-prdt-sec">
   <div class="container">
     <div class="row">
@@ -317,15 +319,19 @@ $thisID = get_the_ID();
                 <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/sedge-prdt-logo.png" alt=""></a>
               </div>
               <div class="prdt-des">
-                <p>Sedge wants to contribute to a better future for generations to come.</p>
-                <p>Our goal is to play a positive part in the development of a sustainable society and 
-                the preservation of traditions. By means of offering 100% natural products and creating more awareness with consumers about ecology and other facets of nature.</p>
-                <p>What drives us in the long term is the opportunity to complete the circle and give back to nature and to the people who give us the possibility to do what we love to do.</p>
-                <p>As an organization we persuade stable,long lasting relationships between equal partners.</p>
+                <?php
+                  if( !empty($aboutproduct['beschrijving']) ) echo wpautop( $aboutproduct['beschrijving'] );
+                ?>
               </div>
-              <div class="find-more">
-                  <a href="#" class="fl-blue-btn find-more-btn">search our products</a>
-                </div> 
+
+                <?php 
+                    $apro_des_knop = $aboutproduct['knop'];
+                    if( is_array( $apro_des_knop ) &&  !empty( $apro_des_knop['url'] ) ):
+                ?>
+                <div class="find-more">
+                  <?php  printf('<a class="fl-blue-btn find-more-btn" href="%s" target="%s">%s</a>', $apro_des_knop['url'], $apro_des_knop['target'], $apro_des_knop['title']); ?>
+                </div>
+                <?php endif; ?>
             </div>
           </div>
           <div class="prdt-catg">
@@ -362,7 +368,7 @@ $thisID = get_the_ID();
     </div>
   </div>
 </section>
-
+<?php endif; ?>
 
 <?php
 get_template_part('templates/footer-top-form');
