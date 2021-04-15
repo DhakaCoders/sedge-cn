@@ -225,9 +225,11 @@ body.woocommerce-order-received .checkout-page-title{
 }
 .thankyou .service-lists{
 	margin: 0 -18px;
+	flex-wrap: wrap;
 }
 .thankyou .service-list{
 	padding: 0 18px;
+	width: 100%;
 }
 .thankyou .service-text{
 	padding-left: 36px;
