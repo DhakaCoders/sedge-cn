@@ -219,13 +219,13 @@ $thisID = get_the_ID();
   <?php foreach( $galerijs_2 as $galerij_2 ){
     printr($galerij_2);
   }
-  $galerij_2_01 = !empty($abanner['afbeelding'])? cbv_get_image_src( $abanner['afbeelding'], 'full' ): '';
+  $galerij_2_01 = !empty($galerij_2[295])? cbv_get_image_src( $galerij_2['295'], 'full' ): '';
 
   ?>
   <div class="grid-gallary-cntrl"> 
     <div class="grd-galry-lft mHc">
       <div class="lft-grd-galry">
-        <div class="grd-galry-img1 inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/grid-glary-img-1.jpg');">
+        <div class="grd-galry-img1 inline-bg" style="background-image: url('<?php echo $galerij_2_01; ?>');">
         </div>
       </div>   
     </div>
