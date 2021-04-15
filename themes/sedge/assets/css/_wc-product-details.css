@@ -1165,6 +1165,13 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	body.single-product .wc-product-gallery-thumb .woocommerce-product-gallery__image{
 	    height: 82px!important;
 	}
+	body.single-product.woocommerce div.product div.images{
+		margin-bottom:0px;
+	}
+	body.single-product .slick-slider .slick-dots li{
+		width:14px!important;
+		height:14px!important;
+	}
 }
 
 @media(max-width: 479px){
@@ -1179,9 +1186,6 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	.main-img-crtl .woocommerce-product-gallery__image {
 	    height: 250px;
-	}
-	.main-img-crtl .woocommerce-product-gallery__image img {
-	    max-height: 135px;
 	}
 	.term-geschenken .fl-products-cntlr ul.products > li{
 	    width:100%!important;
