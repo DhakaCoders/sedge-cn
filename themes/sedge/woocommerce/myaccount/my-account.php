@@ -26,16 +26,13 @@ defined( 'ABSPATH' ) || exit;
 <div class="myaccount-crtl">
 	<div class="account-page-title">
 		<?php if( is_wc_endpoint_url( 'orders' ) ){ ?>
-			<h1 class="fl-blue-btn">BESTELLINGEN</h1>
 			<div class="back-to-dashboard-btn-cntlr"><a href="<?php echo esc_url( get_permalink(get_option( 'woocommerce_myaccount_page_id' )) );?>">Terug naar DASHBOARD</a></div>
 		<?php }elseif( is_wc_endpoint_url( 'edit-account' ) ){ ?>
-			<h1 class="fl-blue-btn">Account Details</h1>
 			<div class="back-to-dashboard-btn-cntlr"><a href="<?php echo esc_url( get_permalink(get_option( 'woocommerce_myaccount_page_id' )) );?>">Terug naar DASHBOARD</a></div>
 		<?php }else{ 
 		    $current_user = wp_get_current_user();
 		    $username = !empty($current_user->display_name)? $current_user->display_name : $current_user->user_firstname;
 		?>
-			<h1 class="fl-blue-btn">DASHBOARD</h1>
 			<p class="loggedin-text"><?php printf( __( 'Dag, <span>%s</span>', THEME_NAME ), esc_html( $username ) ); ?></p>
 			<p>Vanaf uw accountdashboard kunt u uw recente bestellingen bekijken, uw verzend- en factuuradressen beheren en uw wachtwoord en accountgegevens bewerken.</p>
 		<?php } ?>
@@ -55,6 +52,32 @@ defined( 'ABSPATH' ) || exit;
 				?>
 			</div>
 		</div>
+	</div>
+</div>
+<div class="deshboard-inner">
+	<div class="service-contact">
+		<h2>Service & contact</h2>
+		<div class="service-lists">
+			<div class="service-list">
+				<div class="icon">
+					<i><img src="<?php echo THEME_URI; ?>/assets/images/wc-ser-icon.svg" alt=""></i>
+				</div>
+				<div class="service-text">
+					<h3>Vind alles in je account</h3>
+					<p><a href="">Volg je bestelling</a>, <a href="">betaal facturen</a> of retourneer een artikel.</p>
+				</div>
+			</div>
+			<div class="service-list">
+				<div class="icon">
+					<i><img src="<?php echo THEME_URI; ?>/assets/images/wc-con-icon.svg" alt=""></i>
+				</div>
+				<div class="service-text">
+					<h3>Heb je ons nodig?</h3>
+					<p>We helpen je graag. <a href="">Onze klantenservice</a> is dag en nacht open.</p>
+				</div>
+			</div>
+		</div>
+
 	</div>
 </div>
 <div class="myaccount-btm-form">

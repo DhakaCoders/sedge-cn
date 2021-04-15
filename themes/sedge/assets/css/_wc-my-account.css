@@ -1,12 +1,15 @@
 
 /* ------------------- my account  deshboard-----------------------*/
 body.woocommerce-account .account-page-title{
-    padding-top: 40px;
+    padding-top:25px;
 }
 body.woocommerce-account .myaccount-crtl{
     max-width: 926px;
     width: 100%;
     margin: 0 auto;
+}
+body.woocommerce-edit-account .account-page-title {
+    padding-top: 15px;
 }
 body.woocommerce-account .account-page-title h1{
     border-bottom:none!important;
@@ -223,7 +226,8 @@ body.woocommerce-orders .account-page-title h1{
     transition: all .5s;
     -ms-transition: all .5s;
     -webkit-transition: all .5s;
-    margin-top: -3px!important;
+    margin-top: -1px!important;
+    font-size: 15px;
 }
 body.woocommerce-account .breadcrumb-sec{
     display:none;
@@ -231,6 +235,9 @@ body.woocommerce-account .breadcrumb-sec{
 
 
 /* -------------------------body woocommerce-orders -----------------------*/
+body.woocommerce-orders .account-page-title{
+    padding-top: 15px;
+}
 body.woocommerce-orders .customer-order-details .faq-accordion-wrp ul li:last-child{
     margin-bottom:0px!important;
 }
@@ -245,13 +252,12 @@ body.woocommerce-orders .woocommerce-account-grds-cntlr nav.woocommerce-MyAccoun
 
 }
 body.woocommerce-orders .myac-pro-grd-item-inr .myac-pro-grd-img{
-    max-width:90px;
+    max-width: 119px;
     height: auto;
     margin-right: 29px;
 }
 body.woocommerce-orders .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content{
     max-width:100%;
-    padding-left:120px;
 }
 body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc h5{
     font-size: 18px;
@@ -1150,11 +1156,11 @@ body.woocommerce-checkout .custom-checkout-order-review table th{
 }*/
 .custom-checkout-order-review table td,
 .custom-checkout-order-review table th{
-    padding: 12px 0px!important;
+    padding: 10px 0px 20px 0px!important;
 }
 .custom-checkout-order-review table tr.order-total th, 
 .custom-checkout-order-review table tr.order-total td{
-    padding-top: 35px!important;
+    padding-top: 25px!important;
 }
 /*body.woocommerce-checkout .custom-checkout-order-review table tr.order-total th, 
 body.woocommerce-checkout .custom-checkout-order-review table tr.order-total td {
@@ -1218,6 +1224,10 @@ body.woocommerce-checkout .custom-checkout-order-review table.shop_table tfoot .
 body.woocommerce-checkout .woocommerce-additional-fields h3{
     border-bottom: 1px solid #F1E8E1;
     padding-bottom: 20px;
+}
+.custom-checkout-order-review table.shop_table tfoot .order-total th,
+.custom-checkout-order-review table.shop_table tfoot .order-total td{
+    border-top: 2px solid #F2EADE!important;
 }
 body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .woocommerce-input-wrapper textarea{
     min-height:233px
@@ -1395,7 +1405,7 @@ body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul 
     height:60px;
     border: 1px solid #F2EDE9;
     border-radius:6px;
-    background: #FFFFFF;
+    background: #fffbf4;
     margin: 0;
     font-weight: 400;
     display: flex;
@@ -1514,7 +1524,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
 @media(max-width: 1499px){
     body.woocommerce-orders .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content,
     body.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content{
-        padding-left:50px;
+        padding-left:0px;
     }
     body.woocommerce-account .page-title {
         margin-top: 50px;
@@ -2053,7 +2063,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
 
     /* ------------------ account order -------------------*/
     body.woocommerce-orders .woocommerce-account-grds-cntlr{
-        padding-top:0px;
+        padding-top:30px;
     }
     body.woocommerce-orders .order-comment p{
         font-size: 10px;
@@ -2112,7 +2122,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         margin-bottom:0;
     }
     body.woocommerce-orders .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content{
-        max-width: 500px;
+        max-width: 600px;
         padding-left: 0px;
     }
     body.woocommerce-orders .orders-crtl .code-text{
@@ -2129,9 +2139,50 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc ins span bdi{
         font-size: 14px!important;
     }
+    body.woocommerce-orders .order-title{
+        font-size:16px;
+        margin-bottom: 3px;
+        line-height: 1;
 
-
-
+    }
+    body.woocommerce-orders .order-comment p{
+        margin-bottom: 18px!important;
+    }
+    body.woocommerce-orders .myac-pro-grds {
+        border-top: 2px solid #F9F1E6;
+    }
+    body.woocommerce-orders .order-details{
+        padding-left:25px;
+        padding-right:25px;
+        padding-bottom: 22px;
+    }
+    body.woocommerce-orders .accordion-order-title{
+        padding-left:25px;
+        padding-right:25px;
+    }
+    body.woocommerce-orders .myac-pro-grd-item-inr .myac-pro-grd-img img{
+        max-width: 78px;
+        width:100%;
+        height: 85px;
+    }
+     body.woocommerce-orders .myac-pro-grd-item-inr .myac-pro-grd-img{
+        max-width:100%;
+        height:100%;
+     }
+     body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc h5{
+        font-size:16px;
+     }
+     body.woocommerce-orders span.plus-minus{
+        width:20px;
+        height:40px;
+     }
+     body.woocommerce-orders span.plus-minus:after{
+        font-size:18px;
+     }
+     body.woocommerce-orders .orders-list li {
+        background: #fff;
+        margin-bottom: 20px !important;
+    }
     /* ---------------------woocommerce-edit-account------------------------*/
 
     body.woocommerce-edit-account .innerpage-con-wrap .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
@@ -2491,6 +2542,14 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.woocommerce-checkout .woocommerce-additional-fields.extra-info h3{
         margin-bottom:27px;
     }
+    /* -------------- order overview----------------*/
+     body.woocommerce-orders span.plus-minus{
+        width:16px;
+        height:30px;
+     }
+     body.woocommerce-orders span.plus-minus:after{
+        font-size:18px;
+     }
     
 }
 
