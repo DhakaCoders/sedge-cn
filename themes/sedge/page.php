@@ -5,14 +5,17 @@
     <div class="row">
       <div class="col-md-12">
         <div class="page-entry-hdr clearfix">
+          <?php if( is_cart() ){ ?>
           <h1 class="fl-blue-btn"><?php echo get_the_title(); ?></h1>
-
-          <?php if( is_wc_endpoint_url( 'orders' ) ){ ?>
-            <h1 class="fl-blue-btn">BESTELLINGEN</h1>
-          <?php }elseif( is_wc_endpoint_url( 'edit-account' ) ){ ?>
-            <h1 class="fl-blue-btn">Account Details</h1>
-          <?php }else{ ?>
-            <h1 class="fl-blue-btn">DASHBOARD</h1>
+          <?php } ?>
+          <?php if( is_account_page() && is_user_logged_in() ){ ?>
+            <?php if( is_wc_endpoint_url( 'orders' ) ){ ?>
+              <h1 class="fl-blue-btn">BESTELLINGEN</h1>
+            <?php }elseif( is_wc_endpoint_url( 'edit-account' ) ){ ?>
+              <h1 class="fl-blue-btn">Account Details</h1>
+            <?php }else{ ?>
+              <h1 class="fl-blue-btn">DASHBOARD</h1>
+            <?php } ?>
           <?php } ?>
         </div>
       </div>
