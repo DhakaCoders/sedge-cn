@@ -202,7 +202,7 @@ defined( 'ABSPATH' ) || exit;
 		                ?>
 		              </div>
 		            </div>
-		            <div class="order-total">
+		            <div class="order-total custom-checkout-order-review">
 		              <h2 class="fl-h6 order-total-title">OVERZICHT</h2>
 		              <div class="order-details">
 		                <table class="shop_table woocommerce-checkout-review-order-table">
