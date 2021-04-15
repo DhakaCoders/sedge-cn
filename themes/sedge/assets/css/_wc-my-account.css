@@ -2145,6 +2145,34 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.woocommerce-orders .myac-pro-grds {
         border-top: 2px solid #F9F1E6;
     }
+    body.woocommerce-orders .order-details{
+        padding-left:25px;
+        padding-right:25px;
+        padding-bottom: 22px;
+    }
+    body.woocommerce-orders .accordion-order-title{
+        padding-left:25px;
+        padding-right:25px;
+    }
+    body.woocommerce-orders .myac-pro-grd-item-inr .myac-pro-grd-img img{
+        max-width: 78px;
+        width:100%;
+        height: 85px;
+    }
+     body.woocommerce-orders .myac-pro-grd-item-inr .myac-pro-grd-img{
+        max-width:100%;
+        height:100%;
+     }
+     body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc h5{
+        font-size:16px;
+     }
+     body.woocommerce-orders span.plus-minus{
+        width:20px;
+        height:40px;
+     }
+     body.woocommerce-orders span.plus-minus:after{
+        font-size:18px;
+     }
     /* ---------------------woocommerce-edit-account------------------------*/
 
     body.woocommerce-edit-account .innerpage-con-wrap .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
@@ -2504,6 +2532,14 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.woocommerce-checkout .woocommerce-additional-fields.extra-info h3{
         margin-bottom:27px;
     }
+    /* -------------- order overview----------------*/
+     body.woocommerce-orders span.plus-minus{
+        width:16px;
+        height:30px;
+     }
+     body.woocommerce-orders span.plus-minus:after{
+        font-size:18px;
+     }
     
 }
 
