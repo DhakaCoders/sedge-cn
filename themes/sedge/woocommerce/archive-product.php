@@ -69,12 +69,12 @@ if ( woocommerce_product_loop() ) {
 			do_action( 'woocommerce_shop_loop' );
 
 			wc_get_template_part( 'content', 'product' );
-			if( is_product_category() ){
+/*			if( is_product_category() ){
 				if(($i == 2) &&  in_array($cat->slug, assign_gift_card_cat()) ){
 					wc_get_template_part('shop', 'cta'); // blog grid
 				}
 				$i++;
-			}
+			}*/
 		}
 		wc_get_template_part('blog', 'content'); // blog grid
 	}
@@ -109,5 +109,5 @@ do_action( 'woocommerce_after_main_content' );
  * @hooked woocommerce_get_sidebar - 10
  */
 do_action( 'woocommerce_sidebar' );
-
+get_template_part('templates/footer', 'top-form');
 get_footer( 'shop' );
