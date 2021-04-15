@@ -106,13 +106,19 @@ $thisID = get_the_ID();
 </section>
 
 
-
+<?php 
+  $handleiding_sec = get_field('handleiding_sec', $thisID);
+  if( $handleiding_sec ):
+    
+?>
 <section class="product-menual-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="prdt-menual-hdr">
-          <h1 class="fl-h1 prdt-menual-titl">FROM RAW MATERIAL,<br> THROUGH MANUAL PROCESSING,<br> TO FINAL PRODUCT</h1>
+          <?php 
+            if( !empty($handleiding_sec['titel']) ) printf( '<h2 class="fl-h1 prdt-menual-titl">%s</h2>', $handleiding_sec['titel'] );
+          ?>
         </div>
         <div class="prdt-mnl-cntrl">
           <div class="pmi-galry mHc">
@@ -169,9 +175,32 @@ $thisID = get_the_ID();
               </div>
             </div>
           </div>
+
+          <?php 
+            $handleidings = $handleiding_sec['handleiding'];
+              if($handleidings):
+          ?>
           <div class="prdt-mnl-process mHc">
             <ul class="clearfix reset-list">
+              <?php foreach( $handleidings as $handleiding ): ?>
               <li>
+                <div class="pmp-des">
+                  <?php if( !empty($handleiding['afbeelding']) ):  ?>
+                  <div class="pmp-des-img">
+                    <?php echo cbv_get_image_tag($handleiding['afbeelding']); ?>
+                  </div>
+                  
+                  <?php endif; ?>
+                  <div class="pmp-des-tlt">
+                    <?php 
+                        if( !empty($handleiding['titel']) ) printf( '<h6 class="fl-h6 pmp-title">%s</h6>', $handleiding['titel'] );
+                      ?>
+                  </div>
+                </div>
+              </li>
+              <?php endforeach; ?>
+
+              <!-- <li>
                 <div class="pmp-des">
                   <div class="pmp-des-img">
                     <img src="<?php echo THEME_URI; ?>/assets/images/prdt-mnl-des-img-1.jpg" alt="">
@@ -250,14 +279,16 @@ $thisID = get_the_ID();
                     <h6 class="fl-h6 pmp-title">quality  control</h6>
                   </div>
                 </div>
-              </li>
+              </li> -->
             </ul>
           </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php endif; ?>
 
 <section class="grid-gallary">
   <div class="grid-gallary-cntrl"> 

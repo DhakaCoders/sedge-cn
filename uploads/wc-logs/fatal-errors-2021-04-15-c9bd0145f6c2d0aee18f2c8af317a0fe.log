@@ -25,3 +25,5 @@ Stack trace:
 #4 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
 #5 D:\xampp\htdocs\project\202 in D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\themes\sedge\woocommerce\checkout\thankyou.php on line 191
 
+2021-04-15T19:10:10+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in D:\xampp\htdocs\projects\2021\sedge\sedge-cn\themes\sedge\page-about.php on line 435
+
