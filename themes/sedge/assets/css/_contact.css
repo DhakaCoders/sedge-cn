@@ -248,13 +248,15 @@
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.form-privacy-text{
 	margin-bottom: 15px;
 }
-.contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text p {
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-description{
+    margin-top: 0;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-description p{
     font-size: 12px;
     line-height: 1.4;
     color: #6A6A6A;
     margin-bottom: 24px;
     text-align: left;
-    font-style: italic;
     margin-bottom: 0;
     padding-top: 10px;
     padding-right: 20px;
@@ -326,68 +328,6 @@ placeholder
 Inputtype Radio Css
 ----------------------
 */
-/*.input-type-radio ul li{
-    padding: 0 !important;
-    margin: 0 !important;
-    position: relative;
-    float: left;
-    padding-right: 28px !important;
-}
-.input-type-radio ul li label{
-    font-size: 14px;
-    line-height: 1;
-    font-weight: 400;
-    color: #78797B;
-    margin: 0;
-    padding-left: 50px;
-    text-transform: inherit;
-    padding-right: 0;
-    cursor: pointer;
-    padding: 2px 0 2px 25px;
-}
-.input-type-radio ul li input{
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.checkmark{
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    border: 1px solid #71867E;
-    box-sizing: border-box;
-    left: 0;
-    top: 5px;
-    border-radius: 15px;
-}
-
-.checkmark:after{
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.input-type-radio ul li label input:checked ~ .checkmark:after {
-  display: block;
-  background: #93A198;
-}
-
-.input-type-radio ul li label .checkmark:after{
-	content: "";
-	position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    width: 8px;
-    height: 8px;
-    background: #93A198;
-    border-radius: 10px;
-}*/
 
 .input-type-radio input[type=radio],
 .input-type-radio input[type=checkbox]{
