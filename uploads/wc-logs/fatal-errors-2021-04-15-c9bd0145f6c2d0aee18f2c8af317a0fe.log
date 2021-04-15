@@ -18,3 +18,7 @@
 
 2021-04-15T11:33:47+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\themes\sedge\page.php on line 33
 
+2021-04-15T13:58:52+00:00 CRITICAL Out of memory (allocated 31457280) (tried to allocate 86016 bytes) in G:\xampp\htdocs\project\2021\March\sedge\wp-includes\wp-db.php on line 2056
+
+2021-04-15T13:59:14+00:00 CRITICAL Out of memory (allocated 10485760) (tried to allocate 86016 bytes) in G:\xampp\htdocs\project\2021\March\sedge\wp-includes\wp-db.php on line 2056
+
