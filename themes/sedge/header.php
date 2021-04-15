@@ -130,15 +130,15 @@ $smedias = get_field('social_media', 'options');
             </div>
             <?php if(!empty($smedias)):  ?>
             <div class="xs-hdr-socials show-md">
-              <?php foreach($smedias as $smedia): ?>
               <ul class="reset-list clearfix">
+                 <?php foreach($smedias as $smedia): ?>
                 <li>
                   <a href="<?php echo $smedia['url']; ?>">
                     <?php echo $smedia['icon']; ?>
                   </a>
                 </li>
+                <?php endforeach; ?>
               </ul>
-              <?php endforeach; ?>
             </div>
             <?php endif; ?>
           </div>
