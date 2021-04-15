@@ -641,6 +641,9 @@ body.woocommerce-page.woocommerce-checkout .woocommerce-NoticeGroup-checkout .wo
 		width: 50%!important;
 		margin-top: 23px; 
 	}
+	body.woocommerce-cart .cart-table-crtl table.shop_table tbody tr td.product-subtotal{
+    text-align:right!important;
+}
 	body.woocommerce-cart td.product-subtotal{
 		margin-top: 28px!important;
 	}

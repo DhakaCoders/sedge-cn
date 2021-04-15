@@ -301,9 +301,12 @@ if(windowWidth > 768){
   });
 }
 
-$('.wpforms-error').on('click', function(){
+$('.wpforms-field-email').on('click', function(){
+  $(this).addClass('wpforms-has-error');
   $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
 });
+
+
 
 
 
