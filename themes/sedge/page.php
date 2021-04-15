@@ -1,11 +1,19 @@
 <?php get_header(); ?>
-<?php if( is_cart() ): ?>
+<?php if( is_cbv_title() ): ?>
 <div class="page-banner-sec-wrp">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="page-entry-hdr clearfix">
           <h1 class="fl-blue-btn"><?php echo get_the_title(); ?></h1>
+
+          <?php if( is_wc_endpoint_url( 'orders' ) ){ ?>
+            <h1 class="fl-blue-btn">BESTELLINGEN</h1>
+          <?php }elseif( is_wc_endpoint_url( 'edit-account' ) ){ ?>
+            <h1 class="fl-blue-btn">Account Details</h1>
+          <?php }else{ ?>
+            <h1 class="fl-blue-btn">DASHBOARD</h1>
+          <?php } ?>
         </div>
       </div>
     </div>
@@ -27,7 +35,7 @@
   <?php else:?>
   <section class="innerpage-con-wrap">
     <article class="default-page-con">
-      <?php if(have_rows('inhoud')){  ?>
+      <?php if(have_rows('inhoud')):  ?>
       <div class="block-955">
       </div>
       <?php endif; ?>
