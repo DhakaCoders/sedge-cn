@@ -73,7 +73,10 @@
 
 
 
-
+<?php  
+  $homeproduct = get_field('homeproduct', HOMEID);
+  if($homeproduct): 
+?>
 <section class="home-product-sec">
   <div class="prdt-bnr">
     <img src="<?php echo THEME_URI; ?>/assets/images/prdt-bnr-bg.jpg" alt="">
@@ -117,22 +120,21 @@
                 <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/sedge.svg" alt=""></a>
               </div>
               <div class="prdt-des">
-                <ul class="clearfix reset-list">
-                  <li>100% natuurlijk en biologisch afbreekbaar</li>
-                  <li>Geen conserveringsmiddelen, geen chemicaliën</li>
-                  <li>Food grade gecertificeerd*</li>
-                  <li>Revitaliseert en versterkt in vloeistof</li>
-                  <li>Glutenvrij, lactosevrij, suikervrij</li>
-                  <li>Geen ontbossing, superlage ecologische voetafdruk</li>
-                  <li>Helpt de habitat van bedreigde diersoorten te beschermen</li>
-                  <li>Geoogst in de Mekong-delta van Vietnam</li>
-                </ul>
+                <?php
+                  if( !empty($homeproduct['beschrijving']) ) echo wpautop( $homeproduct['beschrijving'] );
+                ?>
                 <div class="notice">
-                  <p>Gecertificeerd als volledig onschadelijk voor mensen door de respectieve nationale Vietnamese en Europese autoriteiten (Ministerie van Volksgezondheid van de Socialistische Republiek Vietnam en EMI-TUV-SUD in Europa)</p>
+                  <?php echo wpautop( $homeproduct['merk_op'] ); ?> 
                 </div> 
+
+                <?php 
+                    $hpro_des_knop = $homeproduct['knop'];
+                    if( is_array( $hpro_des_knop ) &&  !empty( $hpro_des_knop['url'] ) ):
+                ?>
                 <div class="find-more">
-                  <a href="#" class="fl-blue-btn find-more-btn">Ontdek meer over Sedge</a>
-                </div> 
+                  <?php  printf('<a class="fl-blue-btn find-more-btn" href="%s" target="%s">%s</a>', $hpro_des_knop['url'], $hpro_des_knop['target'], $hpro_des_knop['title']); ?>
+                </div>
+                <?php endif; ?>
               </div>
             </div>  
           </div>
@@ -141,4 +143,7 @@
     </div>
   </div>
 </section>
+<?php endif; ?>
+
+
 <?php get_footer(); ?>
