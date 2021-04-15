@@ -223,6 +223,10 @@ body.tax-product_cat span.onsale{
     .fl-pagi-cntlr ul{
         margin: 0;
     }
+    body.home span.onsale, body.post-type-archive span.onsale{
+        top: 32px!important;
+        left: 52px!important;
+    }
 }
 
 @media(max-width: 991px){
@@ -240,6 +244,10 @@ body.tax-product_cat span.onsale{
     }
     .fl-overview-cont-cntrl{
         padding-top: 69px;
+    }
+    body.home span.onsale, body.post-type-archive span.onsale {
+        top: 15px!important;
+        left: 20px!important;
     }
     
 }
@@ -274,6 +282,9 @@ body.tax-product_cat span.onsale{
     .fl-overview-content{
         padding-bottom: 22px;
     }
+    body.home span.onsale, body.post-type-archive span.onsale{
+        width: 80px!important;
+    }
 }
 
 @media(max-width: 639px){
@@ -291,6 +302,9 @@ body.tax-product_cat span.onsale{
     }
     .fl-pro-grd-btn{
         padding-left: 5px;
+    }
+    body.home span.onsale, body.post-type-archive span.onsale{
+        width: 100px!important;
     }
 }
 
@@ -348,5 +362,10 @@ body.tax-product_cat span.onsale{
 @media(max-width: 359px){
     .fl-pro-grd-des .fl-pro-grd-title{
         font-size: 16px;
+    }
+    body.home span.onsale, body.post-type-archive span.onsale {
+        width: 70px!important;
+        top: 10px!important;
+        left: 15px!important;
     }
 }

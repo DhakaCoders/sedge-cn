@@ -192,6 +192,22 @@ google.maps.event.addDomListener(window, 'load', initialize);
   }
 
 
+  if( $('.xs-hdr-srch').length ){
+    $('.xs-hdr-srch').click(function(e){
+      event.preventDefault();
+      $('.xs-hdr-srch-wrap').toggleClass('hdr-rgt-srch-input-show');
+    });
+  }
+
+  $(document).click(function(event) { 
+    var $target = $(event.target);
+    if(!$target.closest('.xs-hdr-srch').length && 
+      $('.xs-hdr-srch-btm').is(":visible")) {
+      $('.xs-hdr-srch-wrap').removeClass('hdr-rgt-srch-input-show');
+  }        
+});
+
+
   /*start of Rannojit*/
 
 
@@ -285,9 +301,22 @@ if(windowWidth > 768){
   });
 }
 
-$('.wpforms-error').on('click', function(){
+$('.wpforms-field-email').on('click', function(){
   $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
 });
+
+
+$('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click',function(){
+    $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error').append('<span></span>');
+});
+
+$('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error').each(function(){
+    $(this).append('<span></span>')
+});
+
+
+
+
 
 
 
