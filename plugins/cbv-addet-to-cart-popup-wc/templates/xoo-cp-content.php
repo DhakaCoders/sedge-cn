@@ -64,11 +64,16 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
             </div>
 
           <?php if($attributes): ?>
-            <div class="xoo-cp-variations"><?php echo $attributes; ?></div>
+            <div class="xoo-cp-variations">
+              <?php echo $attributes; ?>
+              <p>Diameter: Standaard 5 - 7 mm</p>
+              <p>Aantal stuks: 49</p>
+              </div>
           <?php endif; ?>
+
               <div class="qty-price-wrap">
                 <?php if ( $_product->is_sold_individually() || !$xoo_cp_gl_qtyen_value ): ?>
-                  <span><?php echo $cart_item['quantity']; ?></span>        
+                  <span class="is_sold_individually"><?php echo $cart_item['quantity']; ?></span>        
                 <?php else: ?>
                 <div class="quantity qty">
                   <span class="xcp-minus xcp-chng">-</span>
@@ -85,8 +90,8 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
 			</div>
 			<div class="xoo-cp-pdetails-col-2">
   			<div class="product-order-btn">
-  				<a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="<?php echo get_permalink(get_option( 'woocommerce_shop_page_id' ) );?>"><?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></a>
-          <a class="fl-btn" href="<?php echo get_permalink(get_option( 'woocommerce_checkout_page_id' ) );?>"><?php _e('ik ga bestellen','added-to-cart-popup-woocommerce'); ?></a>
+          <a class="fl-btn" href="<?php echo wc_get_cart_url(); ;?>"><?php _e('Verder naar bestellen','added-to-cart-popup-woocommerce'); ?></a>
+  				<div class="popUp-button-bottom"><span>of</span> <a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="#"><?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></a></div>
   			</div>
 			</div>
 		</div>
@@ -159,10 +164,11 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
             echo '<div class="pro-item-desc pw-item-desc">';
             echo '<div class="pro-item-descWrap mHc">';
             echo '<h3 class="pro-item-desc-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h3>';
+            echo '</div>';
             echo '<div class="product-price">';
             echo $product->get_price_html();
             echo '<span class="pro-prize-shrt-title show-sm"></span>';
-            echo '</div></div>';
+            echo '</div>';
             echo '<div class="product-quantity product-quantity-cntlr">';
             if ( ! $product->is_in_stock() ) :
 
@@ -190,16 +196,13 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
             }    
           ?>
         </div>
-        <?php if( !empty($catSlug) ): ?>
-        <div><a class="backto-product-cat" href="<?php echo get_term_link($catSlug, 'product_cat'); ?>"><?php _e('Bekijk alle '.$catName,'added-to-cart-popup-woocommerce'); ?></a></div>
-        <?php endif; ?>
       </div>
       <?php endwhile; ?>
     </div>
   </div>
   <div class="popup-bottom-btn">
-    <a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="<?php echo get_permalink(get_option( 'woocommerce_shop_page_id' ) );?>"><?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></a>
-    <a class="fl-btn" href="<?php echo get_permalink(get_option( 'woocommerce_checkout_page_id' ) );?>"><?php _e('ik ga bestellen','added-to-cart-popup-woocommerce'); ?></a>
+    <a class="fl-btn" href="<?php echo wc_get_cart_url(); ;?>"><?php _e('Verder naar bestellen','added-to-cart-popup-woocommerce'); ?></a>
+    <div class="popUp-button-bottom"><span>of</span> <a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="#"><?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></a></div>
   </div>
   </div>
 <?php endif; wp_reset_postdata(); ?>
