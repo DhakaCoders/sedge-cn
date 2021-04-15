@@ -361,9 +361,6 @@ svg.home-btn-arrow{
 	background: #f2eadf;
 	top: -18px;
 }
-.thankyou .woocommerce-Price-amount.amount bdi{
-	font-size: 14px!important;
-}
 .thankyou .order-totaal .woocommerce-Price-amount.amount bdi{
 	color: #6dbd98!important;
 }
