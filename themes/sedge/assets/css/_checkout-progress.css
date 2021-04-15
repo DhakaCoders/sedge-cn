@@ -87,7 +87,10 @@
     position: absolute;
     transform: rotate(45deg);
     top: 14px;
-    left: -13px;
+    left: -12px;
+}
+body.thankyou .chckout-prgrs-col.active .chckout-prgrs-number:after{
+	content:none;
 }
 .chckout-prgrs-col-1 .chckout-prgrs-number{
     margin-right: auto!important;

@@ -255,7 +255,7 @@ body.single-product .custom-desc-crtl{
 	display: block;
 }
 .fl-product .price-quentity-ctrl form .variations tbody tr td label{
-	margin-bottom: 0;
+	margin-bottom: 5px;
 	font-weight: 400!important;
 	text-transform: capitalize;
 }
@@ -290,11 +290,11 @@ body.single-product .custom-desc-crtl{
 	position: absolute;
 }*/
 .fl-product .price-quentity-ctrl .variations_form table tbody tr td.label {
-    position: absolute;
+   /* position: absolute;
     height: 100%;
     padding: 10px 10px 10px 20px;
     background: #FFFBF4!important;
-    border: 1px solid #F2EADE;
+    border: 1px solid #F2EADE;*/
 }
 .fl-product .price-quentity-ctrl .cartbtn-wrap{
 	display: none;
@@ -308,7 +308,7 @@ body.single-product .custom-desc-crtl{
     height: 50px;
     font-size: 14px;
     padding-top: 16px;
-    padding: 16px 38px 16px 92px!important;
+    padding: 15px 38px 16px 21px!important;
 }
 .price-quentity-ctrl form table tbody {
     display: flex;
@@ -501,10 +501,10 @@ body.single-product .rating p span strong{
 body.single-product .price-quentity-ctrl form{
 	margin-bottom:0!important;
 }
-body.single-product .single_variation_wrap {
-    border-bottom: 2px solid #F2EADE;
-    padding-bottom: 37px;
-    margin-bottom: 36px;
+body.single-product .rating{
+    border-top: 2px solid #F2EADE;
+    margin-top: 37px;
+    padding-top: 36px;
 }
 body.single-product .divided-sec {
     border-bottom: 1px solid #F2EADE;
