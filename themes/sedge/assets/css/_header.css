@@ -843,7 +843,22 @@ body.allWork {
 		margin-left: auto;
 	}
 	.xs-hdr-srch-wrap{
-
+	}
+	.hdr-rgt-srch-input-show .xs-hdr-srch-btm{
+		display: block;
+	}
+	.xs-hdr-srch-btm{
+		display: none;
+		width: 377px;
+		position: absolute;
+		top: 100%;
+		right: 0;
+		z-index: 99999;
+		padding: 33px;
+		background: #F9F5EF;
+		transition: all 0.5s;
+		-ms-transition: all 0.5s;
+		-webkit-transition: all 0.5s;
 	}
 	.xs-hdr-cart{
 		padding-left: 22px;
@@ -884,5 +899,8 @@ body.allWork {
 	
 }
 @media(max-width: 479px){
-	
+	.xs-hdr-srch-btm{
+		width: 300px;
+		padding: 20px;
+	}
 }
