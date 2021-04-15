@@ -189,7 +189,7 @@ $thisID = get_the_ID();
                   <div class="pmp-des-img">
                     <?php echo cbv_get_image_tag($handleiding['afbeelding']); ?>
                   </div>
-                  
+
                   <?php endif; ?>
                   <div class="pmp-des-tlt">
                     <?php 
@@ -199,87 +199,6 @@ $thisID = get_the_ID();
                 </div>
               </li>
               <?php endforeach; ?>
-
-              <!-- <li>
-                <div class="pmp-des">
-                  <div class="pmp-des-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/prdt-mnl-des-img-1.jpg" alt="">
-                  </div>
-                  <div class="pmp-des-tlt">
-                    <h6 class="fl-h6 pmp-title">Handpicking <br>raw material</h6>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pmp-des">
-                  <div class="pmp-des-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/prdt-mnl-des-img-2.jpg" alt="">
-                  </div>
-                  <div class="pmp-des-tlt">
-                    <h6 class="fl-h6 pmp-title">cutting stems <br>at specifc lenghts</h6>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pmp-des">
-                  <div class="pmp-des-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/prdt-mnl-des-img-3.jpg" alt="">
-                  </div>
-                  <div class="pmp-des-tlt">
-                    <h6 class="fl-h6 pmp-title">Thorough cleaning <br>inside and outside</h6>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pmp-des">
-                  <div class="pmp-des-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/prdt-mnl-des-img-4.jpg" alt="">
-                  </div>
-                  <div class="pmp-des-tlt">
-                    <h6 class="fl-h6 pmp-title">desinfecting <br>with salt water</h6>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pmp-des">
-                  <div class="pmp-des-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/prdt-mnl-des-img-5.jpg" alt="">
-                  </div>
-                  <div class="pmp-des-tlt">
-                    <h6 class="fl-h6 pmp-title">Cold oven baking</h6>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pmp-des">
-                  <div class="pmp-des-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/prdt-mnl-des-img-6.jpg" alt="">
-                  </div>
-                  <div class="pmp-des-tlt">
-                    <h6 class="fl-h6 pmp-title">Natural recovery</h6>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pmp-des">
-                  <div class="pmp-des-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/prdt-mnl-des-img-7.jpg" alt="">
-                  </div>
-                  <div class="pmp-des-tlt">
-                    <h6 class="fl-h6 pmp-title">anti bacterial treatment<br>with UV-light</h6>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pmp-des">
-                  <div class="pmp-des-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/prdt-mnl-des-img-8.jpg" alt="">
-                  </div>
-                  <div class="pmp-des-tlt">
-                    <h6 class="fl-h6 pmp-title">quality  control</h6>
-                  </div>
-                </div>
-              </li> -->
             </ul>
           </div>
           <?php endif; ?>
@@ -290,7 +209,19 @@ $thisID = get_the_ID();
 </section>
 <?php endif; ?>
 
+
+<?php 
+  $galerijs_2 = get_field('galerij_2', $thisID);
+  if( $galerijs_2 ):
+    
+?>
 <section class="grid-gallary">
+  <?php foreach( $galerijs_2 as $galerij_2 ){
+    printr($galerij_2);
+  }
+  $galerij_2_01 = !empty($abanner['afbeelding'])? cbv_get_image_src( $abanner['afbeelding'], 'full' ): '';
+
+  ?>
   <div class="grid-gallary-cntrl"> 
     <div class="grd-galry-lft mHc">
       <div class="lft-grd-galry">
@@ -321,6 +252,9 @@ $thisID = get_the_ID();
     </div>
   </div>  
 </section>
+<?php endif; ?>
+
+
 
 
 <?php 
