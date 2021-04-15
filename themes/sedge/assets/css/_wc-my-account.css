@@ -8,6 +8,9 @@ body.woocommerce-account .myaccount-crtl{
     width: 100%;
     margin: 0 auto;
 }
+body.woocommerce-edit-account .account-page-title {
+    padding-top: 15px;
+}
 body.woocommerce-account .account-page-title h1{
     border-bottom:none!important;
     margin-bottom: 18px!important;
@@ -1402,7 +1405,7 @@ body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul 
     height:60px;
     border: 1px solid #F2EDE9;
     border-radius:6px;
-    background: #FFFFFF;
+    background: #fffbf4;
     margin: 0;
     font-weight: 400;
     display: flex;
