@@ -667,6 +667,14 @@ body.allWork {
 	color:  #78797B;
 }
 /*responsive*/
+@media(max-width: 1699px){
+	nav.main-nav > ul{
+		margin: 0 -25px;
+	}
+	nav.main-nav > ul > li{
+		padding: 0 25px;
+	}
+}
 @media(max-width: 1599px){
 	.comnined-shape i svg{
 		max-width: 50px;
