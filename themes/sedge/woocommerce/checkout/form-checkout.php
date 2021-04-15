@@ -130,6 +130,9 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 					</div>
 					<button type="submit" class="button alt" name="woocommerce_checkout_place_order" value="BESTELLING AFRONDEN" data-value="BESTELLING AFRONDEN"><span><?php esc_html_e( 'BESTELLING AFRONDEN', 'woocommerce' ); ?></span></button>
 				</div>
+				<div class="checkout html-text show-xs">
+					<span><?php esc_html_e( 'Koop veilig & vertrouwd', 'woocommerce' ); ?></span>
+				</div>
 				<div class="cart-pay-logo-wrap">
 					<div class="cart-logo-crtl">
 						<ul class="reset-list">
