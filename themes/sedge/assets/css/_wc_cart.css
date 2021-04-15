@@ -575,6 +575,11 @@ body.woocommerce-page.woocommerce-checkout .woocommerce-NoticeGroup-checkout .wo
 	body.woocommerce-cart .cart_totals{
 		padding-left: 0;
 	}
+	body.woocommerce-cart .cart-table-crtl table.shop_table{
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-bottom: none;
+	}
 }
 @media(max-width: 768px){
 	body.woocommerce-cart .innerpage-con-wrap .default-page-con{
