@@ -275,7 +275,7 @@ body.single-product .custom-desc-crtl{
 	background: #FFFBF4!important;
 	border: 1px solid #F2EADE;
 	box-sizing: border-box;
-	border-radius: 6px;
+	border-radius: 0px;
 	color: #8c8da2!important;
 	height: 50px!important;
 	padding: 14px 10px;
@@ -437,7 +437,7 @@ body.single-product div.product form.cart .button{
 	margin-left: 0!important;
 	background: #6DBD98!important;
 	border-color: #6DBD98!important;
-	border-radius:2px!important;
+	border-radius:4px!important;
 	height: 55px!important;
 	max-width:260px!important;
 	width: 100%!important;
@@ -792,19 +792,25 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 		height:400px;
 		
 	}
-	.main-img-crtl .woocommerce-product-gallery__image a{
+/*	.main-img-crtl .woocommerce-product-gallery__image a{
         width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-	}
-	.main-img-crtl .woocommerce-product-gallery__image img{
+	}*/
+	/*.main-img-crtl .woocommerce-product-gallery__image img{
 	    max-height: 400px;
 	    width: auto!important;
 	    
+	}*/
+	body.single-product .wc-product-title {
+	    display: block!important;
 	}
-	
+	body.single-product.woocommerce div.product .product_title,
+	body.single-product.woocommerce div.product .product-size{
+		display: none!important;
+	}
 	.woocommerce div.product div.images{
 		margin-bottom:10px;
 	}
@@ -817,6 +823,7 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	}
 	.woocommerce div.product div.summary {
 	    margin-bottom: 13px;
+	    padding-top:30px;
 	}
 	.related.products.related-pro-crtl{
 		padding-top:50px;
@@ -938,10 +945,10 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
 	.main-img-crtl .woocommerce-product-gallery__image {
 	    height: 300px;
 	}
-	.main-img-crtl .woocommerce-product-gallery__image img{
+	/*.main-img-crtl .woocommerce-product-gallery__image img{
 	    max-height: 200px;
 	    width: auto;
-	}
+	}*/
 	.term-geschenken .fl-products-cntlr ul.products > li{
 	    padding: 0 6px 25px!important;    
 	}
@@ -971,6 +978,92 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
     .term-geschenken .fl-products-cntlr {
         padding-top: 0;
     }
+    body.single-product .main-img-crtl {
+	    height: 350px;
+	}
+	body.single-product .wc-product-gallery-thumb .woocommerce-product-gallery__image {
+	    height: 130px!important;
+	}
+	body.single-product .wc-product-gallery-thumb .woocommerce-product-gallery__image:first-child {
+	    height: 220px!important;
+	}
+	body.single-product .woocommerce-notices-wrapper {
+	    margin-bottom: 40px;
+	}
+	body.single-product .short-desc {
+	    display: none;
+	}
+	.woocommerce .summary-hdr > p {
+	    border: none;
+	    text-align: center;
+	}
+	.woocommerce .summary-hdr > p a {
+	    display: block;
+	}
+	.price-quentity-ctrl form table tbody {
+	    flex-wrap: wrap;
+	}
+	.price-quentity-ctrl form table tbody tr{
+		width:100%;
+	}
+	.woocommerce .summary-hdr > p {
+	    padding-bottom: 0;
+	    margin-bottom: 20px;
+	}
+	body.single-product .summary-ctrl .qty-price-wrap{
+		margin-top:25px;
+		text-align:center;
+		margin-bottom: 20px;
+	}
+	body.single-product .woocommerce-variation-add-to-cart{
+		text-align: center;
+	}
+	body.single-product .summary-ctrl .qty-price-wrap .single-price-total > ins span bdi{
+		font-size:18px!important;
+	}
+	body.single-product .summary-ctrl .qty-price-wrap .single-price-total > del span bdi{
+		margin-right:4px;
+	}
+	body.single-product div.product form.cart .button {
+	    max-width: 215px!important;
+	    font-size: 11px!important;
+	    height: 49px!important;
+	    padding-top: 9px!important
+	}
+	body.single-product .rating{
+		text-align:center;
+		margin-top: 0;
+    	padding-top: 28px;
+    	border-top:none!important;
+	}
+	body.single-product .divided-sec{
+		border-width:2px!important;
+	}
+	body.single-product .custom-desc-crtl h2 {
+	    font-size: 20px;
+	    margin-bottom: 24px;
+	}
+	body.single-product .custom-desc-crtl {
+	    padding-top: 34px;
+	}
+	.related.products.related-pro-crtl h2{
+	    color: #6DBD98;
+	    font-size: 20px;
+	    font-weight:600;
+	    text-align: center;
+	    margin-bottom: 33px;
+	}
+	.related.products.related-pro-crtl {
+	    border-top: none;
+	    padding-top: 5px;
+	    padding-bottom: 0;
+	}
+	body.single-product .ftr-top-contact-sec-inr{
+		display: none!important;
+	}
+	body.single-product .price-quentity-ctrl {
+	    text-align: center;
+	}
 }
 
 
@@ -1019,9 +1112,6 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
     .term-geschenken .fl-products-cntlr ul.products > li.fl-product-grd-full{
         width:100%!important;    
     }
-    .woocommerce div.product .woocommerce-main-image img{
-        max-width: 200px;
-    }
     span.onsale,
     body.single-product .fl-product span.onsale, body.single-product .fl-product span.seller-flash{
         padding: 6px 12px!important;
@@ -1062,6 +1152,18 @@ body.single-product .bootstrap-select .dropdown-toggle .filter-option-inner-inne
     }
     .woocommerce div.product .product-size{
 		font-size:30px;
+	}
+	body.single-product .custom-desc-crtl h2 {
+	    font-size:16px;
+	}
+	body.single-product .main-img-crtl {
+	    height: 282px;
+	}
+	body.single-product .wc-product-gallery-thumb .woocommerce-product-gallery__image:first-child{
+	    height:200px!important;
+	}
+	body.single-product .wc-product-gallery-thumb .woocommerce-product-gallery__image{
+	    height: 82px!important;
 	}
 }
 

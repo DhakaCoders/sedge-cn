@@ -299,10 +299,10 @@ body.home span.onsale, body.post-type-archive span.onsale{
     .woocommerce-Price-amount.amount bdi{
         margin-bottom: 0!important;
     }
-    .fl-pro-grd-btn .fl-blue-btn{
+   /* .fl-pro-grd-btn .fl-blue-btn{
         font-size: 11px;
         height: 25px;
-    }
+    }*/
     .fl-pro-grd-btn .fl-blue-btn:after {
         left: 20px;
         width: 10px;

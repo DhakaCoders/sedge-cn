@@ -35,12 +35,12 @@ $thisID = get_the_ID();
 
                 <?php if( !empty($intro['beschrijving']) ): ?>
                 <div class="input-type-radio clearfix">
-                  <input type="radio" id="bedrijf" name="radios" value="true" checked>
+                  <input type="radio" id="bedrijf" name="condition" value="bedrijf" checked>
                   <label for="bedrijf">
                     Bedrijf
                     <span class="checkmark"></span>
                   </label>
-                  <input type="radio" id="particulier" name="radios" value="true">
+                  <input type="radio" id="particulier" name="condition" value="particulier">
                   <label for="particulier">
                     Particulier
                     <span class="checkmark"></span>
