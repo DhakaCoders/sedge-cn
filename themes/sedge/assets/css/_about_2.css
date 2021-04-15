@@ -300,7 +300,7 @@
 		padding-bottom: 125px;
 	}
 	.about-prdt-sec .prdt-des{
-		padding-bottom: 195px;
+		padding-bottom: 167px;
 	}
 }
 
@@ -309,7 +309,7 @@
 		padding-left: 65px;
 	}
 	.about-prdt-sec .prdt-des-logo{
-		padding-bottom: 100px;
+		padding-bottom: 66px;
 	}
 	.about-prdt-sec .prdt-des{
 		padding-bottom: 115px;
@@ -328,17 +328,38 @@
 		padding-left: 55px;
 	}
 	.about-prdt-sec .prdt-des-logo, .about-prdt-sec .prdt-des{
-		padding-bottom: 70px;
+		padding-bottom: 62px;
+	}
+	.prdt-mnl-cntrl{
+		margin: 0 -15px;
+	}
+	.pmi-galry{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.prdt-mnl-process{
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 	
 }
-@media (max-width: 1065px) {
+@media (max-width: 1099px) {
 	.pmp-des-tlt{
 		padding-left: 45px;
 	}
 	.about-prdt-sec .prdt-catg-des-bg{
-		padding-right: 28px;
-		padding-left: 20px;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.about-prdt-sec .prdt-des p{
+		margin-bottom: 35px;
+		font-size: 14px;
+	}
+	.about-prdt-sec .find-more .find-more-btn{
+		width: 415px;
+	}
+	.about-prdt-sec .prdt-des-logo, .about-prdt-sec .prdt-des{
+		padding-bottom: 92px;
 	}
 }
 
