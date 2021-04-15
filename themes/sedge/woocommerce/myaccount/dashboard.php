@@ -27,29 +27,5 @@ $allowed_html = array(
 	),
 );
 ?>
-<div class="deshboard-inner">
-	<div class="service-contact">
-		<h2>Service & contact</h2>
-		<div class="service-lists">
-			<div class="service-list">
-				<div class="icon">
-					<i><img src="<?php echo THEME_URI; ?>/assets/images/wc-ser-icon.svg" alt=""></i>
-				</div>
-				<div class="service-text">
-					<h3>Vind alles in je account</h3>
-					<p><a href="">Volg je bestelling</a>, <a href="">betaal facturen</a> of retourneer een artikel.</p>
-				</div>
-			</div>
-			<div class="service-list">
-				<div class="icon">
-					<i><img src="<?php echo THEME_URI; ?>/assets/images/wc-con-icon.svg" alt=""></i>
-				</div>
-				<div class="service-text">
-					<h3>Heb je ons nodig?</h3>
-					<p>We helpen je graag. <a href="">Onze klantenservice</a> is dag en nacht open.</p>
-				</div>
-			</div>
-		</div>
-
-	</div>
+<div class="deshboard-wrap">
 </div>
