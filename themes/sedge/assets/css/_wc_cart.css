@@ -13,6 +13,7 @@ body.woocommerce-cart .cart-logo-crtl ul,
 body.woocommerce-checkout  .cart-logo-crtl ul{
     display: flex;
     padding-bottom: 0!important;
+    justify-content: center;
 }
 body.woocommerce-cart .cart-pay-logo-wrap,
 body.woocommerce-checkout .cart-pay-logo-wrap{

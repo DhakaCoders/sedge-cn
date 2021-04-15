@@ -2057,7 +2057,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
 
     /* ------------------ account order -------------------*/
     body.woocommerce-orders .woocommerce-account-grds-cntlr{
-        padding-top:0px;
+        padding-top:30px;
     }
     body.woocommerce-orders .order-comment p{
         font-size: 10px;
@@ -2116,7 +2116,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         margin-bottom:0;
     }
     body.woocommerce-orders .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content{
-        max-width: 500px;
+        max-width: 600px;
         padding-left: 0px;
     }
     body.woocommerce-orders .orders-crtl .code-text{
@@ -2133,9 +2133,18 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc ins span bdi{
         font-size: 14px!important;
     }
+    body.woocommerce-orders .order-title{
+        font-size:16px;
+        margin-bottom: 3px;
+        line-height: 1;
 
-
-
+    }
+    body.woocommerce-orders .order-comment p{
+        margin-bottom: 18px!important;
+    }
+    body.woocommerce-orders .myac-pro-grds {
+        border-top: 2px solid #F9F1E6;
+    }
     /* ---------------------woocommerce-edit-account------------------------*/
 
     body.woocommerce-edit-account .innerpage-con-wrap .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
