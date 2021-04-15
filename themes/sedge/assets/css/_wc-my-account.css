@@ -418,10 +418,35 @@ body.woocommerce-orders .order-comment p{
     font-weight: 300;
 }
 body.woocommerce-orders .faq-accordion-wrp ul li{
-    border-radius:6px;
     border: 1px solid #F2EDE9;
     /*padding-left:0px;*/
     padding:0;
+}
+body.woocommerce-orders .order-items-desc ul li {
+    background: #fffbf4;
+    font-size: 12px;
+    border: none!important;
+    margin-bottom: 0!important;
+    line-height: 1;
+}
+body.woocommerce-orders .order-items-desc ul {
+    margin-bottom: 11px;
+}
+body.woocommerce-orders .order-items-desc ul li strong {
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-block;
+}
+body.woocommerce-orders .order-items-desc ul li span p {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+body.woocommerce-orders .order-items-desc ul li span {
+    display: inline-block;
+}
+.order-items-desc {
+    width: 100%;
 }
 body.woocommerce-orders .orders-crtl .contact-info i{
     background: url(../images/woordr-conifo-icon.svg);
