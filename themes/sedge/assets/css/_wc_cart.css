@@ -14,6 +14,10 @@ body.woocommerce-checkout  .cart-logo-crtl ul{
     display: flex;
     padding-bottom: 0!important;
 }
+body.woocommerce-cart .cart-pay-logo-wrap,
+body.woocommerce-checkout .cart-pay-logo-wrap{
+    margin-top: 10px;
+}
 body.woocommerce-cart .cart-logo-crtl ul li,
 body.woocommerce-checkout  .cart-logo-crtl ul li{
     padding: 0px 4px;
