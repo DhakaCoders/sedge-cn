@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
+  <title>About</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -34,7 +34,7 @@
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->	
+  <![endif]-->  
 
   <svg style="display: none;">
 
@@ -56,10 +56,7 @@
 
 
       <!-- start of Sabbir -->
-      <symbol id="home-btn-arrow" width="8" height="12" viewBox="0 0 8 12" 
-        xmlns="ttp://www.w3.org/2000/svg">
-        <path d="M0.940948 0.000206632C0.757525 -0.00369422 0.577403 0.0477192 0.425624 0.147378C0.273844 0.247037 0.157947 0.390016 0.0940481 0.556308C0.030149 0.722601 0.021422 0.903987 0.0690802 1.0753C0.116738 1.24661 0.218413 1.39923 0.35997 1.51209L5.76116 5.9862L0.35997 10.4587C0.262048 10.5283 0.180041 10.6167 0.119084 10.7183C0.0581275 10.82 0.0195343 10.9327 0.00572114 11.0495C-0.00809202 11.1662 0.00317275 11.2845 0.0388099 11.3968C0.074447 11.5091 0.133688 11.6132 0.212825 11.7024C0.291962 11.7915 0.389288 11.8639 0.49871 11.915C0.608131 11.9661 0.727291 11.9948 0.848725 11.9994C0.97016 12.0039 1.09125 11.9842 1.20442 11.9414C1.31759 11.8986 1.4204 11.8336 1.50641 11.7506L7.69028 6.63464C7.78739 6.55451 7.86537 6.45505 7.91884 6.34296C7.97231 6.23086 8 6.10886 8 5.98541C8 5.86197 7.97231 5.73996 7.91884 5.62787C7.86537 5.51578 7.78739 5.41622 7.69028 5.33609L1.50641 0.215205C1.35019 0.0810394 1.14983 0.00476303 0.940948 9.74702e-06V0.000206632Z"/>
-      </symbol>
+
 
       <!-- start of Milon -->
       <symbol id="map-marker-icon-svg" width="24" height="29" viewBox="0 0 24 29" xmlns="http://www.w3.org/2000/svg">
@@ -99,13 +96,7 @@
     </div>
 </div>
 <!-- fixed --> 
-<div class="comnined-shape-cntlr">
-  <span class="comnined-shape">
-    <i><svg class="comnined-shape-icon" width="78" height="89" viewBox="0 0 78 89" fill="#B3192A">
-      <use xlink:href="#comnined-shape-icon"></use> </svg>
-    </i>
-  </span>
-</div>
+
 <header class="header">
   <div class="container">
       <div class="row">
@@ -144,9 +135,9 @@
                 </ul>
 
                 <ul class="clearfix reset-list">
-                  <li><a href="#">What’s happening</a></li>
+                  <li><a href="#">WHAT’s HAPPENING</a></li>
                   <li class="menu-item-has-children">
-                    <a href="#">Aanmelden</a>
+                    <a href="#">AANMELDEN</a>
                     <ul class="sub-menu" style="">
                       <li><a href="#">sub menu</a></li>
                       <li><a href="#">sub menu</a></li>
@@ -242,106 +233,24 @@
         </ul>
       </div>
       <div class="xs-mbl-btn">
-        <a class="fl-red-btn" href="#">Aanmelden</a>
+        <a class="fl-red-btn" href="#">AANMELDEN</a>
       </div>
     </div>
 
   </div>
 </div>
 
-<!-- extra mbl menu -->
-<div class="xs-extra-mobile-menu">
-
-  <div class="xs-menu-hdr">
-    <div class="hambergar-cntlr show-md">
-      <div class="hambergar-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-    <div class="xs-hdr-socials show-md">
-      <ul class="reset-list">
-        <li><a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a target="_blank" href="#"><i class="fab fa-instagram"></i></a></li>
-      </ul>
-    </div>
-    <div class="hdr-lft">
-      <div class="logo">
-        <a href="#"><img src="assets/images/logo.svg"></a>
-      </div>
-    </div>
-  </div>
-
-  <div class="xs-extra-srch">
-    <form action="">
-      <input type="text" placeholder="Zoeken">
-    </form>
-  </div>
-
-  <div class="xs-extra-link">
-    <ul class="reset-list">
-      <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-      <li><a href="#">Morbi sit amet mauris vitae magna</a></li>
-      <li><a href="#">Quisque imperdiet libero neque</a></li>
-      <li><a href="#">In aliquet nunc non risus placerat</a></li>
-      <li><a href="#">Donec tempus dignissim ligula</a></li>
-      <li><a href="#">Sed felis turpis, faucibus tincidunt sapien a, tincidunt porta odio.</a></li>
-    </ul>
-  </div>
-</div>
-
-
-
-<section class="hm-banner">
-  <div class="hm-banner-bg inline-bg" style="background-image: url('assets/images/hm-banner.png');">
-    <img src="assets/images/hm-banner.png" alt="">
-  </div>
+<section class="about-grey-sd-sec-wrp">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="hm-banner-cntlr">
-          <h1 class="hm-banner-title fl-h2"><span>An<br> Eco-Friendly<br></span>
-          Solution to<br> Plastic Pollution.</h1>
-          <div class="hm-banner-btn">
-            <a class="fl-red-btn" href="#">PRODUCTs</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="main-content">
-  <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-
-        </div>
-        <div class="col-md-6">
-
-        </div>
-      </div>
-  </div>    
-</section>
-
-<!-- sabbir start -->
-<section class="straw-intro">
-  <div class="straw-intro-bg inline-bg">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="straw-into-cntrl">
-            <div class="straw-cont">
-              <div class="straw-des">
-                <p>Our straws are grown in the tropical wetlands of Vietnam. Handpicked by local farmers and cut, cleansed, sterilized and packaged at our HQ.</p>              
-              </div>
-              <div class="more-btn">
-                <a href="#" class="fl-transparent-btn straw-intro-btn">read more</a>
-              </div>
-            </div>  
-            <div class="straw-img-box">
-              <img src="assets/images/straw-img.png" alt="">
+        <div class="about-grey-sd-wrp">
+          <div class="about-grey-sd-inr inline-bg" style="background: url(assets/images/about-grey-sd-img.jpg);">
+            <div class="about-grey-sd-dsc-tp">
+              <h1 class="about-grey-sd-title fl-h1">About Sedge</h1>
+            </div>
+            <div class="about-grey-sd-dsc-box">
+              <span>Grey sedge, a natural plant. Long used by rural farmers and growing alongside agriculturally cultivated areas.</span>
             </div>
           </div>
         </div>
@@ -350,10 +259,261 @@
   </div>
 </section>
 
-<section class="home-product-sec">
-  <div class="prdt-bnr">
-    <img src="assets/images/prdt-bnr-bg.jpg" alt="">
+<section class="about-img-text-sec-wrp">
+   <div class="about-img-text-bg"></div>
+     <div class="about-red-bg"></div>
+     <div class="container">
+       <div class="row">
+         <div class="col-md-12">
+           <div class="about-img-text-wrp">
+             <div class="about-img-text-cntlr clearfix">
+               <div class="about-img-lft">
+                 <div class="about-img inline-bg" style="background: url(assets/images/about-img-001.png);"></div>
+               </div>
+               <div class="about-text-rgt">
+                 <h2 class="about-title-1 fl-h2">nine-tailed dragon</h2>
+                 <span>Mekong river delta</span>
+                 <p>Lorem .........Tekst omtrent  de geografische <br> eigenschappen van de mekongdelta met een kleine <br> beschrijving  van de fauna en flora.</p>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+</section>
+
+<section class="about-msnry-grd-items-sec-wrp">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="about-msnry-grd-items clearfix">
+          <div class="about-gallery-cntlr">
+            <div class="about-msnry-grd-item aboutgi1">
+              <div class="about-msnry-grd-item-ctlr">
+                <div class="about-msnry-grd-item-img inline-bg" style="background: url(assets/images/about-gallery-img-1.png);">
+                </div>
+              </div>
+            </div>
+            <div class="about-msnry-grd-item aboutgi2">
+              <div class="about-msnry-grd-item-ctlr">
+                <div class="about-msnry-grd-item-img inline-bg" style="background: url(assets/images/about-gallery-img-2.png);">
+                </div>
+              </div>
+            </div>
+            <div class="about-msnry-grd-item aboutgi3">
+              <div class="about-msnry-grd-item-ctlr">
+                <div class="about-msnry-grd-item-img inline-bg" style="background: url(assets/images/about-gallery-img-3.png);">
+                </div>
+              </div>
+              <div class="about-msnry-grd-item-ctlr">
+                <div class="about-msnry-grd-item-img inline-bg" style="background: url(assets/images/about-gallery-img-4.png);">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
+
+
+<section class="product-menual-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="prdt-menual-hdr">
+          <h1 class="fl-h1 prdt-menual-titl">FROM RAW MATERIAL,<br> THROUGH MANUAL PROCESSING,<br> TO FINAL PRODUCT</h1>
+        </div>
+        <div class="prdt-mnl-cntrl">
+          <div class="pmi-galry">
+            <div class="galry-img3">
+              <div class="glry-img-lft" >
+                <div class="lft-glry-img1 inline-bg" style="background-image: url('assets/images/prdt-mnl-img-1.jpg');">                  
+                </div>
+              </div>
+              <div class="glry-img-rgt">
+                <div class="rgt-img1">
+                  <div class="rgt-glry-img1 inline-bg" style="background-image: url('assets/images/prdt-mnl-img-2.jpg');">                  
+                  </div>
+                </div>  
+                <div class="rgt-img2">
+                  <div class="rgt-glry-img2 inline-bg" style="background-image: url('assets/images/prdt-mnl-img-3.jpg');">                  
+                  </div>
+                </div>  
+              </div>
+            </div>
+            <div class="galry-img1">
+              <div class="glry-img1-1 inline-bg" style="background-image: url('assets/images/prdt-mnl-img-4.jpg');">                
+              </div>            
+            </div>
+            <div class="res-galry-img2">
+              <div class="res-glry-img21">
+                <div class="res-glry-img21-1 inline-bg" style="background-image: url('assets/images/res-prdt-mnl-des-img-1.jpg');">                  
+                </div>                
+              </div>
+              <div class="res-glry-img22">
+                <div class="res-glry-img22-1 inline-bg" style="background-image: url('assets/images/res-prdt-mnl-des-img-2.jpg');">                  
+                </div>
+              </div>
+            </div>
+            <div class="res-galry-img4">
+              <div class="res-glry-img4-lft">
+                <div class="res-galry-img4-lft-1">
+                  <div class="rg-lft-1 inline-bg" style="background-image: url('assets/images/res-grid-glary-img-1.jpg');">                    
+                  </div>
+                </div>
+                <div class="res-galry-img4-lft-2">
+                  <div class="rg-lft-2 inline-bg" style="background-image: url('assets/images/res-grid-glary-img-2.jpg');">                    
+                  </div>
+                </div>
+              </div>
+              <div class="res-glry-img4-rgt">
+                <div class="res-galry-img4-rgt-1">
+                  <div class="rg-rgt-1 inline-bg" style="background-image: url('assets/images/grid-glary-img-1.jpg');">                    
+                  </div>
+                </div>
+                <div class="res-galry-img4-rgt-2">
+                  <div class="rg-rgt-2 inline-bg" style="background-image: url('assets/images/res-grid-glary-img-3.jpg');">                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prdt-mnl-process">
+            <ul class="clearfix reset-list">
+              <li>
+                <div class="pmp-des">
+                  <img src="assets/images/prdt-mnl-des-img-1.jpg" alt="">
+                  <h6 class="fl-h6 pmp-titl">Handpicking <br>raw material</h6>
+                </div>
+              </li>
+              <li>
+                <div class="pmp-des">
+                  <img src="assets/images/prdt-mnl-des-img-2.jpg" alt="">
+                  <h6 class="fl-h6 pmp-titl">cutting stems <br>at specifc lenghts</h6>
+                </div>
+              </li>
+              <li>
+                <div class="pmp-des">
+                  <img src="assets/images/prdt-mnl-des-img-3.jpg" alt="">
+                  <h6 class="fl-h6 pmp-titl">Thorough cleaning <br>inside and outside</h6>
+                </div>
+              </li>
+              <li>
+                <div class="pmp-des">
+                  <img src="assets/images/prdt-mnl-des-img-4.jpg" alt="">
+                  <h6 class="fl-h6 pmp-titl">desinfecting <br>with salt water</h6>
+                </div>
+              </li>
+              <li>
+                <div class="pmp-des">
+                  <img src="assets/images/prdt-mnl-des-img-5.jpg" alt="">
+                  <h6 class="fl-h6 pmp-titl">Cold oven baking</h6>
+                </div>
+              </li>
+              <li>
+                <div class="pmp-des">
+                  <img src="assets/images/prdt-mnl-des-img-6.jpg" alt="">
+                  <h6 class="fl-h6 pmp-titl">Natural recovery</h6>
+                </div>
+              </li>
+              <li>
+                <div class="pmp-des">
+                  <img src="assets/images/prdt-mnl-des-img-7.jpg" alt="">
+                  <h6 class="fl-h6 pmp-titl">anti bacterial treatment<br>with UV-light</h6>
+                </div>
+              </li>
+              <li>
+                <div class="pmp-des">
+                  <img src="assets/images/prdt-mnl-des-img-8.jpg" alt="">
+                  <h6 class="fl-h6 pmp-titl">quality  control</h6>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="grid-gallary">
+  <div class="grid-gallary-cntrl"> 
+    <div class="grd-galry-lft">
+      <div class="lft-grd-galry">
+        <div class="grd-galry-img1 inline-bg" style="background-image: url('assets/images/grid-glary-img-1.jpg');">
+        </div>
+      </div>   
+    </div>
+    <div class="grd-galry-rgt">
+      <div class="grd-galry-rgt-top">
+        <div class="ggrt-img-1">  
+          <div class="ggrt-img1 inline-bg" style="background-image: url('assets/images/grid-glary-img-2.jpg');"></div>
+        </div>  
+        <div class="ggrt-img-2">
+          <div class="ggrt-img2 inline-bg" style="background-image: url('assets/images/grid-glary-img-3.jpg');"> 
+          </div>
+        </div>
+        <div class="ggrt-img-3">
+          <div class="ggrt-img3 inline-bg" style="background-image: url('assets/images/grid-glary-img-4.jpg');"> 
+          </div>
+        </div>  
+      </div>
+      <div class="grd-galry-rgt-btm">
+        <div class="ggrb-img-1">
+          <div class="ggrb-img1 inline-bg" style="background-image: url('assets/images/grid-glary-img-5.jpg');">          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</section>
+
+<section class="traditions-sec">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="traditions-sec-cntrl">
+          <div class="trad-des">
+            <h2 class="fl-h2 trad-titl">TRADITIONS</h2>
+            <p>For hundreds of years grey sedge is used for making all sorts off daily utilities.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque non nulla in lacus, a, nisl risus pulvinar id. Quis praesent at purus, id justo, enim tortor porttitor sit. Erat quam in nisi, amet. Augue adipiscing vel turpis aliquet sem sit nulla. Et ac sed feugiat leo enim placerat nunc.</p>
+          </div>
+          <div class="trad-galry">
+            <div class="trad-galry-tp">
+              <div class="tgt-lft">
+                <div class="tgt-lft-img-1">
+                  <div class="tgt-img1 inline-bg" style="background-image: url('assets/images/trad-galry-img-1.jpg');"></div>
+                </div>                
+              </div>
+              <div class="tgt-rgt">
+                <div class="tgt-rgt-img1">
+                  <div class="tgt-img2 inline-bg" style="background-image: url('assets/images/trad-galry-img-2.jpg');"></div>
+                </div>
+                <div class="tgt-rgt-img2">    
+                  <div class="tgt-img3 inline-bg" style="background-image: url('assets/images/trad-galry-img-3.jpg');"></div>
+                </div>
+              </div>  
+            </div>
+            <div class="trad-galry-btm">
+              <div class="tgb-img-1">
+                <div class="tgb-img1 inline-bg" style="background-image: url('assets/images/trad-galry-img-4.jpg');"></div>
+              </div>
+              <div class="tgb-img-2">
+                <div class="tgb-img2 inline-bg" style="background-image: url('assets/images/trad-galry-img-5.jpg');">
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="product-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -361,39 +521,39 @@
           <div class="prdt-catg">
             <div class="prdt-item">
               <div class="prdt-fea-img">
-                <a href="#"><img src="assets/images/cocktail-img.jpg" alt=""></a>
+                <img src="assets/images/cocktail-img.jpg" alt="">
               </div>
               <div class="prdt-fea-cont">  
-                <a href="#"><h5 class="fl-h5 prdt-itm-titl">cocktail</h5></a>
+                <h5 class="fl-h5 prdt-itm-titl">cocktail</h5>
                 <span>15cm<br> height</span>
               </div>  
             </div>
             <div class="prdt-item">
               <div class="prdt-fea-img">
-                <a href="#"><img src="assets/images/long-drink-img.jpg" alt=""></a>
+                <img src="assets/images/long-drink-img.jpg" alt="">
               </div>
               <div class="prdt-fea-cont">
-                <a href="#"><h5 class="fl-h5 prdt-itm-titl">long<br> drink</h5></a>
+                <h5 class="fl-h5 prdt-itm-titl">long<br> drink</h5>
                 <span>20cm<br> height</span>
               </div>  
             </div>
             <div class="prdt-item">
               <div class="prdt-fea-img">
-                <a href="3"><img src="assets/images/soda-bottle.jpg" alt=""></a>
+                <img src="assets/images/soda-bottle.jpg" alt="">
               </div>  
               <div class="prdt-fea-cont">
-                <a href="#"><h5 class="fl-h5 prdt-itm-titl">soda<br> bottle</h5></a>
+                <h5 class="fl-h5 prdt-itm-titl">soda<br> bottle</h5>
                 <span>25cm<br> height</span>
               </div>  
             </div>
-          </div>  
+          </div>   
           <div class="prdt-catg-des-cntrl">
             <div class="prdt-catg-des-bg">
               <div class="prdt-des-logo">
-                <a href="#"><img src="assets/images/sedge.svg" alt=""></a>
+                <a href="#"><img src="assets/images/sedge-prdt-logo.png" alt=""></a>
               </div>
               <div class="prdt-des">
-                <ul>
+                <ul class="clearfix reset-list">
                   <li>100% natuurlijk en biologisch afbreekbaar</li>
                   <li>Geen conserveringsmiddelen, geen chemicaliën</li>
                   <li>Food grade gecertificeerd*</li>
@@ -410,15 +570,13 @@
                   <a href="#" class="fl-blue-btn find-more-btn">Ontdek meer over Sedge</a>
                 </div> 
               </div>
-            </div>  
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<!-- sabbir end -->
 
 
 <section class="ftr-top-contact-sec">
@@ -499,7 +657,7 @@
           <div class="ftr-top-inr clearfix">
             <div class="ftr-logo-ctlr">
               <div class="ftr-logo">
-                <a href="#"><img src="assets/images/ftr-logo.svg"></a>
+                <a href="#"><img src="assets/images/ftr-logo.png"></a>
               </div>
               <div class="xs-ftr-social-media show-sm">
                 <div class="ftr-social-media">
