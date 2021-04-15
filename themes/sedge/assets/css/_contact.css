@@ -4,7 +4,7 @@
 ---------------------
 */
 .page-banner-sec-wrp{
-    padding-top: 35px;
+    padding-top: 10px;
 }
 .page-entry-hdr{
 	padding-bottom: 55px;
@@ -24,10 +24,6 @@
     margin: 0;
     color: #FFFFFF!important;
 }
-/*.page-entry-hdr a.fl-blue-btn:hover{
-	color:#71867f;
-	background: transparent;  
-}*/
 .contact-form-sec-wrp {
     padding-bottom: 85px;
 }
@@ -438,6 +434,7 @@ Inputtype Radio Css
     .page-entry-hdr {
         padding-bottom: 45px;
     }
+
     .page-entry-hdr .fl-blue-btn {
         font-size: 45px;
         padding: 8px 30px;
@@ -541,9 +538,6 @@ Inputtype Radio Css
     }
     .contact-form-sec-wrp {
         padding-bottom: 0;
-    }
-    .page-entry-hdr .fl-blue-btn{
-        margin-left: -15px;
     }
 }
 
