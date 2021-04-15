@@ -232,8 +232,8 @@ defined( 'ABSPATH' ) || exit;
 		                <p>Convallis ac ut tincidunt adipiscing.</p>
 		                <div class="thnkY-social-link">
 		                  <ul class="reset-list">
-		                    <li><a target="_blank" href="">Facebook</a></li>
-		                    <li><a target="_blank" href="">Instagram</a></li>
+		                    <li><a target="_blank" href=""><i class="fab fa-facebook-f"></i> Facebook</a></li>
+		                    <li><a target="_blank" href=""><i class="fab fa-instagram"></i> Instagram</a></li>
 		                  </ul>
 		                </div>
 		              </div>
