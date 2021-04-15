@@ -27,9 +27,10 @@
   <?php else:?>
   <section class="innerpage-con-wrap">
     <article class="default-page-con">
+      <?php if(have_rows('inhoud')){  ?>
       <div class="block-955">
-        <?php the_content(); ?>
       </div>
+      <?php endif; ?>
     </article>
   </section>
   <?php endif; ?>

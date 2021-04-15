@@ -225,9 +225,11 @@ body.woocommerce-order-received .checkout-page-title{
 }
 .thankyou .service-lists{
 	margin: 0 -18px;
+	flex-wrap: wrap;
 }
 .thankyou .service-list{
 	padding: 0 18px;
+	width: 100%;
 }
 .thankyou .service-text{
 	padding-left: 36px;
@@ -449,4 +451,65 @@ svg.home-btn-arrow{
 	    padding-top: 35px;
 	    padding-bottom: 32px;
 	}
+}
+
+/* ================= */
+/* == responsive == */
+/* =============== */
+@media (max-width: 1699px) {
+	
+}
+
+@media (max-width: 1599px) {
+	
+}
+
+@media (max-width: 1499px) {
+	
+}
+
+@media (max-width: 1399px) {
+	
+}
+
+@media (max-width: 1299px) {
+	
+}
+
+@media (max-width: 1199px) {
+	
+}
+
+@media (max-width: 991px) {
+	
+}
+
+@media (max-width: 767px) {
+	
+}
+
+@media (max-width: 639px) {
+	.thnk-you-des{
+		display: block;
+	}
+	.thnk-you-des-left{
+		margin: auto;
+		margin-bottom: 12px;
+	}
+	.thnk-you-des-rgt{
+		padding-left: 0;
+		text-align: center;
+	}
+}
+
+@media (max-width: 575px) {
+	
+}
+
+@media (max-width: 439px) {
+	
+}
+
+@media (max-width: 375px) {
+	
 }
