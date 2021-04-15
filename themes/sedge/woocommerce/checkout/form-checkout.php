@@ -130,13 +130,16 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 					</div>
 					<button type="submit" class="button alt" name="woocommerce_checkout_place_order" value="BESTELLING AFRONDEN" data-value="BESTELLING AFRONDEN"><span><?php esc_html_e( 'BESTELLING AFRONDEN', 'woocommerce' ); ?></span></button>
 				</div>
+				<div class="checkout html-text show-xs">
+					<span><?php esc_html_e( 'Koop veilig & vertrouwd', 'woocommerce' ); ?></span>
+				</div>
 				<div class="cart-pay-logo-wrap">
 					<div class="cart-logo-crtl">
 						<ul class="reset-list">
-			              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-01.svg"></li>
-			              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-02.svg"></li>
-			              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-03.svg"></li>
-			              <li><img src="<?php echo THEME_URI; ?>/assets/images/payment-logo-04.svg"></li>
+							<li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-01.png"></li>
+			                <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-02.png"></li>
+			                <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-03.png"></li>
+			                <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-04.png"></li>
 			            </ul>
 					</div>
 				</div>

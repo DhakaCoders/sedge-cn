@@ -176,7 +176,7 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 			<div class="register-btn">
 				<div class="reg-btn-crtl">
 					<p>
-						<button type="submit" name="user-register" id="register_action_btn" value="<?php esc_attr_e( 'Doorgaan', 'woocommerce' ); ?>"><?php esc_html_e( 'Doorgaan', 'woocommerce' ); ?></button>
+						<button type="submit" name="user-register" id="register_action_btn" value="<?php esc_attr_e( 'Doorgaan', 'woocommerce' ); ?>"><span><?php esc_html_e( 'Doorgaan', 'woocommerce' ); ?></span></button>
 						<input type="hidden" name="user_register_nonce" value="<?php echo wp_create_nonce('user-register-nonce'); ?>"/>
 					</p>
 					<p class="form-row html-text">
@@ -221,7 +221,7 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 						<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php esc_html_e( 'Remember me', 'woocommerce' ); ?></span>
 					</label>
 					<?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
-					<button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="<?php esc_attr_e( 'Login', 'woocommerce' ); ?>"><?php esc_html_e( 'Login', 'woocommerce' ); ?></button>
+					<button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="<?php esc_attr_e( 'Login', 'woocommerce' ); ?>"><span><?php esc_html_e( 'Login', 'woocommerce' ); ?></span></button>
 				</p>
 			
 				<?php do_action( 'woocommerce_login_form_end' ); ?>
@@ -244,7 +244,7 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 					<input type="email" class="woocommerce-Input woocommerce-Input--text input-text" name="reg_email" id="reg_email" autocomplete="email" placeholder="E-mailadres" required/>
 				</p>
 				<p class="woocommerce-form-row form-row">
-					<button type="submit" class="woocommerce-Button woocommerce-button button woocommerce-form-register__submit" id="register_next" name="register" value="<?php esc_attr_e( 'Maak een account aan', 'woocommerce' ); ?>"><?php esc_html_e( 'Maak een account aan', 'woocommerce' ); ?></button>
+					<button type="submit" class="woocommerce-Button woocommerce-button button woocommerce-form-register__submit" id="register_next" name="register" value="<?php esc_attr_e( 'Maak een account aan', 'woocommerce' ); ?>"><span><?php esc_html_e( 'Maak een account aan', 'woocommerce' ); ?></span></button>
 				</p>
 			</form>
 

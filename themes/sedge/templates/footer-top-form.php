@@ -1,3 +1,7 @@
+<?php 
+$nieuwsbrief = get_field('nieuwsbrief_form', 'options');
+if( !empty($nieuwsbrief) ):
+?>
 <section class="ftr-top-contact-sec">
   <div class="container">
     <div class="row">
@@ -5,7 +9,7 @@
         <div class="ftr-top-contact-sec-inr clearfix">
           <div class="ftr-top-contact-lft">
             <div class="ftr-top-contact-lft-inr">
-              <h6 class="ftr-top-cnt-lft-title">BLIJF OP DE HOOGTE VAN ACTIES EN PROMOTIES SCHRIJF JE IN OP ONZE NIEUWSBRIEF</h6>
+            <?php if( !empty($nieuwsbrief['titel']) ) printf('<h6 class="ftr-top-cnt-lft-title">%s</h6>', $nieuwsbrief['titel']); ?>
             </div>
           </div>
           <div class="ftr-top-contact-rgt">
@@ -39,3 +43,4 @@
     </div>
   </div>
 </section>
+<?php endif; ?>

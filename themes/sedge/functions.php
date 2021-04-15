@@ -35,9 +35,11 @@ if( !function_exists('cbv_theme_setup') ){
         ) );
 
         register_nav_menus( array(
-            'cbv_main_menu' => __( 'Hoofdmenu', THEME_NAME ),
-            'cbv_main_mbmenu' => __( 'Mobiel Menu', THEME_NAME ),
-            'cbv_cat_menu' => __( 'Category Menu', THEME_NAME ),
+            'cbv_main_menu_1' => __( 'Hoofdmenu 1', THEME_NAME ),
+            'cbv_main_menu_2' => __( 'Hoofdmenu 2', THEME_NAME ),
+            'cbv_main_mbmenu_mobiel' => __( 'Mobiel Menu', THEME_NAME ),
+            'cbv_copyright_mobiel' => __( 'Copyright Mobiel Menu', THEME_NAME ),
+            //'cbv_cat_menu' => __( 'Category Menu', THEME_NAME ),
             'cbv_fta_menu' => __( 'Footer Menu 1', THEME_NAME ),
             'cbv_ftb_menu' => __( 'Footer Menu 2', THEME_NAME ),
             'cbv_copyright_menu' => __( 'Copyright Menu', THEME_NAME ),
@@ -96,10 +98,18 @@ function my_acf_google_map_api( $api ){
 }
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
-function is_blog () {
+function is_blog() {
     return ( is_archive() || is_author() || is_category() || is_home() || is_single() || is_tag()) && 'post' == get_post_type();
 }
-
+function is_cbv_wc() {
+    return ( is_cart() || is_checkout() || is_account_page());
+}
+function is_cbv_title() {
+    return ( is_cart() || is_account_page());
+}
+function is_show_footer_form() {
+    return ( is_cart() || is_shop() || is_product_category() || is_product_tag() || is_product());
+}
 add_post_type_support( 'page', 'excerpt' );
 
 add_filter('use_block_editor_for_post', '__return_false');

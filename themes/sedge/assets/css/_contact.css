@@ -4,7 +4,7 @@
 ---------------------
 */
 .page-banner-sec-wrp{
-    padding-top: 35px;
+    padding-top: 10px;
 }
 .page-entry-hdr{
 	padding-bottom: 55px;
@@ -24,10 +24,6 @@
     margin: 0;
     color: #FFFFFF!important;
 }
-/*.page-entry-hdr a.fl-blue-btn:hover{
-	color:#71867f;
-	background: transparent;  
-}*/
 .contact-form-sec-wrp {
     padding-bottom: 85px;
 }
@@ -234,7 +230,7 @@
     margin-bottom: 0;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error{
-	font-weight: 700;
+	font-weight: 400 !important;
 	font-size: 14px;
 	padding-left: 2px;
 	display: block;
@@ -252,13 +248,15 @@
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.form-privacy-text{
 	margin-bottom: 15px;
 }
-.contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text p {
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-description{
+    margin-top: 0;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-description p{
     font-size: 12px;
     line-height: 1.4;
     color: #6A6A6A;
     margin-bottom: 24px;
     text-align: left;
-    font-style: italic;
     margin-bottom: 0;
     padding-top: 10px;
     padding-right: 20px;
@@ -330,73 +328,51 @@ placeholder
 Inputtype Radio Css
 ----------------------
 */
-.input-type-radio ul li{
-    padding: 0 !important;
-    margin: 0 !important;
-    position: relative;
-    float: left;
-    padding-right: 28px !important;
+
+.input-type-radio input[type=radio],
+.input-type-radio input[type=checkbox]{
+  display:none;
 }
-.input-type-radio ul li label {
+
+.input-type-radio label,
+.input-type-radio label{
+    display: inline-block;
+    margin: 0;
     font-size: 14px;
     line-height: 1;
     font-weight: 400;
     color: #78797B;
     margin: 0;
-    padding-left: 50px;
+    padding-left: 25px;
     text-transform: inherit;
-    padding-right: 0;
+    padding-right: 28px;
     cursor: pointer;
-    padding: 2px 0 2px 25px;
+    position: relative;
 }
-/* Hide the browser's default checkbox */
-.input-type-radio ul li label input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-/* Create a custom checkbox */
-.checkmark {
+.input-type-radio input[type=radio] + label span.checkmark,
+.input-type-radio input[type=checkbox] + label span.checkmark{
     position: absolute;
+    left: 0;
+    top: 0;
     width: 14px;
     height: 14px;
-    border: 1px solid #71867E;
-    box-sizing: border-box;
-    left: 0;
-    top: 5px;
-    border-radius: 15px;
+    border:1px solid#71867E;
+    border-radius: 20px;
 }
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the checkmark when checked */
-.input-type-radio ul li label input:checked ~ .checkmark:after {
-  display: block;
-  background: #93A198;
-}
-
-
-/* Style the checkmark/indicator */
-.input-type-radio ul li label .checkmark:after {
-	content: "";
-	position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
+.input-type-radio input[type=radio]:checked + label:after,
+.input-type-radio input[type=checkbox]:checked + label:after{
+    content: "";
+    outline: 0;
+    background-color:#93A198;
+    color: #fff;
+    position: absolute;
+    left: 3px;
+    top: 3px;
     width: 8px;
     height: 8px;
-    background: #93A198;
-    border-radius: 10px;
+    border-radius: 20px;
 }
+
 .contact-form-info ul li{
     display: block;
     padding-bottom: 28px;
@@ -415,13 +391,13 @@ Inputtype Radio Css
 	display: block;
 	padding-bottom: 16px;
 }
-.contact-form-info-title {
+.fl-h6.contact-form-info-title{
     font-size: 20px;
     line-height: 1;
     color: #78797B;
-    font-weight: 600;
     margin-bottom: 28px;
     font-family: 'Sora', sans-serif;
+    font-weight: 600;
 }
 .contact-form-info ul li a:hover{
 	color:#B3192A;
@@ -443,11 +419,10 @@ Inputtype Radio Css
     .page-entry-hdr {
         padding-bottom: 45px;
     }
-    .page-entry-hdr a.fl-blue-btn{
+
+    .page-entry-hdr .fl-blue-btn {
         font-size: 45px;
-        width: 300px;
-        height: 63px;
-        padding-top: 2px;
+        padding: 8px 30px;
     }
     .contact-form-info ul li span,
     .contact-form-info ul li a {
@@ -467,10 +442,8 @@ Inputtype Radio Css
     .contact-form-block {
         padding-top: 10px;
     }
-    .page-entry-hdr a.fl-blue-btn{
+    .page-entry-hdr .fl-blue-btn{
         font-size: 42px;
-        width: 270px;
-        height: 55px;
     }
     .contact-form-lft {
         padding-right: 40px;
@@ -500,11 +473,10 @@ Inputtype Radio Css
     .contact-form-block {
         padding-top: 0;
     }
-    .page-entry-hdr a.fl-blue-btn{
+    .page-entry-hdr .fl-blue-btn {
         font-size: 30px;
-        width: 210px;
-        height: 35px;
         margin-left: -15px;
+        padding: 5px 10px;
     }
     .contact-form-rgt {
         width: 100%;
@@ -517,10 +489,14 @@ Inputtype Radio Css
     }
     .page-entry-header{
         margin-bottom: 30px;
+        padding-bottom: 30px;
     }
     .page-entry-header p,
     .page-entry-header .fl-h2{
         text-align: center;
+    }
+    .page-entry-header p{
+        margin-bottom: 35px;
     }
     .page-entry-header .fl-h2{
         text-transform: inherit;
@@ -593,6 +569,10 @@ Inputtype Radio Css
     }
     .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-textarea{
         margin-bottom: 10px;
+    }
+    .input-type-radio label,
+    .input-type-radio label{
+        padding-right: 20px;
     }
 }
 

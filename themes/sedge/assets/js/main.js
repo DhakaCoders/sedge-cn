@@ -226,7 +226,65 @@ google.maps.event.addDomListener(window, 'load', initialize);
   });
   $(".billing-address-wrap .same-as-shipping-address,.login-info p:first-child,.form-row .woocommerce-form__label-for-checkbox").each(function(){
           $(this).append('<div class="checkbox-custom"></div>')
+  });
+  $('.variations_form table.variations select#pa_diameter,.variations_form table.variations select#pa_aantal-stuks').addClass('selectpicker');
+
+  // accordion
+  if( $('.accordion-order-title').length ){
+      $( ".orders-crtl" ).first().find('.hh-accordion-title').addClass('hh-accordion-active');
+      $( ".hh-accordion-active").next().slideDown(300);
+    $('.accordion-order-title').click(function(){
+        $(this).next().slideToggle(300);
+        $(this).parents('li').siblings().find('.order-details').slideUp(300);
+        $(this).toggleClass('hh-accordion-active');
+        $(this).parents('li').siblings().find('.accordion-order-title').removeClass('hh-accordion-active');
     });
+  }
+
+  /**
+Slick slider
+*/
+if( $('#related-product-slider').length ){
+    $('#related-product-slider').slick({
+      dots: false,
+      infinite: false,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots:true,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots:true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
   /*start of Sabbir*/
 
 
@@ -250,6 +308,10 @@ if(windowWidth > 768){
     $('.about-img-text-bg').height(AboutTextImgRgtCon).width(LeftBgWidthCalDiv); 
   });
 }
+
+$('.wpforms-error').on('click', function(){
+  $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
+});
 
 
 

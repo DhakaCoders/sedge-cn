@@ -23,7 +23,6 @@ function get_custom_wc_output_content_wrapper_end(){
   if(is_shop() OR is_product_category()){
     echo '</div></div></div></div></section>';
     get_template_part('templates/shop', 'bottom');
-    get_template_part('templates/footer', 'top-form');
   }
 
 }
@@ -203,14 +202,15 @@ if (!function_exists('add_custom_box_product_summary')) {
           woocommerce_template_single_add_to_cart();
         echo '</div>';
         echo '</div>';
-        echo '<div>';
-        $rating_count = intval($product->get_rating_count());
+        /*$rating_count = intval($product->get_rating_count());
         if ( $rating_count > 0 ) {
             echo '<div class="rating">';
             echo '<p>Beoordeling door klanten <span><strong>'.$product->get_average_rating().'</strong> van 5  -  '.$rating_count.' beoordelingen</span></p>';
             echo '</div>';
-        }
-
+        }*/
+        echo '<div class="rating">';
+            echo '<p>Beoordeling door klanten <span><strong>4.2</strong> van 5  - 3035 beoordelingen</span></p>';
+        echo '</div>';
         /*echo $rating_count = $product->get_rating_count();
         echo $review_count = $product->get_review_count();*/
     }
@@ -218,7 +218,7 @@ if (!function_exists('add_custom_box_product_summary')) {
 
 add_action('woocommerce_before_add_to_cart_quantity', 'cbv_start_div_single_price', 99);
 function cbv_start_div_single_price(){
-    echo '<div class="cartbtn-wrap clearfix"><strong>Aantal</strong><div class="cart-btn-qty">';
+    echo '<div class="cartbtn-wrap clearfix"><div class="cart-btn-qty">';
     echo '<div class="quantity qty"><span class="minus">-</span>';
 }
 add_action('woocommerce_after_add_to_cart_quantity', 'cbv_get_single_price');
@@ -249,7 +249,6 @@ function cbv_add_custom_info(){
         echo wpautop( $long_desc );
         echo '</div>';
     endif;
-get_template_part('templates/footer', 'top-form');
 }
 
 add_action( 'woocommerce_product_options_inventory_product_data', 'misha_adv_product_options');
@@ -257,6 +256,14 @@ function misha_adv_product_options(){
  
     echo '<div class="options_group">';
  
+    woocommerce_wp_text_input( array(
+        'id'      => 'product_length',
+        'value'   => get_post_meta( get_the_ID(), 'product_length', true ),
+        'label'   => __('Length (cm)', 'woocommerce'),
+        'type' => 'text',
+        'desc_tip' => 'true', 
+        'description' => __('The amount of credits for this product in currency format.', 'woocommerce'),
+    ));
     woocommerce_wp_text_input( array(
         'id'      => 'product_min_qty',
         'value'   => get_post_meta( get_the_ID(), 'product_min_qty', true ),
@@ -285,6 +292,7 @@ add_action( 'woocommerce_process_product_meta', 'misha_save_fields', 10, 2 );
 function misha_save_fields( $id, $post ){
  
     //if( !empty( $_POST['super_product'] ) ) {
+        update_post_meta( $id, 'product_length', $_POST['product_length'] );
         update_post_meta( $id, 'product_min_qty', $_POST['product_min_qty'] );
         update_post_meta( $id, 'product_max_qty', $_POST['product_max_qty'] );
     //} else {
@@ -562,6 +570,8 @@ function cbv_wc_custom_class( $classes ) {
             $classes[] = 'loggedin-order-crtl';
     }elseif( is_account_page() && is_user_logged_in() && is_wc_endpoint_url( 'edit-account' ) ){
         $classes[]='loggedin-editaccount-crtl';
+    }elseif( strpos($_SERVER['REQUEST_URI'], "order-received") !== false && is_checkout()){
+        $classes[] = 'thankyou';
     }
     if( is_cart() && WC()->cart->cart_contents_count == 0){
         $classes[]='empty-cart';
@@ -659,4 +669,5 @@ function remove_postcode_validation( $fields ) {
     
     return $fields;
 }
+
 include_once(THEME_DIR .'/inc/wc-manage-fields.php');

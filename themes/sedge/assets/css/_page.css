@@ -4,8 +4,8 @@
 	padding: 0 20px!important;
 }
 .slick-slider .slick-dots li{
-	width: 16px!important;
-	height: 16px!important;
+	width: 14px!important;
+	height: 14px!important;
 	position: static;
 	background: #E1E1E1!important;
 	border-radius: 100% 100%!important;
@@ -13,7 +13,7 @@
 	padding: 0!important;
 }
 .slick-slider .slick-dots li.slick-active{
-	background: #F3BA4B!important;
+	background: #B3192A!important;
 }
 .slick-slider .slick-dots li:before,
 .slick-slider .slick-dots li button:before{

@@ -245,7 +245,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="page-entry-hdr clearfix">
-          <a class="fl-blue-btn" href="#">CONTACT</a>
+          <h1 class="fl-blue-btn" href="#">CONTACT</h1>
         </div>
       </div>
     </div>
@@ -263,20 +263,43 @@
             <h2 class="fl-h2">Lorem ipsum dolor</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque non nulla in lacus, a, nisl risus pulvinar id. Quis praesent at purus, id justo, enim tortor porttitor sit.</p>
             <div class="input-type-radio clearfix">
-              <ul class="reset-list clearfix">
+              <input type="radio" id="bedrijf" name="radios" value="true" checked>
+              <label for="bedrijf">
+                Bedrijf
+                <span class="checkmark"></span>
+              </label>
+              <input type="radio" id="particulier" name="radios" value="true">
+              <label for="particulier">
+                Particulier
+                <span class="checkmark"></span>
+              </label>
+              <!-- <ul class="reset-list clearfix">
                 <li class="wpforms-selected">
-                  <label class="container">Bedrijf 
-                    <input type="checkbox" checked>
+                  <input type="radio" id="bedrijf" name="gender" value="bedrijf" checked>
+                  <label for="bedrijf">Bedrijf</label>
+                  <span class="checkmark"></span>
+                </li>
+                <li class="wpforms-selected">
+                  <input type="radio" id="particulier" name="gender" value="particulier">
+                  <label for="particulier">Particulier</label>
+                  <span class="checkmark"></span>
+                </li>
+              </ul> -->
+              
+              <!-- <ul class="reset-list clearfix">
+                <li class="wpforms-selected">
+                  <label class="container" for="bedrijf">Bedrijf 
+                    <input type="radio" id="bedrijf" checked>
                     <span class="checkmark"></span>
                   </label>
                 </li>
                 <li class="wpforms-selected">
-                  <label class="container">Particulier 
-                    <input type="checkbox">
+                  <label class="container" for="particulier">Particulier 
+                    <input type="radio" id="particulier">
                     <span class="checkmark"></span>
                   </label>
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
           <div class="wpforms-container">
@@ -296,7 +319,9 @@
                 <div class="wpforms-field wpforms-has-error FullWidthField">
                   <label class="wpforms-field-label">Voornaam</label>
                   <input type="text" name="text" placeholder="mathias2.conversalbe" required>
-                  <label class="wpforms-error"><img src="assets/images/error-msg-icon.svg"></label>
+                  <label class="wpforms-error"><img src="assets/images/error-msg-icon.svg">
+                  </label>
+                  <span>This Field is required</span>
                 </div>
 
                 <div class="wpforms-field FullWidthField">
@@ -311,7 +336,7 @@
               </div><!-- end of .wpforms-field-container-->
 
               <div class="wpforms-field-text">
-                <p>Wij respecteren uw <a href="#"> privacy.</a> Jouw gegevens wor den altijd vertrouwelijk behandeld.</p>
+                <p>Wij respecteren uw <a href="#"> privacy.</a> Jouw gegevens worden altijd vertrouwelijk behandeld.</p>
               </div>
 
               <div class="wpforms-submit-container">
