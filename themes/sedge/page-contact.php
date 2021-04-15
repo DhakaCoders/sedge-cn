@@ -38,21 +38,17 @@ $thisID = get_the_ID();
                   <ul class="reset-list clearfix">
                     <li class="wpforms-selected">
                       <label class="container" for="bedrijf">Bedrijf 
-                        <input type="radio" id="bedrijf" checked>
+                        <input type="radio" id="bedrijf" name="condition" value="bedrijf" checked>
                         <span class="checkmark"></span>
                       </label>
                     </li>
                     <li class="wpforms-selected">
                       <label class="container" for="particulier">Particulier 
-                        <input type="radio" id="particulier">
+                        <input type="radio" id="particulier" name="condition" value="particulier">
                         <span class="checkmark"></span>
                       </label>
                     </li>
                   </ul>
-                  <!-- <input type="radio" id="male" name="gender" value="male">
-                  <label for="male">Male</label>
-                  <input type="radio" id="female" name="gender" value="female">
-                  <label for="female">Female</label><br> -->
                 </div>
               </div>
               <div class="wpforms-container">
