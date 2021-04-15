@@ -528,6 +528,7 @@ body.woocommerce-cart.woocommerce-page .woocommerce-notices-wrapper + .ywgc_have
 body.woocommerce-page.woocommerce-checkout .woocommerce-NoticeGroup-checkout .woocommerce-error{
 	margin-top: -30px;
 }
+
 /*responsive */
 @media(max-width: 1599px){
 	body.woocommerce-cart .cart_totals{
