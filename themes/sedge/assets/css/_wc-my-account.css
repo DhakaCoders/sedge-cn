@@ -79,8 +79,8 @@ body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccou
     height: 26px;
     width: 30px;
     background-repeat: no-repeat!important;
-    background-position: center;
-    background-size: 100% auto;
+    background-position: center!important;
+    background-size: 100% auto!important;
     right:42px;
     top: 50%;
     transform: translateY(-50%);
@@ -190,7 +190,7 @@ body.woocommerce-orders .account-page-title h1{
 .back-to-dashboard-btn-cntlr a{
     color: #fff;
     position: relative;
-    padding-left: 20px;
+    padding-left: 24px;
     display: inline-block;
     vertical-align: baseline;
     font-size: 14px;
@@ -205,7 +205,6 @@ body.woocommerce-orders .account-page-title h1{
     left: -3px;
 }
 .back-to-dashboard-btn-cntlr{
-    margin-bottom:5px;
     background: #71867E;
     width: 300px;
     height: 32px;
@@ -1103,6 +1102,7 @@ body.woocommerce-checkout #billing_last_name_field label{
 body.woocommerce-checkout .col2-set {
     width: 100%;
     float: left;
+    padding-bottom: 97px;
 }
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .select2-container,
 body.woocommerce-checkout .woocommerce-shipping-fields .select2-container,
@@ -1627,6 +1627,16 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         padding: 10px 15px;
         font-size: 14px;
     }
+    .deshboard-inner {
+        background: #71867E;
+        padding: 35px 20px 20px 20px;
+    }
+    .service-contact .service-text a{
+        font-size:15px;
+    }
+    .service-list .icon i{
+        width: 60px;
+    }
     /* -----------------------  checkout page -----------------------*/
     body.woocommerce-checkout #customer_details .col-2{
         padding-left: 20px;
@@ -1662,6 +1672,14 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
         padding-right:0px;
     }
+
+    /* -------------- check out page ------------------*/
+    body.woocommerce-checkout .default-page-con{
+        padding-top: 0!important;
+    }
+    body.woocommerce-checkout .col2-set{
+        padding-bottom: 70px;
+    }
     body.woocommerce-checkout .woocommerce-billing-fields > h3, 
     body.woocommerce-checkout .woocommerce-additional-fields.extra-info h3, 
     body.woocommerce-checkout .woocommerce-checkout-review-order h3{
@@ -1695,6 +1713,63 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     }
 }
 @media(max-width: 768px){
+    /*  ------------------ deshbord account page -------------------*/
+    body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul {
+        flex-direction: column;
+    }
+    body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li a {
+        font-size: 11px;
+        padding: 13px 20px;
+    }
+    body.woocommerce-account .woocommerce-account-grds-cntlr{
+        padding-top: 20px;
+    }
+    body.woocommerce-account .default-page-con p.loggedin-text{
+        font-size:20px;
+    }
+    .service-contact .service-lists {
+        flex-direction: column;
+    }
+    .service-contact .service-text p,.service-contact .service-text p a {
+        font-size: 11px;
+    }
+    .service-text h3 {
+        font-size: 16px;
+        margin-bottom: 9px!important;
+    }
+    .deshboard-inner {
+        margin: 0 -15px;
+    }
+    .service-lists .service-list{
+        margin-bottom: 30px;
+        width: 100%;
+        padding-right: 0;
+    }
+    .deshboard-inner {
+        padding: 50px 21px 20px 32px;
+    }
+    body.woocommerce-account .myaccount-btm-form {
+        display: none;
+    }
+    body.woocommerce-account .woocommerce-account-grds-cntlr {
+        margin-bottom: 14px!important;
+    }
+    body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
+        margin-bottom:30px;
+    }
+    body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li a:after {
+        width: 22px;
+    }
+    body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--edit-account a:after {
+        width: 22px;
+    }
+    body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--customer-logout a:after {
+        width: 20px;
+    }
     /* -------------------- new login page ----------------------*/
     body.woocommerce-account .account-page-title{
         padding-top: 0px;
@@ -1973,21 +2048,23 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.woocommerce-account.loggedin-deshboard-crtl  .account-page-title h1{
         margin-bottom:25px!important;
     }
-    .back-to-dashboard-btn-cntlr{
-        background: #fff;
+   .back-to-dashboard-btn-cntlr {
+        background: #71867E;
         margin-left: -15px;
         margin-right: -15px;
         text-align: center;
-        
+        justify-content: flex-start;
+        width: initial;
+        padding-left: 33px;
     }
     .back-to-dashboard-btn-cntlr a{
-        
         display: inline-block;
         padding: 9px 0;
         text-align: center;
-        padding-left: 15px;
+        padding-left: 24px;
         
     }
+
 
     body.woocommerce-orders .account-page-title h1{
         border-bottom:none!important;
@@ -2032,7 +2109,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         text-align: left;
     }
     body.woocommerce-account .woocommerce-EditAccountForm legend{
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom:23px;
     }
     body.woocommerce-edit-account .account-page-title div:first-child a{
@@ -2042,6 +2119,16 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         display: table;
         margin-left:auto!important;
         margin-right:auto!important;
+        font-size:11px!important
+    }
+    body.woocommerce-edit-account.woocommerce-account .woocommerce-EditAccountForm legend {
+        margin-bottom: 30px;
+        border-bottom: 2px solid #F2EADE;
+    }
+    body.woocommerce-edit-account.woocommerce-account .woocommerce-EditAccountForm legend {
+        font-size: 16px;
+        padding-bottom:27px;
+        padding-top: 0;
     }
 
     /* ---------------------- woocommerce-MyAccount-content --------------------------*/
@@ -2067,7 +2154,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     }
     body.loggedin-deshboard-crtl .woocommerce-account-grds-cntlr,
     body.woocommerce-edit-account .woocommerce-account-grds-cntlr{
-        padding-top:10px;
+        padding-top: 32px;
     }
     body.woocommerce-account .woocommerce-MyAccount-navigation{
         margin-bottom: 6px;
@@ -2095,6 +2182,9 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     }
 
     /* ----------------------------- chenk out page -----------------------------*/
+    body.woocommerce-checkout .col2-set {
+        padding-bottom: 20px;
+    } 
     body.woocommerce-checkout .checkout-page-title h1{
         border-bottom:none;
     }
@@ -2329,9 +2419,12 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.woocommerce-account .woocommerce-EditAccountForm legend{
         font-size: 20px;
     }
+    body.woocommerce-edit-account .woocommerce-EditAccountForm > p button[type="submit"]{
+        width:100%;
+    }
     /* --------------- account deshboard ----------------*/
-    body.loggedin-deshboard-crtl .account-page-title .loggedin-text{
-        font-size: 12px
+    body.woocommerce-account .default-page-con p.loggedin-text{
+        font-size:16px;
     }
     .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li a{
         font-size: 12px;
