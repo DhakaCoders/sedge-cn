@@ -299,6 +299,7 @@ svg.home-btn-arrow{
 .thankyou .address ul li{
 	padding-top: 14px;
 	padding-bottom: 14px;
+	padding-left: 0;
 }
 .thankyou .address ul li a{
 	color: #78797B;
@@ -360,10 +361,6 @@ svg.home-btn-arrow{
 	height: 2px;
 	background: #f2eadf;
 	top: -18px;
-}
-.thankyou .woocommerce-Price-amount.amount bdi{
-	color: #78797b!important;
-	font-size: 14px!important;
 }
 .thankyou .order-totaal .woocommerce-Price-amount.amount bdi{
 	color: #6dbd98!important;
