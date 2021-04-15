@@ -3,22 +3,29 @@
 get_header();
 $thisID = get_the_ID();
 ?>
-<?php  
-  $intro = get_field('formsec', $thisID);
-  $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title();
-?>
 
+<?php  
+  $abanner = get_field('about_banner', $thisID);
+  $page_title = !empty($abanner['titel']) ? $abanner['titel'] : get_the_title();
+
+  if($abanner):
+  $about_bannerposter = !empty($abanner['afbeelding'])? cbv_get_image_src( $abanner['afbeelding'], 'full' ): '';
+?>
 <section class="about-grey-sd-sec-wrp">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="about-grey-sd-wrp">
-          <div class="about-grey-sd-inr inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/about-grey-sd-img.jpg);">
+          <div class="about-grey-sd-inr inline-bg" style="background: url('<?php echo $about_bannerposter; ?>');">
             <div class="about-grey-sd-dsc-tp">
-              <h1 class="about-grey-sd-title fl-h1">About Sedge</h1>
+              <h1 class="about-grey-sd-title fl-h1"><?php echo $page_title; ?></h1>
             </div>
             <div class="about-grey-sd-dsc-box">
-              <span>Grey sedge, a natural plant. Long used by rural farmers and growing alongside agriculturally cultivated areas.</span>
+              <span>
+                <?php 
+                  if( !empty($abanner['beschrijving']) ) echo $abanner['beschrijving'];
+                ?>
+              </span>
             </div>
           </div>
         </div>
@@ -26,6 +33,8 @@ $thisID = get_the_ID();
     </div>
   </div>
 </section>
+
+<?php endif; ?>
 
 <section class="about-img-text-sec-wrp">
    <div class="about-img-text-bg"></div>
