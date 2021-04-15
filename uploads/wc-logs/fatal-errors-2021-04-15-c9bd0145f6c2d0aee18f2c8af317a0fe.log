@@ -1,27 +1,4 @@
-2021-04-15T14:59:48+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\WooCommerce\Admin\Overrides\Order::get_shipping_email() in D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\themes\sedge\woocommerce\checkout\thankyou.php:191
-Stack trace:
-#0 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\includes\wc-core-functions.php(345): include()
-#1 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(256): wc_get_template('checkout/thanky...', Array)
-#2 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_received(247)
-#3 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
-#4 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
-#5 D:\xampp\htdocs\project\202 in D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\themes\sedge\woocommerce\checkout\thankyou.php on line 191
+2021-04-15T20:09:16+00:00 CRITICAL syntax error, unexpected ':' in D:\xampp\htdocs\projects\2021\sedge\sedge-cn\themes\sedge\page-about.php on line 221
 
-2021-04-15T15:43:41+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\WooCommerce\Admin\Overrides\Order::get_shipping_email() in D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\themes\sedge\woocommerce\checkout\thankyou.php:191
-Stack trace:
-#0 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\includes\wc-core-functions.php(345): include()
-#1 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(256): wc_get_template('checkout/thanky...', Array)
-#2 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_received(247)
-#3 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
-#4 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
-#5 D:\xampp\htdocs\project\202 in D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\themes\sedge\woocommerce\checkout\thankyou.php on line 191
-
-2021-04-15T15:43:50+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\WooCommerce\Admin\Overrides\Order::get_shipping_email() in D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\themes\sedge\woocommerce\checkout\thankyou.php:191
-Stack trace:
-#0 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\includes\wc-core-functions.php(345): include()
-#1 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(256): wc_get_template('checkout/thanky...', Array)
-#2 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_received(247)
-#3 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
-#4 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
-#5 D:\xampp\htdocs\project\202 in D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\themes\sedge\woocommerce\checkout\thankyou.php on line 191
+2021-04-15T20:31:54+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in D:\xampp\htdocs\projects\2021\sedge\sedge-cn\themes\sedge\page-about.php on line 384
 
