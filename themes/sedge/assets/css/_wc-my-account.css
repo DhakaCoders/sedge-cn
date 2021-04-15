@@ -1231,7 +1231,7 @@ body.woocommerce-checkout .custom-checkout-order-review table tbody tr{
 .custom-checkout-order-review table tbody tr{
     width: 100%;
 }
-body.woocommerce-checkout .custom-checkout-order-review table tr td{
+.custom-checkout-order-review table tr td{
     width: 50%;
     text-align: right;
 }
