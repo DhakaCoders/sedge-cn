@@ -1,0 +1,6 @@
+2021-04-15T07:29:04+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in D:\xampp\htdocs\projects\2021\sedge\sedge-cn\themes\sedge\front-page.php on line 137
+
+2021-04-15T07:32:14+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in D:\xampp\htdocs\projects\2021\sedge\sedge-cn\themes\sedge\front-page.php on line 145
+
+2021-04-15T08:07:11+00:00 CRITICAL syntax error, unexpected ',' in D:\xampp\htdocs\projects\2021\sedge\sedge-cn\themes\sedge\front-page.php on line 25
+
