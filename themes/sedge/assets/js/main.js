@@ -286,9 +286,19 @@ if(windowWidth > 768){
 }
 
 $('.wpforms-field-email').on('click', function(){
-  $(this).addClass('wpforms-has-error');
   $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
 });
+
+
+$('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click',function(){
+    $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error').append('<span></span>');
+});
+
+$('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error').each(function(){
+    $(this).append('<span></span>')
+});
+
+
 
 
 
