@@ -106,7 +106,7 @@ $thisID = get_the_ID();
 </section>
 
 
-<!-- sabbir start -->
+
 <section class="product-menual-sec">
   <div class="container">
     <div class="row">
@@ -390,7 +390,7 @@ $thisID = get_the_ID();
   </div>
 </section>
 
-<!-- sabbir end -->
+
 
 
 <section class="ftr-top-contact-sec">
