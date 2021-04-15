@@ -275,7 +275,8 @@ if( $('#related-product-slider').length ){
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            dots:true
           }
         }
         // You can unslick at a given breakpoint now by adding:
