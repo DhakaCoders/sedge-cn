@@ -1,14 +1,23 @@
 <?php get_header(); ?>
-
+<?php if( is_cart() ): ?>
+<div class="page-banner-sec-wrp">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="page-entry-hdr clearfix">
+          <h1 class="fl-blue-btn"><?php echo get_the_title(); ?></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<?php endif; ?>
   <?php if(is_cbv_wc()):?>
     <section class="wc-page-con-wrap">
     	<div class="container">
     		<div class="row">
     			<div class="col-md-12">
     				<article class="default-page-con">
-            <?php if( is_cart() ): ?>
-              <div class="page-heading"><h1><?php echo get_the_title(); ?></h1></div>
-            <?php endif; ?>
     					<?php the_content(); ?>
     				</article>
     			</div>

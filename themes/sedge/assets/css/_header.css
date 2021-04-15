@@ -592,6 +592,80 @@ body.allWork {
 .xs-mbl-btn a{
 	width: 100%!important;
 }
+
+/*extra mbl menu*/
+.xs-extra-mobile-menu{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	max-width: 377px;
+	width: 100%;
+	background: #F9F5EF;
+	padding: 0 33px;
+	padding-top: 146px;
+	display: none;
+}
+.xs-extra-srch{
+	margin-bottom: 32px;
+}
+.xs-extra-srch input{
+	width: 100%;
+	height: 45px;
+	font-size: 14px;
+	padding: 0 20px;
+	border: 1px solid #FFFBF4;
+	background: #FFFBF4;
+	color: #78797B;
+}
+.xs-extra-srch input:focus{
+	border-color: #78797B;
+}
+.xs-extra-srch input::placeholder {
+  opacity: 1;
+  color: #78797B;
+  
+}
+
+.xs-extra-srch input:-ms-input-placeholder {
+ opacity: 1;
+ color: #78797B;
+}
+
+.xs-extra-srch input::-ms-input-placeholder {
+ opacity: 1;
+ color: #78797B;
+}
+.xs-extra-link{
+
+}
+.xs-extra-link ul{
+
+}
+.xs-extra-link ul li{
+	padding: 12px 19px;
+	position: relative;
+	font-size: 14px;
+	line-height: 1.2;
+	color: #78797B;
+}
+.xs-extra-link ul li:after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 12px;
+    background: #78797B;
+    left: 0;
+    top: 50%;
+    margin-top: -2px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+.xs-extra-link ul li a{
+	display: inline-block;
+	color:  #78797B;
+}
 /*responsive*/
 @media(max-width: 1599px){
 	.comnined-shape i svg{
@@ -705,19 +779,21 @@ body.allWork {
 	}
 	nav.main-nav > ul > li.menu-item-has-children > a:after{
 		position: absolute;
-		content: "";
+		content: "\f078";
+		font-size: 15px;
+		font-weight: 600;
+		font-family: 'Font Awesome 5 Free';
 		top: 50%;
-		transform: translateY(-50%);
-		-o-transform: translateY(-50%);
-		-ms-transform: translateY(-50%);
-		-webkit-transform: translateY(-50%);
-		right: 44px;
-		background: url('../images/right-arrow.svg');
-		background-repeat: no-repeat;
-		width: 12px;
-		height: 16px;
-		background-size: contain;
+		margin-top: -8px;
+		right: 0;
 	}
+	nav.main-nav > ul > li.menu-item-has-children.sub-menu-arrow > a:after{
+		transform: rotate(-180deg);
+		-o-transform: rotate(-180deg);
+		-ms-transform: rotate(-180deg);
+		-webkit-transform: rotate(-180deg);
+	}
+	
 
 	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu {
 		position: initial;

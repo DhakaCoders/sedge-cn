@@ -58,7 +58,7 @@ body.woocommerce-order-received .checkout-page-title .checkoutpt-right{
 	margin-bottom: 0;
 }
 .thnk-you-des .thank-you-des-title, .thank-you-des-sub-title{
-	margin-bottom:12px;
+	margin-bottom:12px!important;
 }
 .thnk-you-social-des-cntlr{
 	
@@ -181,12 +181,25 @@ body.woocommerce-order-received .checkout-page-title{
 	letter-spacing: -0.02em;
 	margin-bottom: 18px;
 }
-.thankyou .title-meta dl dd, .title-meta dl dt{
-	font-size: 12px;
-	line-height: 16px;
-}
-.thankyou .title-meta dl{
+.thankyou .title-meta ul li:before{
+	content: none;
 	display: flex;
+}
+.thankyou .title-meta ul{
+	margin: -4px 0;
+}
+.thankyou .title-meta ul li{
+	padding: 4px 0;
+}
+.thankyou .title-meta ul li strong{
+	font-weight: 400;
+}
+.thankyou .title-meta ul li span{
+	padding-left: 4px;
+	display: inline-block;
+	vertical-align: baseline;
+}
+.thankyou .title-meta ul li span p{
 	margin-bottom: 0;
 }
 .thankyou .body-list .quantity{
@@ -217,7 +230,7 @@ body.woocommerce-order-received .checkout-page-title{
 	padding: 0 18px;
 }
 .thankyou .service-text{
-	padding-left: 50px;
+	padding-left: 36px;
 }
 .thankyou .srv-txt-title{
 	margin-bottom: 17px;
@@ -255,6 +268,7 @@ body.woocommerce-order-received .checkout-page-title{
 	display: inline-block;
 	vertical-align: baseline;
 	padding-bottom: 2px;
+	color: #78797B;
 }
 .thankyou .order-home-btn{
 	width: 332px;
@@ -302,6 +316,30 @@ svg.home-btn-arrow{
 	margin-bottom: 0!important;
 	padding-bottom: 0!important;
 }
+.thankyou .woocommerce table.shop_table{
+	border: none;
+	margin: 0; 
+	text-align:initial; 
+	width: 100%; 
+	border-collapse: initial; 
+	border-radius: 0;
+}
+.thankyou .woocommerce table.shop_table tbody th, 
+.thankyou .woocommerce table.shop_table tfoot td, 
+.thankyou .woocommerce table.shop_table tfoot th{
+	font-weight: 400;
+	border-top: none;
+	border-bottom: none!important;
+}
+.thankyou .woocommerce-order-received .woocommerce table.shop_table td, 
+.thankyou .woocommerce-order-received .woocommerce table.shop_table th{
+	border-bottom: none!important;
+}
+.thankyou .woocommerce table.shop_table td{
+	border-bottom: none!important;
+	padding: 0!important;
+	vertical-align: inherit!important;
+}
 .thankyou .product-name, .cart-subtotal th, .fee th, .order-totaal th{
 	width: 278px;
 	padding-right: 10px;
@@ -310,10 +348,10 @@ svg.home-btn-arrow{
 .thankyou .cart-subtotal th{
 	text-transform: uppercase;
 }
-.thankyou .cart_item, .thankyou .cart-subtotal, .thankyou .fee, .thankyou .order-totaal{
+/* .thankyou .cart_item, .thankyou .cart-subtotal, .thankyou .fee, .thankyou .order-totaal{
 	display: inline-block;
 	vertical-align: baseline;
-}
+} */
 .thankyou .cart_item, .thankyou .cart-subtotal, .thankyou .fee {
 	padding-bottom: 27px;
 }
@@ -328,11 +366,11 @@ svg.home-btn-arrow{
 	background: #f2eadf;
 	top: -18px;
 }
-.woocommerce-Price-amount.amount bdi{
+.thankyou .woocommerce-Price-amount.amount bdi{
 	color: #78797b!important;
 	font-size: 14px!important;
 }
-.order-totaal .woocommerce-Price-amount.amount bdi{
+.thankyou .order-totaal .woocommerce-Price-amount.amount bdi{
 	color: #6dbd98!important;
 }
 .thnkY-social-link ul li a{

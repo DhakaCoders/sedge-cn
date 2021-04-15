@@ -1,37 +1,41 @@
 <?php get_header(); ?>
+
+<?php  
+  $hbanner = get_field('home_banner', HOMEID);
+  if($hbanner):
+    $bannerposter = !empty($hbanner['afbeelding'])? cbv_get_image_src( $hbanner['afbeelding'], 'hmbanner' ): '';
+?>
 <section class="hm-banner">
-  <div class="hm-banner-bg inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/hm-banner.png');">
-    <img src="<?php echo THEME_URI; ?>/assets/images/hm-banner.png" alt="">
+  <div class="hm-banner-bg inline-bg" style="background: url('<?php echo $bannerposter; ?>');">
+    <img src="<?php echo $bannerposter; ?>" alt="">
   </div>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="hm-banner-cntlr">
-          <h1 class="hm-banner-title fl-h2"><span>An<br> Eco-Friendly<br></span>
-          Solution to<br> Plastic Pollution.</h1>
+          <?php 
+            if( !empty($hbanner['titel']) ) printf( '<h1 class="hm-banner-title fl-h2">%s</h1>', $hbanner['titel'] );
+          ?>
+          <?php 
+              $hbknop = $hbanner['knop'];
+              if( is_array( $hbknop ) &&  !empty( $hbknop['url'] ) ):
+          ?>
           <div class="hm-banner-btn">
-            <a class="fl-red-btn" href="#">PRODUCTs</a>
+            <?php  printf('<a class="fl-red-btn" href="%s" target="%s">%s</a>', $hbknop['url'], $hbknop['target'], $hbknop['title']); ?>
           </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php endif; ?>
 
-<section class="main-content">
-  <div class="container">
-      <div class="row">
-        <div class="col-md-6">
 
-        </div>
-        <div class="col-md-6">
-
-        </div>
-      </div>
-  </div>    
-</section>
-
-<!-- sabbir start -->
+<?php  
+  $introsec = get_field('introsec', HOMEID);
+  if($introsec): 
+?>
 <section class="straw-intro">
   <div class="straw-intro-bg inline-bg">
     <div class="container">
@@ -39,23 +43,40 @@
         <div class="col-md-12">
           <div class="straw-into-cntrl">
             <div class="straw-cont">
+              <?php if( !empty($introsec['titel']) ): ?>
               <div class="straw-des">
-                <p>Our straws are grown in the tropical wetlands of Vietnam. Handpicked by local farmers and cut, cleansed, sterilized and packaged at our HQ.</p>              
+                <?php echo wpautop( $introsec['titel'] ); ?>          
               </div>
+              <?php endif; ?>
+
+              <?php 
+                  $introbknop = $introsec['knop'];
+                  if( is_array( $introbknop ) &&  !empty( $introbknop['url'] ) ):
+              ?>
               <div class="more-btn">
-                <a href="#" class="fl-transparent-btn straw-intro-btn">read more</a>
+                <?php  printf('<a class="fl-transparent-btn straw-intro-btn" href="%s" target="%s">%s</a>', $introbknop['url'], $introbknop['target'], $introbknop['title']); ?>
               </div>
+              <?php endif; ?>
             </div>  
+            <?php if(!empty($introsec['afbeelding'])): ?>
             <div class="straw-img-box">
-              <img src="<?php echo THEME_URI; ?>/assets/images/straw-img.png" alt="">
+              <?php  echo cbv_get_image_tag($introsec['afbeelding'], 'full'); ?>
             </div>
+            <?php endif; ?>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php endif; ?>
 
+
+
+<?php  
+  $homeproduct = get_field('homeproduct', HOMEID);
+  if($homeproduct): 
+?>
 <section class="home-product-sec">
   <div class="prdt-bnr">
     <img src="<?php echo THEME_URI; ?>/assets/images/prdt-bnr-bg.jpg" alt="">
@@ -99,22 +120,21 @@
                 <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/sedge.svg" alt=""></a>
               </div>
               <div class="prdt-des">
-                <ul class="clearfix reset-list">
-                  <li>100% natuurlijk en biologisch afbreekbaar</li>
-                  <li>Geen conserveringsmiddelen, geen chemicaliën</li>
-                  <li>Food grade gecertificeerd*</li>
-                  <li>Revitaliseert en versterkt in vloeistof</li>
-                  <li>Glutenvrij, lactosevrij, suikervrij</li>
-                  <li>Geen ontbossing, superlage ecologische voetafdruk</li>
-                  <li>Helpt de habitat van bedreigde diersoorten te beschermen</li>
-                  <li>Geoogst in de Mekong-delta van Vietnam</li>
-                </ul>
+                <?php
+                  if( !empty($homeproduct['beschrijving']) ) echo wpautop( $homeproduct['beschrijving'] );
+                ?>
                 <div class="notice">
-                  <p>Gecertificeerd als volledig onschadelijk voor mensen door de respectieve nationale Vietnamese en Europese autoriteiten (Ministerie van Volksgezondheid van de Socialistische Republiek Vietnam en EMI-TUV-SUD in Europa)</p>
+                  <?php echo wpautop( $homeproduct['merk_op'] ); ?> 
                 </div> 
+
+                <?php 
+                    $hpro_des_knop = $homeproduct['knop'];
+                    if( is_array( $hpro_des_knop ) &&  !empty( $hpro_des_knop['url'] ) ):
+                ?>
                 <div class="find-more">
-                  <a href="#" class="fl-blue-btn find-more-btn">Ontdek meer over Sedge</a>
-                </div> 
+                  <?php  printf('<a class="fl-blue-btn find-more-btn" href="%s" target="%s">%s</a>', $hpro_des_knop['url'], $hpro_des_knop['target'], $hpro_des_knop['title']); ?>
+                </div>
+                <?php endif; ?>
               </div>
             </div>  
           </div>
@@ -123,4 +143,7 @@
     </div>
   </div>
 </section>
+<?php endif; ?>
+
+
 <?php get_footer(); ?>
