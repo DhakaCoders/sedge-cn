@@ -1,7 +1,7 @@
 
 /* ------------------- my account  deshboard-----------------------*/
 body.woocommerce-account .account-page-title{
-    padding-top: 40px;
+    padding-top:25px;
 }
 body.woocommerce-account .myaccount-crtl{
     max-width: 926px;
@@ -223,7 +223,8 @@ body.woocommerce-orders .account-page-title h1{
     transition: all .5s;
     -ms-transition: all .5s;
     -webkit-transition: all .5s;
-    margin-top: -3px!important;
+    margin-top: -1px!important;
+    font-size: 15px;
 }
 body.woocommerce-account .breadcrumb-sec{
     display:none;
@@ -231,6 +232,9 @@ body.woocommerce-account .breadcrumb-sec{
 
 
 /* -------------------------body woocommerce-orders -----------------------*/
+body.woocommerce-orders .account-page-title{
+    padding-top: 15px;
+}
 body.woocommerce-orders .customer-order-details .faq-accordion-wrp ul li:last-child{
     margin-bottom:0px!important;
 }
@@ -245,13 +249,12 @@ body.woocommerce-orders .woocommerce-account-grds-cntlr nav.woocommerce-MyAccoun
 
 }
 body.woocommerce-orders .myac-pro-grd-item-inr .myac-pro-grd-img{
-    max-width:90px;
+    max-width: 119px;
     height: auto;
     margin-right: 29px;
 }
 body.woocommerce-orders .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content{
     max-width:100%;
-    padding-left:120px;
 }
 body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc h5{
     font-size: 18px;
@@ -1518,7 +1521,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
 @media(max-width: 1499px){
     body.woocommerce-orders .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content,
     body.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content{
-        padding-left:50px;
+        padding-left:0px;
     }
     body.woocommerce-account .page-title {
         margin-top: 50px;
