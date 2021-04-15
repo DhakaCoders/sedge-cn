@@ -520,6 +520,9 @@ body.woocommerce-account #customer_login .u-column2.col-2 > h2{
     margin-bottom:25px;
     color: #71867E;
 }
+body.woocommerce-account .page-entry-hdr {
+    padding-bottom:0px;
+}
 body.hide-account-title .billing-address-wrap h3{
     margin-bottom:10px;
 }
@@ -644,6 +647,26 @@ body.woocommerce-account .woocommerce button[type=button].woocommerce-button{
     padding: 15px 15px!important;
     line-height: 1;
     width: 311px;
+}body.woocommerce-account .woocommerce button[type=submit].woocommerce-button span, 
+body.woocommerce-account .woocommerce button[type=button].woocommerce-button span{
+    position: relative;
+    padding-left: 15px;
+}
+body.woocommerce-account .woocommerce button[type=submit].woocommerce-button span:after, 
+body.woocommerce-account .woocommerce button[type=button].woocommerce-button span:after{
+    position: absolute;
+    content: "";
+    background: url(../images/cart-page-button-icon.svg);
+    width: 6px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    -webkit-transform:translateY(-50%);
 }
 body.woocommerce-account .woocommerce #register_next{
     width:410px;
@@ -1679,6 +1702,9 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.woocommerce-account .woocommerce-notices-wrapper {
         margin-bottom: 25px;
     }
+    body.woocommerce-account #login_register #customer_login {
+        padding-bottom: 50px;
+    }
     /* ------------------- woocommerce-cart -------------------*/
     .woocommerce-cart .woocommerce .cart-is-emtpy strong{
         font-size:38px;
@@ -2442,11 +2468,11 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
 @media(max-width:575px){
     /* ----------------- login page---------------------*/
     body.woocommerce-account .woocommerce #register_next{
-        width:100%;
+        width:100%!important;
     }
     body.woocommerce-account .woocommerce button[type=submit], 
     body.woocommerce-account .woocommerce button[type=button]{
-        width:100%;
+        width:100%!important;
         font-size: 12px!important;
     }
     body.woocommerce-account #customer_login .u-column1.col-1 > h2, 
