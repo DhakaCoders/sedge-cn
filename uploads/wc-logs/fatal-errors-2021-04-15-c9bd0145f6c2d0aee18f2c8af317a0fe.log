@@ -25,3 +25,5 @@ Stack trace:
 #4 D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
 #5 D:\xampp\htdocs\project\202 in D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\themes\sedge\woocommerce\checkout\thankyou.php on line 191
 
+2021-04-15T18:29:11+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\project\2021\march\sedge\wp-includes\widgets\class-wp-widget-media-audio.php on line 18
+
