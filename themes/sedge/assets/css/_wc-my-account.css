@@ -1102,6 +1102,7 @@ body.woocommerce-checkout #billing_last_name_field label{
 body.woocommerce-checkout .col2-set {
     width: 100%;
     float: left;
+    padding-bottom: 97px;
 }
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .select2-container,
 body.woocommerce-checkout .woocommerce-shipping-fields .select2-container,
@@ -1671,6 +1672,14 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation{
         padding-right:0px;
     }
+
+    /* -------------- check out page ------------------*/
+    body.woocommerce-checkout .default-page-con{
+        padding-top: 0!important;
+    }
+    body.woocommerce-checkout .col2-set{
+        padding-bottom: 70px;
+    }
     body.woocommerce-checkout .woocommerce-billing-fields > h3, 
     body.woocommerce-checkout .woocommerce-additional-fields.extra-info h3, 
     body.woocommerce-checkout .woocommerce-checkout-review-order h3{
@@ -2173,6 +2182,9 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     }
 
     /* ----------------------------- chenk out page -----------------------------*/
+    body.woocommerce-checkout .col2-set {
+        padding-bottom: 20px;
+    } 
     body.woocommerce-checkout .checkout-page-title h1{
         border-bottom:none;
     }
