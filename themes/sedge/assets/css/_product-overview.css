@@ -13,7 +13,9 @@
     background: #fffaf4;
     padding: 7px 7px 24px;
 }
-body.home span.onsale, body.post-type-archive span.onsale{
+body.home span.onsale, 
+body.post-type-archive span.onsale,
+body.single-product .fl-product span.onsale{
     background: #b4192b!important;
     width: 112px!important;
     top: 20px!important;
@@ -148,9 +150,22 @@ body.home span.onsale, body.post-type-archive span.onsale{
     line-height: 1.5;
 }
 
-
-
-
+.fl-products-cntlr{
+    padding-bottom: 45px;
+}
+.shop-item-sec .two-grid-module{
+    border-top: 1px solid #F2EADE;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+.shop-item-sec .two-grid-module .one-grid-module-desc > h3,
+.shop-item-sec .two-grid-module .one-grid-module-desc > h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;    
+    color: #6DBD98;
+}
 @media (max-width: 1699px){
     
 }
