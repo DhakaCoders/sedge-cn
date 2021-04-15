@@ -1209,7 +1209,7 @@ body.woocommerce-checkout #customer_details .col-2{
     font-size: 16px;
 }*/
 .custom-checkout-order-review table.shop_table .order-total td bdi{
-    color: #6DBD98;
+    color: #6DBD98!important;
     font-size: 16px;
 }
 body.woocommerce-checkout .custom-checkout-order-review table.shop_table tfoot .order-total{
