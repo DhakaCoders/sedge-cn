@@ -181,12 +181,25 @@ body.woocommerce-order-received .checkout-page-title{
 	letter-spacing: -0.02em;
 	margin-bottom: 18px;
 }
-.thankyou .title-meta dl dd, .title-meta dl dt{
-	font-size: 12px;
-	line-height: 16px;
-}
-.thankyou .title-meta dl{
+.thankyou .title-meta ul li:before{
+	content: none;
 	display: flex;
+}
+.thankyou .title-meta ul{
+	margin: -4px 0;
+}
+.thankyou .title-meta ul li{
+	padding: 4px 0;
+}
+.thankyou .title-meta ul li strong{
+	font-weight: 400;
+}
+.thankyou .title-meta ul li span{
+	padding-left: 4px;
+	display: inline-block;
+	vertical-align: baseline;
+}
+.thankyou .title-meta ul li span p{
 	margin-bottom: 0;
 }
 .thankyou .body-list .quantity{
@@ -302,6 +315,32 @@ svg.home-btn-arrow{
 	border-bottom: none!important;
 	margin-bottom: 0!important;
 	padding-bottom: 0!important;
+}
+.thankyou .woocommerce table.shop_table{
+	border: none;
+	margin: 0; 
+	text-align:initial; 
+	width: 100%; 
+	border-collapse: initial; 
+	border-radius: 0;
+}
+.thankyou .woocommerce table.shop_table tbody th, 
+.thankyou .woocommerce table.shop_table tfoot td, 
+.thankyou .woocommerce table.shop_table tfoot th{
+	font-weight: 400;
+	border-top: none;
+	border-bottom: none!important;
+	padding: 0;
+}
+.thankyou .woocommerce-order-received .woocommerce table.shop_table td, 
+.thankyou .woocommerce-order-received .woocommerce table.shop_table th{
+	border-bottom: none!important;
+    padding: 0!important;
+}
+.thankyou .woocommerce table.shop_table td{
+	border-top: none!important;
+	padding: 0!important;
+	vertical-align: inherit!important;
 }
 .thankyou .product-name, .cart-subtotal th, .fee th, .order-totaal th{
 	width: 278px;
