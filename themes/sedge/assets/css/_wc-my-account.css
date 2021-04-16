@@ -494,6 +494,27 @@ body.woocommerce-orders .customer-order-details .faq-accordion-wrp > ul:after{
     bottom: 0;
     transform: translateX(-50%);
 }
+body.woocommerce-account.woocommerce-edit-account .woocommerce form .form-row-first#billing_address_1_field,
+body.woocommerce-account.woocommerce-edit-account .woocommerce form .form-row-last#billing_phone_field,
+body.woocommerce-account .woocommerce form .form-row-last#billing_house_field,
+body.woocommerce-account .woocommerce form .form-row-first#billing_postcode_field,
+body.woocommerce-account .woocommerce form .form-row-last#billing_city_field{
+    width:100%!important;
+}
+body.woocommerce-account.woocommerce-edit-account .woocommerce form .form-row-first#billing_address_1_field,
+body.woocommerce-account.woocommerce-edit-account .woocommerce form .form-row-last#billing_phone_field,
+body.woocommerce-account .woocommerce form .form-row-last#billing_house_field,
+body.woocommerce-account .woocommerce form .form-row-first#billing_postcode_field,
+body.woocommerce-account .woocommerce form .form-row-last#billing_city_field{
+    padding-left:3px;
+}
+body.woocommerce-account.woocommerce-edit-account .woocommerce form .form-row-first#billing_address_1_field,
+body.woocommerce-account.woocommerce-edit-account .woocommerce form .form-row-last#billing_phone_field,
+body.woocommerce-account .woocommerce form .form-row-last#billing_house_field,
+body.woocommerce-account .woocommerce form .form-row-first#billing_postcode_field,
+body.woocommerce-account .woocommerce form .form-row-last#billing_city_field{
+    padding-right:3px;
+}
 /* ------------------------- woocommerce-edit-account --------------------------*/
 body.woocommerce-edit-account .innerpage-con-wrap{
     max-width:100%;
