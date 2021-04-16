@@ -453,10 +453,10 @@ body.single-product div.product form.cart .button:after{
     margin-left: 16px;
     color: #6dbd98;
 }
-body.single-product div.product form.cart .button:hover{
-	background: #EC5387!important;
-	border-color: #EC5387!important;
-	color: #fff!important;
+body.single-product div.product form.cart .button:hover {
+    background: #b4192b!important;
+    border-color: #b4192b!important;
+    color: #fff!important;
 }
 body.single-product div.product form.cart .button:before{
 	content: "";
