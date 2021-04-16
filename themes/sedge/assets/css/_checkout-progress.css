@@ -7,8 +7,8 @@
 .checkout-progress-cntlr{
 	margin: 0 -10px;
 	margin-left: auto;
-	max-width: 437px;
-	width: 100%;
+	max-width: 450px;
+    width: 100%;
 }	
 
 .checkout-progress{
@@ -28,7 +28,7 @@
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
-	margin-top: -9px;
+	margin-top: -14px;
 }
 .checkout-progress-bar .ckour-pro-bar-active{
 	position: absolute;
@@ -126,8 +126,8 @@ body.thankyou .chckout-prgrs-col.active .chckout-prgrs-number:after{
     float: right;
 }
 .checkout-page-title .progressbar-crtl{
-   width: 427px;
-   padding-top:0px;
+    width: 450px;
+    padding-top: 0px;
 }
 @media(max-width: 768px){
 	.checkout-page-title .progressbar-crtl{

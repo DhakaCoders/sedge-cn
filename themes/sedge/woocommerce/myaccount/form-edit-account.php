@@ -34,7 +34,7 @@ if (isset( $_POST["account_email"] ) && isset($_POST['user_id'])) {
 	<form class="woocommerce-EditAccountForm edit-account" action="" method="post" >
 		<input type="hidden" name="user_id" value="<?php echo $user->ID; ?>">
 		<?php do_action( 'woocommerce_edit_account_form_start' ); ?>
-		<fieldset>
+		<fieldset class="contact-person">
 			<legend><?php esc_html_e( 'Contactpersoon', 'woocommerce' ); ?></legend>
 		<p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
 			<label for="account_first_name"><?php esc_html_e( 'Naam', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
@@ -64,7 +64,7 @@ if (isset( $_POST["account_email"] ) && isset($_POST['user_id'])) {
 			<input type="email" class="woocommerce-Input woocommerce-Input--email input-text" name="account_email" id="account_email" autocomplete="email" value="<?php echo esc_attr( $user->user_email ); ?>" />
 		</p>
 		</fieldset>
-		<fieldset>
+		<fieldset class="addres">
 			<legend><?php esc_html_e( 'Adres', 'woocommerce' ); ?></legend>
 
 			<p class="form-row form-row-first billing_address_1" id="billing_address_1_field">
@@ -93,7 +93,7 @@ if (isset( $_POST["account_email"] ) && isset($_POST['user_id'])) {
 				</span>
 			</p>
 		</fieldset>
-		<fieldset>
+		<fieldset class="login-details">
 			<legend><?php esc_html_e( 'Login Details', 'woocommerce' ); ?></legend>
 			<p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
 				<label for="password_1"><?php esc_html_e( 'Wachtwoord', 'woocommerce' ); ?></label>

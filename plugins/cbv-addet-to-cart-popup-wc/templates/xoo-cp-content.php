@@ -51,7 +51,7 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
 ?>
 
 
-
+<div class="popup-cont-crtl">
 <div class="xoo-cp-pdetails clearfix">
   <div class="container" id="tr" data-xoo_cp_key="<?php echo $cart_item_key; ?>">
     <div class="row clearfix xoo-cp-pdetails-row plr-40">
@@ -90,8 +90,15 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
       </div>
       <div class="xoo-cp-pdetails-col-2">
         <div class="product-order-btn">
-          <a class="fl-btn" href="<?php echo wc_get_cart_url(); ;?>"><?php _e('Verder naar bestellen','added-to-cart-popup-woocommerce'); ?></a>
-          <div class="popUp-button-bottom"><span>of</span> <a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="#"><?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></a></div>
+          <div class="product-order-btn-top">
+              <a class="fl-btn" href="<?php echo wc_get_cart_url(); ;?>"><span><?php _e('Verder naar bestellen','added-to-cart-popup-woocommerce'); ?></span></a>
+          </div>
+          <div class="popUp-button-bottom"> 
+            <small>of</small>
+            <a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="#">
+              <span><?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -100,8 +107,17 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
 			</div>
 			<div class="xoo-cp-pdetails-col-2">
   			<div class="product-order-btn">
-          <a class="fl-btn" href="<?php echo wc_get_cart_url(); ;?>"><?php _e('Verder naar bestellen','added-to-cart-popup-woocommerce'); ?></a>
-  				<div class="popUp-button-bottom"><span>of</span> <a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="#"><?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></a></div>
+          <div class="product-order-btn-top">
+              <a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="#">
+               <span> <?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></span>
+              </a>
+          </div>
+  				<div class="popUp-button-bottom">
+            <small>of</small> 
+            <a class="fl-btn" href="<?php echo wc_get_cart_url(); ;?>">
+              <span><?php _e('Verder naar bestellen','added-to-cart-popup-woocommerce'); ?></span>
+            </a>
+          </div>
   			</div>
 			</div>
 		</div>
@@ -188,10 +204,10 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
             echo '<div class="quantity"><span class="minus">-</span>';
             echo loop_qty_input();
             echo '<span class="plus">+</span></div>';
-            echo '<div class="product-order-btn"><button type="submit" class="fl-btn">bestellen</button></div>';
+            echo '<div class="product-order-btn"><button type="submit" class="fl-btn"><span>bestellen</span></button></div>';
             echo '</form>';
             }else{
-                printf('<div class="product-order-btn"><a class="fl-btn" href="%s" rel="nofollow" data-product_id="%s" class="button add_to_cart_button product_type_%s">%s</a></div>', $link, $product->get_id(), $product->get_type(), $label);
+                printf('<div class="product-order-btn"><a class="fl-btn" href="%s" rel="nofollow" data-product_id="%s" class="button add_to_cart_button product_type_%s"><span>%s</span></a></div>', $link, $product->get_id(), $product->get_type(), $label);
             }
             endif;
             echo '</div></div>';
@@ -211,9 +227,19 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
     </div>
   </div>
   <div class="popup-bottom-btn">
-    <a class="fl-btn" href="<?php echo wc_get_cart_url(); ;?>"><?php _e('Verder naar bestellen','added-to-cart-popup-woocommerce'); ?></a>
-    <div class="popUp-button-bottom"><span>of</span> <a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="#"><?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></a></div>
+    <div class="product-order-btn-top">
+      <a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="#">
+        <span><?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></span>
+      </a>
+    </div>
+    <div class="popUp-button-bottom">
+      <small>of</small>
+      <a class="fl-btn" href="<?php echo wc_get_cart_url(); ;?>">
+        <span><?php _e('Verder naar bestellen','added-to-cart-popup-woocommerce'); ?></span>
+      </a>
+    </div>
   </div>
   </div>
 <?php endif; wp_reset_postdata(); ?>
 <?php } ?>
+</div>

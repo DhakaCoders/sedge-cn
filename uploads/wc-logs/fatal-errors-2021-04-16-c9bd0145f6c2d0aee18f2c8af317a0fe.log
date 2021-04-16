@@ -1,0 +1,17 @@
+2021-04-16T13:26:19+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in G:\xampp\htdocs\project\2021\March\sedge\wp-includes\widgets\class-wp-widget-calendar.php on line 17
+
+2021-04-16T13:26:19+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in G:\xampp\htdocs\project\2021\March\sedge\sedge-cn\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler.php on line 10
+
+2021-04-16T14:05:41+00:00 CRITICAL Uncaught Error: Call to undefined function is_frontpage() in E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\functions.php:115
+Stack trace:
+#0 E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\header.php(140): is_social_show_hide()
+#1 E:\host\htdocs\2021\04\sedge\wp-includes\template.php(730): require_once('E:\\host\\htdocs\\...')
+#2 E:\host\htdocs\2021\04\sedge\wp-includes\template.php(676): load_template('E:\\host\\htdocs\\...', true, Array)
+#3 E:\host\htdocs\2021\04\sedge\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\page.php(1): get_header()
+#5 E:\host\htdocs\2021\04\sedge\wp-includes\template-loader.php(106): include('E:\\host\\htdocs\\...')
+#6 E:\host\htdocs\2021\04\sedge\wp-blog-header.php(19): require_once('E:\\host\\htdocs\\...')
+#7 E:\host\htdocs\2021\04\sedge\index.php(17): require('E:\\host\\htdocs\\...')
+#8 {main}
+  thrown in E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\functions.php on line 115
+
