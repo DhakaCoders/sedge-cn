@@ -251,7 +251,7 @@ body.woocommerce-orders .account-page-title{
 body.woocommerce-orders .customer-order-details .faq-accordion-wrp ul li:last-child{
     margin-bottom:0px!important;
 }
-body.woocommerce-orders .customer-order-details .faq-accordion-wrp ul{
+body.woocommerce-orders .customer-order-details .faq-accordion-wrp > ul{
     position: relative;
     padding-bottom: 50px!important;
 }
@@ -484,7 +484,7 @@ body.woocommerce-orders .customer-order-details .fl-pagi-cntlr {
     margin-top:42px;
     padding-bottom: 10px;
 }
-body.woocommerce-orders .customer-order-details .faq-accordion-wrp ul:after {
+body.woocommerce-orders .customer-order-details .faq-accordion-wrp > ul:after{
     content: "";
     position: absolute;
     width: 86px;
