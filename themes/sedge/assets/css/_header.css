@@ -872,7 +872,9 @@ body.allWork {
 		width: 377px;
 		position: absolute;
 		top: 100%;
-		right: 0;
+		right: -15px;
+		padding-bottom: 150px;
+		box-shadow: 2px 2px 2px #000;
 		z-index: 99999;
 		padding: 33px;
 		background: #F9F5EF;
