@@ -110,6 +110,10 @@ function is_cbv_title() {
 function is_show_footer_form() {
     return ( is_cart() || is_shop() || is_product_category() || is_product_tag() || is_product());
 }
+
+function is_social_show_hide() {
+    return ( is_cart() || is_shop() || is_account_page() || is_product_category() || is_product_tag() || is_product() || is_checkout() || is_page( get_title_by_page_template('page-contact.php') ));
+}
 add_post_type_support( 'page', 'excerpt' );
 
 add_filter('use_block_editor_for_post', '__return_false');
