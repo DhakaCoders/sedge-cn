@@ -161,7 +161,7 @@
 }
 
 .ftr-menu ul li{
-	padding-bottom: 10px;
+	padding-bottom: 7px;
 }
 .ftr-menu ul li a{
 	display: inline-block;
@@ -276,6 +276,11 @@
 	display: inline-block;
 	vertical-align: baseline;
 	text-decoration: none;
+}
+.ftr-social-media ul li a{
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
 }
 .ftr-social-media ul li a span{
 	text-decoration: none;
