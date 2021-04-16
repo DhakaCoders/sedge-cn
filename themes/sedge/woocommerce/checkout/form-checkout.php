@@ -89,7 +89,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 							<div id="order_review" class="woocommerce-checkout-review-order">
 							<div class="shipping-methods">
 									<?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>
-										<h3>2.<?php esc_html_e( 'Bezorgmethode', 'woocommerce' ); ?></h3>
+										<h4><?php esc_html_e( 'Bezorgmethode', 'woocommerce' ); ?></h4>
 										<?php do_action( 'woocommerce_review_order_before_shipping' ); ?>
 
 										<?php wc_cart_totals_shipping_html(); ?>
@@ -123,7 +123,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 					<h3 class="order-review-title"><?php esc_html_e( 'Overzicht', 'woocommerce' ); ?></h3>
 					<?php 
 						wc_get_template_part('checkout/review-order');
-						do_action('woocommerce_giftcard_form');
+						//wc_get_template_part('checkout/cbv-form-coupon');
 					?>
 					<div class="checkout-terms">
 						<?php wc_get_template_part( 'checkout/terms' ); ?>

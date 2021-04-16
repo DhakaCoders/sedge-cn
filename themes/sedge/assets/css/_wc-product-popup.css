@@ -3,17 +3,18 @@
 	width: 100%;
 }
 .xoo-cp-container h5 {
-    font-size: 30px;
-    color: #202020;
+    font-size: 24px;
+    color: #71867E;
     letter-spacing: -0.02em;
-    font-family: Open Sans;
-    margin-bottom:30px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: Sora;
 }
 .xoo-cp-active{
 	background: rgba(252, 248, 248, 0.88)!important;
 }
 .xoo-cp-container{
-	background:#fff;
+	background:#FFFCF8;
 	padding-top: 40px;
 	border: none!important;
 	padding-left: 47px;
@@ -36,7 +37,7 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #ECEEEF;
-    border-top: 1px solid #ECEEEF;
+    border-top: 1px solid #F6F6F6;
 }
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-1,
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2{
@@ -44,12 +45,15 @@
 	width: 100%
 }
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-pimg{
-    width: 145px;
+    width: 119px;
     height: auto;
 }
-.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title a{
-	font-size: 24px;
-	color: #31304F;
+.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title a {
+    font-size: 18px;
+    color: #71867E;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    font-family: Ubuntu;
 }
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title span,
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .xoo-cp-variations{
@@ -96,12 +100,18 @@
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2 .product-order-btn{
 	justify-content: flex-end;
 }
-.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2 .product-order-btn a,
+.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2 .product-order-btn a, 
 .popup-bottom-btn a {
-    width: 212px;
+    width: 300px;
     letter-spacing: 0.04em;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: 600;
     display: flex;
-    padding: 15px 15px;
+    justify-content: center;
+    align-items: center;
+    background: #6DBD98;
+    border-color: #6DBD98;
 }
 .popup-bottom-btn{
     display: flex;
