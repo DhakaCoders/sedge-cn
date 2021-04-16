@@ -148,33 +148,43 @@ defined( 'ABSPATH' ) || exit;
 		            	$smedias = get_field('social_media', 'options'); 
 		            	$thankyou = get_field('orderthankyou', 'options'); 
 		            ?>
-		            <?php if($service = $thankyou['servicescont']): ?>
+		            
 		            <div class="deshboard-inner">
 		              <div class="service-contact">
-		                <?php if( !empty($service['titel']) ) printf('<h2 class="fl-h6 srv-cont-title">%s</h2>', $service['titel']); ?>
+		                <?php if( !empty($thankyou['sec_titel']) ) printf('<h2 class="fl-h6 srv-cont-title">%s</h2>', $thankyou['sec_titel']); ?>
+		                <?php if($thankyou['blok_1'] && $thankyou['blok_2']): ?>
 		                <div class="service-lists">
+		                  <?php if( $blok1 = $thankyou['blok_1'] ): ?>
 		                  <div class="service-list">
 		                    <div class="icon">
 		                      <i><img src="<?php echo THEME_URI; ?>/assets/images/srv-cont.svg"></i>
 		                    </div>
 		                    <div class="service-text">
-		                      <h3 class="srv-txt-title">Vind alles in je account</h3>
-		                      <p><a href="">Volg je bestelling</a>, <a href="">betaal facturen</a> of <a href="#">retourneer een artikel.</a></p>
+		                      <?php 
+		                      	if( !empty($blok1['titel']) ) printf('<h3 class="srv-txt-title">%s</h3>', $blok1['titel']); 
+		                      	if( !empty($blok1['beschrijving']) ) echo wpautop($blok1['beschrijving']); 
+		                      ?>
 		                    </div>
 		                  </div>
+		              	  <?php endif; ?>
+		              	  <?php if( $blok2 = $thankyou['blok_2'] ): ?>
 		                  <div class="service-list">
 		                    <div class="icon">
 		                      <i><img src="<?php echo THEME_URI; ?>/assets/images/conversation.svg"></i>
 		                    </div>
 		                    <div class="service-text">
-		                      <h3 class="srv-txt-title">Heb je ons nodig?</h3>
-		                      <p>We helpen je graag. <a href="">Onze klantenservice</a> is dag en nacht open.</p>
+	                        <?php 
+		                      	if( !empty($blok2['titel']) ) printf('<h3 class="srv-txt-title">%s</h3>', $blok2['titel']); 
+		                      	if( !empty($blok2['beschrijving']) ) echo wpautop($blok2['beschrijving']); 
+		                    ?>
 		                    </div>
 		                  </div>
+		                  <?php endif; ?>
 		                </div>
+		                <?php endif; ?>
 		              </div>
 		            </div>
-		        	<?php endif; ?>
+		        	
 		            <div class="service-bottom">
 		              <ul class="reset-list">
 		                <li><a href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>"><?php esc_html_e( 'Snel regelen in je account', 'woocommerce' ); ?></a></li>
