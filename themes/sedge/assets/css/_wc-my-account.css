@@ -198,6 +198,9 @@ body.woocommerce-orders .account-page-title h1{
     border-bottom: 1px solid #F1E8E1!important;
     padding-bottom:40px!important;
 }
+body.woocommerce-edit-account fieldset.addres {
+    padding-bottom: 74px!important;
+}
 
 /* -------------- back-button ----------------*/
 .back-to-dashboard-btn-cntlr a{
