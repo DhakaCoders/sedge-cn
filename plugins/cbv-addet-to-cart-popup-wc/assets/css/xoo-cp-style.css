@@ -101,9 +101,15 @@ span.xoo-cp-close {
     position: absolute;
     right: -13px;
     top: -11px;
-    background-color: #fff;
+    background-color: #B3192A;
     border-radius: 50%;
     cursor: pointer;
+    height: 44px;
+    width: 44px;
+    color: #fff!important;
+}
+span.xoo-cp-close:hover{
+    background: #971524;
 }
 .xoo-cp-success, .xoo-cp-error {
     padding: 10px;

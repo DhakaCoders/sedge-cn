@@ -180,7 +180,7 @@ defined( 'ABSPATH' ) || exit;
 		          </div>
 		          <div class="shipping-order-total">
 		            <div class="shipping-crtl">
-		              <h2 class="fl-h6 shipping-order-title">BESTELDETAILS</h2>
+		              <h2 class="fl-h6 shipping-order-title"><?php esc_html_e( 'BESTELDETAILS', 'woocommerce' ); ?></h2>
 		              <div class="address">
 		                 <?php 
 							if ( $order->get_formatted_shipping_address() ) {
@@ -188,7 +188,7 @@ defined( 'ABSPATH' ) || exit;
 							    echo '<ul class="reset-list">';
 			                    echo '<li>'.$order->get_shipping_address_1().'<br/>'.$order->get_shipping_postcode().' '.$order->get_shipping_city(). '- '.WC()->countries->countries[ $order->get_shipping_country() ].'</li>';
 			                    echo '<li>'.$order->get_billing_phone().'</li>';
-			                    echo '<li>'.$order->get_shipping_email().'</li>';
+			                    echo '<li>'.$order->get_billing_email().'</li>';
 			                  	echo '</ul>';
 							} else {
 								echo '<h2 class="fl-h2 address-title">'.$order->get_billing_first_name().' '.$order->get_billing_last_name().'</h2>';
@@ -203,23 +203,35 @@ defined( 'ABSPATH' ) || exit;
 		              </div>
 		            </div>
 		            <div class="order-total custom-checkout-order-review">
-		              <h2 class="fl-h6 order-total-title">OVERZICHT</h2>
+		              <h2 class="fl-h6 order-total-title"><?php esc_html_e( 'OVERZICHT', 'woocommerce' ); ?></h2>
 		              <div class="order-details">
 		                <table class="shop_table woocommerce-checkout-review-order-table">
 		                  <tbody>
 		                    <tr class="cart-subtotal">
-		                      <th>Subtotaal</th>
+		                      <th><?php esc_html_e( 'Subtotaal', 'woocommerce' ); ?></th>
 		                      <td>
 		                      	<?php echo $order->get_subtotal_to_display(); 
-		                      //wc_price($order->get_subtotal()); ?>
+		                      //wc_price($order->get_shipping_total()); ?>
 		                      </td>
 		                    </tr>
-		                    <tr class="fee">
-		                      <th>Verzending</th>
-		                      <td><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">€</span>99.00</bdi></span></td>
+		                    <?php if( $order->get_shipping_method() ): ?>
+		                    <tr class="shipping">
+		                      <th><?php esc_html_e( 'Shipping', 'woocommerce' ); ?></th>
+		                      <td><?php echo wc_price($order->get_shipping_total()); ?></td>
 		                    </tr>
+		                	<?php endif; ?>
+		                	<?php 
+		                	if( $line_items_fee = $order->get_items( 'fee' ) ):
+		                	foreach ( $line_items_fee as $item_id => $fitem ) { 
+		                	?>
+		                	<tr class="fee">
+		                      <th><?php echo $fitem->get_data()['name']; ?></th>
+		                      <td><?php echo wc_price($fitem->get_data()['total']); ?></td>
+		                    </tr>
+							<?php } endif; ?>
+		                    
 		                    <tr class="order-total">
-		                      <th>Totaal</th>
+		                      <th><?php esc_html_e( 'Totaal', 'woocommerce' ); ?></th>
 		                      <td><?php echo $order->get_formatted_order_total(); ?></td>
 		                    </tr>
 		                  </tbody>
@@ -249,5 +261,4 @@ defined( 'ABSPATH' ) || exit;
 	<?php else : ?>
 
 	<?php endif; ?>
-
 </div>

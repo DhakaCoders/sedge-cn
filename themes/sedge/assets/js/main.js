@@ -192,6 +192,22 @@ google.maps.event.addDomListener(window, 'load', initialize);
   }
 
 
+  if( $('.xs-hdr-srch').length ){
+    $('.xs-hdr-srch').click(function(e){
+      event.preventDefault();
+      $('.xs-hdr-srch-wrap').toggleClass('hdr-rgt-srch-input-show');
+    });
+  }
+
+  $(document).click(function(event) { 
+    var $target = $(event.target);
+    if(!$target.closest('.xs-hdr-srch').length && 
+      $('.xs-hdr-srch-btm').is(":visible")) {
+      $('.xs-hdr-srch-wrap').removeClass('hdr-rgt-srch-input-show');
+  }        
+});
+
+
   /*start of Rannojit*/
 
 
@@ -286,9 +302,19 @@ if(windowWidth > 768){
 }
 
 $('.wpforms-field-email').on('click', function(){
-  $(this).addClass('wpforms-has-error');
   $(this).parents('.wpforms-field').removeClass('wpforms-has-error');
 });
+
+
+$('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button').on('click',function(){
+    $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error').append('<span></span>');
+});
+
+$('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error').each(function(){
+    $(this).append('<span></span>')
+});
+
+
 
 
 
@@ -428,6 +454,51 @@ $("#billing_order_type_Particulier").on('change', function(){
         $('#vat_number_field').removeClass('show-vat_number');
         $('#billing_reference_field').removeClass('show-reference');
     }
+});
+
+/**
+Cart quantity updates
+*/
+//$(".ywgc_enter_code").appendTo("#giftcard-here");
+/*jQuery('div.woocommerce').on('change', '.qty', function(){
+    jQuery("[name='update_cart']").prop("disabled", false);
+    jQuery("[name='update_cart']").trigger("click"); 
+});*/
+jQuery('body').on('click', '.qty1 .minus', function(){
+    var spinner = $(this),
+      input = spinner.next().find('input[type="number"]'),
+      min = 1,
+      max = input.attr('max');
+
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= min) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue - 1;
+      }
+      spinner.next().find("input").val(newVal);
+      spinner.next().find("input").trigger("change");
+
+    jQuery("[name='update_cart']").prop("disabled", false);
+    jQuery("[name='update_cart']").trigger("click"); 
+});
+jQuery('body').on('click', '.qty1 .plus', function(){
+    var spinner = $(this),
+      input = spinner.prev().find('input[type="number"]'),
+      min = 1,
+      max = input.attr('max');
+
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= max) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue + 1;
+      }
+      spinner.prev().find("input").val(newVal);
+      spinner.prev().find("input").trigger("change");
+
+    jQuery("[name='update_cart']").prop("disabled", false);
+    jQuery("[name='update_cart']").trigger("click"); 
 });
 
 //matchHeightCol

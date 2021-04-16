@@ -648,12 +648,18 @@ body.woocommerce-account .woocommerce button[type=button].woocommerce-button{
     line-height: 1;
     width: 311px;
 }body.woocommerce-account .woocommerce button[type=submit].woocommerce-button span, 
-body.woocommerce-account .woocommerce button[type=button].woocommerce-button span{
+body.woocommerce-account .woocommerce button[type=button].woocommerce-button span,
+body.woocommerce-account .register-btn button[type="submit"] span,
+body.woocommerce-checkout .payment-method-crtl .custom-checkout-btn button[type=submit] span,
+body.woocommerce-checkout .custom-checkout-order-review button.button.alt span{
     position: relative;
     padding-left: 15px;
 }
 body.woocommerce-account .woocommerce button[type=submit].woocommerce-button span:after, 
-body.woocommerce-account .woocommerce button[type=button].woocommerce-button span:after{
+body.woocommerce-account .woocommerce button[type=button].woocommerce-button span:after,
+body.woocommerce-account .register-btn button[type="submit"] span:after,
+body.woocommerce-checkout .payment-method-crtl .custom-checkout-btn button[type=submit] span:after,
+body.woocommerce-checkout .custom-checkout-order-review button.button.alt span:after{
     position: absolute;
     content: "";
     background: url(../images/cart-page-button-icon.svg);
@@ -1292,9 +1298,9 @@ body.woocommerce-checkout .woocommerce-additional-fields h3{
 body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .woocommerce-input-wrapper textarea{
     min-height:233px
 }
-.shop_table .product-name dl {
+/*.checkout .shop_table .product-name dl {
     display: none;
-}
+}*/
 /*body.woocommerce-checkout .custom-checkout-order-review table tbody,
 body.woocommerce-checkout .custom-checkout-order-review table tfoot,
 body.woocommerce-checkout .custom-checkout-order-review table tbody tr{

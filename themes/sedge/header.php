@@ -83,8 +83,8 @@ $smedias = get_field('social_media', 'options');
                 <div class="fl-lang-cntlr">
                   <ul class="reset-list hide-sm">
                     <li  class="lang-active"><a href="#">EN</a></li>
-                    <li><a href="#">FN</a></li>
-                    <li><a href="#">CN</a></li>
+                    <li><a href="#">FR</a></li>
+                    <li><a href="#">NL</a></li>
                   </ul>
                 </div>
               </div>
@@ -234,7 +234,14 @@ $smedias = get_field('social_media', 'options');
 <!-- fixed --> 
 <div class="cart-socials-cntlr">
   <div class="sitebar-add-cart">
-    <a href="#">
+    <a href="<?php echo wc_get_cart_url(); ?>">
+        <?php 
+        if( WC()->cart->get_cart_contents_count() > 0 ){
+          echo sprintf ( '<span>%d</span>', WC()->cart->get_cart_contents_count() );
+        }else{
+          echo sprintf ( '<span>%d</span>', 0 );
+        }  
+        ?>
       <i><svg class="cart-icon" width="32" height="37" viewBox="0 0 32 37" fill="#fff">
         <use xlink:href="#cart-icon"></use></svg></i>
       </a>

@@ -198,6 +198,10 @@
     bottom: auto !important;
     padding-right: 0 !important;
 }
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field label.wpforms-field-label span{
+    display: inline-block!important;
+    position: static;
+}
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field span{
     font-weight: 400;
     font-size: 12px;
@@ -215,19 +219,26 @@
     bottom: 18px;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error {
-	font-size: 14px;
+    font-size: 14px;
     line-height: 1;
     color: #D17181;
     position: absolute;
-    bottom: 16px;
+    bottom: 15px;
     display: block;
     right: 20px;
     padding-right: 12px;
-    font-weight: 700!important;
+    font-weight: 700 !important;
     text-align: right;
-    width: auto;
     text-transform: inherit;
     margin-bottom: 0;
+    text-indent: 0 !important;
+    background: url(../images/error-msg-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    color: transparent!important;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error{
 	font-weight: 400 !important;
@@ -249,7 +260,7 @@
 	margin-bottom: 15px;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-description{
-    margin-top: 0;
+    margin-top: 5px;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-description p{
     font-size: 12px;
