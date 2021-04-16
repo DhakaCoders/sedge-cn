@@ -2,7 +2,7 @@
   $btm_desc = '';
   if(is_shop()):
     $thisID = woocommerce_get_page_id('shop');
-    $btm_desc = get_field('btm_beschrijving', $thisID); 
+    $btm_desc = get_field('beschrijving', $thisID); 
   ?>
   <?php 
   elseif(is_product_category()): 

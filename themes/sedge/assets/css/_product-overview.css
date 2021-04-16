@@ -1,8 +1,8 @@
-
 .fl-products-cntlr ul.products{
     display: flex;
     flex-wrap: wrap;
-     margin: 0 -12px;
+    margin: 0 -12px;
+    padding-bottom: 20px;
 }
 .fl-products-cntlr ul.products > li{
    width: 25%!important;

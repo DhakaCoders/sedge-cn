@@ -86,9 +86,9 @@ defined( 'ABSPATH' ) || exit;
 		                    </div>
 		                    <div class="thnk-you-des-rgt">
 		                      <h1 class="fl-h6 thank-you-des-sub-title">Dank u, <span><?php echo $order->get_billing_first_name(); ?>!</span></h1>
-		                      <h2 class="fl-h4 thank-you-des-title">Je bestelling is voltooid</h2>
+		                      <h2 class="fl-h4 thank-you-des-title"><?php esc_html_e( 'Je bestelling is voltooid', 'woocommerce' ); ?></h2>
 		                      <a href="#">#<?php echo $order->get_order_number(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></a>
-		                      <p>We maken uw bestelling klaar voor verzending.</p>
+		                      <p><?php esc_html_e( 'We maken uw bestelling klaar voor verzending.', 'woocommerce' ); ?></p>
 		                    </div>
 		                  </div>
 		                </div>
@@ -144,9 +144,14 @@ defined( 'ABSPATH' ) || exit;
 		            	<?php } ?>
 		              </div>
 		            </div>
+		            <?php 
+		            	$smedias = get_field('social_media', 'options'); 
+		            	$thankyou = get_field('orderthankyou', 'options'); 
+		            ?>
+		            <?php if($service = $thankyou['servicescont']): ?>
 		            <div class="deshboard-inner">
 		              <div class="service-contact">
-		                <h2 class="fl-h6 srv-cont-title">Service &amp; contact</h2>
+		                <?php if( !empty($service['titel']) ) printf('<h2 class="fl-h6 srv-cont-title">%s</h2>', $service['titel']); ?>
 		                <div class="service-lists">
 		                  <div class="service-list">
 		                    <div class="icon">
@@ -169,14 +174,15 @@ defined( 'ABSPATH' ) || exit;
 		                </div>
 		              </div>
 		            </div>
+		        	<?php endif; ?>
 		            <div class="service-bottom">
 		              <ul class="reset-list">
-		                <li><a href="<?php echo get_permalink(); ?>">Snel regelen in je account</a></li>
-		                <li><a href="">Heb je ons nodig?</a></li>
-		                <li><a href="">Contact</a></li>
+		                <li><a href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>"><?php esc_html_e( 'Snel regelen in je account', 'woocommerce' ); ?></a></li>
+		                <li><a href=""><?php esc_html_e( 'Heb je ons nodig', 'woocommerce' ); ?>?</a></li>
+		                <li><a href="<?php echo get_link_by_page_template('page-contact.php'); ?>"><?php esc_html_e( 'Contact', 'woocommerce' ); ?></a></li>
 		              </ul>
 		            </div>
-		            <a class="fl-blue-btn order-home-btn" href="<?php echo esc_url(home_url('/')); ?>"><i><svg class="home-btn-arrow" width="8" height="12" viewBox="0 0 8 12"><use xlink:href="#home-btn-arrow"></use> </svg></i><span>Home</span></a>
+		            <a class="fl-blue-btn order-home-btn" href="<?php echo esc_url(home_url('/')); ?>"><i><svg class="home-btn-arrow" width="8" height="12" viewBox="0 0 8 12"><use xlink:href="#home-btn-arrow"></use> </svg></i><span><?php esc_html_e( 'Home', 'woocommerce' ); ?></span></a>
 		          </div>
 		          <div class="shipping-order-total">
 		            <div class="shipping-crtl">
@@ -238,16 +244,28 @@ defined( 'ABSPATH' ) || exit;
 		                </table>
 		              </div>
 		            </div>
+
 		            <div class="thnk-y-social-des">
 		              <div class="thnk-you-social-des-cntlr">
-		                <h5 class="fl-h5 thnk-you-social-des-title">Lorem ipsum dolor</h5>
-		                <p>Convallis ac ut tincidunt adipiscing.</p>
+		              	<?php 
+		              		if( $socialinfo =  $thankyou['socialinfo'] ):
+		              		if( !empty($socialinfo['titel']) ) printf('<h5 class="fl-h5 thnk-you-social-des-title">%s</h5>', $socialinfo['titel']);
+		              		if( !empty($socialinfo['beschrijving']) ) echo wpautop($socialinfo['beschrijving']);
+		              		endif;
+		              	?>
+		                <?php if(!empty($smedias)):  ?>
 		                <div class="thnkY-social-link">
 		                  <ul class="reset-list">
-		                    <li><a target="_blank" href=""><i class="fab fa-facebook-f"></i> Facebook</a></li>
-		                    <li><a target="_blank" href=""><i class="fab fa-instagram"></i> Instagram</a></li>
+		                  <?php foreach($smedias as $smedia): ?>
+		                  <li>
+		                    <a href="<?php echo $smedia['url']; ?>" target="_blank">
+		                      <?php echo $smedia['icon']; ?><span><?php echo $smedia['title']; ?></span>
+		                    </a>
+		                  </li>
+		                  <?php endforeach; ?>
 		                  </ul>
 		                </div>
+		                <?php endif; ?>
 		              </div>
 		            </div>
 		          </div>
