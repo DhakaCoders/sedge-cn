@@ -456,6 +456,18 @@ $("#billing_order_type_Particulier").on('change', function(){
     }
 });
 
+// Coupon code triger
+
+$("#apply_coupon_code").click(function(){
+    var couponCode = $('#coupon_code_enter').val();
+    $(".checkout_coupon #coupon_code").val(coupon_code);
+    var setCode = $(".checkout_coupon #coupon_code").val();
+    if(setCode !=''){
+      $(".checkout_coupon button").submit()
+    }
+
+});
+
 /**
 Cart quantity updates
 */
