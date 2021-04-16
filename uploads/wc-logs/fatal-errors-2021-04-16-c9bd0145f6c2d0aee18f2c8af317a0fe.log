@@ -1,0 +1,4 @@
+2021-04-16T13:26:19+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in G:\xampp\htdocs\project\2021\March\sedge\wp-includes\widgets\class-wp-widget-calendar.php on line 17
+
+2021-04-16T13:26:19+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in G:\xampp\htdocs\project\2021\March\sedge\sedge-cn\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler.php on line 10
+
