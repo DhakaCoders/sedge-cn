@@ -2,7 +2,7 @@
 
 //Exit if accessed directly
 if(!defined('ABSPATH')){
-	return; 	
+  return;   
 }
 
 global $xoo_cp_gl_qtyen_value;
@@ -18,11 +18,11 @@ $product_id = apply_filters( 'woocommerce_cart_item_product_id', $cart_item['pro
 
 $product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
 
-$thumbnail 		= apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
+$thumbnail    = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
 
-$product_name 	=  apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;';
-					
-$product_price 	= apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
+$product_name   =  apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;';
+          
+$product_price  = apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
 
 
 
@@ -35,10 +35,10 @@ $attributes = '';
 $attributes .= $_product->is_type('variable') || $_product->is_type('variation')  ? wc_get_formatted_variation($_product) : '';
 // Meta data
 if(version_compare( WC()->version , '3.3.0' , "<" )){
-	$attributes .=  WC()->cart->get_item_data( $cart_item );
+  $attributes .=  WC()->cart->get_item_data( $cart_item );
 }
 else{
-	$attributes .=  wc_get_formatted_cart_item_data( $cart_item );
+  $attributes .=  wc_get_formatted_cart_item_data( $cart_item );
 }
 
 
@@ -53,9 +53,9 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
 
 
 <div class="xoo-cp-pdetails clearfix">
-	<div class="container" id="tr" data-xoo_cp_key="<?php echo $cart_item_key; ?>">
-		<div class="row clearfix xoo-cp-pdetails-row plr-40">
-			<div class="xoo-cp-pdetails-col-1">
+  <div class="container" id="tr" data-xoo_cp_key="<?php echo $cart_item_key; ?>">
+    <div class="row clearfix xoo-cp-pdetails-row plr-40">
+      <div class="xoo-cp-pdetails-col-1">
         <div class="xoo-cp-left-des">
           <div class="xoo-cp-pimg"><a href="<?php echo  $product_permalink; ?>"><?php echo $thumbnail; ?></a></div>
             <div class="xoo-cp-ptitle">
@@ -64,11 +64,16 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
             </div>
 
           <?php if($attributes): ?>
-            <div class="xoo-cp-variations"><?php echo $attributes; ?></div>
+            <div class="xoo-cp-variations">
+              <?php echo $attributes; ?>
+              <p>Diameter: Standaard 5 - 7 mm</p>
+              <p>Aantal stuks: 49</p>
+              </div>
           <?php endif; ?>
+
               <div class="qty-price-wrap">
                 <?php if ( $_product->is_sold_individually() || !$xoo_cp_gl_qtyen_value ): ?>
-                  <span><?php echo $cart_item['quantity']; ?></span>        
+                  <span class="is_sold_individually"><?php echo $cart_item['quantity']; ?></span>        
                 <?php else: ?>
                 <div class="quantity qty">
                   <span class="xcp-minus xcp-chng">-</span>
@@ -82,35 +87,35 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
               </div>
           </div>
         </div>
-			</div>
-			<div class="xoo-cp-pdetails-col-2">
-  			<div class="product-order-btn">
-  				<a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="<?php echo get_permalink(get_option( 'woocommerce_shop_page_id' ) );?>"><?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></a>
-          <a class="fl-btn" href="<?php echo get_permalink(get_option( 'woocommerce_checkout_page_id' ) );?>"><?php _e('ik ga bestellen','added-to-cart-popup-woocommerce'); ?></a>
-  			</div>
-			</div>
-		</div>
+      </div>
+      <div class="xoo-cp-pdetails-col-2">
+        <div class="product-order-btn">
+          <a class="fl-btn" href="<?php echo wc_get_cart_url(); ;?>"><?php _e('Verder naar bestellen','added-to-cart-popup-woocommerce'); ?></a>
+          <div class="popUp-button-bottom"><span>of</span> <a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="#"><?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></a></div>
+        </div>
+      </div>
+    </div>
 
-	</div>
+  </div>
 </div>
 <?php 
-	$terms = get_the_terms($product_id, 'product_cat');
-	$slugs = array();
-	if( !empty($terms) ){
-		foreach( $terms as $term ){
-			$slugs[] = $term->slug;
-		}
-  	$pQuery = new WP_Query(array(
+  $terms = get_the_terms($product_id, 'product_cat');
+  $slugs = array();
+  if( !empty($terms) ){
+    foreach( $terms as $term ){
+      $slugs[] = $term->slug;
+    }
+    $pQuery = new WP_Query(array(
     'post_type' => 'product',
     'posts_per_page'=> 3,
     'orderby' => 'date',
     'order'=> 'asc',
     'tax_query' => array(
-    	array(
-    		'taxonomy' => 'product_cat',
+      array(
+        'taxonomy' => 'product_cat',
             'field'    => 'slug',
             'terms'    => $slugs,
-    	)
+      )
     )
 
   ));
@@ -150,19 +155,20 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
             }
             $seller_flash = get_field('seller_flash', $product->get_id());
             $gridurl = cbv_get_image_tag( get_post_thumbnail_id($product->get_id()), 'hprogrid' );
-            echo "<div class='pro-item {$itemCls}'>";
+            echo "<div class='pro-item {$itemCls} clearfix'>";
             if( !empty($seller_flash) ) printf('<span class="seller-flash">%s</span>', $seller_flash); 
             echo '<div class="pro-item-img-cntlr pw-item-img-cntlr">';
             echo '<a class="overlay-link" href="'.get_permalink( $product->get_id() ).'"></a>';
             echo '<div class="pro-item-img">'.$gridurl.'</div>';
             echo '</div>';
-            echo '<div class="pro-item-desc pw-item-desc">';
+            echo '<div class="pro-item-desc pw-item-desc clearfix">';
             echo '<div class="pro-item-descWrap mHc">';
             echo '<h3 class="pro-item-desc-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h3>';
+            echo '</div><div class="xpu-pp-qtn">';
             echo '<div class="product-price">';
             echo $product->get_price_html();
             echo '<span class="pro-prize-shrt-title show-sm"></span>';
-            echo '</div></div>';
+            echo '</div>';
             echo '<div class="product-quantity product-quantity-cntlr">';
             if ( ! $product->is_in_stock() ) :
 
@@ -178,7 +184,7 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
                 printf('<div class="product-order-btn"><a class="fl-btn" href="%s" rel="nofollow" data-product_id="%s" class="button add_to_cart_button product_type_%s">%s</a></div>', $link, $product->get_id(), $product->get_type(), $label);
             }
             endif;
-            echo '</div>';
+            echo '</div></div>';
             echo '</div>';
             echo '</div>';
 
@@ -190,18 +196,14 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
             }    
           ?>
         </div>
-        <?php if( !empty($catSlug) ): ?>
-        <div><a class="backto-product-cat" href="<?php echo get_term_link($catSlug, 'product_cat'); ?>"><?php _e('Bekijk alle '.$catName,'added-to-cart-popup-woocommerce'); ?></a></div>
-        <?php endif; ?>
       </div>
       <?php endwhile; ?>
     </div>
   </div>
   <div class="popup-bottom-btn">
-    <a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="<?php echo get_permalink(get_option( 'woocommerce_shop_page_id' ) );?>"><?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></a>
-    <a class="fl-btn" href="<?php echo get_permalink(get_option( 'woocommerce_checkout_page_id' ) );?>"><?php _e('ik ga bestellen','added-to-cart-popup-woocommerce'); ?></a>
+    <a class="fl-btn" href="<?php echo wc_get_cart_url(); ;?>"><?php _e('Verder naar bestellen','added-to-cart-popup-woocommerce'); ?></a>
+    <div class="popUp-button-bottom"><span>of</span> <a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="#"><?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></a></div>
   </div>
   </div>
 <?php endif; wp_reset_postdata(); ?>
 <?php } ?>
-
