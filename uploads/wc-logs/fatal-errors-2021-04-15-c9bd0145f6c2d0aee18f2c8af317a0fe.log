@@ -1,22 +1,4 @@
-2021-04-15T11:25:05+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in G:\xampp\htdocs\project\2021\March\sedge\sedge-cn\themes\sedge\page.php on line 33
+2021-04-15T20:09:16+00:00 CRITICAL syntax error, unexpected ':' in D:\xampp\htdocs\projects\2021\sedge\sedge-cn\themes\sedge\page-about.php on line 221
 
-2021-04-15T11:25:24+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in G:\xampp\htdocs\project\2021\March\sedge\sedge-cn\themes\sedge\page.php on line 33
-
-2021-04-15T11:25:29+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in G:\xampp\htdocs\project\2021\March\sedge\sedge-cn\themes\sedge\page.php on line 33
-
-2021-04-15T11:26:05+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in D:\xampp\htdocs\projects\2021\sedge\sedge-cn\themes\sedge\page.php on line 33
-
-2021-04-15T11:31:46+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in D:\xampp\htdocs\projects\2021\sedge\sedge-cn\themes\sedge\page.php on line 33
-
-2021-04-15T11:31:50+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in D:\xampp\htdocs\projects\2021\sedge\sedge-cn\themes\sedge\page.php on line 33
-
-2021-04-15T11:26:22+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\themes\sedge\page.php on line 33
-
-2021-04-15T11:31:49+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\themes\sedge\page.php on line 33
-
-2021-04-15T11:32:00+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\themes\sedge\page.php on line 33
-
-2021-04-15T11:33:47+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\themes\sedge\page.php on line 33
-
-2021-04-15T12:39:34+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in D:\xampp\htdocs\projects\2021\sedge\sedge-cn\themes\sedge\page-about.php on line 431
+2021-04-15T20:31:54+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in D:\xampp\htdocs\projects\2021\sedge\sedge-cn\themes\sedge\page-about.php on line 384
 

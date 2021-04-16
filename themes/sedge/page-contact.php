@@ -35,20 +35,16 @@ $thisID = get_the_ID();
 
                 <?php if( !empty($intro['beschrijving']) ): ?>
                 <div class="input-type-radio clearfix">
-                  <ul class="reset-list clearfix">
-                    <li class="wpforms-selected">
-                      <label class="container" for="bedrijf">Bedrijf 
-                        <input type="radio" id="bedrijf" name="condition" value="bedrijf" checked>
-                        <span class="checkmark"></span>
-                      </label>
-                    </li>
-                    <li class="wpforms-selected">
-                      <label class="container" for="particulier">Particulier 
-                        <input type="radio" id="particulier" name="condition" value="particulier">
-                        <span class="checkmark"></span>
-                      </label>
-                    </li>
-                  </ul>
+                  <input type="radio" id="bedrijf" name="condition" value="bedrijf" checked>
+                  <label for="bedrijf">
+                    Bedrijf
+                    <span class="checkmark"></span>
+                  </label>
+                  <input type="radio" id="particulier" name="condition" value="particulier">
+                  <label for="particulier">
+                    Particulier
+                    <span class="checkmark"></span>
+                  </label>
                 </div>
               </div>
               <div class="wpforms-container">

@@ -97,6 +97,16 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
     </div>
 
   </div>
+			</div>
+			<div class="xoo-cp-pdetails-col-2">
+  			<div class="product-order-btn">
+          <a class="fl-btn" href="<?php echo wc_get_cart_url(); ;?>"><?php _e('Verder naar bestellen','added-to-cart-popup-woocommerce'); ?></a>
+  				<div class="popUp-button-bottom"><span>of</span> <a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="#"><?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></a></div>
+  			</div>
+			</div>
+		</div>
+
+	</div>
 </div>
 <?php 
   $terms = get_the_terms($product_id, 'product_cat');

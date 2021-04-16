@@ -104,12 +104,14 @@ body.thankyou .chckout-prgrs-col.active .chckout-prgrs-number:after{
     top: 19px!important;
 }
 .chckout-prgrs-title{
-	font-family: 'Bitter', serif;
+	font-family: 'Sora', serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.5;
 	color: #535A61;
 	margin-bottom: 0;
+	position: relative;
+    z-index: 999;
 }
 .chckout-prgrs-col-2{
 	text-align: center;

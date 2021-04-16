@@ -83,8 +83,8 @@ $smedias = get_field('social_media', 'options');
                 <div class="fl-lang-cntlr">
                   <ul class="reset-list hide-sm">
                     <li  class="lang-active"><a href="#">EN</a></li>
-                    <li><a href="#">FN</a></li>
-                    <li><a href="#">CN</a></li>
+                    <li><a href="#">FR</a></li>
+                    <li><a href="#">NL</a></li>
                   </ul>
                 </div>
               </div>

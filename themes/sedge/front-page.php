@@ -145,5 +145,6 @@
 </section>
 <?php endif; ?>
 
+<?php get_template_part('templates/footer', 'top-form'); ?>
 
 <?php get_footer(); ?>

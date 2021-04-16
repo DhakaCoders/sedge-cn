@@ -106,13 +106,19 @@ $thisID = get_the_ID();
 </section>
 
 
-<!-- sabbir start -->
+<?php 
+  $handleiding_sec = get_field('handleiding_sec', $thisID);
+  if( $handleiding_sec ):
+    
+?>
 <section class="product-menual-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="prdt-menual-hdr">
-          <h1 class="fl-h1 prdt-menual-titl">FROM RAW MATERIAL,<br> THROUGH MANUAL PROCESSING,<br> TO FINAL PRODUCT</h1>
+          <?php 
+            if( !empty($handleiding_sec['titel']) ) printf( '<h2 class="fl-h1 prdt-menual-titl">%s</h2>', $handleiding_sec['titel'] );
+          ?>
         </div>
         <div class="prdt-mnl-cntrl">
           <div class="pmi-galry mHc">
@@ -169,102 +175,55 @@ $thisID = get_the_ID();
               </div>
             </div>
           </div>
+
+          <?php 
+            $handleidings = $handleiding_sec['handleiding'];
+              if($handleidings):
+          ?>
           <div class="prdt-mnl-process mHc">
             <ul class="clearfix reset-list">
+              <?php foreach( $handleidings as $handleiding ): ?>
               <li>
                 <div class="pmp-des">
+                  <?php if( !empty($handleiding['afbeelding']) ):  ?>
                   <div class="pmp-des-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/prdt-mnl-des-img-1.jpg" alt="">
+                    <?php echo cbv_get_image_tag($handleiding['afbeelding']); ?>
                   </div>
+
+                  <?php endif; ?>
                   <div class="pmp-des-tlt">
-                    <h6 class="fl-h6 pmp-title">Handpicking <br>raw material</h6>
+                    <?php 
+                        if( !empty($handleiding['titel']) ) printf( '<h6 class="fl-h6 pmp-title">%s</h6>', $handleiding['titel'] );
+                      ?>
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="pmp-des">
-                  <div class="pmp-des-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/prdt-mnl-des-img-2.jpg" alt="">
-                  </div>
-                  <div class="pmp-des-tlt">
-                    <h6 class="fl-h6 pmp-title">cutting stems <br>at specifc lenghts</h6>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pmp-des">
-                  <div class="pmp-des-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/prdt-mnl-des-img-3.jpg" alt="">
-                  </div>
-                  <div class="pmp-des-tlt">
-                    <h6 class="fl-h6 pmp-title">Thorough cleaning <br>inside and outside</h6>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pmp-des">
-                  <div class="pmp-des-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/prdt-mnl-des-img-4.jpg" alt="">
-                  </div>
-                  <div class="pmp-des-tlt">
-                    <h6 class="fl-h6 pmp-title">desinfecting <br>with salt water</h6>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pmp-des">
-                  <div class="pmp-des-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/prdt-mnl-des-img-5.jpg" alt="">
-                  </div>
-                  <div class="pmp-des-tlt">
-                    <h6 class="fl-h6 pmp-title">Cold oven baking</h6>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pmp-des">
-                  <div class="pmp-des-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/prdt-mnl-des-img-6.jpg" alt="">
-                  </div>
-                  <div class="pmp-des-tlt">
-                    <h6 class="fl-h6 pmp-title">Natural recovery</h6>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pmp-des">
-                  <div class="pmp-des-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/prdt-mnl-des-img-7.jpg" alt="">
-                  </div>
-                  <div class="pmp-des-tlt">
-                    <h6 class="fl-h6 pmp-title">anti bacterial treatment<br>with UV-light</h6>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pmp-des">
-                  <div class="pmp-des-img">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/prdt-mnl-des-img-8.jpg" alt="">
-                  </div>
-                  <div class="pmp-des-tlt">
-                    <h6 class="fl-h6 pmp-title">quality  control</h6>
-                  </div>
-                </div>
-              </li>
+              <?php endforeach; ?>
             </ul>
           </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php endif; ?>
 
+
+<?php 
+  $galerijs_2 = get_field('galerij_2', $thisID);
+  if( $galerijs_2 ):
+    
+?>
 <section class="grid-gallary">
+  <?php foreach( $galerijs_2 as $galerij_2 ){
+    //printr($galerij_2);
+  }
+  ?>
   <div class="grid-gallary-cntrl"> 
     <div class="grd-galry-lft mHc">
       <div class="lft-grd-galry">
-        <div class="grd-galry-img1 inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/grid-glary-img-1.jpg');">
-        </div>
+        <div class="grd-galry-img1 inline-bg" style="background-image: url('<?php echo THEME_URI; ?>/assets/images/grid-glary-img-1.jpg');"></div>
       </div>   
     </div>
     <div class="grd-galry-rgt mHc">
@@ -290,16 +249,25 @@ $thisID = get_the_ID();
     </div>
   </div>  
 </section>
+<?php endif; ?>
 
+
+
+
+<?php 
+  $tradities_sec = get_field('tradities_sec', $thisID);
+  if( $tradities_sec ):
+?>
 <section class="traditions-sec about-tradition-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="traditions-sec-cntrl">
           <div class="trad-des mHc">
-            <h2 class="fl-h2 trad-titl">TRADITIONS</h2>
-            <p>For hundreds of years grey sedge is used for making all sorts off daily utilities.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque non nulla in lacus, a, nisl risus pulvinar id. Quis praesent at purus, id justo, enim tortor porttitor sit. Erat quam in nisi, amet. Augue adipiscing vel turpis aliquet sem sit nulla. Et ac sed feugiat leo enim placerat nunc.</p>
+            <?php 
+              if( !empty($tradities_sec['titel']) ) printf( '<h2 class="fl-h2 trad-titl">%s</h2>', $tradities_sec['titel'] );
+              if( !empty($tradities_sec['beschrijving']) ) echo wpautop( $tradities_sec['beschrijving'] );
+            ?>
           </div>
           <div class="trad-galry mHc">
             <div class="trad-galry-tp">
@@ -332,7 +300,14 @@ $thisID = get_the_ID();
     </div>
   </div>
 </section>
+<?php endif; ?>
 
+
+
+<?php  
+  $aboutproduct = get_field('aboutproduct', $thisID);
+  if($aboutproduct): 
+?>
 <section class="product-sec about-prdt-sec">
   <div class="container">
     <div class="row">
@@ -344,15 +319,19 @@ $thisID = get_the_ID();
                 <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/sedge-prdt-logo.png" alt=""></a>
               </div>
               <div class="prdt-des">
-                <p>Sedge wants to contribute to a better future for generations to come.</p>
-                <p>Our goal is to play a positive part in the development of a sustainable society and 
-                the preservation of traditions. By means of offering 100% natural products and creating more awareness with consumers about ecology and other facets of nature.</p>
-                <p>What drives us in the long term is the opportunity to complete the circle and give back to nature and to the people who give us the possibility to do what we love to do.</p>
-                <p>As an organization we persuade stable,long lasting relationships between equal partners.</p>
+                <?php
+                  if( !empty($aboutproduct['beschrijving']) ) echo wpautop( $aboutproduct['beschrijving'] );
+                ?>
               </div>
-              <div class="find-more">
-                  <a href="#" class="fl-blue-btn find-more-btn">search our products</a>
-                </div> 
+
+                <?php 
+                    $apro_des_knop = $aboutproduct['knop'];
+                    if( is_array( $apro_des_knop ) &&  !empty( $apro_des_knop['url'] ) ):
+                ?>
+                <div class="find-more">
+                  <?php  printf('<a class="fl-blue-btn find-more-btn" href="%s" target="%s">%s</a>', $apro_des_knop['url'], $apro_des_knop['target'], $apro_des_knop['title']); ?>
+                </div>
+                <?php endif; ?>
             </div>
           </div>
           <div class="prdt-catg">
@@ -389,52 +368,7 @@ $thisID = get_the_ID();
     </div>
   </div>
 </section>
-
-<!-- sabbir end -->
-
-
-<section class="ftr-top-contact-sec">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="ftr-top-contact-sec-inr clearfix">
-          <div class="ftr-top-contact-lft">
-            <div class="ftr-top-contact-lft-inr">
-              <h6 class="ftr-top-cnt-lft-title">BLIJF OP DE HOOGTE VAN ACTIES EN PROMOTIES SCHRIJF JE IN OP ONZE NIEUWSBRIEF</h6>
-            </div>
-          </div>
-          <div class="ftr-top-contact-rgt">
-            <div class="ftr-top-contact-rgt-inr">
-              <div class="wpforms-container">
-                <form class="wpforms-form">
-                  <div class="wpforms-field-container">  
-                    <div class="wpforms-field firstNameField">
-                      <input type="text" name="name" placeholder="Voornaam" required>
-                    </div>
-                    <div class="wpforms-field lastNameField">
-                      <input type="text" name="name" placeholder="Naam" required>
-                    </div>
-                    <div class="wpforms-field mailField">
-                      <input type="email" name="email" placeholder="mathias2.conversalbe" required>
-                    </div>
-                    <div class="wpforms-field wpforms-field-html html-field">
-                      <p>Wij respecteren uw <a href="#">privacy.</a> Jouw gegevens worden altijd vertrouwelijk behandeld.</p>
-                    </div>
-                  </div><!-- end of .wpforms-field-container-->
-                  <div class="wpforms-submit-container">
-                    <button type="submit" name="submit" class="wpforms-submit fl-blue-btn">VERZENDEN</button>
-                  </div>
-
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+<?php endif; ?>
 
 <?php
 get_template_part('templates/footer-top-form');

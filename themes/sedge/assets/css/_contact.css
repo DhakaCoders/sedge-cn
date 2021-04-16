@@ -198,6 +198,10 @@
     bottom: auto !important;
     padding-right: 0 !important;
 }
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field label.wpforms-field-label span{
+    display: inline-block!important;
+    position: static;
+}
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field span{
     font-weight: 400;
     font-size: 12px;
@@ -215,19 +219,26 @@
     bottom: 18px;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error {
-	font-size: 14px;
+    font-size: 14px;
     line-height: 1;
     color: #D17181;
     position: absolute;
-    bottom: 16px;
+    bottom: 15px;
     display: block;
     right: 20px;
     padding-right: 12px;
-    font-weight: 700!important;
+    font-weight: 700 !important;
     text-align: right;
-    width: auto;
     text-transform: inherit;
     margin-bottom: 0;
+    text-indent: 0 !important;
+    background: url(../images/error-msg-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    color: transparent!important;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-has-error label.wpforms-error{
 	font-weight: 400 !important;
@@ -248,13 +259,15 @@
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.form-privacy-text{
 	margin-bottom: 15px;
 }
-.contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text p {
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-description{
+    margin-top: 5px;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-description p{
     font-size: 12px;
     line-height: 1.4;
     color: #6A6A6A;
     margin-bottom: 24px;
     text-align: left;
-    font-style: italic;
     margin-bottom: 0;
     padding-top: 10px;
     padding-right: 20px;
@@ -326,68 +339,51 @@ placeholder
 Inputtype Radio Css
 ----------------------
 */
-.input-type-radio ul li{
-    padding: 0 !important;
-    margin: 0 !important;
-    position: relative;
-    float: left;
-    padding-right: 28px !important;
+
+.input-type-radio input[type=radio],
+.input-type-radio input[type=checkbox]{
+  display:none;
 }
-.input-type-radio ul li label {
+
+.input-type-radio label,
+.input-type-radio label{
+    display: inline-block;
+    margin: 0;
     font-size: 14px;
     line-height: 1;
     font-weight: 400;
     color: #78797B;
     margin: 0;
-    padding-left: 50px;
+    padding-left: 25px;
     text-transform: inherit;
-    padding-right: 0;
+    padding-right: 28px;
     cursor: pointer;
-    padding: 2px 0 2px 25px;
+    position: relative;
 }
-.input-type-radio ul li label input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.checkmark {
+.input-type-radio input[type=radio] + label span.checkmark,
+.input-type-radio input[type=checkbox] + label span.checkmark{
     position: absolute;
+    left: 0;
+    top: 0;
     width: 14px;
     height: 14px;
-    border: 1px solid #71867E;
-    box-sizing: border-box;
-    left: 0;
-    top: 5px;
-    border-radius: 15px;
+    border:1px solid#71867E;
+    border-radius: 20px;
 }
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.input-type-radio ul li label input:checked ~ .checkmark:after {
-  display: block;
-  background: #93A198;
-}
-
-.input-type-radio ul li label .checkmark:after {
-	content: "";
-	position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
+.input-type-radio input[type=radio]:checked + label:after,
+.input-type-radio input[type=checkbox]:checked + label:after{
+    content: "";
+    outline: 0;
+    background-color:#93A198;
+    color: #fff;
+    position: absolute;
+    left: 3px;
+    top: 3px;
     width: 8px;
     height: 8px;
-    background: #93A198;
-    border-radius: 10px;
+    border-radius: 20px;
 }
+
 .contact-form-info ul li{
     display: block;
     padding-bottom: 28px;
@@ -504,10 +500,14 @@ Inputtype Radio Css
     }
     .page-entry-header{
         margin-bottom: 30px;
+        padding-bottom: 30px;
     }
     .page-entry-header p,
     .page-entry-header .fl-h2{
         text-align: center;
+    }
+    .page-entry-header p{
+        margin-bottom: 35px;
     }
     .page-entry-header .fl-h2{
         text-transform: inherit;
@@ -580,6 +580,10 @@ Inputtype Radio Css
     }
     .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-textarea{
         margin-bottom: 10px;
+    }
+    .input-type-radio label,
+    .input-type-radio label{
+        padding-right: 20px;
     }
 }
 
