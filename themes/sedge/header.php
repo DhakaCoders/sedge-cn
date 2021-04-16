@@ -137,20 +137,7 @@ $smedias = get_field('social_media', 'options');
                 <span></span>
               </div>
             </div>
-            <?php if(!empty($smedias)):  ?>
-            <div class="xs-hdr-socials show-md">
-              <ul class="reset-list clearfix">
-                 <?php foreach($smedias as $smedia): ?>
-                <li>
-                  <a href="<?php echo $smedia['url']; ?>">
-                    <?php echo $smedia['icon']; ?>
-                  </a>
-                </li>
-                <?php endforeach; ?>
-              </ul>
-            </div>
-            <?php endif; ?>
-
+            <?php if( is_social_show_hide() ){ ?>
             <div class="xs-hdr-srch-cart-cntlr">
               <div class="xs-hdr-srch-wrap">
                 <div class="xs-hdr-srch">
@@ -186,7 +173,21 @@ $smedias = get_field('social_media', 'options');
                 </a>
               </div>
             </div>
-
+            <?php }else{ ?>
+              <?php if(!empty($smedias)):  ?>
+              <div class="xs-hdr-socials show-md">
+                <ul class="reset-list clearfix">
+                   <?php foreach($smedias as $smedia): ?>
+                  <li>
+                    <a href="<?php echo $smedia['url']; ?>">
+                      <?php echo $smedia['icon']; ?>
+                    </a>
+                  </li>
+                  <?php endforeach; ?>
+                </ul>
+              </div>
+              <?php endif; ?>
+            <?php } ?>
           </div>
         </div>
       </div>
