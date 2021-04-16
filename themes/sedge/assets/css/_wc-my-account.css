@@ -374,8 +374,8 @@ body.woocommerce-orders .faq-accordion-wrp .orders-crtl time{
 }
 body.woocommerce-orders .accordion-order-title{
     padding-left: 40px;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 28px;
+    padding-bottom: 15px;
     background: #FFFBF4;
     border: 1px solid #FFFBF4;
     cursor: pointer;
@@ -429,7 +429,7 @@ body.woocommerce-orders .order-comment p{
     font-weight: 300;
 }
 body.woocommerce-orders .faq-accordion-wrp ul li{
-    border: 1px solid #F2EDE9;
+    border: 1px solid #F2EADE;
     /*padding-left:0px;*/
     padding:0;
 }
@@ -751,7 +751,7 @@ body.woocommerce-account .woocommerce .u-column2.col-2{
 }
 
 /*  ----------------------------- my new account page ------------------------- */
-body.hide-account-title {
+body.hide-account-title,body.woocommerce-orders{
     background-image: url(../images/new-account-page-bg.png);
     background-repeat: no-repeat;
     background-position: top center;
