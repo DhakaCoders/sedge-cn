@@ -211,11 +211,11 @@ body.woocommerce-orders .account-page-title h1{
     line-height: 1;  
 }
 .back-to-dashboard-btn-cntlr a:hover{
-    color: #8dcc0c;
+    opacity: 0.8;
 }
 .back-to-dashboard-btn-cntlr a:hover:after{
-    color: #8dcc0c;
     left: -3px;
+    opacity: .8;
 }
 .back-to-dashboard-btn-cntlr{
     background: #71867E;
@@ -374,8 +374,8 @@ body.woocommerce-orders .faq-accordion-wrp .orders-crtl time{
 }
 body.woocommerce-orders .accordion-order-title{
     padding-left: 40px;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 28px;
+    padding-bottom: 15px;
     background: #FFFBF4;
     border: 1px solid #FFFBF4;
     cursor: pointer;
@@ -429,7 +429,7 @@ body.woocommerce-orders .order-comment p{
     font-weight: 300;
 }
 body.woocommerce-orders .faq-accordion-wrp ul li{
-    border: 1px solid #F2EDE9;
+    border: 1px solid #F2EADE;
     /*padding-left:0px;*/
     padding:0;
 }
@@ -494,12 +494,34 @@ body.woocommerce-orders .customer-order-details .faq-accordion-wrp > ul:after{
     bottom: 0;
     transform: translateX(-50%);
 }
+body.woocommerce-account.woocommerce-edit-account .woocommerce form .form-row-first#billing_address_1_field,
+body.woocommerce-account.woocommerce-edit-account .woocommerce form .form-row-last#billing_phone_field,
+body.woocommerce-account .woocommerce form .form-row-last#billing_house_field,
+body.woocommerce-account .woocommerce form .form-row-first#billing_postcode_field,
+body.woocommerce-account .woocommerce form .form-row-last#billing_city_field{
+    width:100%!important;
+}
+body.woocommerce-account.woocommerce-edit-account .woocommerce form .form-row-first#billing_address_1_field,
+body.woocommerce-account.woocommerce-edit-account .woocommerce form .form-row-last#billing_phone_field,
+body.woocommerce-account .woocommerce form .form-row-last#billing_house_field,
+body.woocommerce-account .woocommerce form .form-row-first#billing_postcode_field,
+body.woocommerce-account .woocommerce form .form-row-last#billing_city_field{
+    padding-left:3px;
+}
+body.woocommerce-account.woocommerce-edit-account .woocommerce form .form-row-first#billing_address_1_field,
+body.woocommerce-account.woocommerce-edit-account .woocommerce form .form-row-last#billing_phone_field,
+body.woocommerce-account .woocommerce form .form-row-last#billing_house_field,
+body.woocommerce-account .woocommerce form .form-row-first#billing_postcode_field,
+body.woocommerce-account .woocommerce form .form-row-last#billing_city_field{
+    padding-right:3px;
+}
+
 /* ------------------------- woocommerce-edit-account --------------------------*/
 body.woocommerce-edit-account .innerpage-con-wrap{
     max-width:100%;
 }
 body.woocommerce-edit-account .woocommerce-account-grds-cntlr{
-    margin-bottom:110px;
+    margin-bottom: 83px;
 }
 body.woocommerce-edit-account.woocommerce-account .woocommerce-EditAccountForm legend{
     margin-bottom: 35px;
@@ -751,7 +773,7 @@ body.woocommerce-account .woocommerce .u-column2.col-2{
 }
 
 /*  ----------------------------- my new account page ------------------------- */
-body.hide-account-title {
+body.hide-account-title,body.woocommerce-orders{
     background-image: url(../images/new-account-page-bg.png);
     background-repeat: no-repeat;
     background-position: top center;
@@ -1610,7 +1632,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
 
     }
     .back-to-dashboard-btn-cntlr a:after{
-       margin-top: -1px!important
+       margin-top: -2px!important
     }
     body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .woocommerce-input-wrapper textarea {
         min-height: 200px;
