@@ -484,8 +484,9 @@ form .dropdown-menu li a{
 	text-transform: uppercase;
 }
 .fl-blue-btn:hover{
-	background: transparent;
-	color: #6DBD98;
+	background: #b4192b;
+    color: #fff;
+    border-color: #b4192b;
 }
 
 
