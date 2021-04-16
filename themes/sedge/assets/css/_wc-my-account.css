@@ -1610,7 +1610,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
 
     }
     .back-to-dashboard-btn-cntlr a:after{
-       margin-top: -1px!important
+       margin-top: -2px!important
     }
     body.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .woocommerce-input-wrapper textarea {
         min-height: 200px;
