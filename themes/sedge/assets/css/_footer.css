@@ -213,7 +213,19 @@
 	position: relative;
 }
 
-.ftr-location a:after{
+.ftr-location a i,
+.ftr-email a i,
+.ftr-phone a i{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.ftr-location a:hover svg,
+.ftr-email a:hover svg,
+.ftr-phone a:hover svg{
+	fill: #BA0821;
+}
+/*.ftr-location a:after{
 	content: "";
 	position: absolute;
 	top: 0;
@@ -223,8 +235,8 @@
 	background: url('../images/ftr-location.svg');
 	background-repeat: no-repeat!important;
 	background-size: cover!important;
-}
-.ftr-email a:after{
+}*/
+/*.ftr-email a:after{
 	content: "";
 	position: absolute;
 	top: 0;
@@ -234,8 +246,8 @@
 	background: url('../images/ftr-email.svg');
 	background-repeat: no-repeat!important;
 	background-size: cover!important;
-}
-.ftr-phone a:after{
+}*/
+/*.ftr-phone a:after{
 	content: "";
 	position: absolute;
 	top: 0;
@@ -245,7 +257,7 @@
 	background: url('../images/ftr-phone.svg');
 	background-repeat: no-repeat!important;
 	background-size: cover!important;
-}
+}*/
 
 
 .ftr-middle-inr{
