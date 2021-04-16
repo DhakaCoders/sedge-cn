@@ -50,6 +50,7 @@ body.woocommerce-checkout .custom-checkout-order-review .ywgc_enter_code .form-r
 .woocommerce a.button:hover, 
 .woocommerce button.button:hover, 
 .woocommerce input.button:hover,
+.woocommerce button[type=submit]:hover,
 body.woocommerce-account .register-btn button[type="submit"]:hover,
 body.woocommerce-orders .orders-crtl .contact-info a.order-contact-btn:hover,
 body.woocommerce-checkout .custom-checkout-order-review button.button.alt:hover,

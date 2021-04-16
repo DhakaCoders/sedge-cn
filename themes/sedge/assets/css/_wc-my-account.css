@@ -1088,6 +1088,9 @@ body.woocommerce-account .register-btn button[type="submit"]{
 }
 body.hide-account-title .register-nextstep {
     padding-bottom: 40px!important;
+    max-width: 926px;
+    margin-left: auto;
+    margin-right: auto;
 }
 body.hide-account-title .login-info #billing_email_field{
     padding-top: 23px;
