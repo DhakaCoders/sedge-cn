@@ -1,6 +1,6 @@
 .ftr-top-contact-sec-inr{
 	padding-top: 50px;
-	padding-bottom: 25px;
+	padding-bottom: 72px;
 	border-top: 1px solid #F2EADE;
 }
 
@@ -59,6 +59,7 @@
 .ftr-top-contact-sec .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-html p a{
 	color: #873C42;
 	text-decoration: underline;
+	margin-right: 2px;
 }
 .ftr-top-contact-sec .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-html p a:hover{
 	color: #6DBD98;
@@ -350,6 +351,9 @@
 	margin-right: -60px;
 }
 
+.ftrTopSlider .ftr-slider-grd-item{
+	border: 5px solid #F2EADE;
+}
 .ftrTopSlider .ftr-slider-grd-item img{
 	width: 100%;
 }
@@ -385,6 +389,9 @@
 	.ftr-top-contact-sec .wpforms-field-container {
 	    margin-left: -8px!important;
 	    margin-right: -8px!important;
+	}
+	.ftr-top-cnt-lft-title{
+		font-size: 18px;
 	}
 }
 
