@@ -202,6 +202,10 @@ body.single-product .fl-product span.onsale{
     .fl-pro-grd-btn{
         padding-left: 20px;
     }
+    body.home span.onsale, body.post-type-archive span.onsale, body.single-product .fl-product span.onsale{
+        top: 15px!important;
+        left: 20px!important;
+    }
 }
 
 @media(max-width: 1299px){
