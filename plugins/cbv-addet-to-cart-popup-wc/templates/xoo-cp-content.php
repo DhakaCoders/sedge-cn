@@ -155,16 +155,16 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
             }
             $seller_flash = get_field('seller_flash', $product->get_id());
             $gridurl = cbv_get_image_tag( get_post_thumbnail_id($product->get_id()), 'hprogrid' );
-            echo "<div class='pro-item {$itemCls}'>";
+            echo "<div class='pro-item {$itemCls} clearfix'>";
             if( !empty($seller_flash) ) printf('<span class="seller-flash">%s</span>', $seller_flash); 
             echo '<div class="pro-item-img-cntlr pw-item-img-cntlr">';
             echo '<a class="overlay-link" href="'.get_permalink( $product->get_id() ).'"></a>';
             echo '<div class="pro-item-img">'.$gridurl.'</div>';
             echo '</div>';
-            echo '<div class="pro-item-desc pw-item-desc">';
+            echo '<div class="pro-item-desc pw-item-desc clearfix">';
             echo '<div class="pro-item-descWrap mHc">';
             echo '<h3 class="pro-item-desc-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h3>';
-            echo '</div>';
+            echo '</div><div class="xpu-pp-qtn">';
             echo '<div class="product-price">';
             echo $product->get_price_html();
             echo '<span class="pro-prize-shrt-title show-sm"></span>';
@@ -184,7 +184,7 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
                 printf('<div class="product-order-btn"><a class="fl-btn" href="%s" rel="nofollow" data-product_id="%s" class="button add_to_cart_button product_type_%s">%s</a></div>', $link, $product->get_id(), $product->get_type(), $label);
             }
             endif;
-            echo '</div>';
+            echo '</div></div>';
             echo '</div>';
             echo '</div>';
 

@@ -297,11 +297,7 @@ body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-f
     width: initial!important;
 }
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code + button:hover{
-    background: #31304F!important;
-    color: #fff!important;
-    background: #EC5387!important;
-    color: #fff!important;
-    border-color: #EC5387!important;
+    color: #6DBD98!important;
 }
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout #pwgc-redeem-form #pwgc-redeem-gift-card-container input[type=text]{
 	width: 100%;
