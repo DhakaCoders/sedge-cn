@@ -102,7 +102,7 @@
 	flex-direction: column;
 }
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2 .product-order-btn .product-order-btn-top {
-	order: 2;
+
 	margin-right: 0;	
 }
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2 .product-order-btn a:first-child{
@@ -112,7 +112,6 @@
 }
 
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2 .product-order-btn .popUp-button-bottom{
-	order: 1;
 	padding-bottom: 19px;
 }
 
