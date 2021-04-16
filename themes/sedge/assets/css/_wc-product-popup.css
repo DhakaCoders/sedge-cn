@@ -146,7 +146,7 @@
     color: #202020;
 }
 .spotlight-popup-cntlr{
-    padding-top: 52px;
+    padding-top: 58px;
 }
 
 .flex-fill{
@@ -302,7 +302,9 @@ span.xoo-cp-close.xoo-cp-icon-cross:before {
 	color: #71867f!important;
 	font-weight: 700!important;
 }
-
+.xoo-cp-pdetails-col-2{
+	display: none;
+}
 .cart .qty-price-wrap del span{
 	font-size:20px;
 	text-decoration-line: line-through;
