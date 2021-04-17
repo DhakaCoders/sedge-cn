@@ -39,10 +39,7 @@
     position: relative;
 }
 .page-entry-header {
-    border-bottom: 2px solid#F2EADE;
     padding-right: 0;
-    padding-bottom: 25px;
-    margin-bottom: 45px;
 }
 .page-entry-header .fl-h2 {
     color: #78797B;
@@ -344,51 +341,79 @@ placeholder
 Inputtype Radio Css
 ----------------------
 */
+.wpforms-field.wpforms-field-radio{
+    width: 100%!important
+}
+
+.wpforms-field-radio.input-type-radio {
+    border-bottom: 2px solid#F2EADE!important;
+    padding-right: 0!important;
+    padding-bottom: 15px!important;
+    margin-bottom: 45px!important;
+    margin-left: 0!important;
+    float: none!important;
+    padding-left: 0!important;
+    width: auto!important;
+    margin-left: 12px!important;
+    margin-right: 12px!important;
+}
 
 .input-type-radio input[type=radio],
-.input-type-radio input[type=checkbox]{
-  display:none;
+.input-type-radio input[type=checkbox],
+.wpforms-field-radio ul li input[type=radio]{
+  display:none!important;
 }
 
 .input-type-radio label,
-.input-type-radio label{
+.input-type-radio label,
+.wpforms-field-radio ul li label{
     display: inline-block;
     margin: 0;
-    font-size: 14px;
-    line-height: 1;
+    font-size: 14px!important;
+    line-height: 1!important;
     font-weight: 400;
     color: #78797B;
     margin: 0;
-    padding-left: 25px;
+    padding-left: 25px!important;
     text-transform: inherit;
-    padding-right: 28px;
+    padding-right: 28px!important;
     cursor: pointer;
     position: relative;
 }
 .input-type-radio input[type=radio] + label span.checkmark,
-.input-type-radio input[type=checkbox] + label span.checkmark{
+.input-type-radio input[type=checkbox] + label span.checkmark,
+.wpforms-field-radio ul li input[type=radio] + label:before{
+    content: "";
     position: absolute;
     left: 0;
-    top: 0;
+    top: 4px;
     width: 14px;
     height: 14px;
     border:1px solid#71867E;
     border-radius: 20px;
 }
 .input-type-radio input[type=radio]:checked + label:after,
-.input-type-radio input[type=checkbox]:checked + label:after{
+.input-type-radio input[type=checkbox]:checked + label:after,
+.wpforms-field-radio ul li input[type=radio]:checked + label:after{
     content: "";
     outline: 0;
     background-color:#93A198;
     color: #fff;
     position: absolute;
     left: 3px;
-    top: 3px;
+    top: 7px;
     width: 8px;
     height: 8px;
     border-radius: 20px;
 }
-
+div.wpforms-container-full .wpforms-form .wpforms-field-radio ul li{
+    position: relative!important;
+    margin-bottom: 0!important;
+}
+div.wpforms-container .wpforms-field-radio ul li *{
+    display: inline-block;
+    vertical-align: baseline;
+}
 .contact-form-info ul li{
     display: block;
     padding-bottom: 28px;
@@ -523,8 +548,7 @@ Inputtype Radio Css
         width: 100%;
     }
     .page-entry-header{
-        margin-bottom: 30px;
-        padding-bottom: 30px;
+
     }
     .page-entry-header p,
     .page-entry-header .fl-h2{

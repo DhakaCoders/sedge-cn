@@ -24,6 +24,11 @@ if( !function_exists('cbv_theme_setup') ){
         }
         add_image_size( 'hm_intro', 550, 656, true );
         add_image_size( 'hmproduct', 260, 152, true );
+        add_image_size( 'about_banner', 1070, 670, true );
+        add_image_size( 'about_intro', 424, 582, true );
+        add_image_size( 'about_gallery1', 682, 392, true );
+        add_image_size( 'about_gallery2', 414, 624, true );
+        add_image_size( 'about_gallery3', 304, 446, true );
         // add size to media uploader
         add_filter( 'image_size_names_choose', 'cbv_custom_image_sizes' );
         function cbv_custom_image_sizes( $sizes ) {
