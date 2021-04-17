@@ -100,6 +100,7 @@ function my_acf_google_map_api( $api ){
 }
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
+// theme conditioanl tags
 function is_blog() {
     return ( is_archive() || is_author() || is_category() || is_home() || is_single() || is_tag()) && 'post' == get_post_type();
 }
@@ -116,6 +117,15 @@ function is_show_footer_form() {
 function is_social_show_hide() {
     return ( is_cart() || is_shop() || is_account_page() || is_product_category() || is_product_tag() || is_product() || is_checkout() || is_page( get_title_by_page_template('page-contact.php') ));
 }
+
+function is_show_hide_cart(){
+    return ( (is_account_page() && is_user_logged_in()) || is_page( get_title_by_page_template('page-contact.php') ));
+}
+
+function is_show_hide_global_sidebar(){
+    return ( is_front_page() || is_cart() || is_shop() || is_account_page() || is_product_category() || is_product_tag() || is_product() || is_checkout() || is_page( get_title_by_page_template('page-contact.php') ));
+}
+
 add_post_type_support( 'page', 'excerpt' );
 
 add_filter('use_block_editor_for_post', '__return_false');
