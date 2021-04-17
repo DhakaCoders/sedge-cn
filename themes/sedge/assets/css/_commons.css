@@ -504,8 +504,8 @@ form .dropdown-menu li a{
 }
 .dropdown-item:focus, 
 .dropdown-item:hover{
-	background: #b4192b;
-	color:#fff;
+	background: #c4c1c1;
+	color:#78797B;
 }
 
 
