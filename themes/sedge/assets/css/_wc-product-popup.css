@@ -75,7 +75,8 @@
 	flex-wrap: wrap;
 }
 .xoo-cp-ptitle .xoo-cp-variations .variation dt, .xoo-cp-ptitle .xoo-cp-variations .variation dd{
-	width: 50%;
+	width: 30%;
+	display: flex;
 }
 .xoo-cp-ptitle .xoo-cp-variations .variation dd{
 	margin-bottom: 0;
