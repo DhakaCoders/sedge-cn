@@ -65,9 +65,29 @@
     font-weight: 600;
     font-family: Ubuntu;
 }
-.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title span,
+/* .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title span,
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .xoo-cp-variations{
 	display: none;
+} */
+.xoo-cp-ptitle .xoo-cp-variations .variation{
+	display: flex;
+	align-items: center;
+}
+.xoo-cp-ptitle .xoo-cp-variations .variation dt, .xoo-cp-ptitle .xoo-cp-variations .variation dd{
+	width: 50%;
+}
+.xoo-cp-ptitle .xoo-cp-variations .variation dd{
+	margin-bottom: 0;
+}
+.xoo-cp-ptitle .xoo-cp-variations .variation :nth-child(3){
+    display:inline-block;
+    width:100%;
+    color:yellow;
+}
+.xoo-cp-ptitle .xoo-cp-variations .variation :nth-child(4){
+   display:inline-block;
+    width:100%;
+    color:red;
 }
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .qty-price-wrap .quantity{
 	display: none;
