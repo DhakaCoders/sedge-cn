@@ -256,7 +256,8 @@ ul.products li:before,
 .sidebar-widget ul,
 ul.dropdown-menu,
 .moove-gdpr-modal-left-content ul,
-.woocommerce-MyAccount-navigation ul{
+.woocommerce-MyAccount-navigation ul,
+.wpforms-field-radio ul{
 	margin: 0!important;
 	padding: 0!important;
 	list-style: none!important;
@@ -264,7 +265,8 @@ ul.dropdown-menu,
 .sidebar-widget ul li,
 ul.dropdown-menu li,
 .moove-gdpr-modal-left-content ul li,
-.woocommerce-MyAccount-navigation ul{
+.woocommerce-MyAccount-navigation ul li,
+.wpforms-field-radio ul li{
 	padding: 0!important;
 	margin: 0!important;
 	list-style: none!important;
@@ -273,7 +275,8 @@ ul.dropdown-menu li,
 .sidebar-widget ul li:before,
 ul.dropdown-menu li:before,
 .moove-gdpr-modal-left-content ul li:before,
-.woocommerce-MyAccount-navigation ul:before{
+.woocommerce-MyAccount-navigation ul li:before,
+.wpforms-field-radio ul li:before{
 	content: none!important;
 }
 
