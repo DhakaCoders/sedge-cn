@@ -254,8 +254,8 @@
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.form-privacy-text{
 	margin-bottom: 15px;
 }
-.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-description{
-    margin-top: 0;
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-description {
+    margin-top: 0 !important;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-description p{
     font-size: 12px;
@@ -263,9 +263,9 @@
     color: #6A6A6A;
     margin-bottom: 24px;
     text-align: left;
-    margin-bottom: 0;
-    padding-top: 10px;
-    padding-right: 20px;
+    margin-bottom: 0 !important;
+    padding-top: 22px;
+    padding-right: 10px;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text p a{
 	display: inline-block;
