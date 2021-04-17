@@ -255,11 +255,19 @@ body.woocommerce-cart .cart_totals tbody tr td:last-child{
 	padding-right: 0;
 	text-align: right;
 }
-body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon{
-	margin-bottom: 45px;
+body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon,
+body.woocommerce-checkout .custom-checkout-order-review .form-row-last{
+	margin-bottom: 40px;
 	text-align: right;
 }
-body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code {
+body.woocommerce-checkout #payment div.payment_box {
+    left: 0;
+    top: 100%;
+    margin-top: 0;
+    position: absolute;
+}
+body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code,
+body.woocommerce-checkout .custom-checkout-order-review .form-row .input-text{
     border: 1px solid #F2EADE!important;
     outline: 0!important;
     height: 45px;
@@ -285,7 +293,8 @@ body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-f
 	color:#78797B!important;
 	opacity: 1;
 }
-body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code + button {
+body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code + button,
+body.woocommerce-checkout .custom-checkout-order-review .form-row button[type=button].button{
     display: inline-block;
     background: transparent!important;
     border: none!important;
@@ -296,7 +305,8 @@ body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-f
     padding: 0;
     width: initial!important;
 }
-body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code + button:hover{
+body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code + button:hover,
+body.woocommerce-checkout .custom-checkout-order-review .form-row button[type=button].button:hover{
     color: #6DBD98!important;
 }
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout #pwgc-redeem-form #pwgc-redeem-gift-card-container input[type=text]{

@@ -1304,6 +1304,15 @@ body.woocommerce-checkout .custom-checkout-order-review table tr.order-total th,
 body.woocommerce-checkout .custom-checkout-order-review table tr.order-total td strong{
     font-weight:700;
 }
+body.woocommerce-checkout .custom-checkout-order-review .form-row{
+    width:100%;
+}
+body.woocommerce-checkout .custom-checkout-order-review .form-row-last{
+    text-align: right;
+}
+body.woocommerce-checkout .custom-checkout-order-review .form-row .input-text{
+    margin-bottom:0px!important;
+}
 body.woocommerce-checkout .checkout-page-title h1{
     padding-bottom:0px;
 }
