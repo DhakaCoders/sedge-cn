@@ -122,7 +122,7 @@
 
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea{
 	width: 100%;
-	margin-bottom: 15px;
+	margin-bottom: 27px;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea textarea{
 	width: 100%;
@@ -260,17 +260,16 @@
 	margin-bottom: 15px;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-description{
-    margin-top: 5px;
+    margin-top: 0;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-description p{
     font-size: 12px;
     line-height: 1.4;
     color: #6A6A6A;
-    margin-bottom: 24px;
     text-align: left;
-    margin-bottom: 0;
-    padding-top: 10px;
-    padding-right: 20px;
+    margin-bottom: 0 !important;
+    padding-top: 25px !important;
+    padding-right: 10px;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text p a{
 	display: inline-block;
@@ -280,6 +279,9 @@
 }
 .contact-form-wrp .wpforms-container .wpforms-form .form-privacy-text p a:hover{
 	color: #E0861A;
+}
+.contact-form-wrp div.wpforms-container-full {
+    margin-bottom: 0 !important;
 }
 
 .contact-form-wrp .wpforms-container label.wpforms-field-label span.wpforms-required-label{
@@ -294,6 +296,9 @@
 }
 .wpforms-field.wpforms-field-html p a:hover{
 	color: #e48aa4;
+}
+.contact-form-wrp div.wpforms-container-full .wpforms-form .wpforms-submit-container {
+    padding: 0 !important;
 }
 
 /*
@@ -417,6 +422,7 @@ Inputtype Radio Css
 	fill:#B3192A;
 }
 
+
 /*
 -----------------
  Responsive Css
@@ -442,6 +448,9 @@ Inputtype Radio Css
     }
     .contact-form-sec-wrp {
         padding-bottom: 65px;
+    }
+    .page-entry-header .fl-h2{
+        font-size: 32px;
     }
 
 }
@@ -474,10 +483,20 @@ Inputtype Radio Css
     .contact-form-sec-wrp {
         padding-bottom: 40px;
     }
+    .page-entry-header .fl-h2{
+        font-size: 27px;
+    }
     
 }
 
 @media(max-width: 767px){
+     
+    .page-template-page-contact .header {
+        margin-bottom: 15px;
+    }
+    .page-template-page-contact .ftr-top-contact-sec-inr{
+        border-top: none;
+    }
     .page-entry-hdr {
         padding-bottom: 30px;
     }
@@ -487,7 +506,9 @@ Inputtype Radio Css
     .page-entry-hdr .fl-blue-btn {
         font-size: 30px;
         margin-left: -15px;
-        padding: 5px 10px;
+        padding: 5px 35px 5px 25px;
+        width: 210px;
+        height: 35px;
     }
     .contact-form-rgt {
         width: 100%;
@@ -511,9 +532,10 @@ Inputtype Radio Css
     }
     .page-entry-header .fl-h2{
         text-transform: inherit;
+        font-size: 24px;
     }
     .contact-form-info-cntlr {
-        padding: 35px 15px 40px;
+        padding: 35px 15px 45px;
         margin-left: -15px;
         margin-right: -15px;
     }
@@ -579,11 +601,23 @@ Inputtype Radio Css
         text-align: center;
     }
     .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-textarea{
-        margin-bottom: 10px;
+        margin-bottom: 16px;
     }
     .input-type-radio label,
     .input-type-radio label{
         padding-right: 20px;
+    }
+    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-description p {
+        padding-top: 14px !important;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center;
+    }
+    .page-entry-header .fl-h2{
+        font-size: 20px;
+    }
+    .page-template-page-contact .ftr-top-contact-sec{
+        display: none;
     }
 }
 

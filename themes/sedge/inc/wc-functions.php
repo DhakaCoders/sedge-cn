@@ -74,6 +74,7 @@ if (!function_exists('add_shorttext_below_title_loop')) {
           }
         $seller_flash = get_field('seller_flash', $product->get_id());
         $gridtag = cbv_get_image_tag( get_post_thumbnail_id($product->get_id()), 'pgrid' );
+        $get_height = get_product_lenth($product->get_id());
         echo '<div class="fl-product-grd mHc">';
           echo '<div class="fl-product-grd-inr">';
             wc_get_template_part('loop/sale-flash');
@@ -83,9 +84,7 @@ if (!function_exists('add_shorttext_below_title_loop')) {
             echo '</div>';
             echo '<div class="fl-pro-grd-des mHc2">';
               echo '<h4 class="fl-h5 fl-pro-grd-title mHc3"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h4>';
-              echo '<div class="product-lenth">';
-              echo '<p>(15 cm)</p>';
-              echo '</div>';
+              if( $get_height ) printf('<div class="product-lenth"><p>(%s cm)</p></div>', $get_height);
               echo '<div class="fl-pro-grd-price">';
                 echo $product->get_price_html();
               echo '</div>';
@@ -185,11 +184,11 @@ if (!function_exists('add_custom_box_product_summary')) {
         $sh_desc = $product->get_short_description();
         $long_desc = $product->get_description();
         $sh_desc = !empty($sh_desc)?$sh_desc:'';
-        $get_height = get_post_meta($product->get_id(), 'product_length', true);
+        $get_height = get_product_lenth($product->get_id());
         echo '<div class="summary-ctrl">';
         echo '<div class="summary-hdr">';
         echo '<h1 class="product_title entry-title hide-sm">'.$product->get_title().'</h1>';
-        if( !empty($get_height) ) printf('<div class="product-size"><span>(%s cm)</span></div>', $get_height);
+        if( $get_height ) printf('<div class="product-size"><span>(%s cm)</span></div>', $get_height);
         echo '<p>Grotere oplages nodig of professionele partner <a class="contact-btn" href="'.get_link_by_page_template('page-contact.php').'">Contacteer ons</a><p>';
         if( !empty($sh_desc) ){
             echo '<div class="short-desc">';
@@ -569,4 +568,13 @@ function remove_postcode_validation( $fields ) {
     return $fields;
 }
 
+function get_product_lenth($id){
+    if( empty($id) ) return false;
+    $get_length = get_post_meta($id, 'product_length', true);
+    if( isset($get_length) && !empty($get_length) ){
+        return $get_length;
+    }else{
+        return false;
+    }
+}
 include_once(THEME_DIR .'/inc/wc-manage-fields.php');

@@ -641,6 +641,7 @@ body.woocommerce-account .woocommerce input[type="tel"]::placeholder,
 body.woocommerce-account .woocommerce input[type="password"]::placeholder, 
 body.woocommerce-account .woocommerce textarea::placeholder{
     color:#78797B;
+    opacity:1;
 }
 body.woocommerce-account .woocommerce input[type="text"]:-moz-placeholder, 
 body.woocommerce-account .woocommerce input[type="email"]:-moz-placeholder,
@@ -648,6 +649,7 @@ body.woocommerce-account .woocommerce input[type="tel"]:-moz-placeholder,
 body.woocommerce-account .woocommerce input[type="password"]:-moz-placeholder, 
 body.woocommerce-account .woocommerce textarea:-moz-placeholder{
     color:#78797B;
+    opacity:1;
 }
 body.woocommerce-account .woocommerce input[type="text"]:-ms-input-placeholder, 
     body.woocommerce-account .woocommerce input[type="email"]:-ms-input-placeholderr,
@@ -655,6 +657,7 @@ body.woocommerce-account .woocommerce input[type="tel"]:-ms-input-placeholder,
 body.woocommerce-account .woocommerce input[type="password"]:-ms-input-placeholder, 
 body.woocommerce-account .woocommerce textarea:-ms-input-placeholderr{
     color:#78797B;
+    opacity:1;
 }
 
 body.woocommerce-account .woocommerce input[type="text"]::-moz-placeholder, 
@@ -663,6 +666,7 @@ body.woocommerce-account .woocommerce input[type="tel"]::-moz-placeholder,
 body.woocommerce-account .woocommerce input[type="password"]::-moz-placeholder, 
 body.woocommerce-account .woocommerce textarea::-moz-placeholder{
     color:#78797B;
+    opacity:1;
 }
 body.woocommerce-account .woocommerce input[type="text"]::-webkit-input-placeholder 
 body.woocommerce-account .woocommerce input[type="email"]::-webkit-input-placeholder,
@@ -670,6 +674,7 @@ body.woocommerce-account .woocommerce input[type="tel"]::-webkit-input-placehold
 body.woocommerce-account .woocommerce input[type="password"]::-webkit-input-placeholder,
 body.woocommerce-account .woocommerce textarea::-webkit-input-placeholder{
     color:#78797B;
+    opacity:1;
 }
 
 body.woocommerce-account .login-register-wrap a{
@@ -679,7 +684,7 @@ body.woocommerce-account .login-register-wrap a{
     font-weight: 300;
 }
 body.woocommerce-account .login-register-wrap a:hover {
-    color: #8dcc0c;
+    color: #b4192b;
 }
 body.woocommerce-account .woocommerce form .form-row label,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row label{
@@ -811,10 +816,12 @@ body.hide-account-title .register-title h3{
 .reg-heading h3{
     font-size:16px;
     margin-bottom: 32px!important;
+    font-family: Sora;
 }
 .login-info h3{
     font-size:16px;
     margin-top:50px;
+    font-family: Sora;
 }
 .register-top-title h1{
     border-bottom:none!important;
@@ -963,7 +970,7 @@ body.woocommerce-checkout .woocommerce-shipping-fields .selection .select2-selec
     width: 100%;
     height: 48px!important;
     border: 1px solid #F2EDE9!important;
-    color: #9EA5AB;
+    color: #78797B;
     padding: 5px 18px 5px;
     font-size: 14px;
     background: #FFFBF4;
@@ -971,7 +978,7 @@ body.woocommerce-checkout .woocommerce-shipping-fields .selection .select2-selec
 body.woocommerce-account .billing-address-wrap h3{
     font-size:16px;
     font-weight:normal;
-    font-family: 'Bitter', serif;
+    font-family: Sora;
 }
 body.woocommerce-account .woocommerce-input-wrapper .bootstrap-select{
     width: 100%!important;
@@ -1599,7 +1606,9 @@ body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul 
     font-family: Work Sans;
 }
 .woocommerce form .form-row .required{
+    top: -3px;
     font-size: 11px;
+    position: relative;
 }
 /*body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul{*/
 /*    border-top-right-radius: 6px;*/
@@ -1703,6 +1712,9 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
 }
 
 @media(max-width:1199px){
+    body.hide-account-title, body.woocommerce-orders{
+        background-image: none;
+    }
     body.woocommerce-account .woocommerce input[type="text"],
     body.woocommerce-account .woocommerce input[type="email"], 
     body.woocommerce-account .woocommerce input[type="tel"],

@@ -31,8 +31,20 @@ $('.fancybox').fancybox({
   });
 
 }
-
-
+if (windowWidth <= 767) {
+  $(window).scroll(function() {
+      if ($(this).scrollTop()) {
+          $('.to-top-btn-cntlr').fadeIn();
+      } else {
+          $('.to-top-btn-cntlr').fadeOut();
+      }
+  });
+  }
+if( $('.to-top-btn-cntlr').length ){
+  $(".to-top-btn-cntlr").click(function() {
+      $("html, body").animate({scrollTop: 0}, 1000);
+   });
+}
 /**
 Responsive on 767px
 */
@@ -233,6 +245,7 @@ Slick slider
 if( $('#related-product-slider').length ){
     $('#related-product-slider').slick({
       dots: false,
+      arrows: false,
       infinite: false,
       autoplay: true,
       autoplaySpeed: 4000,
