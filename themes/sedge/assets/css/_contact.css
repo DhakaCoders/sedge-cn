@@ -512,7 +512,6 @@ Inputtype Radio Css
         font-size: 33px;
         margin-left: -15px;
         padding: 5px 35px 5px 25px;
-        height: 35px;
     }
     .contact-form-rgt {
         width: 100%;
@@ -634,7 +633,9 @@ Inputtype Radio Css
 }
 
 @media(max-width: 359px){
-
+    .page-entry-hdr .fl-blue-btn {
+        font-size: 27px;
+    }
 }
 
 

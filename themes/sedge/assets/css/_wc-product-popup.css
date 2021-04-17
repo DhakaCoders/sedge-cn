@@ -351,7 +351,6 @@ span.xoo-cp-close.xoo-cp-icon-cross:before {
 .fl-pro-grd-price del span bdi{
     color: #B3192A!important;
     font-size: 16px;
-    text-decoration-line: line-through;
     margin-right: 0;
 }
 .xoo-cp-pprice .product-price del{
@@ -379,12 +378,18 @@ span.xoo-cp-close.xoo-cp-icon-cross:before {
 .product-quantity .product-order-btn button[type="submit"]:hover,
 .product-quantity .product-order-btn a:hover,
 .product-quantity .product-order-btn a:hover{
-    background: #31304f!important;
+    background: #b3192a!important;
     color: #fff!important;
+    border-color: #b3192a!important;
+}
+.popUp-button-bottom:hover a.xcp-btn,
+.popUp-button-bottom:hover small{
+	color: #b3192a!important;
 }
 .flex-fill > div:nth-child(2) a:hover,
-.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2 .product-order-btn a:first-child:hover{
-	color: #9c9ea2;
+.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2 .product-order-btn a:first-child:hover,
+.popup-bottom-btn .product-order-btn-top a.fl-btn:hover{
+	background: #b3192a!important;
 }
 .product-quantity form .quantity span:active {
     background: #8ccc0c;

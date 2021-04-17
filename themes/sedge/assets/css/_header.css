@@ -870,9 +870,9 @@ body.allWork {
 	}
 	.xs-hdr-srch-wrap{
 	}
-	.hdr-rgt-srch-input-show .xs-hdr-srch-btm{
+	/*.hdr-rgt-srch-input-show .xs-hdr-srch-btm{
 		display: block;
-	}
+	}*/
 	.xs-hdr-srch-btm{
 		display: none;
 		position: absolute;
@@ -884,9 +884,6 @@ body.allWork {
 		z-index: 99999;
 		padding: 33px;
 		background: #F9F5EF;
-		transition: all 0.5s;
-		-ms-transition: all 0.5s;
-		-webkit-transition: all 0.5s;
 	}
 	.xs-hdr-cart{
 		padding-left: 22px;
