@@ -272,6 +272,9 @@ body.woocommerce-order-received .checkout-page-title{
 	padding-bottom: 2px;
 	color: #78797B;
 }
+.thankyou .service-bottom ul li a:hover{
+	color: #6DBD98;
+}
 .thankyou .order-home-btn{
 	width: 332px;
 }
