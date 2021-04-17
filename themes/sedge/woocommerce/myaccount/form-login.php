@@ -221,7 +221,7 @@ if( isset($_GET['action']) && $_GET['action']=='registration'):
 						<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php esc_html_e( 'Remember me', 'woocommerce' ); ?></span>
 					</label>
 					<?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
-					<button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="<?php esc_attr_e( 'Login', 'woocommerce' ); ?>"><span><?php esc_html_e( 'Login', 'woocommerce' ); ?></span></button>
+					<button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="<?php esc_attr_e( 'Inloggen', 'woocommerce' ); ?>"><span><?php esc_html_e( 'Inloggen', 'woocommerce' ); ?></span></button>
 				</p>
 			
 				<?php do_action( 'woocommerce_login_form_end' ); ?>
