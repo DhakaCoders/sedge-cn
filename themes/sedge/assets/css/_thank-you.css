@@ -33,7 +33,7 @@ body.woocommerce-order-received .checkout-page-title .checkoutpt-right{
 	height: auto;
 }
 .thank-you-des-sub-title{
-	font-size: 18px;
+	font-size: 18px!important;
 	font-family: 'Sora', sans-serif;
 	font-weight: 700;
 	color: #b41929;
@@ -48,7 +48,7 @@ body.woocommerce-order-received .checkout-page-title .checkoutpt-right{
 	display: inline-block;
 	vertical-align: baseline;
 	line-height: 1.2;
-	margin-bottom:10px;
+	margin-bottom:14px;
 }
 .thnk-you-des-rgt{
 	padding-left: 40px;
@@ -60,6 +60,9 @@ body.woocommerce-order-received .checkout-page-title .checkoutpt-right{
 .thnk-you-des .thank-you-des-title, .thank-you-des-sub-title{
 	margin-bottom:12px!important;
 }
+.thnk-you-des .thank-you-des-title{
+	margin-bottom:4px!important;
+}
 .thnk-you-social-des-cntlr{
 	
 }
@@ -67,6 +70,9 @@ body.woocommerce-order-received .checkout-page-title .checkoutpt-right{
     letter-spacing: -0.02em;
     color: #FDF8F5;
     margin-bottom: 12px;
+    font-size: 20px;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
 }
 .thnk-y-social-des {
     text-align: center;
@@ -86,8 +92,7 @@ body.woocommerce-order-received .checkout-page-title .checkoutpt-right{
     padding: 0px 20px;
 }
 .thnk-y-social-des p {
-	color: #FDF8F5;
-	margin-bottom: 27px;
+	color: #fff;
 }
 .thnkY-social-link ul li i{
     display: inline-block;
@@ -125,7 +130,7 @@ body.woocommerce-order-received .checkout-page-title{
 	padding: 51px 0 111px 0;
 }
 .thankyou .orders-crtl{
-	padding: 5px 0 0 0!important;
+	padding: 0!important;
     max-width: 925px;
     width: 100%;
     margin-right: 79px;
@@ -215,7 +220,7 @@ body.woocommerce-order-received .checkout-page-title{
 }
 .thankyou .service-contact .srv-cont-title{
 	font-family: 'Sora', sans-serif!important;
-	margin-bottom: 33px;
+	margin-bottom: 33px!important;
 }
 .thankyou .service-list .icon i{
 	display: inline-block;
@@ -358,6 +363,18 @@ svg.home-btn-arrow{
 .thankyou .cart_item, .thankyou .cart-subtotal, .thankyou .fee {
 	padding-bottom: 27px;
 }
+.thankyou .fee th{
+	position: relative;
+}
+.thankyou .fee th:after{
+	position: absolute;
+	content: "";
+	background-image: url('../images/thankyou-frame.png');
+	background-repeat: no-repeat;
+	width: 22px;
+	height: 22px;
+
+}
 .thankyou .order-totaal{
 	position: relative;
 }
@@ -369,8 +386,8 @@ svg.home-btn-arrow{
 	background: #f2eadf;
 	top: -18px;
 }
-.thankyou .shop_table.woocommerce-checkout-review-order-table.order-total th, 
-.thankyou .shop_table.woocommerce-checkout-review-order-table.order-total td{
+.thankyou .shop_table.woocommerce-checkout-review-order-table .order-total th, 
+.thankyou .shop_table.woocommerce-checkout-review-order-table .order-total td{
 	border-top: 2px solid #f2eadf!important;
 }
 .thankyou .order-totaal .woocommerce-Price-amount.amount bdi{
