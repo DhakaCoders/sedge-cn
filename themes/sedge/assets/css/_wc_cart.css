@@ -299,6 +299,7 @@ body.woocommerce-checkout .custom-checkout-order-review .form-row .input-text{
     font-size: 12px;
     color: #78797B!important;
     padding-left: 21px;
+    padding-right: 37px;
 }
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code:placeholder{
 	color:#78797B!important;
@@ -449,6 +450,7 @@ body.woocommerce-cart.woocommerce-page .product-name a{
     font-weight: 700;
     color: #71867E;
     font-family: Ubuntu;
+    margin-bottom: 10px;
 }
 body.woocommerce-cart.woocommerce-page table.shop_table th.product-name strong,
 body.woocommerce-cart.woocommerce-page .woocommerce .cart_totals > h2{

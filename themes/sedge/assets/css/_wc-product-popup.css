@@ -40,7 +40,7 @@
     border-top: 1px solid #F6F6F6;
 }
 .xoo-cp-ptitle .popup-product-title{
-	padding-bottom: 10px;
+	padding-bottom: 6px;
 }
 .xpu-pp-qtn .product-price ins span.woocommerce-Price-amount.amount bdi{
 	color: #71867f!important;
@@ -56,27 +56,46 @@
     width: 119px;
     height: auto;
 }
-.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title a {
+/*.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title a,
+.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title span{
     font-size: 18px;
     color: #71867E;
     letter-spacing: -0.02em;
     font-weight: 600;
     font-family: Ubuntu;
-}
-.xoo-cp-ptitle .xoo-cp-variations .variation{
+    text-transform:capitalize;
+}*/
+.xoo-cp-ptitle .xoo-cp-variations .variation,
+.product-thumbnail dl.variation{
 	padding-bottom: 10px;
 }
-.xoo-cp-ptitle .xoo-cp-variations .variation dt, .xoo-cp-ptitle .xoo-cp-variations .variation dd{
+.xoo-cp-ptitle .xoo-cp-variations .variation dt, .xoo-cp-ptitle .xoo-cp-variations .variation dd,
+.product-thumbnail dl.variation dt,
+.product-thumbnail dl.variation dd{
 	display: inline-block;
 	vertical-align: baseline;
 	line-height: 20px;
 	color: #78797B;
 	font-size: 12px;
+	float: left;
+}
+.product-thumbnail dl.variation dd p,
+.xoo-cp-ptitle .xoo-cp-variations .variation dd p{
+	margin-bottom:0;
+}
+.product-thumbnail dl.variation dd,
+.xoo-cp-ptitle .xoo-cp-variations .variation dd{
+	margin-top:1.5px;
+}
+.product-thumbnail dl.variation dt{
+	font-weight:400;
+	margin-right:5px;
 }
 .xoo-cp-ptitle .xoo-cp-variations .variation dt{
 	margin-bottom: 0;
 }
-.xoo-cp-ptitle .xoo-cp-variations .variation :nth-child(2n+1){
+.xoo-cp-ptitle .xoo-cp-variations .variation :nth-child(2n+1),
+.product-thumbnail .variation :nth-child(2n+1){
 	clear: left;
 }
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .qty-price-wrap .quantity{
@@ -246,14 +265,21 @@
     left: 0;
     top: 0;
 }
-.pro-item-desc .pro-item-descWrap .pro-item-desc-title a{
+.pro-item-desc .pro-item-descWrap .pro-item-desc-title a,
+.pro-item-desc .pro-item-descWrap .pro-item-desc-title span,
+.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title a,
+.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title span{
     font-size: 16px;
     color: #71867E;
     letter-spacing: -0.02em;
     font-weight: 700;
     font-family: Ubuntu;
+    text-transform:capitalize;
 }
-
+.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title a,
+.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-left-des .xoo-cp-ptitle .popup-product-title span{
+	font-size:18px!important;
+}
 .pro-item-desc {
     float: left;
     width: 100%;

@@ -50,6 +50,9 @@ body.tax-product_cat span.onsale{
 .fl-pro-grd-title{
     margin-bottom: 10px;
 }
+.post-type-archive .fl-pro-grd-title{
+    font-size:24px;
+}
 .fl-pro-grd-title a{
     text-transform: uppercase;
     color: #71867d;
