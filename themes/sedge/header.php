@@ -153,8 +153,9 @@ $smedias = get_field('social_media', 'options');
 
                 <div class="xs-hdr-srch-btm">
                   <div class="xs-extra-srch">
-                    <form action="">
-                      <input type="text" placeholder="Zoeken">
+                     <form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                      <input type="text" placeholder="Zoeken" name="s" value="<?php echo get_search_query(); ?>">
+                      <input type="hidden" name="post_type" value="product" />
                     </form>
                   </div>
 
@@ -171,8 +172,14 @@ $smedias = get_field('social_media', 'options');
                 </div>
               </div>
               <div class="xs-hdr-cart">
-                <a href="#">
-                  <span>2</span>
+              <a href="<?php echo wc_get_cart_url(); ?>">
+                <?php 
+                if( WC()->cart->get_cart_contents_count() > 0 ){
+                  echo sprintf ( '<span>%d</span>', WC()->cart->get_cart_contents_count() );
+                }else{
+                  echo sprintf ( '<span>%d</span>', 0 );
+                }  
+                ?>
                   <i><svg class="hdr-cart-icon" width="22" height="22" viewBox="0 0 22 22" fill="#71867E">
                     <use xlink:href="#hdr-cart-icon"></use> </svg></i>
                 </a>
