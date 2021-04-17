@@ -244,7 +244,7 @@ defined( 'ABSPATH' ) || exit;
 		                	foreach ( $line_items_fee as $item_id => $fitem ) { 
 		                	?>
 		                	<tr class="fee">
-		                      <th><?php echo $fitem->get_data()['name']; ?></th>
+		                      <th><span><?php echo $fitem->get_data()['name']; ?></span></th>
 		                      <td><?php echo wc_price($fitem->get_data()['total']); ?></td>
 		                    </tr>
 							<?php } endif; ?>
