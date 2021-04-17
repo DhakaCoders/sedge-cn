@@ -14,6 +14,7 @@
   $email = get_field('emailadres', 'options');
   $gmaplink = !empty($gmurl)?$gmurl: 'javascript:void()';
   $smedias = get_field('social_media', 'options');
+  $ftgalerij = get_field('ft_galerij', 'options');
   $copyright_text = get_field('copyright_text', 'options');
 ?>
 <footer class="footer-wrp">
@@ -69,9 +70,9 @@
             <div class="ftr-menu ftr-col-3 hide-sm">
               <h6 class="ftr-menu-title"><?php _e( 'Contact gegevens', THEME_NAME ); ?></h6>
               <?php 
-                if( !empty($address) ) printf('<div class="ftr-location"><a href="%s" target="_blank">%s <i><svg class="ftr-location-svg" width="20" height="20" viewBox="0 0 20 20" fill="#78797B"><use xlink:href="#ftr-location-svg"></use></svg></i></a></div>', $gmaplink, $address);
-                if( !empty($email) ) printf('<div class="ftr-email"><a href="mailto:%s">%s <i><svg class="ftr-email-svg" width="16" height="17" viewBox="0 0 16 17" fill="#78797B"><use xlink:href="#ftr-email-svg"></use> </svg></i></a></div>', $email, $email); 
-                if( !empty($telefoon) ) printf('<div class="ftr-phone"><a href="tel:%s">%s <i><svg class="ftr-phone-svg" width="16" height="17" viewBox="0 0 16 17" fill="#78797B"><use xlink:href="#ftr-phone-svg"></use> </svg></i></a></div>', phone_preg($telefoon),  $telefoon);  
+                if( !empty($address) ) printf('<div class="ftr-location"><a href="%s" target="_blank">%s</a></div>', $gmaplink, $address);
+                if( !empty($email) ) printf('<div class="ftr-email"><a href="mailto:%s">%s</a></div>', $email, $email); 
+                if( !empty($telefoon) ) printf('<div class="ftr-phone"><a href="tel:%s">%s</a></div>', phone_preg($telefoon),  $telefoon);  
               ?>
 
               <?php if(!empty($smedias)):  ?>
@@ -94,22 +95,23 @@
       </div>
     </div>
   </div> 
+  <?php if( $ftgalerij ): ?>
   <div class="ftr-middle">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="ftr-middle-inr hide-sm">
             <ul class="reset-list">
-              <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-01.png"></li>
-              <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-02.png"></li>
-              <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-03.png"></li>
-              <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-04.png"></li>
+              <?php foreach( $ftgalerij as $ftgalID ): ?>
+              <li><?php echo cbv_get_image_tag($ftgalID); ?></li>
+              <?php endforeach; ?>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <?php endif; ?>
   <div class="ftr-btm">
     <div class="container">
       <div class="row">
@@ -124,16 +126,15 @@
                 <span><strong>4.2</strong> van 5  -  <a href="#">3083 beoordelingen</a></span>
               </div>
             </div>
-
+            <?php if( $ftgalerij ): ?>
             <div class="ftr-middle-inr xs-btm-img show-sm">
               <ul class="reset-list">
-                <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-01.png"></li>
-                <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-02.png"></li>
-                <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-03.png"></li>
-                <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-04.png"></li>
+              <?php foreach( $ftgalerij as $ftgalID ): ?>
+                <li><?php echo cbv_get_image_tag($ftgalID); ?></li>
+              <?php endforeach; ?>
               </ul>
             </div>
-
+          <?php endif; ?>
             <div class="ftr-copywrite">
               <?php if( !empty( $copyright_text ) ) printf( '<p>%s</p>', $copyright_text); ?> 
             </div>
