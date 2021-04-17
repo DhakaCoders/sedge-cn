@@ -22,6 +22,8 @@ if( !function_exists('cbv_theme_setup') ){
         if(function_exists('add_theme_support')) {
             add_theme_support('category-thumbnails');
         }
+        add_image_size( 'hm_intro', 550, 656, true );
+        add_image_size( 'hmproduct', 260, 152, true );
         // add size to media uploader
         add_filter( 'image_size_names_choose', 'cbv_custom_image_sizes' );
         function cbv_custom_image_sizes( $sizes ) {

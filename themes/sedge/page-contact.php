@@ -59,7 +59,6 @@ $thisID = get_the_ID();
             $telefoon = get_field('telefoon', 'options');
             $email = get_field('emailadres', 'options');
             $gmaplink = !empty($gmurl)?$gmurl: 'javascript:void()';
-            $smedias = get_field('social_media', 'options');
           ?>
           <div class="contact-form-rgt">
             <div class="contact-form-info-cntlr">
@@ -87,7 +86,7 @@ $thisID = get_the_ID();
                   <?php endif; if( !empty($telefoon) ) : ?>
                   <li>
                     <span>
-                      <a href="tel:<?php phone_preg($telefoon); ?>">
+                      <a href="tel:<?php echo phone_preg($telefoon); ?>">
                       <i><svg class="email-icon-svg" width="32" height="32" viewBox="0 0 32 32" fill="#78797B">
                         <use xlink:href="#email-icon-svg"></use> </svg>
                       </i>
