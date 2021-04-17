@@ -24,3 +24,5 @@ p on line 7
 2021-04-16T10:57:50+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in E:\host\htdocs\2021\04\sedge\sedge-cn\plugins\facebook-for-woocommerce\includes\Lifecycle.php on line 15
 >>>>>>> f76afe8be9554e081b8e31013fe9b6b07c93eb8b
 
+2021-04-16T22:30:09+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in E:\host\htdocs\2021\04\sedge\wp-includes\class-wp-hook.php on line 294
+

@@ -119,15 +119,11 @@
 }
 
 .product-order-btn-top a.fl-btn {
-    width: 300px!important;
-    background: #6dbd98!important;
-    color: #fff!important;
-    height: 50px;
-	text-decoration: none!important;
+	text-transform: uppercase!important;
+	color: #71867E!important;
 	font-family: 'Sora', sans-serif!important;
     font-weight: 600!important;
-    font-size: 16px!important;
-    border-radius: 5px!important;
+    font-size: 12px!important;
 }
 .popUp-button-bottom a.xcp-btn{
 	background: initial!important;
@@ -157,7 +153,7 @@
 .popup-bottom-btn a {
     width: 300px;
     letter-spacing: 0.04em;
-    padding: 12px 15px;
+    height: 50px;
     font-size: 16px;
     font-weight: 600;
     display: flex;
@@ -165,6 +161,7 @@
     align-items: center;
     background: #6DBD98;
     border-color: #6DBD98;
+    color: #fff;
 }
 .popup-bottom-btn{
     display: flex;
@@ -185,7 +182,6 @@
     width: 100%;
 }
 .pro-item-cntlr{
-    border: 1px solid #F5F6F7;
     padding-bottom: 0;
    /* margin-bottom: 28px;*/
     height: 100%;
@@ -204,13 +200,13 @@
     margin-bottom: 30px;
     position: relative;
     padding-top: 0;
-    padding-left: 100px;
+    padding-left: 115px;
     min-height: 90px;
 }
 .spotlight-popup .flex-fill{
 	flex: initial!important;
 	position: relative;
-	padding-bottom:50px;
+	padding-bottom:30px;
 }
 
 /*.spotlight-popup .flex-fill{
@@ -234,6 +230,7 @@
     font-weight: 700;
     font-family: Ubuntu;
 }
+
 .pro-item-desc {
     float: left;
     width: 100%;

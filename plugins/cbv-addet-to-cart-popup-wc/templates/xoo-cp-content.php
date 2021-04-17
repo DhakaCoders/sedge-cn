@@ -63,13 +63,14 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
               <div><a href="<?php echo  $product_permalink; ?>"><?php echo $product_name; ?></a></div>
             </div>
 
-          <?php if($attributes): ?>
-            <div class="xoo-cp-variations">
-              <?php echo $attributes; ?>
-              <p>Diameter: Standaard 5 - 7 mm</p>
-              <p>Aantal stuks: 49</p>
-              </div>
-          <?php endif; ?>
+              <?php 
+              if($attributes): ?>
+                <div class="xoo-cp-variations">
+                  <?php echo $attributes; ?>
+                  <!-- <p>Diameter: Standaard 5 - 7 mm</p>
+                  <p>Aantal stuks: 49</p> -->
+                  </div>
+              <?php endif; ?>
 
               <div class="qty-price-wrap">
                 <?php if ( $_product->is_sold_individually() || !$xoo_cp_gl_qtyen_value ): ?>
@@ -95,7 +96,7 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
           </div>
           <div class="popUp-button-bottom"> 
             <small>of</small>
-            <a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="#">
+            <a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="<?php echo get_permalink(get_option( 'woocommerce_shop_page_id' ));?>">
               <span><?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></span>
             </a>
           </div>
@@ -108,15 +109,15 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
 			<div class="xoo-cp-pdetails-col-2">
   			<div class="product-order-btn">
           <div class="product-order-btn-top">
-              <a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="#">
-               <span> <?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></span>
-              </a>
-          </div>
-  				<div class="popUp-button-bottom">
-            <small>of</small> 
             <a class="fl-btn" href="<?php echo wc_get_cart_url(); ;?>">
               <span><?php _e('Verder naar bestellen','added-to-cart-popup-woocommerce'); ?></span>
             </a>
+          </div>
+  				<div class="popUp-button-bottom">
+            <small>of</small> 
+            <a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="<?php echo get_permalink(get_option( 'woocommerce_shop_page_id' ));?>">
+               <span> <?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></span>
+              </a>
           </div>
   			</div>
 			</div>
@@ -212,14 +213,7 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
             endif;
             echo '</div></div>';
             echo '</div>';
-            echo '</div>';
-
-            $catSlug = $catName = '';
-            $cats  = get_the_terms($product->get_id(), 'product_cat');//$post->ID
-            foreach($cats as $cd){
-              $catSlug = $cd->slug;
-              $catName = $cd->name;
-            }    
+            echo '</div>';   
           ?>
         </div>
       </div>
@@ -228,14 +222,14 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
   </div>
   <div class="popup-bottom-btn">
     <div class="product-order-btn-top">
-      <a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="#">
-        <span><?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></span>
+      <a class="fl-btn" href="<?php echo wc_get_cart_url(); ;?>">
+        <span><?php _e('Verder naar bestellen','added-to-cart-popup-woocommerce'); ?></span>
       </a>
     </div>
     <div class="popUp-button-bottom">
       <small>of</small>
-      <a class="fl-btn" href="<?php echo wc_get_cart_url(); ;?>">
-        <span><?php _e('Verder naar bestellen','added-to-cart-popup-woocommerce'); ?></span>
+      <a class="fl-btn continue-shopping-btn xoo-cp-close xcp-btn" href="<?php echo get_permalink(get_option( 'woocommerce_shop_page_id' ));?>">
+        <span><?php _e('Verder winkelen','added-to-cart-popup-woocommerce'); ?></span>
       </a>
     </div>
   </div>

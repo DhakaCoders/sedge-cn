@@ -43,18 +43,18 @@ $attachment_ids = $product->get_gallery_image_ids();
 		<?php
 		if ( $product->get_image_id() ) {
 			$imgurl = wp_get_attachment_image_url( $product->get_image_id(), 'full' );
-			$thumimgtag = wp_get_attachment_image( $product->get_image_id(), 'full' );
+			$thumimgsrc = wp_get_attachment_image_url( $product->get_image_id(), 'full' );
 			echo '<div class="wc-product-gallery-single">';
 			echo '<div class="woocommerce-product-gallery__image">';
             echo '<a class="woocommerce-main-image fancybox" data-fancybox="gallery" href="'.$imgurl.'">';
-            echo $thumimgtag;
+            echo '<div class="gallery-bg" style="background-image:url('.$thumimgsrc.')"></div>';
             echo '</a>';
             echo '</div>';
             echo '</div>';
 		} else {
 			echo '<div class="wc-product-gallery-single">';
 			echo '<div class="woocommerce-product-gallery__image--placeholder">';
-			echo sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src( 'woocommerce_single' ) ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
+			echo '<div class="gallery-bg" style="background-image:url('.esc_url( wc_placeholder_img_src( 'woocommerce_single' ) ).')"></div>';
 			echo '</div>';
 			echo '</div>';
 		}
@@ -62,10 +62,10 @@ $attachment_ids = $product->get_gallery_image_ids();
 			echo '<div class="wc-product-gallery-thumb">';
 			foreach ( $attachment_ids as $attachment_id ) {
 				$thumimgurl = wp_get_attachment_image_url( $attachment_id, 'full' );
-				$thumimgtag = wp_get_attachment_image( $attachment_id, 'full' );
+				$thumimgsrc = wp_get_attachment_image_url( $attachment_id, 'full' );
 				echo '<div class="woocommerce-product-gallery__image">';
 	            echo '<a class="woocommerce-main-image fancybox" data-fancybox="gallery" href="'.$thumimgurl.'">';
-	            echo $thumimgtag;
+	            echo '<div class="gallery-bg" style="background-image:url('.$thumimgsrc.')"></div>';
 	            echo '</a>';
 	            echo '</div>';
 			}
