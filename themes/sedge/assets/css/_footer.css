@@ -375,6 +375,11 @@
 	width: 100%;
 }
 
+.to-top-btn-cntlr{
+	display: none;
+}
+
+
 
 @media (max-width: 1699px){
 	
@@ -550,6 +555,14 @@
 	.ftr-designby span{
 		font-size: 10px;
 	}
+	.to-top-btn-cntlr{
+		display: block;
+		position: fixed;
+		bottom: 20%;
+		right: 15px;
+	}
+
+
 }
 
 @media(max-width: 575px){
