@@ -69,9 +69,9 @@
             <div class="ftr-menu ftr-col-3 hide-sm">
               <h6 class="ftr-menu-title"><?php _e( 'Contact gegevens', THEME_NAME ); ?></h6>
               <?php 
-                if( !empty($address) ) printf('<div class="ftr-location"><a href="%s" target="_blank">%s</a></div>', $gmaplink, $address);
-                if( !empty($email) ) printf('<div class="ftr-email"><a href="mailto:%s">%s</a></div>', $email, $email); 
-                if( !empty($telefoon) ) printf('<div class="ftr-phone"><a href="tel:%s">%s</a></div>', phone_preg($telefoon),  $telefoon);  
+                if( !empty($address) ) printf('<div class="ftr-location"><a href="%s" target="_blank">%s <i><svg class="ftr-location-svg" width="20" height="20" viewBox="0 0 20 20" fill="#78797B"><use xlink:href="#ftr-location-svg"></use></svg></i></a></div>', $gmaplink, $address);
+                if( !empty($email) ) printf('<div class="ftr-email"><a href="mailto:%s">%s <i><svg class="ftr-email-svg" width="16" height="17" viewBox="0 0 16 17" fill="#78797B"><use xlink:href="#ftr-email-svg"></use> </svg></i></a></div>', $email, $email); 
+                if( !empty($telefoon) ) printf('<div class="ftr-phone"><a href="tel:%s">%s <i><svg class="ftr-phone-svg" width="16" height="17" viewBox="0 0 16 17" fill="#78797B"><use xlink:href="#ftr-phone-svg"></use> </svg></i></a></div>', phone_preg($telefoon),  $telefoon);  
               ?>
 
               <?php if(!empty($smedias)):  ?>
