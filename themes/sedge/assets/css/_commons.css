@@ -502,5 +502,10 @@ form .dropdown-menu li a{
     color: #fff;
     border-color: #b4192b;
 }
+.dropdown-item:focus, 
+.dropdown-item:hover{
+	background: #b4192b;
+	color:#fff;
+}
 
 
