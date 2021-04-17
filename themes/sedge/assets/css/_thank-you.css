@@ -369,7 +369,8 @@ svg.home-btn-arrow{
 	background: #f2eadf;
 	top: -18px;
 }
-.thankyou .shop_table.woocommerce-checkout-review-order-table.order-total th, .order-total td{
+.thankyou .shop_table.woocommerce-checkout-review-order-table.order-total th, 
+.thankyou .shop_table.woocommerce-checkout-review-order-table.order-total td{
 	border-top: 2px solid #f2eadf!important;
 }
 .thankyou .order-totaal .woocommerce-Price-amount.amount bdi{
