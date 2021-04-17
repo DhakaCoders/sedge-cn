@@ -54,30 +54,40 @@ defined( 'ABSPATH' ) || exit;
 		</div>
 	</div>
 </div>
+<?php $thankyou = get_field('orderthankyou', 'options'); ?>
 <div class="deshboard-inner">
 	<div class="service-contact">
-		<h2>Service & contact</h2>
+		<?php if( !empty($thankyou['sec_titel']) ) printf('<h2>%s</h2>', $thankyou['sec_titel']); ?>
+		<?php if($thankyou['blok_1'] && $thankyou['blok_2']): ?>
 		<div class="service-lists">
+			<?php if( $blok1 = $thankyou['blok_1'] ): ?>
 			<div class="service-list">
 				<div class="icon">
 					<i><img src="<?php echo THEME_URI; ?>/assets/images/wc-ser-icon.svg" alt=""></i>
 				</div>
 				<div class="service-text">
-					<h3>Vind alles in je account</h3>
-					<p><a href="">Volg je bestelling</a>, <a href="">betaal facturen</a> of retourneer een artikel.</p>
+                  <?php 
+                  	if( !empty($blok1['titel']) ) printf('<h3>%s</h3>', $blok1['titel']); 
+                  	if( !empty($blok1['beschrijving']) ) echo wpautop($blok1['beschrijving']); 
+                  ?>
 				</div>
 			</div>
+			<?php endif; ?>
+		    <?php if( $blok2 = $thankyou['blok_2'] ): ?>
 			<div class="service-list">
 				<div class="icon">
 					<i><img src="<?php echo THEME_URI; ?>/assets/images/wc-con-icon.svg" alt=""></i>
 				</div>
 				<div class="service-text">
-					<h3>Heb je ons nodig?</h3>
-					<p>We helpen je graag. <a href="">Onze klantenservice</a> is dag en nacht open.</p>
+					<?php 
+                      	if( !empty($blok2['titel']) ) printf('<h3>%s</h3>', $blok2['titel']); 
+                      	if( !empty($blok2['beschrijving']) ) echo wpautop($blok2['beschrijving']); 
+                    ?>
 				</div>
 			</div>
+			<?php endif; ?>
 		</div>
-
+		<?php endif; ?>
 	</div>
 </div>
 <div class="myaccount-btm-form">
