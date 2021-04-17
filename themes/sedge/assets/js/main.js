@@ -31,18 +31,20 @@ $('.fancybox').fancybox({
   });
 
 }
-$(window).scroll(function() {
-    if ($(this).scrollTop()) {
-        $('.to-top-btn-cntlr').fadeIn();
-    } else {
-        $('.to-top-btn-cntlr').fadeOut();
-    }
-});
-
-$(".to-top-btn-cntlr").click(function() {
-    $("html, body").animate({scrollTop: 0}, 1000);
- });
-
+if (windowWidth <= 767) {
+  $(window).scroll(function() {
+      if ($(this).scrollTop()) {
+          $('.to-top-btn-cntlr').fadeIn();
+      } else {
+          $('.to-top-btn-cntlr').fadeOut();
+      }
+  });
+  }
+if( $('.to-top-btn-cntlr').length ){
+  $(".to-top-btn-cntlr").click(function() {
+      $("html, body").animate({scrollTop: 0}, 1000);
+   });
+}
 /**
 Responsive on 767px
 */
