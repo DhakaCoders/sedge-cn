@@ -204,7 +204,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
   }
 
 
-  if( $('.xs-hdr-srch').length ){
+/*  if( $('.xs-hdr-srch').length ){
     $('.xs-hdr-srch').click(function(e){
       event.preventDefault();
       $('.xs-hdr-srch-wrap').toggleClass('hdr-rgt-srch-input-show');
@@ -217,6 +217,10 @@ google.maps.event.addDomListener(window, 'load', initialize);
       $('.xs-hdr-srch-btm').is(":visible")) {
       $('.xs-hdr-srch-wrap').removeClass('hdr-rgt-srch-input-show');
   }        
+});*/
+
+$('.xs-hdr-srch').click(function(){
+  $('.xs-hdr-srch-btm').slideToggle(300);
 });
 
   $(".type-order-format .woocommerce-input-wrapper span").each(function(){
