@@ -2,14 +2,12 @@
 /*Template Name: About*/
 get_header();
 $thisID = get_the_ID();
-?>
 
-<?php  
-  $abanner = get_field('about_banner', $thisID);
-  $page_title = !empty($abanner['titel']) ? $abanner['titel'] : get_the_title();
+$abanner = get_field('about_banner', $thisID);
+$page_title = !empty($abanner['titel']) ? $abanner['titel'] : get_the_title();
 
-  if($abanner):
-  $about_bannerposter = !empty($abanner['afbeelding'])? cbv_get_image_src( $abanner['afbeelding'], 'full' ): '';
+if($abanner):
+$about_bannerposter = !empty($abanner['afbeelding'])? cbv_get_image_src( $abanner['afbeelding'], 'full' ): '';
 ?>
 <section class="about-grey-sd-sec-wrp">
   <div class="container">

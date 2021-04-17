@@ -347,10 +347,11 @@ form .bootstrap-select .caret{
 	content: none;
 }
 .dropdown-toggle::before{
-	content: "\f107"!important;
+	content: ""!important;
     font-family: 'Font Awesome 5 Free';
     font-weight: 600;
     text-decoration: inherit;
+    background: url(../images/select-down-arrow.png);
     color: #1E1E1E;
     font-size: 22px;
     padding-right: 0;
@@ -361,9 +362,17 @@ form .bootstrap-select .caret{
     -webkit-transform: translateY(-50%);
     right: 15px;
     line-height: 15px;
+    height: 6px;
+    width: 11px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
 }
 .bootstrap-select.show .dropdown-toggle::before{
-	content: "\f106"!important;
+	content: ""!important;
+	background:url(../images/select-up-arrow.png)!important;
+	height:6px;
+	width:11px;
 }
 
 .btn-light.focus, 
@@ -425,6 +434,8 @@ form .dropdown-menu li a{
 .dropdown-menu.show{
 	width: 100%;
 	font-size: 13px;
+	padding-top:0!important;
+	padding-bottom:0!important;
 }
 
 

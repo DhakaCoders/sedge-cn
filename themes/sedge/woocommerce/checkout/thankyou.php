@@ -121,12 +121,15 @@ defined( 'ABSPATH' ) || exit;
 			                    $itemImgID = get_post_thumbnail_id($product->get_parent_id());
 			                }
 			                $order_img = cbv_get_image_tag( $itemImgID, 'thumbnail' );
+			                $get_height = get_product_lenth($product->get_id());
 		              	?>
 		                <div class="body-list">
 		                  <div class="image-title">
 		                    <i><?php echo $order_img; ?></i>
 		                    <div class="title-meta">
-		                      <h2 class="fl-h6 meta-title"><?php echo $item['name']; ?> (15 cm)</h2>
+		                      <h2 class="fl-h6 meta-title">
+		                      	<?php echo $item['name']; ?><?php if($get_height) printf(' (%s cm)', $get_height);?>
+		                      </h2>
 		                      <?php 
 		                      //printr($formatted_meta_data); 
 								if ($formatted_meta_data) :
