@@ -116,6 +116,7 @@
     width: initial;
     padding:0;
 }
+
 .popup-bottom-btn a:first-child:hover{
 	background:none;
 	text-decoration: underline;
