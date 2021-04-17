@@ -1606,7 +1606,9 @@ body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul 
     font-family: Work Sans;
 }
 .woocommerce form .form-row .required{
+    top: -3px;
     font-size: 11px;
+    position: relative;
 }
 /*body.woocommerce-checkout .payment-method-crtl .woocommerce-checkout-payment ul{*/
 /*    border-top-right-radius: 6px;*/
