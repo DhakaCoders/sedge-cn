@@ -428,6 +428,11 @@ Inputtype Radio Css
  Responsive Css
 -----------------
 */
+@media(max-width: 1499px){
+    .page-entry-hdr .fl-blue-btn{
+        font-size: 42px;
+    }
+}
 
 @media(max-width: 1199px){
     .contact-form-lft {
@@ -438,7 +443,7 @@ Inputtype Radio Css
     }
 
     .page-entry-hdr .fl-blue-btn {
-        font-size: 45px;
+        font-size: 40px;
         padding: 8px 30px;
     }
     .contact-form-info ul li span,
@@ -463,7 +468,7 @@ Inputtype Radio Css
         padding-top: 10px;
     }
     .page-entry-hdr .fl-blue-btn{
-        font-size: 42px;
+        font-size: 38px;
     }
     .contact-form-lft {
         padding-right: 40px;
@@ -504,10 +509,9 @@ Inputtype Radio Css
         padding-top: 0;
     }
     .page-entry-hdr .fl-blue-btn {
-        font-size: 30px;
+        font-size: 33px;
         margin-left: -15px;
         padding: 5px 35px 5px 25px;
-        width: 210px;
         height: 35px;
     }
     .contact-form-rgt {
@@ -564,6 +568,9 @@ Inputtype Radio Css
 }
 
 @media(max-width: 575px){ 
+    .page-entry-hdr .fl-blue-btn {
+        font-size: 30px;
+    }
     .input-type-radio ul li label{
         font-size: 10px;
     }
