@@ -459,7 +459,19 @@ body.woocommerce-cart.woocommerce-page .product-price del bdi,
 body.woocommerce-cart.woocommerce-page .product-price del bdi span{
 	/*font-size: 12px!important;*/
 	color: #b4192b!important;
-    text-decoration-line: line-through;
+	position: relative;
+}
+body.woocommerce-cart.woocommerce-page .product-price del bdi:after,
+body.woocommerce-cart.woocommerce-page .product-price del bdi span:after{
+    content: "";
+    background: #b4192b;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 body.woocommerce-cart.woocommerce-page .product-price .woocommerce-price-suffix{
 	font-size: 10px!important;
