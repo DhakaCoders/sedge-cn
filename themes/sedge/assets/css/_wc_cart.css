@@ -163,7 +163,7 @@ body.woocommerce-cart .woocommerce table.shop_table td{
 	border: none;
 }
 body.woocommerce-cart .woocommerce a.remove{
-	text-align: right!important;
+/*	text-align: right!important;
 	float: right!important;
 	height: initial!important;
 	width: initial!important;
@@ -176,10 +176,11 @@ body.woocommerce-cart .woocommerce a.remove{
 	align-items: center;
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
+	-webkit-transition: all 0.5s;*/
+	display:none;
 }
 body.woocommerce-cart .woocommerce a.remove:hover{
-	background: url(../images/cart-crose-icon-red.svg);
+/*	background: url(../images/cart-crose-icon-red.svg);
 	background-repeat: no-repeat;
 	line-height: 0.6;
 	border-radius: initial!important;
@@ -192,7 +193,7 @@ body.woocommerce-cart .woocommerce a.remove:hover{
 	width: initial!important;
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
+	-webkit-transition: all 0.5s;*/
 }
 body.woocommerce-cart table.shop_table tbody tr td{
 	padding-bottom: 15px!important;
