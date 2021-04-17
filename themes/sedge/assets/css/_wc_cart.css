@@ -281,6 +281,7 @@ body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-f
 	color:#78797B!important;
 	opacity: 1;
 }
+
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon #coupon_code::-webkit-input-placeholder {
 	color:#78797B!important;
 	opacity: 1;
