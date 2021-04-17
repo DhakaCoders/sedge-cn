@@ -39,10 +39,7 @@
     position: relative;
 }
 .page-entry-header {
-    border-bottom: 2px solid#F2EADE;
     padding-right: 0;
-    padding-bottom: 25px;
-    margin-bottom: 45px;
 }
 .page-entry-header .fl-h2 {
     color: #78797B;
@@ -351,7 +348,7 @@ Inputtype Radio Css
 .wpforms-field-radio.input-type-radio {
     border-bottom: 2px solid#F2EADE!important;
     padding-right: 0!important;
-    padding-bottom: 25px!important;
+    padding-bottom: 15px!important;
     margin-bottom: 45px!important;
     margin-left: 0!important;
     float: none!important;
@@ -409,11 +406,11 @@ Inputtype Radio Css
     height: 8px;
     border-radius: 20px;
 }
-.wpforms-field-radio ul li{
+div.wpforms-container-full .wpforms-form .wpforms-field-radio ul li{
     position: relative!important;
-    padding-left: 23px!important;
+    margin-bottom: 0!important;
 }
-.wpforms-field-radio ul li *{
+div.wpforms-container .wpforms-field-radio ul li *{
     display: inline-block;
     vertical-align: baseline;
 }
@@ -551,8 +548,7 @@ Inputtype Radio Css
         width: 100%;
     }
     .page-entry-header{
-        margin-bottom: 30px;
-        padding-bottom: 30px;
+
     }
     .page-entry-header p,
     .page-entry-header .fl-h2{
