@@ -1,8 +1,8 @@
-
 .fl-products-cntlr ul.products{
     display: flex;
     flex-wrap: wrap;
-     margin: 0 -12px;
+    margin: 0 -12px;
+    padding-bottom: 20px;
 }
 .fl-products-cntlr ul.products > li{
    width: 25%!important;
@@ -15,7 +15,8 @@
 }
 body.home span.onsale, 
 body.post-type-archive span.onsale,
-body.single-product .fl-product span.onsale{
+body.single-product .fl-product span.onsale,
+body.tax-product_cat span.onsale{
     background: #b4192b!important;
     width: 112px!important;
     top: 20px!important;
@@ -113,7 +114,9 @@ body.single-product .fl-product span.onsale{
     font-weight: 700;
 }
 .fl-pro-grd-btn{
-    padding-left: 30px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
 }
 .fl-pro-grd-btn .fl-blue-btn{
     max-width: 260px; 
@@ -125,7 +128,7 @@ body.single-product .fl-product span.onsale{
 
 }
 .fl-pro-grd-btn .fl-blue-btn:hover{
-    background: #71867d;
+    background: #b4192b;
     color: #fffaf4;
 }
 .fl-blue-btn i{
@@ -184,9 +187,6 @@ body.single-product .fl-product span.onsale{
     .fl-pro-grd-des{
         padding: 25px 24px 19px 24px!important;
     }
-    .fl-pro-grd-btn{
-        padding-left: 24px;
-    }
 }
 
 @media(max-width: 1399px){
@@ -216,9 +216,6 @@ body.single-product .fl-product span.onsale{
     .fl-pro-grd-des{
         padding: 15px 16px 15px 16px!important;
     }
-    .fl-pro-grd-btn{
-        padding-left: 16px;
-    }
     .fl-pagi-cntlr ul{
         margin: 0;
     }
@@ -237,9 +234,6 @@ body.single-product .fl-product span.onsale{
     }
     .fl-pro-grd-des{
         padding: 12px 10px 13px 10px!important;
-    }
-    .fl-pro-grd-btn{
-        padding-left: 10px;
     }
     .fl-overview-cont-cntrl{
         padding-top: 69px;
@@ -264,9 +258,6 @@ body.single-product .fl-product span.onsale{
     }
     .fl-pro-grd-des .fl-pro-grd-title{
         font-size: 24px;
-    }
-    .fl-pro-grd-btn{
-        padding-left: 7px;
     }
     .fl-blue-btn i{
         padding-right: 6px;
@@ -299,9 +290,6 @@ body.single-product .fl-product span.onsale{
     .product-lenth p{
         margin-bottom: 20px;
     }
-    .fl-pro-grd-btn{
-        padding-left: 5px;
-    }
     body.home span.onsale, body.post-type-archive span.onsale{
         width: 100px!important;
     }
@@ -328,10 +316,10 @@ body.single-product .fl-product span.onsale{
     .woocommerce-Price-amount.amount bdi{
         margin-bottom: 0!important;
     }
-   /* .fl-pro-grd-btn .fl-blue-btn{
+    .fl-pro-grd-btn .fl-blue-btn{
         font-size: 11px;
         height: 25px;
-    }*/
+    }
     .fl-pro-grd-btn .fl-blue-btn:after {
         left: 20px;
         width: 10px;
@@ -339,6 +327,13 @@ body.single-product .fl-product span.onsale{
     }
     .fl-pro-grd-des > span{
         margin-bottom: 8px;
+    }
+    .fl-pro-grd-btn .fl-blue-btn i svg{
+        max-width: 10px;
+    }
+    .fl-pro-grd-btn .fl-blue-btn i {
+        padding-right: 3px;
+        margin-top: -2px;
     }
 }
 

@@ -7,7 +7,7 @@
 ?>
 <section class="hm-banner">
   <div class="hm-banner-bg inline-bg" style="background: url('<?php echo $bannerposter; ?>');">
-    <img src="<?php echo $bannerposter; ?>" alt="">
+    <img src="<?php echo $bannerposter; ?>" alt="home-banner">
   </div>
   <div class="container">
     <div class="row">
@@ -31,7 +31,6 @@
 </section>
 <?php endif; ?>
 
-
 <?php  
   $introsec = get_field('introsec', HOMEID);
   if($introsec): 
@@ -43,9 +42,9 @@
         <div class="col-md-12">
           <div class="straw-into-cntrl">
             <div class="straw-cont">
-              <?php if( !empty($introsec['titel']) ): ?>
+              <?php if( !empty($introsec['beschrijving']) ): ?>
               <div class="straw-des">
-                <?php echo wpautop( $introsec['titel'] ); ?>          
+                <?php echo wpautop( $introsec['beschrijving'] ); ?>          
               </div>
               <?php endif; ?>
 
@@ -60,7 +59,7 @@
             </div>  
             <?php if(!empty($introsec['afbeelding'])): ?>
             <div class="straw-img-box">
-              <?php  echo cbv_get_image_tag($introsec['afbeelding'], 'full'); ?>
+              <?php  echo cbv_get_image_tag($introsec['afbeelding'], 'hm_intro'); ?>
             </div>
             <?php endif; ?>
           </div>
@@ -74,8 +73,9 @@
 
 
 <?php  
+  $showhide_products = get_field('showhide_products', HOMEID);
   $homeproduct = get_field('homeproduct', HOMEID);
-  if($homeproduct): 
+  if($showhide_products): 
 ?>
 <section class="home-product-sec">
   <div class="prdt-bnr">
@@ -85,39 +85,34 @@
     <div class="row">
       <div class="col-md-12">
         <div class="prdt-cntrl">
+          <?php 
+          $products = $homeproduct['products'];
+          if( $products ):
+          ?>
           <div class="prdt-catg">
+            <?php 
+              foreach( $products as $product ){
+              $gridtag = !empty($product['afbeelding'])? cbv_get_image_tag( $product['afbeelding'], 'hmproduct' ):'';
+              $proLink = !empty($product['knop'])? $product['knop']:'#'; 
+            ?>
             <div class="prdt-item">
               <div class="prdt-fea-img">
-                <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/cocktail-img.jpg" alt=""></a>
+                <a href="<?php echo $proLink; ?>">
+                  <?php echo $gridtag; ?>
+                </a>
               </div>
               <div class="prdt-fea-cont">  
-                <a href="#"><h5 class="fl-h5 prdt-itm-titl">cocktail</h5></a>
-                <span>15cm<br> height</span>
+                <a href="<?php echo $proLink; ?>"><h5 class="fl-h5 prdt-itm-titl"><?php if( !empty($product['titel']) ) printf('%s', $product['titel']); ?></h5></a>
+                <?php if( !empty($product['height']) ) printf('<span>%s<br> height</span>', $product['height']); ?>
               </div>  
             </div>
-            <div class="prdt-item">
-              <div class="prdt-fea-img">
-                <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/long-drink-img.jpg" alt=""></a>
-              </div>
-              <div class="prdt-fea-cont">
-                <a href="#"><h5 class="fl-h5 prdt-itm-titl">long<br> drink</h5></a>
-                <span>20cm<br> height</span>
-              </div>  
-            </div>
-            <div class="prdt-item">
-              <div class="prdt-fea-img">
-                <a href="3"><img src="<?php echo THEME_URI; ?>/assets/images/soda-bottle.jpg" alt=""></a>
-              </div>  
-              <div class="prdt-fea-cont">
-                <a href="#"><h5 class="fl-h5 prdt-itm-titl">soda<br> bottle</h5></a>
-                <span>25cm<br> height</span>
-              </div>  
-            </div>
+            <?php } ?>
           </div>  
+          <?php endif; wp_reset_postdata(); ?>
           <div class="prdt-catg-des-cntrl">
             <div class="prdt-catg-des-bg">
               <div class="prdt-des-logo">
-                <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/sedge.svg" alt=""></a>
+                <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo THEME_URI; ?>/assets/images/sedge.svg" alt=""></a>
               </div>
               <div class="prdt-des">
                 <?php

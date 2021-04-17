@@ -1,5 +1,9 @@
 .header{
 	position: relative;
+	margin-bottom: 47px;
+}
+body.home .header{
+	margin-bottom: 0!important;
 }
 .comnined-shape-cntlr{
 	position: absolute;
@@ -342,7 +346,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	position: relative;
 	z-index: 5;
 	padding-left: 275px;
-	padding-top: 70px;
+	padding-top: 50px;
 }
 .hm-banner-title br{
 	display: none!important;
@@ -382,6 +386,21 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 	align-items: center;
 	justify-content: center;
 	background: #6DBD98;
+	position: relative;
+}
+.sitebar-add-cart a span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	line-height: 1;
+	display: inline-block;
+	margin-bottom: 0;
+	color: #fff;
+	margin-top: 5px;
 }
 .sitebar-add-cart a:hover{
 	background: #b4192b;
@@ -396,6 +415,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after{
 
 .sitebar-socials ul li{
 	padding: 10px 0;
+	text-align: center;
 }
 .sitebar-socials ul li:first-child{
 	padding-top: 0;
@@ -733,12 +753,18 @@ body.allWork {
 	body.home .comnined-shape-cntlr{
 		display: none!important;
 	}
+	.sitebar-socials {
+	    padding: 27px 25px;
+	}
 }
 @media(max-width: 991px){
+	.cart-socials-cntlr{
+		display: none;
+	}
 	.header-inr{
 		display: flex;
 		align-items: center;
-		padding: 48px 0;
+		padding: 48px 15px;
 	}
 	.hdr-lft{
 		margin: 0;
@@ -849,10 +875,12 @@ body.allWork {
 	}
 	.xs-hdr-srch-btm{
 		display: none;
-		width: 377px;
 		position: absolute;
 		top: 100%;
-		right: 0;
+		right: -15px;
+		left: -15px;
+		padding-bottom: 150px;
+		box-shadow: 2px 2px 2px #000;
 		z-index: 99999;
 		padding: 33px;
 		background: #F9F5EF;
@@ -862,6 +890,8 @@ body.allWork {
 	}
 	.xs-hdr-cart{
 		padding-left: 22px;
+		position: relative;
+		top: -2px;
 	}
 	.xs-hdr-cart a{
 		position: relative;
@@ -893,6 +923,9 @@ body.allWork {
 	.logo a{
 		max-width: 120px;
 	}
+	.header {
+	    margin-bottom: 39px;
+	}
 	
 }
 @media(max-width: 575px){
@@ -900,7 +933,6 @@ body.allWork {
 }
 @media(max-width: 479px){
 	.xs-hdr-srch-btm{
-		width: 300px;
 		padding: 20px;
 	}
 }

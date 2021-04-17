@@ -145,3 +145,56 @@ function cbv_table( $table, $title =''){
     echo '</div>';
   }  
 }
+function get_link_by_page_template( $pagetemplate ){
+    $pagelink = '#';
+    if( !empty($pagetemplate) ){
+      $page_details = get_pages( array(
+       'post_type' => 'page',
+       'meta_key' => '_wp_page_template',
+       'hierarchical' => 0,
+       'meta_value' => $pagetemplate
+      ));
+      if($page_details){
+        foreach($page_details as $page_detail){
+          $pagelink = get_permalink($page_detail->ID);
+        }
+      }
+    }
+  return $pagelink;
+}
+function get_id_by_page_template( $pagetemplate ){
+    $pageID = '';
+    if( !empty($pagetemplate) ){
+      $page_details = get_pages( array(
+       'post_type' => 'page',
+       'meta_key' => '_wp_page_template',
+       'hierarchical' => 0,
+       'meta_value' => $pagetemplate
+      ));
+      if($page_details){
+        foreach($page_details as $page_detail){
+          $pageID = $page_detail->ID;
+        }
+      }
+    }
+  return $pageID;
+}
+function get_title_by_page_template( $pagetemplate ){
+    global $post;
+
+    $pagetitle = get_the_title($post->ID);
+    if( !empty($pagetemplate) ){
+      $page_details = get_pages( array(
+       'post_type' => 'page',
+       'meta_key' => '_wp_page_template',
+       'hierarchical' => 0,
+       'meta_value' => $pagetemplate
+      ));
+      if($page_details){
+        foreach($page_details as $page_detail){
+          $pagetitle = $page_detail->post_title;
+        }
+      }
+    }
+  return $pagetitle;
+}

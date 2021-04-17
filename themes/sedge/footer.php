@@ -14,8 +14,19 @@
   $email = get_field('emailadres', 'options');
   $gmaplink = !empty($gmurl)?$gmurl: 'javascript:void()';
   $smedias = get_field('social_media', 'options');
+  $ftgalerij = get_field('ft_galerij', 'options');
   $copyright_text = get_field('copyright_text', 'options');
 ?>
+
+<div class="to-top-btn-cntlr">
+  <div class="to-top-btn">
+    <i>
+      <svg class="to-top-btn-arrow-icon" width="14" height="9" viewBox="0 0 14 9" fill="#fff">
+      <use xlink:href="#to-top-btn-arrow-icon"></use> </svg>
+    </i>
+    <span>top</span>
+  </div>
+</div>
 <footer class="footer-wrp">
   <div class="ftr-top">
     <div class="container">
@@ -94,22 +105,23 @@
       </div>
     </div>
   </div> 
+  <?php if( $ftgalerij ): ?>
   <div class="ftr-middle">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="ftr-middle-inr hide-sm">
             <ul class="reset-list">
-              <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-01.png"></li>
-              <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-02.png"></li>
-              <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-03.png"></li>
-              <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-04.png"></li>
+              <?php foreach( $ftgalerij as $ftgalID ): ?>
+              <li><?php echo cbv_get_image_tag($ftgalID); ?></li>
+              <?php endforeach; ?>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <?php endif; ?>
   <div class="ftr-btm">
     <div class="container">
       <div class="row">
@@ -124,16 +136,15 @@
                 <span><strong>4.2</strong> van 5  -  <a href="#">3083 beoordelingen</a></span>
               </div>
             </div>
-
+            <?php if( $ftgalerij ): ?>
             <div class="ftr-middle-inr xs-btm-img show-sm">
               <ul class="reset-list">
-                <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-01.png"></li>
-                <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-02.png"></li>
-                <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-03.png"></li>
-                <li><img src="<?php echo THEME_URI; ?>/assets/images/ftr-btm-img-04.png"></li>
+              <?php foreach( $ftgalerij as $ftgalID ): ?>
+                <li><?php echo cbv_get_image_tag($ftgalID); ?></li>
+              <?php endforeach; ?>
               </ul>
             </div>
-
+          <?php endif; ?>
             <div class="ftr-copywrite">
               <?php if( !empty( $copyright_text ) ) printf( '<p>%s</p>', $copyright_text); ?> 
             </div>

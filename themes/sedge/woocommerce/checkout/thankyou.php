@@ -86,9 +86,9 @@ defined( 'ABSPATH' ) || exit;
 		                    </div>
 		                    <div class="thnk-you-des-rgt">
 		                      <h1 class="fl-h6 thank-you-des-sub-title">Dank u, <span><?php echo $order->get_billing_first_name(); ?>!</span></h1>
-		                      <h2 class="fl-h4 thank-you-des-title">Je bestelling is voltooid</h2>
+		                      <h2 class="fl-h4 thank-you-des-title"><?php esc_html_e( 'Je bestelling is voltooid', 'woocommerce' ); ?></h2>
 		                      <a href="#">#<?php echo $order->get_order_number(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></a>
-		                      <p>We maken uw bestelling klaar voor verzending.</p>
+		                      <p><?php esc_html_e( 'We maken uw bestelling klaar voor verzending.', 'woocommerce' ); ?></p>
 		                    </div>
 		                  </div>
 		                </div>
@@ -144,43 +144,59 @@ defined( 'ABSPATH' ) || exit;
 		            	<?php } ?>
 		              </div>
 		            </div>
+		            <?php 
+		            	$smedias = get_field('social_media', 'options'); 
+		            	$thankyou = get_field('orderthankyou', 'options'); 
+		            ?>
+		            
 		            <div class="deshboard-inner">
 		              <div class="service-contact">
-		                <h2 class="fl-h6 srv-cont-title">Service &amp; contact</h2>
+		                <?php if( !empty($thankyou['sec_titel']) ) printf('<h2 class="fl-h6 srv-cont-title">%s</h2>', $thankyou['sec_titel']); ?>
+		                <?php if($thankyou['blok_1'] && $thankyou['blok_2']): ?>
 		                <div class="service-lists">
+		                  <?php if( $blok1 = $thankyou['blok_1'] ): ?>
 		                  <div class="service-list">
 		                    <div class="icon">
 		                      <i><img src="<?php echo THEME_URI; ?>/assets/images/srv-cont.svg"></i>
 		                    </div>
 		                    <div class="service-text">
-		                      <h3 class="srv-txt-title">Vind alles in je account</h3>
-		                      <p><a href="">Volg je bestelling</a>, <a href="">betaal facturen</a> of <a href="#">retourneer een artikel.</a></p>
+		                      <?php 
+		                      	if( !empty($blok1['titel']) ) printf('<h3 class="srv-txt-title">%s</h3>', $blok1['titel']); 
+		                      	if( !empty($blok1['beschrijving']) ) echo wpautop($blok1['beschrijving']); 
+		                      ?>
 		                    </div>
 		                  </div>
+		              	  <?php endif; ?>
+		              	  <?php if( $blok2 = $thankyou['blok_2'] ): ?>
 		                  <div class="service-list">
 		                    <div class="icon">
 		                      <i><img src="<?php echo THEME_URI; ?>/assets/images/conversation.svg"></i>
 		                    </div>
 		                    <div class="service-text">
-		                      <h3 class="srv-txt-title">Heb je ons nodig?</h3>
-		                      <p>We helpen je graag. <a href="">Onze klantenservice</a> is dag en nacht open.</p>
+	                        <?php 
+		                      	if( !empty($blok2['titel']) ) printf('<h3 class="srv-txt-title">%s</h3>', $blok2['titel']); 
+		                      	if( !empty($blok2['beschrijving']) ) echo wpautop($blok2['beschrijving']); 
+		                    ?>
 		                    </div>
 		                  </div>
+		                  <?php endif; ?>
 		                </div>
+		                <?php endif; ?>
 		              </div>
 		            </div>
+		        	
 		            <div class="service-bottom">
 		              <ul class="reset-list">
-		                <li><a href="<?php echo get_permalink(); ?>">Snel regelen in je account</a></li>
-		                <li><a href="">Heb je ons nodig?</a></li>
-		                <li><a href="">Contact</a></li>
+		                <li><a href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>"><?php esc_html_e( 'Snel regelen in je account', 'woocommerce' ); ?></a></li>
+		                <li><a href=""><?php esc_html_e( 'Heb je ons nodig', 'woocommerce' ); ?>?</a></li>
+		                <li><a href="<?php echo get_link_by_page_template('page-contact.php'); ?>"><?php esc_html_e( 'Contact', 'woocommerce' ); ?></a></li>
 		              </ul>
 		            </div>
-		            <a class="fl-blue-btn order-home-btn" href="<?php echo esc_url(home_url('/')); ?>"><i><svg class="home-btn-arrow" width="8" height="12" viewBox="0 0 8 12"><use xlink:href="#home-btn-arrow"></use> </svg></i><span>Home</span></a>
+		            <a class="fl-blue-btn order-home-btn" href="<?php echo esc_url(home_url('/')); ?>"><i><svg class="home-btn-arrow" width="8" height="12" viewBox="0 0 8 12"><use xlink:href="#home-btn-arrow"></use> </svg></i><span><?php esc_html_e( 'Home', 'woocommerce' ); ?></span></a>
 		          </div>
 		          <div class="shipping-order-total">
 		            <div class="shipping-crtl">
-		              <h2 class="fl-h6 shipping-order-title">BESTELDETAILS</h2>
+		              <h2 class="fl-h6 shipping-order-title"><?php esc_html_e( 'BESTELDETAILS', 'woocommerce' ); ?></h2>
 		              <div class="address">
 		                 <?php 
 							if ( $order->get_formatted_shipping_address() ) {
@@ -188,7 +204,7 @@ defined( 'ABSPATH' ) || exit;
 							    echo '<ul class="reset-list">';
 			                    echo '<li>'.$order->get_shipping_address_1().'<br/>'.$order->get_shipping_postcode().' '.$order->get_shipping_city(). '- '.WC()->countries->countries[ $order->get_shipping_country() ].'</li>';
 			                    echo '<li>'.$order->get_billing_phone().'</li>';
-			                    echo '<li>'.$order->get_shipping_email().'</li>';
+			                    echo '<li>'.$order->get_billing_email().'</li>';
 			                  	echo '</ul>';
 							} else {
 								echo '<h2 class="fl-h2 address-title">'.$order->get_billing_first_name().' '.$order->get_billing_last_name().'</h2>';
@@ -203,39 +219,63 @@ defined( 'ABSPATH' ) || exit;
 		              </div>
 		            </div>
 		            <div class="order-total custom-checkout-order-review">
-		              <h2 class="fl-h6 order-total-title">OVERZICHT</h2>
+		              <h2 class="fl-h6 order-total-title"><?php esc_html_e( 'OVERZICHT', 'woocommerce' ); ?></h2>
 		              <div class="order-details">
 		                <table class="shop_table woocommerce-checkout-review-order-table">
 		                  <tbody>
 		                    <tr class="cart-subtotal">
-		                      <th>Subtotaal</th>
+		                      <th><?php esc_html_e( 'Subtotaal', 'woocommerce' ); ?></th>
 		                      <td>
 		                      	<?php echo $order->get_subtotal_to_display(); 
-		                      //wc_price($order->get_subtotal()); ?>
+		                      //wc_price($order->get_shipping_total()); ?>
 		                      </td>
 		                    </tr>
-		                    <tr class="fee">
-		                      <th>Verzending</th>
-		                      <td><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">€</span>99.00</bdi></span></td>
+		                    <?php if( $order->get_shipping_method() ): ?>
+		                    <tr class="shipping">
+		                      <th><?php esc_html_e( 'Shipping', 'woocommerce' ); ?></th>
+		                      <td><?php echo wc_price($order->get_shipping_total()); ?></td>
 		                    </tr>
+		                	<?php endif; ?>
+		                	<?php 
+		                	if( $line_items_fee = $order->get_items( 'fee' ) ):
+		                	foreach ( $line_items_fee as $item_id => $fitem ) { 
+		                	?>
+		                	<tr class="fee">
+		                      <th><?php echo $fitem->get_data()['name']; ?></th>
+		                      <td><?php echo wc_price($fitem->get_data()['total']); ?></td>
+		                    </tr>
+							<?php } endif; ?>
+		                    
 		                    <tr class="order-total">
-		                      <th>Totaal</th>
+		                      <th><?php esc_html_e( 'Totaal', 'woocommerce' ); ?></th>
 		                      <td><?php echo $order->get_formatted_order_total(); ?></td>
 		                    </tr>
 		                  </tbody>
 		                </table>
 		              </div>
 		            </div>
+
 		            <div class="thnk-y-social-des">
 		              <div class="thnk-you-social-des-cntlr">
-		                <h5 class="fl-h5 thnk-you-social-des-title">Lorem ipsum dolor</h5>
-		                <p>Convallis ac ut tincidunt adipiscing.</p>
+		              	<?php 
+		              		if( $socialinfo =  $thankyou['socialinfo'] ):
+		              		if( !empty($socialinfo['titel']) ) printf('<h5 class="fl-h5 thnk-you-social-des-title">%s</h5>', $socialinfo['titel']);
+		              		if( !empty($socialinfo['beschrijving']) ) echo wpautop($socialinfo['beschrijving']);
+		              		endif;
+		              	?>
+		                <?php if(!empty($smedias)):  ?>
 		                <div class="thnkY-social-link">
 		                  <ul class="reset-list">
-		                    <li><a target="_blank" href=""><i class="fab fa-facebook-f"></i> Facebook</a></li>
-		                    <li><a target="_blank" href=""><i class="fab fa-instagram"></i> Instagram</a></li>
+		                  <?php foreach($smedias as $smedia): ?>
+		                  <li>
+		                    <a href="<?php echo $smedia['url']; ?>" target="_blank">
+		                      <?php echo $smedia['icon']; ?><span><?php echo $smedia['title']; ?></span>
+		                    </a>
+		                  </li>
+		                  <?php endforeach; ?>
 		                  </ul>
 		                </div>
+		                <?php endif; ?>
 		              </div>
 		            </div>
 		          </div>
@@ -249,5 +289,4 @@ defined( 'ABSPATH' ) || exit;
 	<?php else : ?>
 
 	<?php endif; ?>
-
 </div>

@@ -74,6 +74,7 @@ if (!function_exists('add_shorttext_below_title_loop')) {
           }
         $seller_flash = get_field('seller_flash', $product->get_id());
         $gridtag = cbv_get_image_tag( get_post_thumbnail_id($product->get_id()), 'pgrid' );
+        $get_height = get_post_meta($product->get_id(), 'product_length', true);
         echo '<div class="fl-product-grd mHc">';
           echo '<div class="fl-product-grd-inr">';
             wc_get_template_part('loop/sale-flash');
@@ -83,9 +84,7 @@ if (!function_exists('add_shorttext_below_title_loop')) {
             echo '</div>';
             echo '<div class="fl-pro-grd-des mHc2">';
               echo '<h4 class="fl-h5 fl-pro-grd-title mHc3"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h4>';
-              echo '<div class="product-lenth">';
-              echo '<p>(15 cm)</p>';
-              echo '</div>';
+              if( !empty($get_height) ) printf('<div class="product-lenth"><p>(%s cm)</p></div>', $get_height);
               echo '<div class="fl-pro-grd-price">';
                 echo $product->get_price_html();
               echo '</div>';
@@ -184,14 +183,13 @@ if (!function_exists('add_custom_box_product_summary')) {
         global $product, $woocommerce, $post;
         $sh_desc = $product->get_short_description();
         $long_desc = $product->get_description();
-        $product_usps = get_field('product_usps', 'options' );
         $sh_desc = !empty($sh_desc)?$sh_desc:'';
-
+        $get_height = get_post_meta($product->get_id(), 'product_length', true);
         echo '<div class="summary-ctrl">';
         echo '<div class="summary-hdr">';
         echo '<h1 class="product_title entry-title hide-sm">'.$product->get_title().'</h1>';
-        echo '<div class="product-size"><span>(15 cm)</span></div>';
-        echo '<p>Grotere oplages nodig of professionele partner <a class="contact-btn" href="#">Contacteer ons</a><p>';
+        if( !empty($get_height) ) printf('<div class="product-size"><span>(%s cm)</span></div>', $get_height);
+        echo '<p>Grotere oplages nodig of professionele partner <a class="contact-btn" href="'.get_link_by_page_template('page-contact.php').'">Contacteer ons</a><p>';
         if( !empty($sh_desc) ){
             echo '<div class="short-desc">';
             echo wpautop( $sh_desc, true );
@@ -259,10 +257,10 @@ function misha_adv_product_options(){
     woocommerce_wp_text_input( array(
         'id'      => 'product_length',
         'value'   => get_post_meta( get_the_ID(), 'product_length', true ),
-        'label'   => __('Length (cm)', 'woocommerce'),
+        'label'   => __('Height (cm)', 'woocommerce'),
         'type' => 'text',
         'desc_tip' => 'true', 
-        'description' => __('The amount of credits for this product in currency format.', 'woocommerce'),
+        'description' => __('H in decimal form.', 'woocommerce'),
     ));
     woocommerce_wp_text_input( array(
         'id'      => 'product_min_qty',
@@ -343,72 +341,6 @@ function product_max_qty($product_id = '', $_product = array()){
     }
     return $get_max_purchase_qty;
 }
-
-add_filter('woocommerce_get_catalog_ordering_args', 'custom_woocommerce_get_catalog_ordering_args');
-
-function custom_woocommerce_get_catalog_ordering_args( $args ) {
-    $orderby_value = isset( $_GET['orderby'] ) ? wc_clean( $_GET['orderby'] ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
-    if ( 'title' == $orderby_value ) {
-        $args['orderby'] = 'title';
-        $args['order'] = 'asc';
-    }elseif('title-desc' == $orderby_value){
-        $args['orderby'] = 'title';
-        $args['order'] = 'desc';
-    }
-    return $args;
-}
-//add_filter( 'woocommerce_default_catalog_orderby_options', 'wc_customize_product_sorting' );
-//add_filter( 'woocommerce_catalog_orderby', 'wc_customize_product_sorting' );
-
-function wc_customize_product_sorting($sorting_options){
-    $sorting_options = array(
-        'title'      => __( 'A-Z', 'woocommerce' ),
-        'title-desc' => __( 'Z-A', 'woocommerce' ),
-        'popularity' => __( 'popularity', 'woocommerce' ),
-        'rating'     => __( 'average rating', 'woocommerce' ),
-        'date'       => __( 'newness', 'woocommerce' ),
-        'price'      => __( 'low price', 'woocommerce' ),
-        'price-desc' => __( 'high price', 'woocommerce' ),
-    );
-
-    return $sorting_options;
-}
-// custom cbv_catalog hook
-add_action('cbv_catalog', 'cbv_catalog_ordering');
-
-function cbv_catalog_ordering() {
-    global $wp_query;
-
-    /*if ( 0 == $wp_query->found_posts || ! woocommerce_products_will_display() ) {
-        return;
-    }*/
-
-    $orderby                 = isset( $_GET['orderby'] ) ? wc_clean( $_GET['orderby'] ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
-    $show_default_orderby    = 'menu_order' === apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
-    $catalog_orderby_options = apply_filters( 'woocommerce_catalog_orderby', array(
-        'title' => __( 'A-Z', 'woocommerce' ),
-        'title-desc' => __( 'Z-A', 'woocommerce' ),
-        'popularity' => __( 'popularity', 'woocommerce' ),
-        'rating'     => __( 'average rating', 'woocommerce' ),
-        'date'       => __( 'newness', 'woocommerce' ),
-        'price'      => __( 'price: low to high', 'woocommerce' ),
-        'price-desc' => __( 'price: high to low', 'woocommerce' )
-    ) );
-
-    if ( ! $show_default_orderby ) {
-        unset( $catalog_orderby_options['menu_order'] );
-    }
-
-    if ( get_option( 'woocommerce_enable_review_rating' ) === 'no' ) {
-        unset( $catalog_orderby_options['rating'] );
-    }
-
-    if( get_option('woocommerce_enable_review_rating') == 'no' && get_option('woocommerce_default_catalog_orderby') == 'rating') {
-        update_option('woocommerce_default_catalog_orderby', 'date');
-    }
-
-    wc_get_template( 'loop/orderby.php', array( 'catalog_orderby_options' => $catalog_orderby_options, 'orderby' => $orderby, 'show_default_orderby' => $show_default_orderby ) );
-}
 function projectnamespace_woocommerce_text( $translated, $text, $domain ) {
     if ( $domain === 'woocommerce' ) {
         $translated = str_replace(
@@ -467,40 +399,6 @@ function end_modify_html() {
 add_action( 'wp_head', 'start_modify_html' );
 add_action( 'wp_footer', 'end_modify_html' );
 
-// display general product attributes
-function cbv_display_some_product_attributes(){
-    global $product;
-    $formatted_attributes = array();
-    $attributes = $product->get_attributes();
-    if($attributes):
-        foreach($attributes as $attr => $attr_deets){
-            // skip variations
-            if ( $attr_deets->get_variation() ) {
-                continue;
-            }
-            $attribute_label = wc_attribute_label($attr);
-
-            if ( isset( $attributes[ $attr ] ) || isset( $attributes[ 'pa_' . $attr ] ) ) {
-
-                $attribute = isset( $attributes[ $attr ] ) ? $attributes[ $attr ] : $attributes[ 'pa_' . $attr ];
-
-                if ( $attribute['is_taxonomy'] ) {
-                    echo '<li><span class="pro-attribute">';
-                        echo '<strong>'.$attribute_label.': </strong>';
-                        echo implode( ', ', wc_get_product_terms( $product->get_id(), $attribute['name'], array( 'fields' => 'names' ) ) );
-                    echo '</span></li>';
-
-                } else {
-                    echo '<li><span class="pro-attribute">';
-                        echo '<strong>'.$attribute_label.': </strong>';
-                    echo $attribute['value'];
-                    echo '</span></li>';
-                }
-
-            }
-        }
-    endif;
-}
 
 remove_action( 'woocommerce_cart_is_empty', 'wc_empty_cart_message');
 add_action( 'woocommerce_cart_is_empty', 'woo_if_cart_empty' );
@@ -670,4 +568,13 @@ function remove_postcode_validation( $fields ) {
     return $fields;
 }
 
+function get_product_lenth($id){
+    if( !empty($id) ) return false;
+    $get_length = get_post_meta($id, 'product_length', true);
+    if( isset($get_length) && !empty($get_length) ){
+        return $get_length;
+    }else{
+        return false;
+    }
+}
 include_once(THEME_DIR .'/inc/wc-manage-fields.php');
