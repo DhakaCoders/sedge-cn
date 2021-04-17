@@ -184,14 +184,13 @@ if (!function_exists('add_custom_box_product_summary')) {
         global $product, $woocommerce, $post;
         $sh_desc = $product->get_short_description();
         $long_desc = $product->get_description();
-        $product_usps = get_field('product_usps', 'options' );
         $sh_desc = !empty($sh_desc)?$sh_desc:'';
-
+        $get_height = get_post_meta($product->get_id(), 'product_length', true);
         echo '<div class="summary-ctrl">';
         echo '<div class="summary-hdr">';
         echo '<h1 class="product_title entry-title hide-sm">'.$product->get_title().'</h1>';
-        echo '<div class="product-size"><span>(15 cm)</span></div>';
-        echo '<p>Grotere oplages nodig of professionele partner <a class="contact-btn" href="#">Contacteer ons</a><p>';
+        if( !empty($get_height) ) printf('<div class="product-size"><span>(%s cm)</span></div>', $get_height);
+        echo '<p>Grotere oplages nodig of professionele partner <a class="contact-btn" href="'.get_link_by_page_template('page-contact.php').'">Contacteer ons</a><p>';
         if( !empty($sh_desc) ){
             echo '<div class="short-desc">';
             echo wpautop( $sh_desc, true );
@@ -262,7 +261,7 @@ function misha_adv_product_options(){
         'label'   => __('Height (cm)', 'woocommerce'),
         'type' => 'text',
         'desc_tip' => 'true', 
-        'description' => __('The amount of credits for this product in currency format.', 'woocommerce'),
+        'description' => __('H in decimal form.', 'woocommerce'),
     ));
     woocommerce_wp_text_input( array(
         'id'      => 'product_min_qty',
