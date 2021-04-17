@@ -111,6 +111,13 @@ body.woocommerce-cart .product-quantity .quantity.qty1 span,
     -webkit-transition: all 0.5s;
     padding: 0;
 }
+.xpu-pp-qtn .product-quantity form .quantity{
+	width:initial;
+	background:#FFFCF8;
+}
+.xpu-pp-qtn .product-quantity form .quantity input{
+	background:#FFFCF8;
+}
 body.woocommerce-cart .product-quantity .quantity a:hover,
 body.woocommerce-cart .product-quantity .quantity a:hover{
 	background: #EC5387;
