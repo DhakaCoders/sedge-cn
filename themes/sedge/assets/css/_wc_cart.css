@@ -343,11 +343,12 @@ body.woocommerce-cart .cart_totals .wc-proceed-to-checkout a.checkout-button spa
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout a.checkout-button{
     background: #6DBD98!important;
     border-color: #6DBD98!important;
-    padding: 15px!important;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     margin-bottom: 4px!important;
+    padding: 17px 15px 13px 15px!important;
+    line-height: 1;
 }
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout a.checkout-button:hover,
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon button:hover{
