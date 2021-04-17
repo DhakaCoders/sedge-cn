@@ -108,7 +108,7 @@
             </div>
             <?php } ?>
           </div>  
-          <?php endif; wp_reset_postdata(); ?>
+          <?php endif;?>
           <div class="prdt-catg-des-cntrl">
             <div class="prdt-catg-des-bg">
               <div class="prdt-des-logo">
