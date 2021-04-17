@@ -1,17 +1,26 @@
-2021-04-16T13:26:19+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in G:\xampp\htdocs\project\2021\March\sedge\wp-includes\widgets\class-wp-widget-calendar.php on line 17
+<<<<<<< HEAD
+2021-04-16T10:26:49+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\project\2021\march\sedge\wp-includes\Requests\Transport\cURL.php on line 163
 
-2021-04-16T13:26:19+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in G:\xampp\htdocs\project\2021\March\sedge\sedge-cn\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler.php on line 10
+2021-04-16T10:28:48+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\project\2021\march\sedge\wp-includes\Requests\Transport\cURL.php on line 163
+=======
+2021-04-16T09:29:19+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in E:\host\htdocs\2021\04\sedge\wp-includes\Requests\Transport\cURL.php on line 163
 
-2021-04-16T14:05:41+00:00 CRITICAL Uncaught Error: Call to undefined function is_frontpage() in E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\functions.php:115
-Stack trace:
-#0 E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\header.php(140): is_social_show_hide()
-#1 E:\host\htdocs\2021\04\sedge\wp-includes\template.php(730): require_once('E:\\host\\htdocs\\...')
-#2 E:\host\htdocs\2021\04\sedge\wp-includes\template.php(676): load_template('E:\\host\\htdocs\\...', true, Array)
-#3 E:\host\htdocs\2021\04\sedge\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
-#4 E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\page.php(1): get_header()
-#5 E:\host\htdocs\2021\04\sedge\wp-includes\template-loader.php(106): include('E:\\host\\htdocs\\...')
-#6 E:\host\htdocs\2021\04\sedge\wp-blog-header.php(19): require_once('E:\\host\\htdocs\\...')
-#7 E:\host\htdocs\2021\04\sedge\index.php(17): require('E:\\host\\htdocs\\...')
-#8 {main}
-  thrown in E:\host\htdocs\2021\04\sedge\sedge-cn\themes\sedge\functions.php on line 115
+2021-04-16T09:29:20+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in E:\host\htdocs\2021\04\sedge\wp-includes\Requests\Transport\cURL.php on line 163
+
+2021-04-16T09:34:46+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in E:\host\htdocs\2021\04\sedge\wp-includes\Requests\Transport\cURL.php on line 463
+
+2021-04-16T09:37:45+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in E:\host\htdocs\2021\04\sedge\wp-includes\Requests\Transport\cURL.php on line 463
+
+2021-04-16T09:43:09+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in E:\host\htdocs\2021\04\sedge\wp-includes\Requests\Transport\cURL.php on line 463
+
+2021-04-16T09:50:05+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in E:\host\htdocs\2021\04\sedge\wp-includes\wp-db.php on line 2056
+
+2021-04-16T10:57:34+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in E:\host\htdocs\2021\04\sedge\sedge-cn\plugins\creative-mail-by-constant-contact\src\managers\CheckoutManager.php on line 18
+
+p on line 7
+
+2021-04-16T10:57:38+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in E:\host\htdocs\2021\04\sedge\sedge-cn\plugins\duplicate-post\src\ui\class-column.php on line 16
+
+2021-04-16T10:57:50+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in E:\host\htdocs\2021\04\sedge\sedge-cn\plugins\facebook-for-woocommerce\includes\Lifecycle.php on line 15
+>>>>>>> f76afe8be9554e081b8e31013fe9b6b07c93eb8b
 
