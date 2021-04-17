@@ -84,14 +84,16 @@ body.woocommerce-cart .product-thumbnail .product-name{
 body.woocommerce-cart .product-quantity {
 
 }
-body.woocommerce-cart .product-quantity .quantity.qty1{
+body.woocommerce-cart .product-quantity .quantity.qty1,
+.xpu-pp-qtn .product-quantity form .quantity{
 	display: flex;
     align-items: center;
     background: #fff;
     width: 64px;
 }
 body.woocommerce-cart .product-quantity .quantity.qty span,
-body.woocommerce-cart .product-quantity .quantity.qty1 span{
+body.woocommerce-cart .product-quantity .quantity.qty1 span,
+.xpu-pp-qtn .product-quantity form .quantity span{
 	height: 28px;
     width: 16px;
     color: #fff;
@@ -108,6 +110,13 @@ body.woocommerce-cart .product-quantity .quantity.qty1 span{
     -ms-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     padding: 0;
+}
+.xpu-pp-qtn .product-quantity form .quantity{
+	width:initial;
+	background:#FFFCF8;
+}
+.xpu-pp-qtn .product-quantity form .quantity input{
+	background:#FFFCF8;
 }
 body.woocommerce-cart .product-quantity .quantity a:hover,
 body.woocommerce-cart .product-quantity .quantity a:hover{
@@ -252,14 +261,17 @@ body.woocommerce-cart .cart_totals table tr.order-total .woocommerce-Price-amoun
 	color: #31304F;
 }
 body.woocommerce-cart .cart_totals .wc-proceed-to-checkout .woocommerce-coupon-form .coupon:after,
-body.woocommerce-checkout .custom-checkout-order-review .form-row .input-text:after{
+body.woocommerce-checkout .custom-checkout-order-review .form-row-first:after{
     width: 18px;
     height: 18px;
     background-image: url(../images/cupon-checkmark.svg);
     position: absolute;
-    content: "";
+    content: ""!important;
     top: 14px;
     right: 17px;
+}
+body.woocommerce-checkout .custom-checkout-order-review .form-row-first:after{
+	top:17px;
 }
 body.woocommerce-cart .cart_totals tbody tr td:last-child{
 	padding-right: 0;
