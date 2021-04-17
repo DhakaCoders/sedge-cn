@@ -195,10 +195,14 @@ body.woocommerce-order-received .checkout-page-title{
 	display: flex;
 }
 .thankyou .title-meta ul{
-	margin: -4px 0;
+	margin: -2px 0;
 }
 .thankyou .title-meta ul li{
-	padding: 4px 0;
+	padding: 0;
+	line-height: 16px;
+}
+.thankyou .title-meta ul li strong, .thankyou .title-meta ul li span{
+	font-size: 12px;
 }
 .thankyou .title-meta ul li strong{
 	font-weight: 400;
