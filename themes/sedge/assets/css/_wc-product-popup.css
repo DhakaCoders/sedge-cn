@@ -154,6 +154,8 @@
 	padding-right: 1px;
     font-size: 8px;
     color: #78797d;
+    font-weight: 600!important;
+    text-transform: uppercase!important;
 }
 
 .xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2 .product-order-btn a:hover, 
