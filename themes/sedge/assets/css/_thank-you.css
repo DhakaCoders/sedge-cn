@@ -281,9 +281,9 @@ body.woocommerce-order-received .checkout-page-title{
 svg.home-btn-arrow{
 	fill: #fff;
 }
-.thankyou .order-home-btn:hover svg.home-btn-arrow{
+/* .thankyou .order-home-btn:hover svg.home-btn-arrow{
 	fill: #6DBD98!important;
-}
+} */
 
 .thankyou .shipping-order-title{
 	font-size: 16px;
