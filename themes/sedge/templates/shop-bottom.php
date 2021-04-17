@@ -2,7 +2,7 @@
   $btm_desc = '';
   if(is_shop()):
     $thisID = woocommerce_get_page_id('shop');
-    $titel = get_field('titel', $thisID); 
+    $titel = get_field('bottom_titel', $thisID); 
     $btm_desc = get_field('beschrijving', $thisID); 
   ?>
   <?php 

@@ -278,9 +278,10 @@ $smedias = get_field('social_media', 'options');
   </div>
 </div>
 
-
+<?php if( is_show_hide_global_sidebar() ): ?>
 <!-- fixed --> 
 <div class="cart-socials-cntlr">
+  <?php if( !is_show_hide_cart() ):?>
   <div class="sitebar-add-cart">
     <a href="<?php echo wc_get_cart_url(); ?>">
         <?php 
@@ -294,6 +295,7 @@ $smedias = get_field('social_media', 'options');
         <use xlink:href="#cart-icon"></use></svg></i>
       </a>
     </div> 
+    <?php endif; ?>
     <?php if(!empty($smedias)):  ?>
     <div class="sitebar-socials">
       <ul class="reset-list">
@@ -309,3 +311,5 @@ $smedias = get_field('social_media', 'options');
     <?php endif; ?>
 </div>
 <!-- fixed --> 
+<?php endif; ?>
+
