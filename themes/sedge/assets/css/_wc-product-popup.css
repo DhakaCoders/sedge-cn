@@ -42,9 +42,7 @@
 .xoo-cp-ptitle .popup-product-title{
 	padding-bottom: 10px;
 }
-
-.xoo-cp-pprice .woocommerce-Price-amount.amount bdi,
-.product-price .woocommerce-Price-amount.amount bdi{
+.xpu-pp-qtn .product-price ins span.woocommerce-Price-amount.amount bdi{
 	color: #71867f!important;
 	font-size: 16px!important;
 	margin-right: 5px!important;
@@ -303,7 +301,7 @@ span.xoo-cp-close.xoo-cp-icon-cross:before {
 	display: flex;
 	justify-content: center;
 }
-.product-quantity form .quantity span{
+/* .product-quantity form .quantity span{
     width: 20px;
     height: 20px;
     background: #31304F;
@@ -313,7 +311,7 @@ span.xoo-cp-close.xoo-cp-icon-cross:before {
     align-items: center;
     border-radius: 4px;
     cursor: pointer;
-}
+} */
 .product-quantity form .quantity input.qty{
 	width: 33px;
 	line-height: 1;
@@ -342,6 +340,8 @@ span.xoo-cp-close.xoo-cp-icon-cross:before {
     opacity: 1!important;
 }
 .product-price del span,
+.xoo-cp-container .xpu-pp-qtn .product-price del span.woocommerce-Price-amount.amount bdi,
+.xoo-cp-pprice del span.woocommerce-Price-amount.amount bdi
 .fl-pro-grd-price del span,
 .loggedin-winkelmandje-crtl .woocommerce-mini-cart-item .quantity del span,
 .loggedin-winkelmandje-crtl .woocommerce-mini-cart-item .quantity del span bdi,
@@ -352,9 +352,11 @@ span.xoo-cp-close.xoo-cp-icon-cross:before {
     text-decoration-line: line-through;
     margin-right: 0;
 }
-.xoo-cp-pprice del, .xoo-cp-pprice ins span,
-.product-price del, .product-price ins span,
-.xoo-cp-container .xoo-cp-content .xoo-cp-pdetails .xpu-pp-qtn .product-price del.woocommerce-Price-amount bdi span{
+.xoo-cp-pprice .product-price del{
+	text-decoration-line: line-through; 
+}
+.xoo-cp-container .xpu-pp-qtn .product-price ins span, 
+.xoo-cp-pprice ins span bdi{
 	font-size: 16px!important;
 	color: #71867f!important;
 	font-weight: 700!important;
