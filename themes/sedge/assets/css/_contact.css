@@ -39,7 +39,6 @@
     position: relative;
 }
 .page-entry-header {
-    border-bottom: 2px solid#F2EADE;
     padding-right: 0;
 }
 .page-entry-header .fl-h2 {
@@ -349,7 +348,7 @@ Inputtype Radio Css
 .wpforms-field-radio.input-type-radio {
     border-bottom: 2px solid#F2EADE!important;
     padding-right: 0!important;
-    padding-bottom: 25px!important;
+    padding-bottom: 15px!important;
     margin-bottom: 45px!important;
     margin-left: 0!important;
     float: none!important;
