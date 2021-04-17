@@ -185,7 +185,6 @@
     width: 100%;
 }
 .pro-item-cntlr{
-    border: 1px solid #F5F6F7;
     padding-bottom: 0;
    /* margin-bottom: 28px;*/
     height: 100%;
@@ -204,13 +203,13 @@
     margin-bottom: 30px;
     position: relative;
     padding-top: 0;
-    padding-left: 100px;
+    padding-left: 115px;
     min-height: 90px;
 }
 .spotlight-popup .flex-fill{
 	flex: initial!important;
 	position: relative;
-	padding-bottom:50px;
+	padding-bottom:30px;
 }
 
 /*.spotlight-popup .flex-fill{

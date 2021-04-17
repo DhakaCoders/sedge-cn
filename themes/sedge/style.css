@@ -12,6 +12,10 @@ Text Domain: sedge
 */
 
 @import url('assets/css/main.css');
-
-
+.gallery-bg{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;	
+}
 
