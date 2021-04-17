@@ -569,7 +569,7 @@ function remove_postcode_validation( $fields ) {
 }
 
 function get_product_lenth($id){
-    if( !empty($id) ) return false;
+    if( empty($id) ) return false;
     $get_length = get_post_meta($id, 'product_length', true);
     if( isset($get_length) && !empty($get_length) ){
         return $get_length;
