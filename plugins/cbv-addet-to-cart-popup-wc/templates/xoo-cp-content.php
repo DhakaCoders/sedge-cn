@@ -32,7 +32,7 @@ $exc = get_the_excerpt( $product_id );
 $attributes = '';
 
 //Variation
-$attributes .= $_product->is_type('variable') || $_product->is_type('variation')  ? wc_get_formatted_variation($_product) : '';
+//$attributes .= $_product->is_type('variable') || $_product->is_type('variation')  ? wc_get_formatted_variation($_product) : '';
 // Meta data
 if(version_compare( WC()->version , '3.3.0' , "<" )){
   $attributes .=  WC()->cart->get_item_data( $cart_item );

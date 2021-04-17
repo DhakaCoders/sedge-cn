@@ -74,6 +74,7 @@ if (!function_exists('add_shorttext_below_title_loop')) {
           }
         $seller_flash = get_field('seller_flash', $product->get_id());
         $gridtag = cbv_get_image_tag( get_post_thumbnail_id($product->get_id()), 'pgrid' );
+        $get_height = get_post_meta($product->get_id(), 'product_length', true);
         echo '<div class="fl-product-grd mHc">';
           echo '<div class="fl-product-grd-inr">';
             wc_get_template_part('loop/sale-flash');
@@ -83,9 +84,7 @@ if (!function_exists('add_shorttext_below_title_loop')) {
             echo '</div>';
             echo '<div class="fl-pro-grd-des mHc2">';
               echo '<h4 class="fl-h5 fl-pro-grd-title mHc3"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h4>';
-              echo '<div class="product-lenth">';
-              echo '<p>(15 cm)</p>';
-              echo '</div>';
+              if( !empty($get_height) ) printf('<div class="product-lenth"><p>(%s cm)</p></div>', $get_height);
               echo '<div class="fl-pro-grd-price">';
                 echo $product->get_price_html();
               echo '</div>';
