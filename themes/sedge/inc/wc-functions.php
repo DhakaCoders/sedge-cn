@@ -568,4 +568,13 @@ function remove_postcode_validation( $fields ) {
     return $fields;
 }
 
+function get_product_lenth($id){
+    if( !empty($id) ) return false;
+    $get_length = get_post_meta($id, 'product_length', true);
+    if( isset($get_length) && !empty($get_length) ){
+        return $get_length;
+    }else{
+        return false;
+    }
+}
 include_once(THEME_DIR .'/inc/wc-manage-fields.php');

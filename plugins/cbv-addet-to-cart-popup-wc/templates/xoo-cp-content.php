@@ -47,7 +47,7 @@ $max_value = apply_filters( 'woocommerce_quantity_input_max', product_max_qty($p
 $min_value = apply_filters( 'woocommerce_quantity_input_min', product_min_qty($product_id, $_product) );
 $step      = apply_filters( 'woocommerce_quantity_input_step', 1, $_product );
 $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'woocommerce_stock_amount', 'intval' ) ? '[0-9]*' : '' );
-
+$get_height = get_product_lenth($product_id);
 ?>
 
 
@@ -60,7 +60,10 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
           <div class="xoo-cp-pimg"><a href="<?php echo  $product_permalink; ?>"><?php echo $thumbnail; ?></a></div>
             <div class="xoo-cp-ptitle">
             <div class="popup-product-title">
-              <div><a href="<?php echo  $product_permalink; ?>"><?php echo $product_name; ?></a></div>
+              <div>
+                <a href="<?php echo  $product_permalink; ?>"><?php echo $product_name; ?></a>
+                <?php if( $get_height ) printf('<span class="product-lenth">(%s cm)</span>', $get_height);?>
+              </div>
             </div>
 
               <?php 
@@ -178,6 +181,7 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
             }
             $seller_flash = get_field('seller_flash', $product->get_id());
             $gridurl = cbv_get_image_tag( get_post_thumbnail_id($product->get_id()), 'hprogrid' );
+            $getheight = get_product_lenth($product->get_id());
             echo "<div class='pro-item {$itemCls} clearfix'>";
             if( !empty($seller_flash) ) printf('<span class="seller-flash">%s</span>', $seller_flash); 
             echo '<div class="pro-item-img-cntlr pw-item-img-cntlr">';
@@ -186,7 +190,10 @@ $pattern   = apply_filters( 'woocommerce_quantity_input_pattern', has_filter( 'w
             echo '</div>';
             echo '<div class="pro-item-desc pw-item-desc clearfix">';
             echo '<div class="pro-item-descWrap mHc">';
-            echo '<h3 class="pro-item-desc-title"><a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a></h3>';
+            echo '<h3 class="pro-item-desc-title">';
+            echo '<a href="'.get_permalink( $product->get_id() ).'">'.get_the_title().'</a>';
+            if( $getheight ) printf('<span class="product-lenth">(%s cm)</span>', $getheight);
+            echo '</h3>';
             echo '</div><div class="xpu-pp-qtn">';
             echo '<div class="product-price">';
             echo $product->get_price_html();
