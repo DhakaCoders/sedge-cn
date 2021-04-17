@@ -433,6 +433,7 @@ body.woocommerce-cart.woocommerce-page .woocommerce .cart_totals > h2{
     font-weight: 700;
     color: #71867E;
     letter-spacing: -0.02em;
+    text-transform: uppercase;
 }
 body.woocommerce-cart.woocommerce-page .cart-total-crtl .cart_totals table.shop_table_responsive th{
 	width: 50%;
