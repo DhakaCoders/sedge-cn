@@ -342,7 +342,6 @@ span.xoo-cp-close.xoo-cp-icon-cross:before {
     opacity: 1!important;
 }
 .product-price del span,
-.xoo-cp-pprice del span,
 .fl-pro-grd-price del span,
 .loggedin-winkelmandje-crtl .woocommerce-mini-cart-item .quantity del span,
 .loggedin-winkelmandje-crtl .woocommerce-mini-cart-item .quantity del span bdi,
@@ -354,7 +353,8 @@ span.xoo-cp-close.xoo-cp-icon-cross:before {
     margin-right: 0;
 }
 .xoo-cp-pprice del, .xoo-cp-pprice ins span,
-.product-price del, .product-price ins span{
+.product-price del, .product-price ins span,
+.xoo-cp-container .xoo-cp-content .xoo-cp-pdetails .xpu-pp-qtn .product-price del.woocommerce-Price-amount bdi span{
 	font-size: 16px!important;
 	color: #71867f!important;
 	font-weight: 700!important;
