@@ -468,13 +468,19 @@ body.woocommerce-cart.woocommerce-page .product-price .woocommerce-Price-amount.
     font-size: 16px;
 }
 body.woocommerce-cart.woocommerce-page .product-price del bdi,
-body.woocommerce-cart.woocommerce-page .product-price del bdi span{
+body.woocommerce-cart.woocommerce-page .product-price del bdi span,
+.fl-pro-grd-price del span bdi,
+.xoo-cp-pprice del span.woocommerce-Price-amount.amount bdi,
+.xoo-cp-container .xpu-pp-qtn .product-price del span.woocommerce-Price-amount.amount bdi{
 	/*font-size: 12px!important;*/
 	color: #b4192b!important;
 	position: relative;
 }
 body.woocommerce-cart.woocommerce-page .product-price del bdi:after,
-body.woocommerce-cart.woocommerce-page .product-price del bdi span:after{
+body.woocommerce-cart.woocommerce-page .product-price del bdi span:after,
+.fl-pro-grd-price del span bdi:after,
+.xoo-cp-pprice del span.woocommerce-Price-amount.amount bdi:after,
+.xoo-cp-container .xpu-pp-qtn .product-price del span.woocommerce-Price-amount.amount bdi:after{
     content: "";
     background: #b4192b;
     height: 1px;
