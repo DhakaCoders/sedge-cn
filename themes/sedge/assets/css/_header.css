@@ -753,8 +753,14 @@ body.allWork {
 	body.home .comnined-shape-cntlr{
 		display: none!important;
 	}
+	.sitebar-socials {
+	    padding: 27px 25px;
+	}
 }
 @media(max-width: 991px){
+	.cart-socials-cntlr{
+		display: none;
+	}
 	.header-inr{
 		display: flex;
 		align-items: center;
@@ -869,10 +875,10 @@ body.allWork {
 	}
 	.xs-hdr-srch-btm{
 		display: none;
-		width: 377px;
 		position: absolute;
 		top: 100%;
 		right: -15px;
+		left: -15px;
 		padding-bottom: 150px;
 		box-shadow: 2px 2px 2px #000;
 		z-index: 99999;
@@ -884,6 +890,8 @@ body.allWork {
 	}
 	.xs-hdr-cart{
 		padding-left: 22px;
+		position: relative;
+		top: -2px;
 	}
 	.xs-hdr-cart a{
 		position: relative;
@@ -915,6 +923,9 @@ body.allWork {
 	.logo a{
 		max-width: 120px;
 	}
+	.header {
+	    margin-bottom: 39px;
+	}
 	
 }
 @media(max-width: 575px){
@@ -922,7 +933,6 @@ body.allWork {
 }
 @media(max-width: 479px){
 	.xs-hdr-srch-btm{
-		width: 300px;
 		padding: 20px;
 	}
 }
