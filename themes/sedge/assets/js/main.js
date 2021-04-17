@@ -207,12 +207,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
   }        
 });
 
-
-  /*start of Rannojit*/
-
-
-
-  /* start of niaz*/
   $(".type-order-format .woocommerce-input-wrapper span").each(function(){
         $(this).append('<div class="radio-custom"></div>')
   });
@@ -277,11 +271,7 @@ if( $('#related-product-slider').length ){
       ]
     });
 }
-  /*start of Sabbir*/
 
-
-
-  /*start of Milon*/
   /* -- About page left bg control --*/
 if(windowWidth > 768){
   var AboutTextImgSecWrp = $('.about-img-text-sec-wrp').width();
@@ -315,12 +305,6 @@ $('.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .
 });
 
 
-
-
-
-
-
-  /*start of Shariful*/
   /*var swiper = new Swiper('.ftrTopSlider', {
     slidesPerView: 'auto',
     loop: true,
@@ -454,6 +438,14 @@ $("#billing_order_type_Particulier").on('change', function(){
         $('#vat_number_field').removeClass('show-vat_number');
         $('#billing_reference_field').removeClass('show-reference');
     }
+});
+
+// Coupon code triger
+$("#apply_coupon_code").click(function(){
+    var couponCode = $('#coupon_code_enter').val();
+    $("body .checkout_coupon.woocommerce-form-coupon input#coupon_code").val(couponCode)
+    $(".checkout_coupon button").submit();
+
 });
 
 /**
