@@ -64,6 +64,78 @@
         <?php if( !empty( $beschrijving ) ) echo wpautop($beschrijving); ?>
         </div>
         </div>
+        <?php 
+        }elseif( get_row_layout() == 'blockquote' ){ 
+        $blockquote = get_sub_field('fc_teksteditor');
+        ?>
+        <div class="block-955">
+        <div class="dft-blockquote">
+          <blockquote>
+            <?php if( !empty( $blockquote ) ) echo wpautop($blockquote); ?>
+          </blockquote>
+        </div>
+        </div>
+        <?php 
+        }elseif( get_row_layout() == 'product_overzicht' ){ 
+        $fc_titlel = get_sub_field('fc_titlel');
+        $height = get_sub_field('height');
+        $afbeeldingen = get_sub_field('fc_afbeeldingen');
+        ?>
+        <div class="block-955">
+        <div class="dfp-prdt-item-module">
+          <div class="prdt-item">
+            <?php if( !empty($afbeeldingen) ): ?>
+            <div class="prdt-fea-img">
+              <?php echo cbv_get_image_tag($afbeeldingen); ?>
+            </div>
+            <?php endif; ?>
+            <div class="prdt-fea-cont">  
+              <?php
+                if( !empty($fc_titlel) ) printf('<h5 class="fl-h5 prdt-itm-titl">%s</h5>', $fc_titlel); 
+                if( !empty($height) ) printf('<span>%s height</span>', $height); 
+              ?>
+            </div>  
+          </div>
+        </div>
+
+        </div>
+        <?php 
+        }elseif( get_row_layout() == 'tekst_tekst' ){ 
+        $tekst_1 = get_sub_field('tekst_1');
+        $tekst_2 = get_sub_field('tekst_2');
+        ?>
+        <div class="block-955">
+        <div class="dfp-des-module clearfix">
+          <?php if( !empty( $tekst_1 ) ): ?>
+          <div class="dfp-des-lft">
+            <?php echo wpautop($tekst_1); ?>
+          </div>
+          <?php endif; ?>
+          <?php if( !empty( $tekst_2 ) ): ?>
+          <div class="dfp-des-rgt">
+            <?php if( !empty( $tekst_2 ) ) echo wpautop($tekst_2); ?>
+          </div>
+          <?php endif; ?>
+        </div>
+        </div>
+      <?php 
+      }elseif( get_row_layout() == 'afbeelding_tekst' ){ 
+      $fc_afbeelding = get_sub_field('fc_afbeelding');
+      $imgsrc = cbv_get_image_src($fc_afbeelding, 'dfpageg1');
+      $fc_tekst = get_sub_field('fc_tekst');
+      $positie_afbeelding = get_sub_field('positie_afbeelding');
+      $imgposcls = ( $positie_afbeelding == 'right' ) ? ' fl-dft-rgtimg-lftdes' : '';
+      ?>
+      <div class="block-955">
+      <div class="fl-dft-overflow-controller">
+        <div class="fl-dft-lftimg-rgtdes clearfix<?php echo $imgposcls; ?>">
+          <div class="fl-dft-lftimg-rgtdes-lft mHc" style="background-image: url(<?php echo $imgsrc; ?>);"></div>
+          <div class="fl-dft-lftimg-rgtdes-rgt mHc">
+            <?php echo wpautop($fc_tekst); ?>
+          </div>
+        </div>
+      </div>
+      </div>
         <?php }elseif( get_row_layout() == 'galerij' ){ 
         $galleries = get_sub_field('fc_afbeeldingen');
         $lightbox = get_sub_field('lightbox');
