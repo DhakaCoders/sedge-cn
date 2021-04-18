@@ -17,9 +17,12 @@
 	width: 50%;
 	height: 520px;
 	background: #6dbd98;
-	padding: 127px 72px 116px;
+	padding: 0 54px 0;
 	position: relative;
 	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .straw-des{
 	padding-bottom: 25px;
@@ -260,7 +263,7 @@
 		font-size: 26px;
 	}
 	.straw-cont{
-		padding: 127px 90px 116px;
+		padding: 0 44px 0;
 	}
 }
 
@@ -269,7 +272,6 @@
 		font-size: 24px;
 	}
 	.straw-cont{
-		padding: 71px 52px 100px;
 		height: 460px;
 	}
 	.straw-img-box{
@@ -323,7 +325,6 @@
 		font-size: 22px;
 	}
 	.straw-cont{
-		padding: 60px 45px 80px;
 		height: 420px;
 	}
 	.straw-img-box{
@@ -383,7 +384,6 @@
 		font-size: 21px;
 	}
 	.straw-cont{
-		padding: 70px 50px 116px;
 		height: 370px;
 	}
 	.straw-img-box{
@@ -435,7 +435,10 @@
 @media (max-width: 991px) {
 	.straw-cont{
 		height: 320px;
-		padding: 45px 15px 80px;
+		padding: 0 25px 0;
+	}
+	.straw-des{
+		padding-bottom: 15px;
 	}
 	.straw-des p{
 		font-size: 18px;
@@ -522,6 +525,7 @@
 	}
 	.straw-cont{
 		height: 310px;
+		padding: 0 13px 0;
 	}
 	.straw-img-box {
     	margin-left: 60px;
@@ -550,7 +554,6 @@
 		padding-bottom: 65px;
 	}
 	.straw-cont{
-		padding: 19px 15px 15px 33px;
     	height: 180px;
     	width: 100%;
     	max-width: 328px;
@@ -628,7 +631,6 @@
 
 @media (max-width: 439px) {
 	.straw-cont {
-    	padding: 19px 33px 10px 33px;
     	height: 170px;
 	}
 	.straw-des p {
