@@ -181,7 +181,7 @@ function get_id_by_page_template( $pagetemplate ){
 }
 function get_title_by_page_template( $pagetemplate ){
     global $post;
-
+    if( !isset($post->ID) ) return;
     $pagetitle = get_the_title($post->ID);
     if( !empty($pagetemplate) ){
       $page_details = get_pages( array(
