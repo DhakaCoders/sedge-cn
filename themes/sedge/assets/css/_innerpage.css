@@ -309,7 +309,7 @@ Gallery design
 
 .dft-blockquote{
 	background: #71867E;
-	padding: 70px 60px 60px 65px;
+	padding: 65px 60px 55px 65px;
 	color: #fff;
 	margin-bottom: 30px;
 }
@@ -372,8 +372,8 @@ Gallery design
 }
 
 
-.fl-product-module{
-	padding-bottom: 30px;
+.fl-product-module .fl-products-cntlr{
+	padding-bottom: 10px;
 }
 .fl-product-module ul{
 	margin-left: -12px;
