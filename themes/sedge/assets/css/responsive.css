@@ -110,6 +110,11 @@
 	p{
 		line-height: 19px;
 	}
+	.fl-red-btn{
+		width: 101px;
+		height: 30px;
+		font-size: 12px;
+	}
 }
 
 @media(max-width: 575px){

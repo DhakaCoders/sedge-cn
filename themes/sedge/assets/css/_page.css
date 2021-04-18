@@ -97,6 +97,97 @@ pagination
 	border-bottom: none!important;
 }
 
+
+/*
+-------------
+ 404 page
+-------------
+*/
+body.error404 .to-top-btn-cntlr{
+    display: none!important;
+}
+.page-404-sec-wrp{
+	padding-bottom: 85px;
+}
+.page-404-dsc-wrp{
+	max-width: 920px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.page-404-dsc-wrp strong{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-bottom: 40px;
+	padding-left: 190px;
+}
+.page-404-dsc-wrp span{
+	display: block;
+	font-size: 22px;
+	line-height: 1;
+	letter-spacing: -0.02em;
+	color: #8AA4E4;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+.page-404-dsc-wrp p{
+	margin-bottom: 50px;
+}
+.page-404-dsc-wrp ul{
+	display: table;
+	margin: 0 auto;
+}
+.page-404-dsc-wrp ul li{
+	float: left;
+	font-size: 16px;
+	line-height: 1.1;
+	font-weight: 500;
+	padding: 0 35px;
+}
+.page-404-dsc-wrp ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	color:#525A61; 
+	text-decoration: underline;
+}
+.page-404-dsc-wrp ul li a:hover{
+	color: #8dcc0c;
+}
+.page-404-btn{
+	padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.page-404-btn a {
+    float: left;
+    height: 50px;
+    width: 185px;
+    margin: 0 9px;
+    border: 1px solid #6DBD98;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6DBD98;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.page-404-btn div:first-of-type a{
+    color: #fff;
+}
+.page-404-btn div:first-of-type a:hover {
+    background: #B3192A;
+    color: #fff;
+    border-color: #B3192A;
+}
+.page-404-btn div:last-of-type a:hover {
+    background: #6DBD98;
+    border-color: #6DBD98;
+    color: #fff;
+}
+
 /*responsive*/
 @media(max-width: 1599px){
 	.hm-banner-cntlr{
@@ -128,6 +219,13 @@ pagination
 		padding-left: 60px;
 		padding-top: 30px;
 	}
+	.page-404-dsc-wrp strong{
+	   padding-left: 105px;
+	}
+	.page-404-btn {
+        padding-top: 35px;
+    }
+	
 }
 @media(max-width: 767px){
 	.hm-banner{
@@ -156,6 +254,13 @@ pagination
 	.fl-pagi-cntlr ul li{
 		padding: 0 20px;
 	}
+	.page-404-dsc-wrp strong{
+	    padding-left: 67px;
+	}
+	.page-404-dsc-wrp strong img{
+	    max-width: 350px;
+	    width: 100%;
+	}
 }
 
 @media(max-width: 575px){
@@ -174,4 +279,7 @@ pagination
 	.fl-pagi-cntlr ul li{
 		padding: 0 15px;
 	}
+	.page-404-dsc-wrp strong {
+        padding-left: 0;
+    }
 }
