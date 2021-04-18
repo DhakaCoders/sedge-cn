@@ -1,7 +1,7 @@
 
 /* ------------------- my account  deshboard-----------------------*/
 body.woocommerce-account .account-page-title{
-    padding-top:25px;
+    padding-top: 75px;
 }
 body.woocommerce-account .myaccount-crtl{
     max-width: 926px;
@@ -50,7 +50,7 @@ body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccou
     opacity: .8;
 }
 body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li {
-    margin-bottom: 28px;
+    margin-bottom: 28px!important;
 }
 body.woocommerce-account .default-page-con p.loggedin-text span{
     font-weight: 700;
@@ -81,8 +81,8 @@ body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccou
 body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li{
     max-width:50%;
     width:100%;
-    padding-left: 12px;
-    padding-right:12px;
+    padding-left: 12px!important;
+    padding-right:12px!important;
 }
 body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul li a:after{
     content: "";
@@ -142,6 +142,7 @@ body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccou
     font-size: 18px;
     color: #fff;
     font-weight:600;
+    font-family: Sora;
 }
 
 .service-contact .service-lists{
@@ -166,6 +167,7 @@ body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccou
     color: #fff;
     font-weight: 600;
     margin-bottom: 33px!important;
+    font-family: Sora;
 }
 .service-list .icon i{
     display: inline-block;
@@ -198,8 +200,8 @@ body.woocommerce-orders .account-page-title h1{
     border-bottom: 1px solid #F1E8E1!important;
     padding-bottom:40px!important;
 }
-body.woocommerce-edit-account fieldset.addres {
-    padding-bottom: 74px!important;
+body.woocommerce-edit-account fieldset.addres{
+    padding-bottom:65px!important;
 }
 
 /* -------------- back-button ----------------*/
@@ -248,8 +250,9 @@ body.woocommerce-account .breadcrumb-sec{
 
  
 /* -------------------------body woocommerce-orders -----------------------*/
-body.woocommerce-orders .account-page-title{
-    padding-top: 15px;
+body.woocommerce-orders .account-page-title,
+body.woocommerce-edit-account .account-page-title{
+    padding-top: 69px;
 }
 body.woocommerce-orders .customer-order-details .faq-accordion-wrp ul li:last-child{
     margin-bottom:0px!important;
@@ -485,7 +488,7 @@ body.woocommerce-orders .order-details{
 }
 body.woocommerce-orders .customer-order-details .fl-pagi-cntlr {
     margin-top:42px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 body.woocommerce-orders .customer-order-details .faq-accordion-wrp > ul:after{
     content: "";
@@ -561,7 +564,7 @@ body.woocommerce-edit-account .woocommerce-EditAccountForm > p button[type="subm
 /* ---------------------- my account login page---------------------------*/
 body.woocommerce-account #customer_login .u-column1.col-1 > h2, 
 body.woocommerce-account #customer_login .u-column2.col-2 > h2{
-    margin-bottom:25px;
+    margin-bottom:19px;
     color: #71867E;
 }
 /*body.woocommerce-account .page-entry-hdr {
@@ -683,6 +686,10 @@ body.woocommerce-account .login-register-wrap a{
     font-size: 14px;
     font-weight: 300;
 }
+body.woocommerce-account .login-register-wrap .lost_password{
+    margin-bottom: 15px;
+    margin-top: 18px;
+}
 body.woocommerce-account .login-register-wrap a:hover {
     color: #b4192b;
 }
@@ -783,7 +790,10 @@ body.woocommerce-account .login-info-crtl .login-info-inr .loginInfoSlideItem .l
     background-position: center;
 }
 body.woocommerce-account .default-page-con p{
-    margin-bottom:13px;
+    margin-bottom:10px;
+}
+.service-contact .service-text a:hover{
+    color: #b4192b;
 }
 body.woocommerce-account .woocommerce-form .woocommerce-LostPassword{
     padding-left: 3px;
@@ -822,6 +832,10 @@ body.hide-account-title .register-title h3{
     font-size:16px;
     margin-top:50px;
     font-family: Sora;
+    padding-left: 3px;
+}
+.login-info h3 + p {
+    padding-left: 3px;
 }
 .register-top-title h1{
     border-bottom:none!important;
@@ -979,6 +993,7 @@ body.woocommerce-account .billing-address-wrap h3{
     font-size:16px;
     font-weight:normal;
     font-family: Sora;
+    padding-left: 3px;
 }
 body.woocommerce-account .woocommerce-input-wrapper .bootstrap-select{
     width: 100%!important;
@@ -1025,6 +1040,7 @@ body.woocommerce-account .woocommerce-input-wrapper .bootstrap-select{
 .woocommerce-form .form-row .woocommerce-form__label-for-checkbox{
     position: relative;
     padding-left: 25px;
+    margin-left: 3px;
 }
 .same-as-shipping-address input,
 .login-info p > input,
@@ -1464,6 +1480,7 @@ body .woocommerce-checkout span.woocommerce-input-wrapper .checkbox{
     display:inline-flex!important;
     padding-left: 28px;
     position: relative;
+    font-family: Sora;
 }
 body .woocommerce-checkout .woocommerce-form__label input,
 body .woocommerce-checkout span.woocommerce-input-wrapper .checkbox input{
@@ -1472,7 +1489,7 @@ body .woocommerce-checkout span.woocommerce-input-wrapper .checkbox input{
     position:absolute;
     left: 0;
     top:0;
-    margin-top:1px!important;
+    margin-top:0px!important;
 }
 body.woocommerce-checkout .woocommerce-shipping-fields .woocommerce-form__label{
     font-size:16px;
@@ -1672,6 +1689,9 @@ body.woocommerce-checkout .form-row > span{
     display:inline-block;
     width:100%;
 }
+body.woocommerce-checkout .form-row > span.woocommerce-input-wrapper label.checkbox{
+    margin-bottom: 15px;
+}
 body.woocommerce-checkout #pwgc-redeem-gift-card-form #pwgc-redeem-form  input[type=text]:focus{
     background: #fcf8f8;
     border-color:#fcf8f8;
@@ -1690,7 +1710,6 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     border:none;
 }
 
-
 @media(max-width: 1499px){
     body.woocommerce-orders .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content,
     body.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content{
@@ -1699,7 +1718,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.woocommerce-account .page-title {
         margin-top: 50px;
     }
-    body.woocommerce-checkout #customer_details .col-2 {
+    body.woocommerce-checkout #customer_details .col-2{
         padding-left: 50px;
 
     }
@@ -1714,7 +1733,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.woocommerce-account #customer_login .u-column2.col-2 > h2{
         font-size:30px;
     }
-
+    
 }
 
 @media(max-width:1199px){
