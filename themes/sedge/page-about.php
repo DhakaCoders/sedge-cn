@@ -250,8 +250,6 @@ $about_bannerposter = !empty($abanner['afbeelding'])? cbv_get_image_src( $abanne
     
 ?>
 <section class="grid-gallary">
-
-  ?>
   <div class="grid-gallary-cntrl"> 
     <?php if( !empty($galerij2['afbeelding_1']) ):?>
     <div class="grd-galry-lft mHc">

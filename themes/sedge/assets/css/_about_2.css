@@ -4,7 +4,6 @@
 }
 .prdt-menual-hdr{
 	background-color: #6dbd98;
-	min-height: 212px;
 	padding: 28px 10px 33px;
 	display: flex;
 	justify-content: center;
@@ -406,6 +405,9 @@
 	.about-prdt-sec .find-more {
 		display: none;
 	}
+	.glry-img-lft{
+	    margin-right: 20px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -578,6 +580,17 @@
 	.prdt-item{
 		padding: 10px 0;
 	}
+	.prdt-menual-hdr{
+	   justify-content: left;
+	   padding-left: 15px;
+	}
+	.prdt-menual-hdr .prdt-menual-titl{
+	    margin-bottom: 0; 
+	}
+	.prdt-mnl-process ul{
+	    padding-left: 20px;
+	    padding-right: 20px;
+	}
 }
 
 @media (max-width: 639px) {
@@ -596,6 +609,9 @@
 	}
 	.rgt-img2{
 		height: 145px;
+	}
+	.prdt-menual-hdr .prdt-menual-titl br{
+	    display: none;
 	}
 }
 
