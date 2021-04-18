@@ -103,6 +103,9 @@ pagination
  404 page
 -------------
 */
+body.error404 .to-top-btn-cntlr{
+    display: none!important;
+}
 .page-404-sec-wrp{
 	padding-bottom: 85px;
 }
