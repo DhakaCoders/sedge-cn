@@ -102,7 +102,7 @@
                 </a>
               </div>
               <div class="prdt-fea-cont">  
-                <a href="<?php echo $proLink; ?>"><h5 class="fl-h5 prdt-itm-titl"><?php if( !empty($product['titel']) ) printf('%s', $product['titel']); ?></h5></a>
+                <h5 class="fl-h5 prdt-itm-titl"><a href="<?php echo $proLink; ?>"><?php if( !empty($product['titel']) ) printf('%s', $product['titel']); ?></a></h5>
                 <?php if( !empty($product['height']) ) printf('<span>%s<br> height</span>', $product['height']); ?>
               </div>  
             </div>

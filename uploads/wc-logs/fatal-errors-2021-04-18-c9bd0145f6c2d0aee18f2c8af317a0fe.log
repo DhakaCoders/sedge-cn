@@ -1,6 +1,0 @@
-2021-04-18T10:51:06+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\project\2021\march\sedge\sedge-cn\plugins\woocommerce\includes\class-wc-order-refund.php on line 15
-
-2021-04-18T10:51:53+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\project\2021\march\sedge\wp-includes\Requests\Transport\cURL.php on line 463
-
-2021-04-18T11:57:36+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in D:\xampp\htdocs\project\2021\march\sedge\wp-includes\Requests\Transport\cURL.php on line 441
-
