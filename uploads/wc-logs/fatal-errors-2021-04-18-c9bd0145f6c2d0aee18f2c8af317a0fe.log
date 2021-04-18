@@ -4,3 +4,5 @@
 
 2021-04-18T11:28:58+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in G:\xampp\htdocs\project\2021\March\sedge\wp-includes\Requests\Transport\cURL.php on line 163
 
+2021-04-18T17:12:31+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in G:\xampp\htdocs\project\2021\March\sedge\sedge-cn\plugins\woocommerce\packages\woocommerce-blocks\src\Payments\Integrations\PayPal.php on line 12
+
