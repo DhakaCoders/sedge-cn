@@ -292,7 +292,7 @@ $smedias = get_field('social_media', 'options');
         </ul>
       </div>
       <div class="xs-mbl-btn">
-        <a class="fl-red-btn" href="#">Aanmelden</a>
+        <a class="fl-red-btn" href="<?php echo get_permalink(get_option( 'woocommerce_myaccount_page_id' ));?>">Aanmelden</a>
       </div>
     </div>
 
