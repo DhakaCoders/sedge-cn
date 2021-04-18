@@ -5,7 +5,7 @@ about-grey-sd-sec-wrp
 */
 .about-grey-sd-sec-wrp {
     padding-bottom: 150px;
-    padding-top: 60px;
+    padding-top: 0;
 }
 .about-grey-sd-wrp{
 	position: relative;
@@ -302,7 +302,7 @@ about-img-text-sec-wrp
 	    height: 75px;
 	}
 	.about-grey-sd-sec-wrp {
-	    padding-top: 50px;
+	    padding-top: 0;
 	}
 
 }
@@ -363,7 +363,7 @@ about-img-text-sec-wrp
 	    height: 65px;
 	}
 	.about-grey-sd-sec-wrp {
-	    padding-top: 40px;
+	    padding-top: 0;
 	}
 }
 
@@ -461,7 +461,7 @@ about-img-text-sec-wrp
 	    top: 45px;
 	}
 	.about-grey-sd-sec-wrp {
-	    padding-top: 30px;
+	    padding-top: 0;
 	}
 }
 
