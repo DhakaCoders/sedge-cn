@@ -888,10 +888,11 @@ body.allWork {
 		top: 100%;
 		right: -15px;
 		left: -15px;
-		padding-bottom: 150px;
+		
 		box-shadow: 2px 2px 2px #000;
 		z-index: 99999;
 		padding: 33px;
+		padding-bottom: 100px;
 		background: #F9F5EF;
 		transition: all 0.5s;
 		-ms-transition: all 0.5s;
