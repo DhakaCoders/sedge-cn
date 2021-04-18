@@ -309,7 +309,7 @@ Gallery design
 
 .dft-blockquote{
 	background: #71867E;
-	padding: 70px 60px 60px 65px;
+	padding: 65px 60px 55px 65px;
 	color: #fff;
 	margin-bottom: 30px;
 }
@@ -372,8 +372,8 @@ Gallery design
 }
 
 
-.fl-product-module{
-	padding-bottom: 30px;
+.fl-product-module .fl-products-cntlr{
+	padding-bottom: 10px;
 }
 .fl-product-module ul{
 	margin-left: -12px;
@@ -598,12 +598,6 @@ Gallery design
 	.dfp-text-module{
 		padding-right: 10px;
 	}
-	.dfp-promo-module h1, 
-	.dfp-promo-module-title{
-		margin-bottom: 30px;
-	    padding-bottom: 15px;
-	    border-bottom: 1px solid #F1E8E1;
-	}
 	.pn-con-bar {
 	    margin-bottom: 30px;
 	}
@@ -821,7 +815,7 @@ Gallery design
 		height: 31px!important;
 	}
 	.fl-dft-lftimg-rgtdes-lft {
-	    min-height: 180px;
+	    min-height: 200px;
 	}
 	.dfp-cta-module {
 	    margin-bottom: 0;
@@ -924,6 +918,9 @@ Gallery design
 	.fl-product-module .product-lenth p {
 	    margin-bottom: 8px;
 	}
+	.dfp-prdt-item-module .prdt-itm-titl{
+		margin-bottom: 7px;
+	}
 
 }
 
@@ -987,6 +984,11 @@ Gallery design
 	}
 	.glry-col-2 .gallery-icon-img {
 	    height: 100px;
+	}
+	.dfp-promo-module-title{
+		padding: 2px 15px 2px 35px;
+		display: inline-block;
+		vertical-align: baseline;
 	}
 	
 }
