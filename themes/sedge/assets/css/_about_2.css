@@ -604,6 +604,12 @@
 	.about-prdt-sec .prdt-catg-des-cntrl{
 		margin-bottom: 15px;
 	}
+	.prdt-cntrl{
+		padding: 0;
+	}
+	.about-prdt-sec{
+		padding-bottom: 0;
+	}
 	.about-prdt-sec .prdt-item{
 		padding: 10px 0;
 	}
