@@ -381,6 +381,10 @@ span.xoo-cp-close.xoo-cp-icon-cross:before {
     font-size: 16px;
     margin-right: 0;
 }
+.fl-pro-grd-price del span bdi span, .fl-pro-grd-price ins span bdi span{
+	font-weight: 700;
+	padding-right: 5px;
+}
 .xoo-cp-pprice .product-price del{
 	text-decoration-line: line-through; 
 }
