@@ -1893,7 +1893,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     }
     .deshboard-inner {
         background: #71867E;
-        padding: 35px 20px 20px 20px;
+        padding: 35px 33px 20px 33px;
     }
     .service-contact .service-text a{
         font-size:15px;
@@ -1902,11 +1902,13 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         width: 60px;
     }
     body.woocommerce-account .account-page-title{
-        padding-left: 18px;
-        padding-right: 18px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
-    .deshboard-inner{
-        margin:0 -15px!important;
+    .deshboard-inner {
+        margin: 0 -15px!important;
+        max-width: initial!important;
+        width: auto;
     }
     /* -----------------------  checkout page -----------------------*/
     body.woocommerce-checkout #customer_details .col-2{
