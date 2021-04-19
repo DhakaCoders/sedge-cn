@@ -212,6 +212,11 @@ body.tax-product_cat span.onsale{
     .fl-pro-grd-btn{
         padding-left: 20px;
     }
+    body.home span.onsale, body.post-type-archive span.onsale, body.single-product .fl-product span.onsale, body.tax-product_cat span.onsale{
+        width: 100px!important;
+        top: 15px!important;
+        left: 25px!important;
+    }
 }
 
 @media(max-width: 1299px){
@@ -230,8 +235,9 @@ body.tax-product_cat span.onsale{
         margin: 0;
     }
     body.home span.onsale, body.post-type-archive span.onsale{
-        top: 32px!important;
-        left: 52px!important;
+        top: 25px!important;
+        left: 38px!important;
+        width: 126px!important;
     }
 }
 
@@ -283,7 +289,10 @@ body.tax-product_cat span.onsale{
         padding-bottom: 22px;
     }
     body.home span.onsale, body.post-type-archive span.onsale{
-        width: 80px!important;
+        width: 94px!important;
+        height: 25px!important;
+        top: 12px!important;
+        left: 15px!important;
     }
 }
 
@@ -352,6 +361,7 @@ body.tax-product_cat span.onsale{
         width: 82px!important;
         top: 12px!important;
         left: 18px!important;
+        height: 22px!important;
     }
     .fl-pro-grd-des .fl-pro-grd-title{
         font-size: 18px;
@@ -371,5 +381,6 @@ body.tax-product_cat span.onsale{
         width: 70px!important;
         top: 10px!important;
         left: 15px!important;
+        height: 20px!important;
     }
 }
