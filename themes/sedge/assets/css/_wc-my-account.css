@@ -1906,7 +1906,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         padding-right: 18px;
     }
     .deshboard-inner{
-        margin:0 15px!important;
+        margin:0 -15px!important;
     }
     /* -----------------------  checkout page -----------------------*/
     body.woocommerce-checkout #customer_details .col-2{
