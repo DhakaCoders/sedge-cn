@@ -1901,6 +1901,13 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     .service-list .icon i{
         width: 60px;
     }
+    body.woocommerce-account .account-page-title{
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    .deshboard-inner{
+        margin:0 15px!important;
+    }
     /* -----------------------  checkout page -----------------------*/
     body.woocommerce-checkout #customer_details .col-2{
         padding-left: 20px;
@@ -1976,7 +1983,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         padding-top: 15px;
     }
 }
-@media(max-width: 768px){
+@media(max-width: 767px){
     /*  ------------------ deshbord account page -------------------*/
     body.woocommerce-account .woocommerce-account-grds-cntlr nav.woocommerce-MyAccount-navigation ul {
         flex-direction: column;
@@ -2044,8 +2051,6 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     /* -------------------- new login page ----------------------*/
     body.woocommerce-account .account-page-title{
         padding-top:48px;
-        padding-left: 15px;
-        padding-right: 15px;
     }
     body.woocommerce-orders .account-page-title,
     body.woocommerce-edit-account .account-page-title {
