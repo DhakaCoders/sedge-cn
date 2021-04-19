@@ -269,6 +269,7 @@
 	}
 	.prdt-catg-des-bg{
 		padding-right: 28px;
+		padding-left: 47px;
 		padding-top: 60px;
 		padding-bottom: 50px;
 	}
@@ -312,7 +313,7 @@
 	.prdt-catg-des-bg{
     	padding-top: 50px;
     	padding-bottom: 50px;
-    	padding-left: 50px;
+    	padding-left: 45px;
     	padding-right: 30px;
 	}
 	.prdt-des-logo{
@@ -361,20 +362,20 @@
 		height: 307px;
 	}
 	.prdt-catg-des-bg {
-	    padding-top: 35px;
+	    padding-top: 34px;
 	    padding-bottom: 35px;
 	    padding-left: 40px;
 	    padding-right: 40px;
 	}
 	.prdt-des-logo {
-	    padding-bottom: 64px;
+	    padding-bottom: 61px;
 	    margin-bottom: 60px;
 	}
 	.prdt-des ul {
     	margin: 0 -12px 40px;
 	}
 	.notice {
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 30px;
 }
 	.prdt-des ul li{
@@ -414,8 +415,8 @@
     	max-width: 265px;
 	}
 	.prdt-catg-des-bg{
-		padding-right: 10px;
-		padding-left: 20px;
+		padding-right: 17px;
+		padding-left: 30px;
 	}
 	.prdt-fea-cont {
     	padding-right: 35px;
@@ -427,7 +428,7 @@
 		right: -15px;
 	}
 	.prdt-des ul {
-    	margin: 0 -15px 31px;
+    	margin: 0 -15px 22px;
 	}
 	.prdt-des ul li{
 		padding: 0 15px;
@@ -493,6 +494,10 @@
 	.prdt-item:nth-child(3) .prdt-fea-img,
 	.prdt-item:nth-child(2n+2) .prdt-fea-img{
 		max-width: 100%;
+		width: 100%;
+	}
+	.prdt-item:nth-child(2n+2) .prdt-fea-img{
+		text-align: right;
 	}
 	.prdt-item:nth-child(2n+2) .prdt-fea-cont{
 		left: 0;
@@ -561,7 +566,7 @@
 	}
 	.prdt-item, .prdt-catg-des-bg{
 		max-width: 100%;
-		width: auto;
+		width: 100%;
 	}
 	.straw-img-box {
     	margin-left: 60px;
