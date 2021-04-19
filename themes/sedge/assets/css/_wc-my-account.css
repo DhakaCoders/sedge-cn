@@ -281,7 +281,6 @@ body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc h5{
     font-weight: 700;
     margin-bottom: 7px;
     letter-spacing: -0.02em;
-    text-transform: capitalize!important;
 }
 body.woocommerce-orders .myac-pro-grd-item-inr .order-items-desc span{
     color: #78797B;
@@ -488,7 +487,7 @@ body.woocommerce-orders .order-details{
 }
 body.woocommerce-orders .customer-order-details .fl-pagi-cntlr {
     margin-top:42px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 body.woocommerce-orders .customer-order-details .faq-accordion-wrp > ul:after{
     content: "";
@@ -538,6 +537,7 @@ body.woocommerce-edit-account .woocommerce-account-grds-cntlr{
 body.woocommerce-edit-account.woocommerce-account .woocommerce-EditAccountForm legend{
     margin-bottom: 35px;
     border-bottom: 1px solid #ECEEEF;
+    margin-left: 3px;
 }
 body.woocommerce-edit-account .woocommerce-EditAccountForm > p {
     text-align: left;
@@ -550,6 +550,7 @@ body.woocommerce-edit-account .woocommerce-EditAccountForm > p button[type="subm
     line-height: 1;
     padding-top: 16px;
     padding-bottom: 15px;
+    margin-left: 3px;
 }
 .country_select {
     display: table;
@@ -1816,9 +1817,6 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         padding:12px 20px;
         font-size:15px;
     }
-    body.woocommerce-orders .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content{
-        padding-left: 40px;
-    }
 /* -------------------- loggedin-winkelmandje-crtl -------------------------*/
     body.loggedin-winkelmandje-crtl .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content{
         padding-left: 50px;
@@ -2256,6 +2254,9 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     .register-pay-logo-wrap .payment-title{
         display: none;
     }
+    body.woocommerce-account.woocommerce-edit-account .woocommerce form fieldset.contact-person p:last-of-type{
+        padding-left: 3px;
+    }
     body.woocommerce-account .woocommerce form .form-row{
         padding-left: 0px;
         padding-right: 0px;
@@ -2353,9 +2354,6 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.woocommerce-orders .customer-order-details .faq-accordion-wrp > ul{
         padding-bottom: 45px!important;
     }
-    body.woocommerce-orders .customer-order-details .fl-pagi-cntlr{
-        padding-bottom:8px;
-    }
    .back-to-dashboard-btn-cntlr {
         background: #71867E;
         margin-left: -30px;
@@ -2378,10 +2376,6 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     }
     body.woocommerce-orders .orders-crtl .contact-info a.order-contact-btn{
         margin-bottom:0;
-    }
-    body.woocommerce-orders .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content{
-        max-width: 600px;
-        padding-left: 0px;
     }
     body.woocommerce-orders .orders-crtl .code-text{
         font-size:18px;
@@ -2454,10 +2448,8 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         display: none;
     }
     body.woocommerce-edit-account .woocommerce-account-grds-cntlr .woocommerce-MyAccount-content{
-        max-width:500px;
-        margin-left: auto;
-        margin-right: auto;
         text-align: left;
+        max-width: 100%;
     }
     body.woocommerce-account .woocommerce-EditAccountForm legend{
         font-size: 18px;
@@ -2658,6 +2650,7 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     .cart-is-emtpy {
         padding-top: 0!important;
     }
+
 }
 
 @media(max-width: 659px){
@@ -2774,8 +2767,9 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.woocommerce-account .woocommerce-EditAccountForm legend{
         font-size: 20px;
     }
-    body.woocommerce-edit-account .woocommerce-EditAccountForm > p button[type="submit"]{
-        width:100%;
+    body.woocommerce-edit-account .woocommerce-EditAccountForm > p button[type="submit"] {
+        width: 98.5%!important;
+        margin-left: 3px!important;
     }
     body.woocommerce-account .woocommerce input[type="text"], 
     body.woocommerce-account .woocommerce input[type="email"], 
