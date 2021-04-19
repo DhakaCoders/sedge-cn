@@ -194,6 +194,9 @@
 .prdt-des-logo a img{
 	width: 100%;
 }
+.prdt-des{
+	color: #fff;
+}
 .prdt-des ul {
 	margin: 0 -22px 50px;
 }
