@@ -208,10 +208,14 @@ about-img-text-sec-wrp
 	    margin-right: -80px;
 	}
 	.about-img {
-	    margin-left: -60px;
+	    margin-left: -130px;
 	}
-	.about-text-rgt{
-		padding-left: 65px;
+	.about-text-rgt {
+	    padding-left: 45px;
+	    width: 62%;
+	}
+	.about-img-lft {
+	    width: 38%;
 	}
 }
 
@@ -219,13 +223,23 @@ about-img-text-sec-wrp
 	.aboutgi1 .about-msnry-grd-item-img {
 	    margin-right: -40px;
 	}
-	.about-img{
-		margin-left: -30px
+	.about-img {
+	    margin-left: -70px;
+	    margin-top: -60px;
+	    height: 520px;
 	}
 }
 @media (max-width: 1499px) {
 	.about-grey-sd-dsc-box span{
 		font-size: 31px;
+	}
+	.about-img {
+	    margin-left: -70px;
+	    margin-top: -45px;
+	    height: 460px;
+	}
+	.about-text-rgt {
+	    padding-bottom: 75px;
 	}
 	
 }
@@ -286,16 +300,21 @@ about-img-text-sec-wrp
 	.about-msnry-grd-items {
 	    min-height: 765px;
 	}
+	.about-img-lft {
+	    width: 40%;
+	}
 	.about-text-rgt {
-	    padding-left: 60px;
+	    padding-left: 45px;
 	    padding-right: 15px;
 	    padding-top: 100px;
+	    width: 60%;
 	}
 	.about-img-text-wrp{
-		padding-bottom: 150px;
+		padding-bottom: 180px;
 	}
 	.about-img {
-	    height: 500px;
+	    height: 430px;
+	    margin-top: -30px;
 	}
 	.about-text-rgt p{
 		font-size: 20px;
@@ -316,6 +335,15 @@ about-img-text-sec-wrp
 	}
 	.about-grey-sd-sec-wrp {
 	    padding-top: 0;
+	}
+	.aboutgi1{
+		width: 56%;
+	}
+	.aboutgi2 {
+	    width: 44%;
+	}
+	.aboutgi3{
+		width: 56%;
 	}
 
 }
@@ -359,18 +387,18 @@ about-img-text-sec-wrp
 		padding-bottom: 25px;
 	}
 	.about-text-rgt {
-	    padding-left: 50px;
-	    padding-bottom: 110px;
+	    padding-left: 40px;
+	    padding-bottom: 90px;
+	    width: 58%;
 	}
-	.about-img {
-	    margin-top: -65px;
-	}
+
 	.about-img-text-wrp {
 	    padding-bottom: 150px;
 	    margin-right: 0;
 	}
 	.about-img {
-	    height: 440px;
+	    height: 400px;
+	    margin-top: -30px;
 	}
 	.about-red-bg {
 	    width: 100px;
@@ -378,6 +406,18 @@ about-img-text-sec-wrp
 	}
 	.about-grey-sd-sec-wrp {
 	    padding-top: 0;
+	}
+	.about-img-lft {
+	    width: 42%;
+	}
+	.aboutgi2 {
+	    width: 46%;
+	}
+	.aboutgi1 {
+	    width: 54%;
+	}
+	.aboutgi3 {
+	    width: 54%;
 	}
 }
 
