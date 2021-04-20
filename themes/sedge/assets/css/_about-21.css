@@ -75,12 +75,12 @@ about-img-text-sec-wrp
     padding-bottom: 180px;
     margin-right: -25px;
 }
-.about-img-text-cntlr{
+/*.about-img-text-cntlr{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-}
+}*/
 .about-img-lft{
 	width: 36%;
 	float: left;
@@ -98,10 +98,13 @@ about-img-text-sec-wrp
 	text-transform: uppercase;
 	margin-bottom: 15px;
 }
-.about-text-rgt{
-	width: 64%;
-	float: right;
-	padding-left: 80px;
+.about-text-rgt {
+    width: 64%;
+    float: right;
+    padding-left: 80px;
+    padding-top: 130px;
+    padding-bottom: 140px;
+    padding-right: 10px;
 }
 .about-text-rgt span{
 	display: inline-block;
@@ -153,15 +156,15 @@ about-img-text-sec-wrp
     bottom: auto;
     left: auto;
     right: 0;
-    width: 60%;
+    width: 58%;
 }
 .aboutgi2{
-	width: 40%;
+	width: 42%;
 }
 .aboutgi3 {
     right: 0;
     left: auto;
-    width: 60%;
+    width: 58%;
 }
 .aboutgi3 .about-msnry-grd-item-ctlr{
 	width: 50%;
@@ -207,6 +210,9 @@ about-img-text-sec-wrp
 	.about-img {
 	    margin-left: -60px;
 	}
+	.about-text-rgt{
+		padding-left: 65px;
+	}
 }
 
 @media(max-width: 1599px){
@@ -230,6 +236,9 @@ about-img-text-sec-wrp
 	}
 	.aboutgi1 .about-msnry-grd-item-img {
 	    margin-right: -50px;
+	}
+	.about-text-rgt p br{
+		display: none;
 	}
 	
 }
@@ -280,6 +289,10 @@ about-img-text-sec-wrp
 	.about-text-rgt {
 	    padding-left: 60px;
 	    padding-right: 15px;
+	    padding-top: 100px;
+	}
+	.about-img-text-wrp{
+		padding-bottom: 150px;
 	}
 	.about-img {
 	    height: 500px;
@@ -347,6 +360,7 @@ about-img-text-sec-wrp
 	}
 	.about-text-rgt {
 	    padding-left: 50px;
+	    padding-bottom: 110px;
 	}
 	.about-img {
 	    margin-top: -65px;
@@ -368,6 +382,9 @@ about-img-text-sec-wrp
 }
 
 @media(max-width: 767px){
+	.page-template-page-about .header{
+		margin-bottom: 5px;
+	}
 	.about-grey-sd-dsc-box span{
 		font-size: 22px;
 	}
@@ -423,7 +440,7 @@ about-img-text-sec-wrp
 	}
 	.about-text-rgt p{
 		font-size: 16px;
-		margin-bottom: 10px;
+		margin-bottom: 0;
 	}
 	.about-text-rgt span{
 		font-size: 14px;
@@ -438,6 +455,7 @@ about-img-text-sec-wrp
 	    padding-left: 25px;
 	    width: 100%;
 	    padding-bottom: 25px;
+	    padding-top: 0;
 	}
 	.about-img {
 	    height: 340px;
@@ -451,7 +469,7 @@ about-img-text-sec-wrp
 	}
 	.about-img-text-wrp {
 	    margin-right: 0;
-	    padding-bottom: 220px;
+	    padding-bottom: 230px;
 	}
 	.about-grey-sd-sec-wrp {
 	    padding-bottom: 15px;
