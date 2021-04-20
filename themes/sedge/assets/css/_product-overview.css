@@ -1,7 +1,7 @@
 .fl-products-cntlr ul.products{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -12px;
+    margin: 0 -12px!important;
     padding-bottom: 20px;
 }
 .fl-products-cntlr ul.products > li{
@@ -28,6 +28,10 @@ body.tax-product_cat span.onsale{
     width: 112px!important;
     top: 20px!important;
     left: 38px!important;    
+}
+body.single-product .fl-product span.onsale{
+    left: 20px!important;
+    top: 20px!important;
 }
 .fl-pro-grd-img-cntlr {
     display: flex;
@@ -63,6 +67,9 @@ body.tax-product_cat span.onsale{
 .fl-pro-grd-title a{
     text-transform: uppercase;
     color: #71867d;
+}
+.fl-pro-grd-title a:hover{
+    color: #6DBD98;
 }
 .product-lenth p{
     margin-bottom: 24px;
@@ -189,7 +196,7 @@ body.tax-product_cat span.onsale{
         max-width: 200px;
     }
     .fl-products-cntlr ul.products{
-        margin: 0 -10px;
+        margin: 0 -10px!important;
     }
     .fl-products-cntlr ul.products > li{
         padding: 0 10px 34px!important;
@@ -201,7 +208,7 @@ body.tax-product_cat span.onsale{
 
 @media(max-width: 1399px){
     .fl-pro-grd-des .fl-pro-grd-title{
-        font-size: 25px;
+        font-size: 23px;
     }
     .fl-products-cntlr ul.products > li{
         padding: 0 10px 30px!important;
@@ -209,13 +216,14 @@ body.tax-product_cat span.onsale{
     .fl-pro-grd-des{
         padding: 20px 20px 17px 20px!important;
     }
-    .fl-pro-grd-btn{
-        padding-left: 20px;
-    }
     body.home span.onsale, body.post-type-archive span.onsale, body.single-product .fl-product span.onsale, body.tax-product_cat span.onsale{
         width: 100px!important;
         top: 15px!important;
         left: 25px!important;
+    }
+    body.single-product .fl-product span.onsale{
+        left: 20px!important;
+        top: 20px!important;
     }
 }
 
@@ -243,7 +251,7 @@ body.tax-product_cat span.onsale{
 
 @media(max-width: 991px){
     .fl-products-cntlr ul.products{
-        margin: 0 -8px;
+        margin: 0 -8px!important;
     }
     .fl-products-cntlr ul.products > li{
         padding: 0 8px 20px!important;
@@ -263,7 +271,7 @@ body.tax-product_cat span.onsale{
 
 @media(max-width: 767px){
     .fl-products-cntlr ul.products{
-        margin: 0 -6px;
+        margin: 0 -6px!important;
         padding-bottom: 20px;
     }
     .fl-products-cntlr ul.products > li{
@@ -294,6 +302,9 @@ body.tax-product_cat span.onsale{
         top: 12px!important;
         left: 15px!important;
     }
+     .fl-products-cntlr ul.products > li {
+        width: 50%!important;
+    }
 }
 
 @media(max-width: 639px){
@@ -312,6 +323,7 @@ body.tax-product_cat span.onsale{
     body.home span.onsale, body.post-type-archive span.onsale{
         width: 100px!important;
     }
+   
 }
 
 @media(max-width: 575px){
@@ -321,7 +333,7 @@ body.tax-product_cat span.onsale{
         left: 25px!important;
     }
     .fl-products-cntlr ul.products{
-        margin: 0 -4px;
+        margin: 0 -4px!important;
     }
     .fl-products-cntlr ul.products > li{
         padding: 0 4px 12px!important;
@@ -353,6 +365,9 @@ body.tax-product_cat span.onsale{
     .fl-pro-grd-btn .fl-blue-btn i {
         padding-right: 3px;
         margin-top: -2px;
+    }
+    .fl-overview-cont-cntrl{
+        padding-top:0;
     }
 }
 

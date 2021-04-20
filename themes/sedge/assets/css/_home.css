@@ -171,6 +171,7 @@
 	right: -37.5px;
 	top: 16.5%;
 }
+
 .prdt-des-logo{
 	display: flex;
 	justify-content: center;
@@ -195,7 +196,7 @@
 	width: 100%;
 }
 .prdt-des{
-	color: #fff;
+    color: #fff;
 }
 .prdt-des ul {
 	margin: 0 -22px 50px;
