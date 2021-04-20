@@ -1,7 +1,6 @@
 .straw-intro{
 	padding: 36px;
 	background: #f9f9f9;
-
 }
 .straw-intro-bg{
 	background: #faf5ef;
@@ -457,7 +456,6 @@
 		margin-top: -88px;
 	}
 	.straw-img-box {
-		/* margin-top: 90px; */
     	margin-left: -195px;
 	}
 	.straw-des{
@@ -573,7 +571,6 @@
 	}
 	.straw-img-box{
 		margin-left: -166px;
-		/* margin-top: 104px; */
 	}
 	.straw-intro{
 		padding: 15px;
@@ -634,17 +631,6 @@
 	.prdt-item{
 		padding-bottom: 20px;
 	}
-	/* .straw-img-box {
-    	position: static;
-		width: auto;
-		max-width: 100%;
-		margin-left: 0;
-		margin-right: 0;
-		margin-top: 40px;
-		top: 100%;
-		transform: initial;
-		left: initial;
-	} */
 	.straw-des p{
 		font-size: 14px;
 	}
