@@ -439,6 +439,20 @@ svg.home-btn-arrow{
 	.thankyou .order-home-btn{
 		margin: auto;
 	}	
+	.thankyou .orders-product-item{
+	    margin-left: -30px;
+	    margin-right: -30px;
+	}
+	.thankyou .deshboard-inner {
+        margin-left: -30px!important;
+        margin-right: -30px!important;
+    }
+	.thankyou .order-home-btn{
+	    margin-top: 33px;
+	}
+	.thankyou .order-products{
+	    padding-bottom: 90px;
+	}
 }
 
 @media(max-width:768px){
@@ -466,6 +480,9 @@ svg.home-btn-arrow{
 	}
 	.thankyou .deshboard-inner{
 		margin: 30px -30px;
+	}
+	.thankyou .order-products{
+	    padding-bottom: 67px;
 	}
 }
 

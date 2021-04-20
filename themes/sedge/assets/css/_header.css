@@ -925,6 +925,11 @@ body.allWork {
 	.xs-hdr-cart a:hover i svg{
 		fill: #B3192A;
 	}
+	.fl-products-cntlr,
+	.fl-overview-cont-cntrl{
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
 }
 @media(max-width: 767px){
 	.cart-socials-cntlr{

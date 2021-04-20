@@ -17,7 +17,7 @@
 	width: 50%;
 	height: 520px;
 	background: #6dbd98;
-	padding: 0 54px 0;
+	padding: 20px 54px 20px;
 	position: relative;
 	z-index: 2;
 	display: flex;
@@ -48,8 +48,8 @@
 	left: 50%;
     transform: translate(-50%, -50%);
     top: 50%;
-    margin-left: 125px;
-    margin-top: 66px;	
+    margin-left: 175px;
+    margin-top: 65px;	
 }
 .straw-intro-btn:hover{
 	background: #fff;
@@ -171,6 +171,7 @@
 	right: -37.5px;
 	top: 16.5%;
 }
+
 .prdt-des-logo{
 	display: flex;
 	justify-content: center;
@@ -195,7 +196,7 @@
 	width: 100%;
 }
 .prdt-des{
-	color: #fff;
+    color: #fff;
 }
 .prdt-des ul {
 	margin: 0 -22px 50px;
@@ -264,6 +265,10 @@
 	.straw-des p{
 		font-size: 28px;
 	}
+	.straw-img-box{
+		margin-left: 136px;
+    	margin-top: 93px;
+	}
 	.prdt-item:nth-child(2n+2) .prdt-fea-cont{
 		padding-left: 32px;
 	}
@@ -293,7 +298,7 @@
 		font-size: 26px;
 	}
 	.straw-cont{
-		padding: 0 44px 0;
+		padding: 20px 44px 20px;
 	}
 }
 
@@ -305,6 +310,7 @@
 		height: 460px;
 	}
 	.straw-img-box{
+		margin-left: 140px;
 		margin-top: 63px;
 	}
 	.prdt-fea-img{
@@ -352,15 +358,12 @@
 		height: 420px;
 	}
 	.straw-img-box{
-		margin-left: 145px;
-		margin-top: 31px;
+		margin-left: 138px;
+		margin-top: 58px;
 	}
 	.prdt-fea-img{
 		max-width: 300px;
 	}
-	/* .prdt-item:nth-child(3) .prdt-fea-img{
-		max-width: 290px;
-	} */
 	.prdt-item{
 		height: 307px;
 	}
@@ -409,10 +412,12 @@
 	}
 	.straw-cont{
 		height: 370px;
+		padding: 20px 53px 20px;
+
 	}
 	.straw-img-box{
-		margin-left: 74px;
-    	margin-top: 42px;
+		margin-left: 125px;
+    	margin-top: 33px;
 	}
 	.prdt-fea-img {
     	max-width: 265px;
@@ -445,17 +450,26 @@
 	}
 }
 
+@media (max-width: 1099px){
+	.straw-img-box {
+	    margin-left: 115px;
+	}
+}
 
 @media (max-width: 991px) {
 	.straw-cont{
 		height: 320px;
-		padding: 0 25px 0;
+		padding: 20px 25px 20px;
 	}
 	.straw-des{
 		padding-bottom: 15px;
 	}
 	.straw-des p{
 		font-size: 18px;
+	}
+	.straw-img-box {
+	    margin-left: 105px;
+	    margin-top: 45px;
 	}	
 	.home .fl-transparent-btn{
 		width: 160px;
@@ -552,8 +566,8 @@
 		width: auto;
 	}
 	.straw-intro-bg{
-		padding-top: 60px;
-		padding-bottom: 90px;
+		padding-top: 80px;
+		padding-bottom: 140px;
 	}
 	.home .fl-transparent-btn{
 		width: 150px;
@@ -561,8 +575,8 @@
 		font-size: 14px;
 	}
 	.straw-cont{
-		height: 310px;
-		padding: 0 13px 0;
+		height: 270px;
+		padding: 20px 13px 20px;
 	}
 	.straw-intro{
 		padding: 15px;
@@ -572,8 +586,8 @@
 		width: 100%;
 	}
 	.straw-img-box {
-    	margin-left: 60px;
-    	margin-top: 50px;
+    	margin-left: 90px;
+    	margin-top: 40px;
 	}
 	.straw-des p{
 		font-size: 16px;
@@ -612,7 +626,7 @@
     	height: 180px;
     	width: auto;
     	margin-left: -30px;
-    	padding: 0 50px 0 32px;    	
+    	padding: 20px 50px 20px 32px;    	
 	}
 	.prdt-des-logo{
 		padding-bottom: 35px; 
@@ -622,9 +636,10 @@
 	}
 	.straw-img-box {
     	position: static;
-		width: 100%;
-		max-width: 280px;
-		margin-left: 17px;
+		width: auto;
+		max-width: 100%;
+		margin-left: 0;
+		margin-right: 0;
 		margin-top: 40px;
 		top: 100%;
 		transform: initial;

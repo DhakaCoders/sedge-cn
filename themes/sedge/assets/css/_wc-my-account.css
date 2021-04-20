@@ -1,3 +1,7 @@
+body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
 
 /* ------------------- my account  deshboard-----------------------*/
 body.woocommerce-account .account-page-title{
@@ -515,7 +519,7 @@ body.woocommerce-account .woocommerce form .form-row-first#billing_postcode_fiel
 body.woocommerce-account .woocommerce form .form-row-last#billing_city_field,
 body.woocommerce-account fieldset.login-details .form-row-first,
 body.woocommerce-account fieldset.login-details .form-row-last{
-    padding-left:3px!important;
+    padding-left:0!important;
 }
 body.woocommerce-account.woocommerce-edit-account .woocommerce form .form-row-first#billing_address_1_field,
 body.woocommerce-account.woocommerce-edit-account .woocommerce form .form-row-last#billing_phone_field,
@@ -524,7 +528,7 @@ body.woocommerce-account .woocommerce form .form-row-first#billing_postcode_fiel
 body.woocommerce-account .woocommerce form .form-row-last#billing_city_field,
 body.woocommerce-account fieldset.login-details .form-row-first,
 body.woocommerce-account fieldset.login-details .form-row-last{
-    padding-right:3px!important;
+    padding-right:0!important;
 }
 
 /* ------------------------- woocommerce-edit-account --------------------------*/
@@ -537,7 +541,7 @@ body.woocommerce-edit-account .woocommerce-account-grds-cntlr{
 body.woocommerce-edit-account.woocommerce-account .woocommerce-EditAccountForm legend{
     margin-bottom: 35px;
     border-bottom: 1px solid #ECEEEF;
-    margin-left: 3px;
+    margin-left: 0;
 }
 body.woocommerce-edit-account .woocommerce-EditAccountForm > p {
     text-align: left;
@@ -708,7 +712,9 @@ body.woocommerce-account .woocommerce button[type=button].woocommerce-button{
 body.woocommerce-account .woocommerce button[type=button].woocommerce-button span,
 body.woocommerce-account .register-btn button[type="submit"] span,
 body.woocommerce-checkout .payment-method-crtl .custom-checkout-btn button[type=submit] span,
-body.woocommerce-checkout .custom-checkout-order-review button.button.alt span{
+body.woocommerce-checkout .custom-checkout-order-review button.button.alt span,
+.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2 .product-order-btn .product-order-btn-top a span,
+.xoo-cp-content .popup-bottom-btn .product-order-btn-top a.fl-btn span{
     position: relative;
     padding-left: 15px;
 }
@@ -716,7 +722,9 @@ body.woocommerce-account .woocommerce button[type=submit].woocommerce-button spa
 body.woocommerce-account .woocommerce button[type=button].woocommerce-button span:after,
 body.woocommerce-account .register-btn button[type="submit"] span:after,
 body.woocommerce-checkout .payment-method-crtl .custom-checkout-btn button[type=submit] span:after,
-body.woocommerce-checkout .custom-checkout-order-review button.button.alt span:after{
+body.woocommerce-checkout .custom-checkout-order-review button.button.alt span:after,
+.xoo-cp-content .xoo-cp-pdetails-row .xoo-cp-pdetails-col-2 .product-order-btn .product-order-btn-top a span:after,
+.xoo-cp-content .popup-bottom-btn .product-order-btn-top a.fl-btn span:after{
     position: absolute;
     content: "";
     background: url(../images/cart-page-button-icon.svg);
@@ -952,14 +960,14 @@ body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#v
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_postcode_field,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_address_1_field,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_gsm_number_field{
-    padding-right: 13px;
+    padding-right: 13px!important;
 }
 
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_city_field,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_house_field,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_phone_field,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#vat_number_field{
-    padding-left: 13px;
+    padding-left: 13px!important;
 }
 body.woocommerce-account .woocommerce form .form-row-first,
 body.woocommerce-account .woocommerce-page form .form-row-first
@@ -967,7 +975,8 @@ body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row-f
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper #billing_company_field,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper #billing_first_name_field,
 body.woocommerce-checkout .woocommerce-shipping-fields .form-row-first{
-    padding-right: 13px;
+    padding-right: 13px!important;
+    padding-left: 0!important;
 }
 /*body.woocommerce-checkout .checkout-terms{
     display: none;
@@ -980,7 +989,8 @@ body.woocommerce-account .woocommerce-page form .form-row-last,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row-last,
 body.woocommerce-checkout  .woocommerce-shipping-fields__field-wrapper .form-row-last,
 body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper #billing_btw_nummer_field {
-    padding-left: 13px;
+    padding-left: 13px!important;
+    padding-right: 0!important;
 }
 body.woocommerce-account .woocommerce form .form-row select, 
 body.woocommerce-account  .woocommerce-page form .form-row select,
@@ -1982,6 +1992,23 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.woocommerce-checkout .payment-method-crtl .woocommerce-additional-fields.extra-info {
         padding-top: 15px;
     }
+     body.woocommerce-account #login_register{
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 15px;
+        padding-right: 18px;
+    }
+    body.woocommerce-account #mail_checker{
+        margin-right: 0!important;
+    } 
+    body.hide-account-title .register-nextstep{
+        max-width: 100%;
+    }
+    body.hide-account-title .default-page-con{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 @media(max-width: 767px){
     /*  ------------------ deshbord account page -------------------*/
@@ -2144,7 +2171,11 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper #billing_first_name_field {
         margin-bottom: 5px;
     }
-
+    body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_city_field, body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_house_field, body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_phone_field, body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#vat_number_field,
+    body.woocommerce-account .woocommerce form .form-row-last, body.woocommerce-account .woocommerce-page form .form-row-last, body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row-last, body.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row-last, body.woocommerce-checkout .woocommerce-billing-fields__field-wrapper #billing_btw_nummer_field{
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
     body.woocommerce-account .woocommerce form .show-password-input, 
     body.woocommerce-account .woocommerce-page form .show-password-input{
         top:50%!important;
@@ -2228,12 +2259,12 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
     }
     body.woocommerce-account .woocommerce form .form-row-first,
     body.woocommerce-account .woocommerce-page form .form-row-first{
-        padding-right: 0px
+        padding-right: 0px!important
     }
 
     body.woocommerce-account .woocommerce form .form-row-last, 
     body.woocommerce-account .woocommerce-page form .form-row-last{
-        padding-left:0px;
+        padding-left:0px!important;
     }
     body.hide-account-title .login-info #billing_email_field{
         padding-top: 18px;
@@ -2255,7 +2286,8 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         display: none;
     }
     body.woocommerce-account.woocommerce-edit-account .woocommerce form fieldset.contact-person p:last-of-type{
-        padding-left: 3px;
+        padding-left: 0!important;
+        padding-right: 0!important;
     }
     body.woocommerce-account .woocommerce form .form-row{
         padding-left: 0px;
@@ -2642,8 +2674,6 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
         margin: 0 -15px;   
         margin-bottom:32px;
     }
-}
-@media(max-width: 767px){
     body.woocommerce-checkout .woocommerce-notices-wrapper {
         margin-top: 0;
     }   
@@ -2653,11 +2683,15 @@ body.woocommerce-checkout .select2-container--default .select2-search--dropdown 
 
 }
 
+
 @media(max-width: 659px){
     
 }
 
 @media(max-width:575px){
+    body.woocommerce-checkout .checkout.html-text.show-xs{
+        display: none!important;
+    }
     /* ----------------- login page---------------------*/
     body.woocommerce-account .woocommerce #register_next{
         width:100%!important;

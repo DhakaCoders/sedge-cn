@@ -249,10 +249,10 @@ body.error404 .to-top-btn-cntlr{
 		padding-bottom: 29px;
 	}
 	.fl-pagi-cntlr ul{
-		margin: 0 -20px;
+		margin: 0 -20px!important;
 	}
 	.fl-pagi-cntlr ul li{
-		padding: 0 20px;
+		padding: 0 20px!important;
 	}
 	.page-404-dsc-wrp strong{
 	    padding-left: 67px;
@@ -274,10 +274,10 @@ body.error404 .to-top-btn-cntlr{
 		top: 100px;
 	}
 	.fl-pagi-cntlr ul{
-		margin: 0 -15px;
+		margin: 0 -15px!important;
 	}
 	.fl-pagi-cntlr ul li{
-		padding: 0 15px;
+		padding: 0 15px!important;
 	}
 	.page-404-dsc-wrp strong {
         padding-left: 0;
