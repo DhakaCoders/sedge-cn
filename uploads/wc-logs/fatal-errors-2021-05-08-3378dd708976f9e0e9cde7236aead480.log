@@ -1,0 +1,18 @@
+2021-05-08T08:52:45+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in D:\xampp\htdocs\projects\2021\sedge\wp-includes\Requests\Transport\cURL.php on line 463
+
+2021-05-08T08:54:51+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($function) must be a valid callback, non-static method WP_Feed_Cache::create() cannot be called statically in D:\xampp\htdocs\projects\2021\sedge\wp-includes\SimplePie\Registry.php:214
+Stack trace:
+#0 D:\xampp\htdocs\projects\2021\sedge\wp-includes\class-simplepie.php(1412): SimplePie_Registry->call('Cache', 'get_handler', Array)
+#1 D:\xampp\htdocs\projects\2021\sedge\wp-includes\feed.php(821): SimplePie->init()
+#2 D:\xampp\htdocs\projects\2021\sedge\wp-includes\widgets.php(1493): fetch_feed('https://wordpre...')
+#3 D:\xampp\htdocs\projects\2021\sedge\wp-admin\includes\dashboard.php(1519): wp_widget_rss_output('https://wordpre...', Array)
+#4 D:\xampp\htdocs\projects\2021\sedge\wp-admin\includes\dashboard.php(1125): wp_dashboard_primary_output('dashboard_prima...', Array)
+#5 D:\xampp\htdocs\projects\2021\sedge\wp-admin\includes\dashboard.php(1503): wp_dashboard_cached_rss_widget('dashboard_prima...', 'wp_dashboard_pr...', Array)
+#6 D:\xampp\htdocs\projects\2021\sedge\wp-admin\includes\ajax-actions.php(400): wp_dashboard_primary()
+#7 D:\xampp\htdocs\projects\2021\sedge\wp-includes\class-wp-hook.php(287): wp_ajax_dashboard_widgets('')
+#8 D:\xampp\htdocs\projects\2021\sedge\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#9 D:\xampp\htdocs\projects\2021\sedge\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#10 D:\xampp\htdocs\projects\2021\sedge\wp-admin\admin-ajax.php(176): do_action('wp_ajax_dashboa...')
+#11 {main}
+  thrown in D:\xampp\htdocs\projects\2021\sedge\wp-includes\SimplePie\Registry.php on line 214
+
