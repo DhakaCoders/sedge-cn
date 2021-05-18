@@ -1,0 +1,242 @@
+.blog-sec{
+
+}
+.blog-inr .page-entry-hdr{
+	padding-bottom: 100px;
+}
+.blog-grid-cntlr{
+	padding-bottom: 28px;
+}
+.blog-grid-cntlr ul{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -13px;
+}
+.blog-grid-cntlr ul li{
+	padding: 0 13px;
+	margin-bottom: 30px;
+	width: 50%;
+}
+.blog-grid-cntlr ul li:nth-child(2n+2) .blog-item-img-cntlr{
+	order: 2;
+}
+.blog-grid-cntlr ul li:nth-child(2n+2) .blog-item-desc-cntlr{
+	order: 1;
+}
+.blog-item{
+	background: #fffaf4;
+	display: flex;
+	flex-direction: column;
+}
+.blog-item-img-cntlr{
+	height: 432px;
+	width: 100%;
+	overflow: hidden;
+	
+}
+.blog-item-img{
+	height: 100%;
+	width: 100%;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.blog-item:hover .blog-item-img{
+	transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+.blog-item-desc-cntlr{
+	padding: 55px 46px;
+}
+.blog-item-desc-date{
+	display: inline-block;
+	font-size: 14px;
+	line-height: 1;
+	color: #B3192A;
+	margin-bottom: 14px;
+}
+.blog-item-desc-title{
+	color: #71867E;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.blog-item-desc-title a{
+	display: inline-block;
+	color: #71867E;
+}
+.blog-item-desc-title a:hover{
+	color: #B3192A;
+}
+.blog-item-desc > p:last-of-type{
+	margin-bottom: 0;
+}
+.blog-item-desc{
+	margin-bottom: 38px;
+}
+.blog-item-desc-btn .fl-transparent-btn{
+	border-color: #B3192A;
+	border-radius: 4px;
+	color: #B3192A;
+}
+.blog-item-desc-btn .fl-transparent-btn:hover{
+	background: #B3192A;
+	color: #fff;
+}
+.blog-inr .fl-pagi-cntlr{
+	padding-top: 44px;
+	padding-bottom: 40px;
+	position: relative;
+}
+.blog-inr .fl-pagi-cntlr:after{
+	position: absolute;
+	content: "";
+	width: 86px;
+	background: #71867E;
+	height: 2px;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+
+}
+.blog-item-img img{
+		display: none;
+	}
+/*responsive*/
+@media(max-width: 1599px){
+	.blog-item-desc-cntlr {
+		padding: 45px 35px;
+	}
+	.blog-item-desc-date{
+		margin-bottom: 11px;
+	}
+	.blog-item-desc-title{
+		margin-bottom: 15px;
+	}
+	.blog-item-desc{
+		margin-bottom: 28px;
+	}
+	.blog-item-img-cntlr{
+		height: 380px;
+	}
+}
+@media(max-width: 1399px){
+
+}
+@media(max-width: 1299px){
+
+}
+@media(max-width: 1199px){
+	.blog-item-img-cntlr{
+		height: 320px;
+	}
+	.blog-item-desc-cntlr {
+		padding: 28px 28px;
+	}
+	.blog-item-desc-title.fl-h5{
+		font-size: 23px;
+		margin-bottom: 12px;
+	}
+	.blog-item-desc > p{
+		font-size: 14px;
+	}
+	.blog-item-desc{
+		margin-bottom: 22px;
+	}
+}
+@media(max-width: 991px){
+	.blog-grid-cntlr ul{
+		margin: 0 -16px;
+	}
+	.blog-grid-cntlr ul li{
+		padding: 0 8px;
+	}
+	.blog-item-desc-cntlr {
+		padding: 22px 20px 28px 20px;
+	}
+	.blog-item-desc-title.fl-h5{
+		font-size: 19px;
+	}
+	.blog-item-desc-btn .fl-transparent-btn{
+		width: 160px;
+		height: 40px;
+		font-size: 14px;
+	}
+	.blog-item-desc-date{
+		margin-bottom: 8px;
+	}
+	.blog-item-desc{
+		margin-bottom: 18px;
+	}
+	.blog-item-img-cntlr{
+		height: 300px;
+	}
+	.blog-inr .page-entry-hdr{
+		padding-bottom: 85px;
+	}
+}
+@media(max-width: 767px){
+	.blog-grid-cntlr ul{
+		margin: 0;
+	}
+	.blog-grid-cntlr ul li{
+		width: 100%;
+		padding: 0;
+		margin-bottom: 40px;
+	}
+	.blog-grid-cntlr ul li:nth-child(2n+2) .blog-item-img-cntlr{
+		order: initial;
+	}
+	.blog-grid-cntlr ul li:nth-child(2n+2) .blog-item-desc-cntlr{
+		order: initial;
+	}
+	.blog-item{
+		display: block;
+		max-width: 432px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.blog-item-img-cntlr{
+		height: 260px;
+	}
+	.blog-inr .page-entry-hdr{
+		padding-bottom: 65px;
+	}
+	.blog-grid-cntlr{
+		padding-bottom: 11px;
+	}
+}
+@media(max-width: 639px){
+
+}
+@media(max-width: 575px){
+	.blog-inr .page-entry-hdr{
+		padding-bottom: 45px;
+	}
+	.blog-item{
+		max-width: 100%;
+	}
+	.blog-item-img-cntlr{
+		height: initial;
+	}
+	.blog-item-img{
+		background: transparent!important;
+	}
+	.blog-item-img img{
+		display: block;
+	}
+	.blog-item-desc-title.fl-h5{
+		font-size: 18px;
+	}
+	.blog-item-desc-date{
+		font-size: 12px;
+	}
+
+}
+@media(max-width: 479px){
+
+}

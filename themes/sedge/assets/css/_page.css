@@ -61,11 +61,12 @@ pagination
 	height: 19px!important;
 	font-size: 16px!important;
 	line-height: 1.3;
+	font-weight: 600;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: #78797b;
-	border-bottom: 1px solid transparent;
+	border-bottom: 2px solid transparent;
 }
 /*.faq-pagi-ctlr ul li:nth-child(1) span,
 .faq-pagi-ctlr ul li:last-child span,
@@ -75,11 +76,11 @@ pagination
 }*/
 
 .fl-pagi-cntlr ul li a:hover{
-	border-bottom: 1px solid #b4192b;
+	border-bottom: 2px solid #b4192b;
 	color: #b4192b;
 }
 .fl-pagi-cntlr ul li span.current{
-	border-bottom: 1px solid #b4192b;
+	border-bottom: 2px solid #b4192b;
 	color: #b4192b;
 /*     float: left;
     height: 50px;
