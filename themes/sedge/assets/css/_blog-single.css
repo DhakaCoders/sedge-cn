@@ -1,0 +1,72 @@
+
+.bs-innerpage-con-wrap .default-page-con{
+	padding-bottom: 120px;
+}
+.blog-single-entry-hdr{
+	padding-bottom: 70px;
+}
+.blog-single-entry-hdr .fl-blue-btn{
+	width: 318px;
+}
+.bs-dfp-promo-module{
+	padding-bottom: 53px;
+}
+.bs-dfp-promo-module-hdr{
+	max-width: 973px;
+	width: 100%;
+	margin: 0 auto;
+}
+.bs-dfp-promo-module-date{
+	display: block;
+	font-size: 18px;
+	line-height: 1;
+	color: #B3192A;
+	margin-bottom: 14px;
+}
+.bs-dfp-promo-module-title.fl-h2{
+	text-transform: uppercase;
+	color: #71867E;
+	padding-bottom: 48px;
+	line-height: 1.2;
+	display: inline-block;
+}
+.bs-innerpage-con-wrap .dfp-cta-module{
+	padding-bottom: 35px;
+}
+.dfp-socilas-module{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 5px;
+}
+.dfp-socilas-module span{
+	padding-right: 16px;
+	line-height: 1;
+	color: #78797B;
+}
+.dfp-socilas-module ul{
+	display: flex;
+	align-items: center;
+	margin: 0 -5px;
+	padding-bottom: 0!important;
+}
+.dfp-socilas-module ul li{
+	padding: 0 5px;
+}
+.dfp-socilas-module ul li a{
+	color: #78797B;
+	display: inline-block;
+	font-size: 16px;
+}
+.dfp-socilas-module ul li a:hover{
+	color: #b4192b;
+}
+.related-articles-sec{
+	background: #fffaf4;
+	padding-top: 95px;
+	padding-bottom: 55px;
+}
+.related-articles-title{
+	margin-bottom: 45px;
+	text-align: center;
+}
