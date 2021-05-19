@@ -81,7 +81,7 @@
 	width: 50%;
 	margin-bottom: 30px;
 }
-.blog-grid-item-wrap .blog-item{
+.blog-grid-item-wrap .blog-item .blog-item-desc-cntlr{
 	background: #fff;
 }
 
@@ -91,7 +91,7 @@
 .blog-grid-item-wrap:nth-child(2n+2) .blog-item-desc-cntlr{
 	order: 1;
 }
-.blog-grid-item-wrap:nth-child(1) .blog-item-img-cntlr{
+.blog-grid-wrap .blog-grid-item-wrap:first-child .blog-grid-item-cntlr .blog-item .blog-item-img-cntlr{
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 }
