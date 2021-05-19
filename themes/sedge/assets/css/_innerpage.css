@@ -921,6 +921,9 @@ Gallery design
 	.dfp-prdt-item-module .prdt-itm-titl{
 		margin-bottom: 7px;
 	}
+	.fl-dft-lftimg-rgtdes{
+		padding-bottom: 0;
+	}
 
 }
 
