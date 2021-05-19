@@ -91,6 +91,10 @@
 .blog-grid-item-wrap:nth-child(2n+2) .blog-item-desc-cntlr{
 	order: 1;
 }
+.blog-grid-item-wrap:nth-child(1) .blog-item-img-cntlr{
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
 
 /*responsive*/
 @media(max-width: 1599px){

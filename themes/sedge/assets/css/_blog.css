@@ -23,6 +23,10 @@
 .blog-grid-cntlr > ul > li:nth-child(2n+2) .blog-item-desc-cntlr{
 	order: 1;
 }
+.blog-grid-cntlr > ul > li:nth-child(1) .blog-item-img-cntlr{
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
 .blog-item{
 	background: #fffaf4;
 	display: flex;

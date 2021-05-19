@@ -293,7 +293,7 @@ if(windowWidth < 768){
     $('.bsBlogItemSlider').slick({
       dots: true,
       infinite: true,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 4000,
       speed: 700,
       slidesToShow: 1,
