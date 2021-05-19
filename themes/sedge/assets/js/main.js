@@ -288,8 +288,21 @@ if( $('#related-product-slider').length ){
       ]
     });
 }
-
+if(windowWidth < 768){
+  if( $('.bsBlogItemSlider').length ){
+    $('.bsBlogItemSlider').slick({
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      speed: 700,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+  }
+}
   /* -- About page left bg control --*/
+
 if(windowWidth > 768){
   var AboutTextImgSecWrp = $('.about-img-text-sec-wrp').width();
   var AboutTextImgSecWrpContainer = $('.about-img-text-sec-wrp .container').width();

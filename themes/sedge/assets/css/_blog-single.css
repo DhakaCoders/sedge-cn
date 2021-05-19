@@ -79,6 +79,7 @@
 .blog-grid-item-wrap{
 	padding: 0 13px;
 	width: 50%;
+	margin-bottom: 30px;
 }
 .blog-grid-item-wrap .blog-item{
 	background: #fff;
@@ -155,6 +156,23 @@
 	}
 	.related-articles-title.fl-h3{
 		margin-bottom: 30px;
+	}
+	.blog-grid-wrap{
+		display: block;
+		margin: 0;
+		max-width: 432px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.blog-grid-item-wrap{
+		padding: 0;
+		width: 100%;
+	}
+	.blog-item{
+		max-width: 100%;
+	}
+	.bsBlogItemSlider.slick-dotted.slick-slider{
+		margin-bottom: 0;
 	}
 }
 @media(max-width: 639px){
