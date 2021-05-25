@@ -30,14 +30,13 @@
 	line-height: 1.2;
 	display: inline-block;
 }
-.bs-innerpage-con-wrap .dfp-cta-module{
-	padding-bottom: 35px;
-}
+
 .dfp-socilas-module{
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	padding-right: 5px;
+	padding-top: 35px;
 }
 .dfp-socilas-module span{
 	padding-right: 16px;
